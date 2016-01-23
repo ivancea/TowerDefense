@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TowerDefense" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/TowerDefense" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="towers" />
+					<Add directory="towerManagers" />
+					<Add directory="../TowerDefense" />
+					<Add directory="enemies" />
+					<Add directory="towers/entities" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static" />
+				</Linker>
+			</Target>
+			<Target title="MapCreator">
+				<Option output="bin/MapCreator/MapCreator" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/MapCreator/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add directory="towers" />
+					<Add directory="towerManagers" />
+					<Add directory="../TowerDefense" />
+					<Add directory="enemies" />
+					<Add directory="towers/entities" />
+				</Compiler>
+				<Linker>
+					<Add option="-static" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Enemy.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Enemy.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Game.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Game.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="MapManager.cpp" />
+		<Unit filename="MapManager.h" />
+		<Unit filename="Tower.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="TowerManager.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="TowerManager.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="TowerType.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="TowerType.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Vec.hpp" />
+		<Unit filename="enemies/BasicEnemy.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="enemies/BasicEnemy.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="main.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="mapCreator/main.cpp">
+			<Option target="MapCreator" />
+		</Unit>
+		<Unit filename="towerManagers/BasicTowerManager.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="towerManagers/BasicTowerManager.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="towers/FlameRingTower.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="towers/FlameRingTower.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="towers/RocketTower.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="towers/RocketTower.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="towers/SniperTower.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="towers/SniperTower.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="towers/SoldierTower.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="towers/SoldierTower.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="towers/entities/Bullet.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="towers/entities/Bullet.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="towers/entities/Rocket.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="towers/entities/Rocket.h">
+			<Option target="Release" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="5" line="2" />
+				<doxyfile_project />
+				<doxyfile_build extract_all="1" extract_private="1" extract_static="1" />
+				<doxyfile_warnings />
+				<doxyfile_output xml="1" />
+				<doxyfile_dot class_diagrams="1" have_dot="1" />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

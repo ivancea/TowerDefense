@@ -1,0 +1,171 @@
+# depslib dependency file v1.0
+1451853073 source:c:\users\ivancea\desktop\towerdefense\towermanager.cpp
+	"TowerManager.h"
+
+1452037692 c:\users\ivancea\desktop\towerdefense\towermanager.h
+	<string>
+	<list>
+	"TowerType.h"
+
+1452872846 source:c:\users\ivancea\desktop\towerdefense\main.cpp
+	<iostream>
+	<map>
+	<cmath>
+	<ctime>
+	<thread>
+	<chrono>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"MapManager.h"
+	"BasicTowerManager.h"
+	"BasicEnemy.h"
+	"towers/SoldierTower.h"
+	"towers/FlameRingTower.h"
+
+1451836850 c:\users\ivancea\desktop\towerdefense\include\towermanager.h
+
+1451838883 source:c:\users\ivancea\desktop\towerdefense\tower.cpp
+	"Tower.h"
+
+1452442017 c:\users\ivancea\desktop\towerdefense\tower.h
+	<SFML/Graphics.hpp>
+	"Game.h"
+	"Vec.hpp"
+
+1451839600 source:c:\users\ivancea\desktop\towerdefense\towertype.cpp
+	"TowerType.h"
+
+1451853812 c:\users\ivancea\desktop\towerdefense\towertype.h
+	<string>
+	<SFML/Graphics.hpp>
+	"Tower.h"
+
+1451913759 c:\users\ivancea\desktop\towerdefense\towers\canontower.h
+	<SFML/Graphics.hpp>
+	"../Game.h"
+	"../Tower.h"
+
+1452442076 c:\users\ivancea\desktop\towerdefense\towers\snipertower.h
+	<SFML/Graphics.hpp>
+	"../Game.h"
+	"../Tower.h"
+
+1452364790 c:\users\ivancea\desktop\towerdefense\game.h
+	<list>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"TowerManager.h"
+	"Tower.h"
+	"Enemy.h"
+	"Vec.hpp"
+
+1451850604 c:\users\ivancea\desktop\towerdefense\\game.h
+
+1452442017 source:c:\users\ivancea\desktop\towerdefense\game.cpp
+	"Game.h"
+	<cmath>
+	<string>
+
+1452039768 source:c:\users\ivancea\desktop\towerdefense\towers\canontower.cpp
+	"CanonTower.h"
+
+1452788083 source:c:\users\ivancea\desktop\towerdefense\towers\snipertower.cpp
+	"SniperTower.h"
+
+1452360547 source:c:\users\ivancea\desktop\towerdefense\towermanagers\basictowermanager.cpp
+	"BasicTowerManager.h"
+	"RocketTower.h"
+	"SniperTower.h"
+
+1452360525 c:\users\ivancea\desktop\towerdefense\towermanagers\basictowermanager.h
+	"../TowerManager.h"
+	"RocketTower.h"
+	"SniperTower.h"
+
+1452035431 c:\users\ivancea\desktop\towerdefense\enemy.h
+	<SFML/Graphics.hpp>
+	"Vec.hpp"
+
+1452367606 source:c:\users\ivancea\desktop\towerdefense\enemy.cpp
+	"Enemy.h"
+	"Game.h"
+
+1452364497 c:\users\ivancea\desktop\towerdefense\vec.hpp
+	<cmath>
+
+1452073866 source:c:\users\ivancea\desktop\towerdefense\enemies\basicenemy.cpp
+	"BasicEnemy.h"
+	<SFML/OpenGL.hpp>
+	"Game.h"
+
+1452019827 c:\users\ivancea\desktop\towerdefense\enemies\basicenemy.h
+	"Enemy.h"
+
+1452189782 source:c:\users\ivancea\desktop\towerdefense\mapcreator\main.cpp
+	<iostream>
+	<vector>
+	<map>
+	<thread>
+	<chrono>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"MapManager.h"
+	"Vec.hpp"
+
+1452189705 c:\users\ivancea\desktop\towerdefense\mapmanager.h
+	<vector>
+	<fstream>
+	"Vec.hpp"
+
+1452189874 source:c:\users\ivancea\desktop\towerdefense\mapmanager.cpp
+	"MapManager.h"
+
+1452442076 c:\users\ivancea\desktop\towerdefense\towers\rockettower.h
+	<list>
+	<SFML/Graphics.hpp>
+	"../Game.h"
+	"../Tower.h"
+	"entities/Rocket.h"
+
+1452873271 source:c:\users\ivancea\desktop\towerdefense\towers\entities\rocket.cpp
+	"Rocket.h"
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"../../Game.h"
+
+1452364790 c:\users\ivancea\desktop\towerdefense\towers\entities\rocket.h
+	"../../Vec.hpp"
+	"../../Enemy.h"
+
+1452788610 source:c:\users\ivancea\desktop\towerdefense\towers\rockettower.cpp
+	"RocketTower.h"
+
+1452387296 source:c:\users\ivancea\desktop\towerdefense\towers\entities\bullet.cpp
+	"Bullet.h"
+	<list>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"../../Game.h"
+
+1452386214 c:\users\ivancea\desktop\towerdefense\towers\entities\bullet.h
+	"../../Vec.hpp"
+	"../../Enemy.h"
+
+1452442076 c:\users\ivancea\desktop\towerdefense\towers\soldiertower.h
+	<list>
+	<SFML/Graphics.hpp>
+	"../Game.h"
+	"../Tower.h"
+	"entities/Bullet.h"
+
+1452788590 source:c:\users\ivancea\desktop\towerdefense\towers\soldiertower.cpp
+	"SoldierTower.h"
+
+1452873086 source:c:\users\ivancea\desktop\towerdefense\towers\flameringtower.cpp
+	"FlameRingTower.h"
+
+1452873021 c:\users\ivancea\desktop\towerdefense\towers\flameringtower.h
+	<SFML/Graphics.hpp>
+	"../Game.h"
+	"../Tower.h"
+
