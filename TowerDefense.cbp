@@ -18,10 +18,7 @@
 					<Add directory="../TowerDefense" />
 					<Add directory="enemies" />
 					<Add directory="towers/entities" />
-<<<<<<< HEAD
 					<Add directory="entities" />
-=======
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -57,12 +54,9 @@
 		<Unit filename="Enemy.h">
 			<Option target="Release" />
 		</Unit>
-<<<<<<< HEAD
 		<Unit filename="Entity.h">
 			<Option target="Release" />
 		</Unit>
-=======
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 		<Unit filename="Game.cpp">
 			<Option target="Release" />
 		</Unit>
@@ -93,7 +87,6 @@
 		<Unit filename="enemies/BasicEnemy.h">
 			<Option target="Release" />
 		</Unit>
-<<<<<<< HEAD
 		<Unit filename="enemies/InmortalEnemy.cpp">
 			<Option target="Release" />
 		</Unit>
@@ -106,8 +99,6 @@
 		<Unit filename="entities/ExplosionEntity.h">
 			<Option target="Release" />
 		</Unit>
-=======
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 		<Unit filename="main.cpp">
 			<Option target="Release" />
 		</Unit>

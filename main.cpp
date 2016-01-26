@@ -9,12 +9,8 @@
 
 #include "MapManager.h"
 #include "BasicTowerManager.h"
-<<<<<<< HEAD
 #include "enemies/BasicEnemy.h"
 #include "enemies/InmortalEnemy.h"
-=======
-#include "BasicEnemy.h"
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 #include "towers/SoldierTower.h"
 #include "towers/FlameRingTower.h"
 
@@ -156,27 +152,20 @@ int main(){
                 break;
             }
         }
-<<<<<<< HEAD
 
         clock_t cl = clock();
 
-=======
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
         window.clear();
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glLoadIdentity();
         Game::draw(&window);
         window.display();
-<<<<<<< HEAD
 
         this_thread::sleep_for(chrono::milliseconds(10));
 
         if(tickCount%20==0)
             window.setTitle("Tower Defense + (" + to_string(1000/((clock()-cl)*1000/CLOCKS_PER_SEC + 1)) + " fps)");
 
-=======
-        this_thread::sleep_for(chrono::milliseconds(10));
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
         if(lastLife != Game::life){
             cout << "Vida: " << Game::life << endl;
             lastLife = Game::life;
@@ -186,12 +175,8 @@ int main(){
         if(true || Game::life>0){
             tickCount += 1;
             if(tickCount%20 == 1)
-<<<<<<< HEAD
                 //Game::enemies.push_back(new BasicEnemy(1.0 + (double)(rand()%10)/10.0,15+tickCount/500,1));
                 Game::enemies.push_back(new InmortalEnemy(1.0,1));
-=======
-                Game::enemies.push_back(new BasicEnemy(1.0 + (double)(rand()%10)/10.0,15+tickCount/500,1));
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
             if(Game::tick())
                 running = false;
         }

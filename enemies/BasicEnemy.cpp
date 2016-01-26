@@ -4,21 +4,13 @@
 
 #include "Game.h"
 
-<<<<<<< HEAD
 BasicEnemy::BasicEnemy(double velocity, double life, double damage)
 : Enemy(1){
-=======
-BasicEnemy::BasicEnemy(double velocity, double life, double damage){
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
     _velocity = velocity;
     _life = life;
     _damage = damage;
     if(Game::enemiesRoute.size()>=1)
         _position = Game::enemiesRoute[0];
-<<<<<<< HEAD
-=======
-    _nextPositionIndex = 1;
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 }
 
 void BasicEnemy::draw(sf::RenderWindow* window) const{

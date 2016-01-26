@@ -8,10 +8,7 @@ namespace Game{
     TowerManager* towerManager = nullptr;
     std::list<Tower*> towers;
     std::list<Enemy*> enemies;
-<<<<<<< HEAD
     std::list<Entity*> entities;
-=======
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 
     std::vector<Vec2i> enemiesRoute;
     std::vector< std::vector<TileType> > map;
@@ -31,7 +28,6 @@ namespace Game{
                 it1 = enemies.erase(it1);
             }else it1++;
         }
-<<<<<<< HEAD
         auto it2 = entities.begin();
         while(it2 != entities.end()){
             Entity* e = *it2;
@@ -40,8 +36,6 @@ namespace Game{
                 it2 = entities.erase(it2);
             }else it2++;
         }
-=======
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
         for(Tower* t : towers)
             t->tick();
         return false;
@@ -79,15 +73,12 @@ namespace Game{
 
         for(Enemy* e : enemies)
             e->draw(window);
-<<<<<<< HEAD
 
         for(Entity* e : entities)
             e->draw(window);
         for(Entity* e : entities)
             e->drawOver(window);
 
-=======
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
         for(Tower* t : towers)
             t->draw(window);
         for(Tower* t : towers)
@@ -217,21 +208,9 @@ namespace Game{
                 if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), *it2))
                     continue;
                 Enemy* e = *it2;
-<<<<<<< HEAD
                 if(e->getDistanceToEnd()>0 && (t<0 || e->getDistanceToEnd()>t)){
                     t = e->getDistanceToEnd();
                     it = it2;
-=======
-                double d = e->getDistanceToNextPosition();
-                if(d>=0){
-                    if(t<0 || e->getNextPositionIndex()<index
-                       || (e->getNextPositionIndex()==index
-                          && d>t)){
-                        it = it2;
-                        index = e->getNextPositionIndex();
-                        t = d;
-                    }
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
                 }
             }
             break;
@@ -324,21 +303,9 @@ namespace Game{
                 if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), *it2))
                     continue;
                 Enemy* e = *it2;
-<<<<<<< HEAD
                 if(e->getDistanceToEnd()>0 && (t<0 || e->getDistanceToEnd()<t)){
                     t = e->getDistanceToEnd();
                     it = it2;
-=======
-                double d = e->getDistanceToNextPosition();
-                if(d>=0){
-                    if(t<0 || e->getNextPositionIndex()>index
-                       || (e->getNextPositionIndex()==index
-                          && d<t)){
-                        it = it2;
-                        index = e->getNextPositionIndex();
-                        t = d;
-                    }
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
                 }
             }
             break;
@@ -375,7 +342,6 @@ namespace Game{
         return false;
     }
 
-<<<<<<< HEAD
     bool exists(Entity* entity){
         if(entity == nullptr)
             return false;
@@ -385,6 +351,4 @@ namespace Game{
         return false;
     }
 
-=======
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 }

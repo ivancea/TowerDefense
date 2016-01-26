@@ -5,11 +5,7 @@ RocketTower::RocketTower(int id){
     _ticksForShoot = 0;
     _ticksBetweenShoots = 120;
     _damage = 5;
-<<<<<<< HEAD
     _explosionRange = 40;
-=======
-    _explosionRange = 50;
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
     _rocketVelocity = 5;
 
     _maxRocketDistance = 500;

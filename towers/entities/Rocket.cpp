@@ -4,10 +4,7 @@
 #include <SFML/OpenGL.hpp>
 
 #include "../../Game.h"
-<<<<<<< HEAD
 #include "../../entities/ExplosionEntity.h"
-=======
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 
 Rocket::Rocket(Enemy* target, double damage, double explosionRange,
                double velocity, double maxDistance,
@@ -18,12 +15,8 @@ Rocket::Rocket(Enemy* target, double damage, double explosionRange,
     _damage = damage;
     _explosionRange = explosionRange;
     _velocity = velocity;
-<<<<<<< HEAD
     _distanceTraveled = 0;
     _maxDistance = maxDistance;
-=======
-    _maxDistance = maxDistance; // TODO: Implement
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
     _hitEnemiesInPath = hitEnemiesInPath;
 }
 
@@ -36,19 +29,13 @@ Rocket::Rocket(Vec2d target, double damage, double explosionRange,
     _damage = damage;
     _explosionRange = explosionRange;
     _velocity = velocity;
-<<<<<<< HEAD
     _distanceTraveled = 0;
-=======
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
     _maxDistance = maxDistance;
     _hitEnemiesInPath = hitEnemiesInPath;
 }
 
 void Rocket::damageEnemies() const{
-<<<<<<< HEAD
     Game::entities.push_back(new ExplosionEntity(_position, _explosionRange, 10));
-=======
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
     for(auto it = Game::enemies.begin(); it != Game::enemies.end();){
         if((*it)->getPosition().distance(_position)<=_explosionRange){
             if((*it)->damage(_damage))
@@ -67,21 +54,15 @@ bool Rocket::tick(){
     }
 
     Vec2d p = _targetPosition;
-<<<<<<< HEAD
     double distance = p.distance(_position);
     if(distance<=_velocity
     && distance+_distanceTraveled<_maxDistance){
-=======
-
-    if(p.distance(_position)<=_velocity){
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
         _position = p;
         damageEnemies();
         return true;
     }else{
         p = p-_position;
         p.normalize();
-<<<<<<< HEAD
         if(_velocity+_distanceTraveled<_maxDistance){
             p *= _velocity;
             _distanceTraveled += _velocity;
@@ -98,10 +79,6 @@ bool Rocket::tick(){
     if(_hitEnemiesInPath && Game::findEnemiesInRange(_position, 0,10).size()>0){
         damageEnemies();
         return true;
-=======
-        p *= _velocity;
-        _position += p;
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
     }
 
     /// TODO: HitEnemiesInPath mode

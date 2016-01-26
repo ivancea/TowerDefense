@@ -185,13 +185,10 @@ int main(){
                                 t.y += rad;
                             pathPoints.push_back(t);
                         }
-<<<<<<< HEAD
                         if(pathPoints.size()>=2 && pathPoints.back()==pathPoints[pathPoints.size()-2]){
                             pathPoints.pop_back();
                             cout << "Error: point equal to last point." << endl;
                         }
-=======
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
                     }
                 }
                 break;

@@ -67,11 +67,7 @@ namespace MapManager{
         file.read(buff, x*y);
         for(int i=0; i<x; i++)
             for(int j=0; j<y; j++)
-<<<<<<< HEAD
                 if(buff[i*y + j]==0)
-=======
-                if(buff[i*x + j]==0)
->>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
                     tileMap[i][j] = false;
         delete buff;
         buff = new char[sizeof(int)*n*2];
