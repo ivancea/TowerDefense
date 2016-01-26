@@ -169,6 +169,7 @@
 	"../Game.h"
 	"../Tower.h"
 
+<<<<<<< HEAD
 1453720976 source:c:\documents and settings\javier\escritorio\towerdefense\enemies\basicenemy.cpp
 	"BasicEnemy.h"
 	<SFML/OpenGL.hpp>
@@ -356,3 +357,5 @@
 	<SFML/OpenGL.hpp>
 	"Game.h"
 
+=======
+>>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178

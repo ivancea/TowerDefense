@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Release" />
+<<<<<<< HEAD
 	<File name="enemies\InmortalEnemy.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="92" topLine="0" />
@@ -39,6 +40,46 @@
 	<File name="towers\FlameRingTower.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1418" topLine="30" />
+=======
+	<File name="MapManager.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="352" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="TowerManager.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="203" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="towers\RocketTower.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="642" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="enemies\BasicEnemy.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="55" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="towers\FlameRingTower.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="177" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="towers\SniperTower.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="46" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Tower.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1215" topLine="25" />
+		</Cursor>
+	</File>
+	<File name="mapCreator\main.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3907" topLine="105" />
+>>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 		</Cursor>
 	</File>
 	<File name="towers\FlameRingTower.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -46,6 +87,7 @@
 			<Cursor1 position="224" topLine="0" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="towers\RocketTower.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="170" topLine="0" />
@@ -79,6 +121,36 @@
 	<File name="Entity.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="207" topLine="0" />
+=======
+	<File name="Enemy.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="758" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="TowerType.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="487" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="towerManagers\BasicTowerManager.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="507" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="towers\RocketTower.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1174" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="towers\SniperTower.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="553" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Game.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1057" topLine="19" />
+>>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 		</Cursor>
 	</File>
 	<File name="towers\SoldierTower.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -86,6 +158,7 @@
 			<Cursor1 position="1134" topLine="0" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="Game.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="7423" topLine="160" />
@@ -104,10 +177,21 @@
 	<File name="towers\entities\Bullet.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="842" topLine="6" />
+=======
+	<File name="towers\entities\Rocket.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="449" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="towers\entities\Rocket.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="36" topLine="0" />
+>>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 		</Cursor>
 	</File>
 	<File name="MapManager.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
 			<Cursor1 position="2321" topLine="59" />
 		</Cursor>
 	</File>
@@ -129,6 +213,19 @@
 	<File name="towers\entities\Rocket.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="358" topLine="0" />
+=======
+			<Cursor1 position="2695" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="towers\SoldierTower.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="595" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Enemy.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="748" topLine="0" />
+>>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 		</Cursor>
 	</File>
 	<File name="TowerManager.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -136,6 +233,7 @@
 			<Cursor1 position="270" topLine="0" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="TowerManager.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="203" topLine="0" />
@@ -144,6 +242,11 @@
 	<File name="TowerType.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="487" topLine="0" />
+=======
+	<File name="towers\entities\Bullet.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="842" topLine="6" />
+>>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 		</Cursor>
 	</File>
 	<File name="Vec.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -151,6 +254,7 @@
 			<Cursor1 position="2138" topLine="27" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="enemies\BasicEnemy.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="301" topLine="3" />
@@ -164,6 +268,21 @@
 	<File name="enemies\InmortalEnemy.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1194" topLine="16" />
+=======
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5507" topLine="141" />
+		</Cursor>
+	</File>
+	<File name="Game.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2145" topLine="54" />
+		</Cursor>
+	</File>
+	<File name="towerManagers\BasicTowerManager.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="131" topLine="0" />
+>>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

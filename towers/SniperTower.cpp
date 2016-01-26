@@ -54,5 +54,20 @@ void SniperTower::drawOver(sf::RenderWindow* window) const{
             glVertex2i(_lastShootPosition.x, _lastShootPosition.y);
         glEnd();
     }
+<<<<<<< HEAD
+=======
+
+    float t1 = 50,
+          t2 = 100;
+    glColor3ub(0,0,0);
+    glBegin(GL_TRIANGLE_STRIP);
+    for(float i=0; i<=PI*2.01; i+=PI/360.0){
+        glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(i)*t1,
+                   _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*t1);
+        glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(i)*t2,
+                   _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*t2);
+    }
+    glEnd();
+>>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 }
 

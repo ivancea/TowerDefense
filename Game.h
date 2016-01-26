@@ -10,7 +10,10 @@
 #include "TowerManager.h"
 #include "Tower.h"
 #include "Enemy.h"
+<<<<<<< HEAD
 #include "Entity.h"
+=======
+>>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 #include "Vec.hpp"
 
 namespace Game{
@@ -24,7 +27,10 @@ namespace Game{
     extern TowerManager* towerManager;
     extern std::list<Tower*> towers;
     extern std::list<Enemy*> enemies;
+<<<<<<< HEAD
     extern std::list<Entity*> entities;
+=======
+>>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 
     extern std::vector<Vec2i> enemiesRoute;
     extern std::vector< std::vector<TileType> > map;
@@ -53,7 +59,10 @@ namespace Game{
 
     bool exists(Enemy* enemy);
     bool exists(Tower* tower);
+<<<<<<< HEAD
     bool exists(Entity* entities);
+=======
+>>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
 }
 
 #endif // GAME_H

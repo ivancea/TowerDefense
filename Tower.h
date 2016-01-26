@@ -54,7 +54,11 @@ public:
     void setMaxRange(double maxRange){ _maxRange = maxRange; }
 
     virtual TowerEvent tick() = 0;
+<<<<<<< HEAD
     virtual void draw(sf::RenderWindow* window) const {};
+=======
+    virtual void draw(sf::RenderWindow* window) const = 0;
+>>>>>>> 7146168b63f00ded2fecf3a9893f4a80e25f7178
     virtual void drawOver(sf::RenderWindow* window) const {};
 };
 
