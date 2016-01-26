@@ -1,0 +1,358 @@
+# depslib dependency file v1.0
+1451853073 source:c:\users\ivancea\desktop\towerdefense\towermanager.cpp
+	"TowerManager.h"
+
+1452037692 c:\users\ivancea\desktop\towerdefense\towermanager.h
+	<string>
+	<list>
+	"TowerType.h"
+
+1452872846 source:c:\users\ivancea\desktop\towerdefense\main.cpp
+	<iostream>
+	<map>
+	<cmath>
+	<ctime>
+	<thread>
+	<chrono>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"MapManager.h"
+	"BasicTowerManager.h"
+	"BasicEnemy.h"
+	"towers/SoldierTower.h"
+	"towers/FlameRingTower.h"
+
+1451836850 c:\users\ivancea\desktop\towerdefense\include\towermanager.h
+
+1451838883 source:c:\users\ivancea\desktop\towerdefense\tower.cpp
+	"Tower.h"
+
+1452442017 c:\users\ivancea\desktop\towerdefense\tower.h
+	<SFML/Graphics.hpp>
+	"Game.h"
+	"Vec.hpp"
+
+1451839600 source:c:\users\ivancea\desktop\towerdefense\towertype.cpp
+	"TowerType.h"
+
+1451853812 c:\users\ivancea\desktop\towerdefense\towertype.h
+	<string>
+	<SFML/Graphics.hpp>
+	"Tower.h"
+
+1451913759 c:\users\ivancea\desktop\towerdefense\towers\canontower.h
+	<SFML/Graphics.hpp>
+	"../Game.h"
+	"../Tower.h"
+
+1452442076 c:\users\ivancea\desktop\towerdefense\towers\snipertower.h
+	<SFML/Graphics.hpp>
+	"../Game.h"
+	"../Tower.h"
+
+1452364790 c:\users\ivancea\desktop\towerdefense\game.h
+	<list>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"TowerManager.h"
+	"Tower.h"
+	"Enemy.h"
+	"Vec.hpp"
+
+1451850604 c:\users\ivancea\desktop\towerdefense\\game.h
+
+1452442017 source:c:\users\ivancea\desktop\towerdefense\game.cpp
+	"Game.h"
+	<cmath>
+	<string>
+
+1452039768 source:c:\users\ivancea\desktop\towerdefense\towers\canontower.cpp
+	"CanonTower.h"
+
+1452788083 source:c:\users\ivancea\desktop\towerdefense\towers\snipertower.cpp
+	"SniperTower.h"
+
+1452360547 source:c:\users\ivancea\desktop\towerdefense\towermanagers\basictowermanager.cpp
+	"BasicTowerManager.h"
+	"RocketTower.h"
+	"SniperTower.h"
+
+1452360525 c:\users\ivancea\desktop\towerdefense\towermanagers\basictowermanager.h
+	"../TowerManager.h"
+	"RocketTower.h"
+	"SniperTower.h"
+
+1452035431 c:\users\ivancea\desktop\towerdefense\enemy.h
+	<SFML/Graphics.hpp>
+	"Vec.hpp"
+
+1452367606 source:c:\users\ivancea\desktop\towerdefense\enemy.cpp
+	"Enemy.h"
+	"Game.h"
+
+1452364497 c:\users\ivancea\desktop\towerdefense\vec.hpp
+	<cmath>
+
+1452073866 source:c:\users\ivancea\desktop\towerdefense\enemies\basicenemy.cpp
+	"BasicEnemy.h"
+	<SFML/OpenGL.hpp>
+	"Game.h"
+
+1452019827 c:\users\ivancea\desktop\towerdefense\enemies\basicenemy.h
+	"Enemy.h"
+
+1452189782 source:c:\users\ivancea\desktop\towerdefense\mapcreator\main.cpp
+	<iostream>
+	<vector>
+	<map>
+	<thread>
+	<chrono>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"MapManager.h"
+	"Vec.hpp"
+
+1452189705 c:\users\ivancea\desktop\towerdefense\mapmanager.h
+	<vector>
+	<fstream>
+	"Vec.hpp"
+
+1452189874 source:c:\users\ivancea\desktop\towerdefense\mapmanager.cpp
+	"MapManager.h"
+
+1452442076 c:\users\ivancea\desktop\towerdefense\towers\rockettower.h
+	<list>
+	<SFML/Graphics.hpp>
+	"../Game.h"
+	"../Tower.h"
+	"entities/Rocket.h"
+
+1452873271 source:c:\users\ivancea\desktop\towerdefense\towers\entities\rocket.cpp
+	"Rocket.h"
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"../../Game.h"
+
+1452364790 c:\users\ivancea\desktop\towerdefense\towers\entities\rocket.h
+	"../../Vec.hpp"
+	"../../Enemy.h"
+
+1452788610 source:c:\users\ivancea\desktop\towerdefense\towers\rockettower.cpp
+	"RocketTower.h"
+
+1452387296 source:c:\users\ivancea\desktop\towerdefense\towers\entities\bullet.cpp
+	"Bullet.h"
+	<list>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"../../Game.h"
+
+1452386214 c:\users\ivancea\desktop\towerdefense\towers\entities\bullet.h
+	"../../Vec.hpp"
+	"../../Enemy.h"
+
+1452442076 c:\users\ivancea\desktop\towerdefense\towers\soldiertower.h
+	<list>
+	<SFML/Graphics.hpp>
+	"../Game.h"
+	"../Tower.h"
+	"entities/Bullet.h"
+
+1452788590 source:c:\users\ivancea\desktop\towerdefense\towers\soldiertower.cpp
+	"SoldierTower.h"
+
+1452873086 source:c:\users\ivancea\desktop\towerdefense\towers\flameringtower.cpp
+	"FlameRingTower.h"
+
+1452873021 c:\users\ivancea\desktop\towerdefense\towers\flameringtower.h
+	<SFML/Graphics.hpp>
+	"../Game.h"
+	"../Tower.h"
+
+1453720976 source:c:\documents and settings\javier\escritorio\towerdefense\enemies\basicenemy.cpp
+	"BasicEnemy.h"
+	<SFML/OpenGL.hpp>
+	"Game.h"
+
+1453567094 c:\documents and settings\javier\escritorio\towerdefense\enemies\basicenemy.h
+	"Enemy.h"
+
+1453720976 c:\documents and settings\javier\escritorio\towerdefense\enemy.h
+	<SFML/Graphics.hpp>
+	"Vec.hpp"
+
+1453567094 c:\documents and settings\javier\escritorio\towerdefense\vec.hpp
+	<cmath>
+
+1453714030 c:\documents and settings\javier\escritorio\towerdefense\game.h
+	<list>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"TowerManager.h"
+	"Tower.h"
+	"Enemy.h"
+	"Entity.h"
+	"Vec.hpp"
+
+1453567094 c:\documents and settings\javier\escritorio\towerdefense\towermanager.h
+	<string>
+	<list>
+	"TowerType.h"
+
+1453567094 c:\documents and settings\javier\escritorio\towerdefense\towertype.h
+	<string>
+	<SFML/Graphics.hpp>
+	"Tower.h"
+
+1453713037 c:\documents and settings\javier\escritorio\towerdefense\tower.h
+	<SFML/Graphics.hpp>
+	"Game.h"
+	"Vec.hpp"
+
+1453720998 source:c:\documents and settings\javier\escritorio\towerdefense\enemy.cpp
+	"Enemy.h"
+	"Game.h"
+
+1453720737 source:c:\documents and settings\javier\escritorio\towerdefense\game.cpp
+	"Game.h"
+	<cmath>
+	<string>
+
+1453723213 source:c:\documents and settings\javier\escritorio\towerdefense\main.cpp
+	<iostream>
+	<map>
+	<cmath>
+	<ctime>
+	<thread>
+	<chrono>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"MapManager.h"
+	"BasicTowerManager.h"
+	"enemies/BasicEnemy.h"
+	"enemies/InmortalEnemy.h"
+	"towers/SoldierTower.h"
+	"towers/FlameRingTower.h"
+
+1453567094 c:\documents and settings\javier\escritorio\towerdefense\mapmanager.h
+	<vector>
+	<fstream>
+	"Vec.hpp"
+
+1453567094 c:\documents and settings\javier\escritorio\towerdefense\towermanagers\basictowermanager.h
+	"../TowerManager.h"
+	"RocketTower.h"
+	"SniperTower.h"
+
+1453567094 c:\documents and settings\javier\escritorio\towerdefense\towers\rockettower.h
+	<list>
+	<SFML/Graphics.hpp>
+	"../Game.h"
+	"../Tower.h"
+	"entities/Rocket.h"
+
+1453567094 c:\documents and settings\javier\escritorio\towerdefense\towers\entities\rocket.h
+	"../../Vec.hpp"
+	"../../Enemy.h"
+
+1453567094 c:\documents and settings\javier\escritorio\towerdefense\towers\snipertower.h
+	<SFML/Graphics.hpp>
+	"../Game.h"
+	"../Tower.h"
+
+1453567094 c:\documents and settings\javier\escritorio\towerdefense\towers\soldiertower.h
+	<list>
+	<SFML/Graphics.hpp>
+	"../Game.h"
+	"../Tower.h"
+	"entities/Bullet.h"
+
+1453567094 c:\documents and settings\javier\escritorio\towerdefense\towers\entities\bullet.h
+	"../../Vec.hpp"
+	"../../Enemy.h"
+
+1453567094 c:\documents and settings\javier\escritorio\towerdefense\towers\flameringtower.h
+	<SFML/Graphics.hpp>
+	"../Game.h"
+	"../Tower.h"
+
+1453719222 source:c:\documents and settings\javier\escritorio\towerdefense\mapmanager.cpp
+	"MapManager.h"
+
+1453567094 source:c:\documents and settings\javier\escritorio\towerdefense\towermanager.cpp
+	"TowerManager.h"
+
+1453567094 source:c:\documents and settings\javier\escritorio\towerdefense\towermanagers\basictowermanager.cpp
+	"BasicTowerManager.h"
+	"RocketTower.h"
+	"SniperTower.h"
+
+1453567094 source:c:\documents and settings\javier\escritorio\towerdefense\towers\entities\bullet.cpp
+	"Bullet.h"
+	<list>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"../../Game.h"
+
+1453567094 source:c:\documents and settings\javier\escritorio\towerdefense\towers\flameringtower.cpp
+	"FlameRingTower.h"
+
+1453716867 source:c:\documents and settings\javier\escritorio\towerdefense\towers\rockettower.cpp
+	"RocketTower.h"
+
+1453711033 source:c:\documents and settings\javier\escritorio\towerdefense\towers\snipertower.cpp
+	"SniperTower.h"
+
+1453567094 source:c:\documents and settings\javier\escritorio\towerdefense\towers\soldiertower.cpp
+	"SoldierTower.h"
+
+1453567094 source:c:\documents and settings\javier\escritorio\towerdefense\towertype.cpp
+	"TowerType.h"
+
+1453716854 source:c:\documents and settings\javier\escritorio\towerdefense\towers\entities\rocket.cpp
+	"Rocket.h"
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"../../Game.h"
+	"../../entities/ExplosionEntity.h"
+
+1453716682 c:\documents and settings\javier\escritorio\towerdefense\entity.h
+	<SFML/Graphics.hpp>
+
+1453716990 source:c:\documents and settings\javier\escritorio\towerdefense\entities\explosionentity.cpp
+	"ExplosionEntity.h"
+	"../Game.h"
+	<SFML/OpenGL.hpp>
+
+1453716403 c:\documents and settings\javier\escritorio\towerdefense\entities\explosionentity.h
+	<SFML/Graphics.hpp>
+	"../Vec.hpp"
+	"../entity.h"
+
+1453722943 source:c:\documents and settings\javier\escritorio\towerdefense\mapcreator\main.cpp
+	<iostream>
+	<vector>
+	<map>
+	<thread>
+	<chrono>
+	<SFML/Graphics.hpp>
+	<SFML/OpenGL.hpp>
+	"MapManager.h"
+	"Vec.hpp"
+
+1453721773 source:c:\documents and settings\javier\escritorio\towerdefense\inmortalenemy.cpp
+	"InmortalEnemy.h"
+	<SFML/OpenGL.hpp>
+	"Game.h"
+
+1453721711 c:\documents and settings\javier\escritorio\towerdefense\inmortalenemy.h
+	"../Enemy.h"
+
+1453721711 c:\documents and settings\javier\escritorio\towerdefense\enemies\inmortalenemy.h
+	"../Enemy.h"
+
+1453722260 source:c:\documents and settings\javier\escritorio\towerdefense\enemies\inmortalenemy.cpp
+	"InmortalEnemy.h"
+	<SFML/OpenGL.hpp>
+	"Game.h"
+
