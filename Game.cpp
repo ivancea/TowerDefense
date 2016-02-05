@@ -182,6 +182,7 @@ namespace Game{
 
     std::list<Enemy*>::iterator kill(std::list<Enemy*>::iterator enemy){
         /// TODO: set callbacks maybe
+        delete *enemy;
         return enemies.erase(enemy);
     }
 
