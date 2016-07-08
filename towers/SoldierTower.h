@@ -9,8 +9,6 @@
 #include "entities/Bullet.h"
 
 class SoldierTower : public Tower{
-    int _ticksForShoot;
-    int _ticksBetweenShoots;
     double _damage;
     double _bulletVelocity;
 

@@ -7,9 +7,6 @@
 #include "../Tower.h"
 
 class FlameRingTower : public Tower{
-    int _ticksForRing;
-    int _ticksBetweenRings;
-
     double _ringVelocity;
     double _ringSize;
     double _ringActualRange;

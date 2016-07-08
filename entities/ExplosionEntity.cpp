@@ -15,7 +15,7 @@ bool ExplosionEntity::tick(){
 }
 
 void ExplosionEntity::draw(sf::RenderWindow* window) const{
-    glColor3ub(255,127,0);
+    glColor4ub(255,127,0, 230);
     glBegin(GL_TRIANGLES);
         for(float i=0; i<=PI*2.00; i+=PI/360.0){
             glVertex2i(_position.x+sin(i)*_range,

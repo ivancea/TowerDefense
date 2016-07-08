@@ -30,7 +30,10 @@ class Tower{
 
 protected:
     int _id;
-    int _ticksUntilShoot;
+
+    int _ticksForShoot;
+    int _ticksBetweenShoots;
+
     Vec2i _position;
     Priority _priority;
 
@@ -43,6 +46,12 @@ public:
 
     int getId() const { return _id; }
     void setId(int id) { _id = id; }
+
+    int getTicksForShoot() const { return _ticksForShoot; }
+    void setTicksForShoot(int ticksForShoot) { _ticksForShoot = ticksForShoot; }
+    int getTicksBetweenShoots() const { return _ticksBetweenShoots; }
+    void setTicksBetweenShoots(int ticksBetweenShoots) { _ticksBetweenShoots = ticksBetweenShoots; }
+
     Vec2i getPosition() const { return _position; }
     void setPosition(Vec2i position) { _position = position; }
     Priority getPriority() const { return _priority; }

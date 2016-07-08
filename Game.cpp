@@ -352,4 +352,14 @@ namespace Game{
         return false;
     }
 
+    double getDistance(Vec2i towerPosition, Vec2d position){
+        return position.distance(Vec2d((towerPosition.x+0.5)*Game::pixelsPerSquare,
+                                 (towerPosition.y+0.5)*Game::pixelsPerSquare));
+    }
+
+    Vec2d getRealPosition(Vec2d towerPosition){
+        return Vec2d(towerPosition.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2,
+                     towerPosition.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2);
+    }
+
 }

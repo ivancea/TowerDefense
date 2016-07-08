@@ -9,11 +9,9 @@
 #include "entities/Rocket.h"
 
 class RocketTower : public Tower{
-    int _ticksForShoot;
-    int _ticksBetweenShoots;
     double _damage;
     double _explosionRange;
-    double _rocketVelocity; // If followEnemy is active
+    double _rocketVelocity;
 
     double _maxRocketDistance;
 

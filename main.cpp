@@ -10,6 +10,7 @@
 #include "MapManager.h"
 #include "BasicTowerManager.h"
 #include "enemies/BasicEnemy.h"
+#include "enemies/InhibitorEnemy.h"
 #include "enemies/InmortalEnemy.h"
 #include "towers/SoldierTower.h"
 #include "towers/FlameRingTower.h"
@@ -91,6 +92,9 @@ int main(){
     glOrtho(0,window.getSize().x, window.getSize().y,0,0,1);
     glMatrixMode(GL_PROJECTION);
 
+    glEnable (GL_BLEND);
+    glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
     int tickCount = 0;
 
     double lastLife = 0;
@@ -117,14 +121,15 @@ int main(){
                 if(ev.mouseButton.button == sf::Mouse::Left){
                     Vec2i p = Vec2i(mouse.x,mouse.y)/Game::pixelsPerSquare;
                     if(Game::map.size()>p.x && p.x>=0
-                    && Game::map[p.x].size()>p.y && p.y>=0
-                    && Game::map[p.x][p.y] != Game::TileType::RoadTile){
+                    && Game::map[p.x].size()>p.y && p.y>=0){
+                        bool mustDeselect = true;
                         if(Game::map[p.x][p.y] == Game::TileType::EmptyTile){
                             Tower* t = nullptr;
                             if(keys[sf::Keyboard::Q]){
                                 t = new SoldierTower(1);
                             }else if(keys[sf::Keyboard::W]){
                                 t = new RocketTower(1);
+                                t->setPriority(Priority::MoreEnemiesTogether);
                             }else if(keys[sf::Keyboard::E]){
                                 t = new SniperTower(1);
                                 t->setPriority(MoreLife);
@@ -135,17 +140,25 @@ int main(){
                                 t->setPosition(p);
                                 if(!Game::putTower(t))
                                     delete t;
+                                else
+                                    mustDeselect = false;
                             }
                         }else if(Game::map[p.x][p.y] == Game::TileType::TowerTile){
-                            Tower* t = Game::removeTower(p);
-                            if(t==nullptr)
-                                cout << "ERROR" << endl;
-                            else
-                                delete t;
+                            Game::selectedTower = Game::getTower(Vec2i(mouse.x,mouse.y)/Game::pixelsPerSquare);
+                            mustDeselect = false;
                         }
+                        if(mustDeselect)
+                            Game::selectedTower = nullptr;
                     }
                 }else if(ev.mouseButton.button == sf::Mouse::Right){
-                    Game::selectedTower = Game::getTower(Vec2i(mouse.x,mouse.y)/Game::pixelsPerSquare);
+                    Vec2i p = Vec2i(mouse.x,mouse.y)/Game::pixelsPerSquare;
+                    if(Game::map[p.x][p.y] == Game::TileType::TowerTile){
+                        Tower* t = Game::removeTower(p);
+                        if(t==nullptr)
+                            cout << "ERROR DELETING TOWER" << endl;
+                        else
+                            delete t;
+                    }
                 }
                 break;
             default:
@@ -156,7 +169,7 @@ int main(){
         clock_t cl = clock();
 
         window.clear();
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        glMatrixMode(GL_PROJECTION);
         glLoadIdentity();
         Game::draw(&window);
         window.display();
@@ -164,7 +177,7 @@ int main(){
         this_thread::sleep_for(chrono::milliseconds(10));
 
         if(tickCount%20==0)
-            window.setTitle("Tower Defense + (" + to_string(1000/((clock()-cl)*1000/CLOCKS_PER_SEC + 1)) + " fps)");
+            window.setTitle(("Tower Defense + (" + to_string(1000/((clock()-cl)*1000/CLOCKS_PER_SEC + 1)) + " fps)").c_str());
 
         if(lastLife != Game::life){
             cout << "Vida: " << Game::life << endl;
@@ -174,9 +187,11 @@ int main(){
         }
         if(true || Game::life>0){
             tickCount += 1;
-            if(tickCount%20 == 1)
-                //Game::enemies.push_back(new BasicEnemy(1.0 + (double)(rand()%10)/10.0,15+tickCount/500,1));
-                Game::enemies.push_back(new InmortalEnemy(1.0,1));
+            if(tickCount%400 == 1)
+                Game::enemies.push_back(new InhibitorEnemy(1.0, 30+tickCount/500, 1));
+            else if(tickCount%20 == 1)
+                Game::enemies.push_back(new BasicEnemy(1.0 + (double)(rand()%10)/10.0, 15+tickCount/500, 1));
+                //Game::enemies.push_back(new InmortalEnemy(1.0, 1));
             if(Game::tick())
                 running = false;
         }

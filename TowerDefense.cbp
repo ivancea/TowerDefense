@@ -87,6 +87,12 @@
 		<Unit filename="enemies/BasicEnemy.h">
 			<Option target="Release" />
 		</Unit>
+		<Unit filename="enemies/InhibitorEnemy.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="enemies/InhibitorEnemy.h">
+			<Option target="Release" />
+		</Unit>
 		<Unit filename="enemies/InmortalEnemy.cpp">
 			<Option target="Release" />
 		</Unit>
@@ -97,6 +103,12 @@
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="entities/ExplosionEntity.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="entities/LaserEntity.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="entities/LaserEntity.h">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="main.cpp">

@@ -1,10 +1,16 @@
 #include "BasicTowerManager.h"
 
-#include "RocketTower.h"
+#include "SoldierTower.h"
 #include "SniperTower.h"
+#include "RocketTower.h"
+#include "FlameRingTower.h"
 
 
 BasicTowerManager::BasicTowerManager(){
+    _towerTypes.push_back(new TowerType(new SoldierTower(_nextId++),
+                                   "Soldier",
+                                   "Fast shots, low damage",
+                                   200, nullptr, nullptr));
     _towerTypes.push_back(new TowerType(new SniperTower(_nextId++),
                                    "Sniper",
                                    "High damage and global range, but low attack rate",
@@ -13,6 +19,10 @@ BasicTowerManager::BasicTowerManager(){
                                    "Rocket",
                                    "Ground area damage",
                                    200, nullptr, nullptr));
+    _towerTypes.push_back(new TowerType(new FlameRingTower(_nextId++),
+                                   "Flame Ring",
+                                   "Area damage, low range",
+                                   500, nullptr, nullptr));
 
     _lastError = 0;
 }

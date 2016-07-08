@@ -1,5 +1,6 @@
 #include "SniperTower.h"
 
+#include "../entities/LaserEntity.h"
 
 SniperTower::SniperTower(int id){
     _id = id;
@@ -15,7 +16,7 @@ TowerEvent SniperTower::tick(){
     if(_ticksForShoot<=0){
         auto it = Game::findTarget(this);
         if(it != Game::enemies.end()){
-            _lastShootPosition = (*it)->getPosition();
+            Game::entities.push_back(new LaserEntity(Game::getRealPosition(_position), (*it)->getPosition(), 10));
             if((*it)->damage(_damage)){
                 Game::kill(it);
             }
@@ -34,25 +35,5 @@ void SniperTower::draw(sf::RenderWindow* window) const{
             glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(i)*t,
                        _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*t);
     glEnd();
-
-    if(_ticksForShoot>_ticksBetweenShoots-10){
-        glLineWidth(1);
-        glColor3ub(255,125,125);
-        glBegin(GL_LINES);
-            glVertex2i(_position.x*Game::pixelsPerSquare + Game::pixelsPerSquare/2, _position.y*Game::pixelsPerSquare + Game::pixelsPerSquare/2);
-            glVertex2i(_lastShootPosition.x, _lastShootPosition.y);
-        glEnd();
-    }
-}
-
-void SniperTower::drawOver(sf::RenderWindow* window) const{
-    if(_ticksForShoot>_ticksBetweenShoots-10){
-        glLineWidth(1);
-        glColor3ub(255,125,125);
-        glBegin(GL_LINES);
-            glVertex2i(_position.x*Game::pixelsPerSquare + Game::pixelsPerSquare/2, _position.y*Game::pixelsPerSquare + Game::pixelsPerSquare/2);
-            glVertex2i(_lastShootPosition.x, _lastShootPosition.y);
-        glEnd();
-    }
 }
 

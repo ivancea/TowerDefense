@@ -2,8 +2,8 @@
 
 FlameRingTower::FlameRingTower(int id){
     _id = id;
-    _ticksForRing = 0;
-    _ticksBetweenRings = 5;
+    _ticksForShoot = 0;
+    _ticksBetweenShoots = 5;
     _minRange = 5;
     _maxRange = 80;
     _ringVelocity = 2.5;
@@ -13,21 +13,24 @@ FlameRingTower::FlameRingTower(int id){
 }
 
 TowerEvent FlameRingTower::tick(){
-    if(_ticksForRing<=0){
+    if(_ticksForShoot<=0){
         _ringActualRange += _ringVelocity;
         if(_ringActualRange+_ringSize>_maxRange){
-            _ringActualRange = _minRange;
-            _ticksForRing = _ticksBetweenRings;
+            _ticksForShoot = _ticksBetweenShoots;
+        }else{
+            for(auto it = Game::enemies.begin(); it!=Game::enemies.end();){
+                if(Game::isInRange((_position+Vec2d(0.5,0.5))*Game::pixelsPerSquare, _ringActualRange, _ringActualRange+_ringSize, *it)){
+                    if((*it)->damage(_damage))
+                        it = Game::kill(it);
+                    else
+                        it++;
+                }else it++;
+            }
         }
-        for(auto it = Game::enemies.begin(); it!=Game::enemies.end();){
-            if(Game::isInRange((_position+Vec2d(0.5,0.5))*Game::pixelsPerSquare, _ringActualRange, _ringActualRange+_ringSize, *it)){
-                if((*it)->damage(_damage))
-                    it = Game::kill(it);
-                else
-                    it++;
-            }else it++;
-        }
-    }else --_ticksForRing;
+    }else{
+        _ringActualRange = _minRange;
+        --_ticksForShoot;
+    }
     return TowerEvent::None;
 }
 
@@ -42,13 +45,15 @@ void FlameRingTower::draw(sf::RenderWindow* window) const{
 }
 
 void FlameRingTower::drawOver(sf::RenderWindow* window) const{
-    glColor3ub(127,127,0);
-    glBegin(GL_TRIANGLE_STRIP);
-    for(float i=0; i<=PI*2.01; i+=PI/360.0){
-        glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(i)*_ringActualRange,
-                   _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*_ringActualRange);
-        glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(i)*(_ringActualRange+_ringSize),
-                   _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*(_ringActualRange+_ringSize));
+    if(_ticksForShoot<=0){
+        glColor4ub(127,127,0, 200);
+        glBegin(GL_TRIANGLE_STRIP);
+        for(float i=0; i<=PI*2.01; i+=PI/360.0){
+            glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(i)*_ringActualRange,
+                       _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*_ringActualRange);
+            glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(i)*(_ringActualRange+_ringSize),
+                       _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*(_ringActualRange+_ringSize));
+        }
+        glEnd();
     }
-    glEnd();
 }
