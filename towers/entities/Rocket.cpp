@@ -81,8 +81,6 @@ bool Rocket::tick(){
         return true;
     }
 
-    /// TODO: HitEnemiesInPath mode
-
     return false;
 }
 

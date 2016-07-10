@@ -12,6 +12,8 @@ bool Enemy::damage(double n){
     return (_life-=n)<=0;
 }
 
+void Enemy::killed(){}
+
 void Enemy::reloadDistanceToEnd(){
     if(_nextPositionIndex<0 || _nextPositionIndex>=Game::enemiesRoute.size()){
         _distanceToEnd = -1;

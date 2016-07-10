@@ -61,14 +61,20 @@ void RocketTower::draw(sf::RenderWindow* window) const {
             glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(i)*t,
                        _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*t);
     glEnd();
-    t *= (double)_ticksForShoot/(double)_ticksBetweenShoots;
+    //t *= (double)_ticksForShoot/(double)_ticksBetweenShoots;
     glColor3ub(0,0,127);
     glBegin(GL_POLYGON);
+        glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2,
+                   _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2);
+        for(float i=0; i<PI*2.0*((double)_ticksForShoot/(double)_ticksBetweenShoots); i+=PI/360)
+            glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(-i)*t,
+                       _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i+PI)*t);
+    glEnd();
+    /*glBegin(GL_POLYGON);
         for(float i=0; i<PI*2.01; i+=PI/360)
             glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(i)*t,
                        _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*t);
-    glEnd();
-
+    glEnd();*/
     for(Rocket* r : _rockets)
         r->draw(window);
 }

@@ -1,0 +1,6 @@
+Any tower:
+    -Burst mode (3 fast shots, increased reload)
+
+RocketTower:
+    -Rocket piercing
+    -Fire Rocket

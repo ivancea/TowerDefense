@@ -24,6 +24,7 @@ public:
     virtual void draw(sf::RenderWindow* window) const = 0;
 
     virtual bool damage(double n);
+    virtual void killed();
 
     double getLife() const { return _life ; }
     double getVelocity() const { return _velocity; }

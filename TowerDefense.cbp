@@ -65,6 +65,7 @@
 		</Unit>
 		<Unit filename="MapManager.cpp" />
 		<Unit filename="MapManager.h" />
+		<Unit filename="TODO.txt" />
 		<Unit filename="Tower.h">
 			<Option target="Release" />
 		</Unit>

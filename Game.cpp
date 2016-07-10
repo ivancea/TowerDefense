@@ -85,13 +85,7 @@ namespace Game{
             t->drawOver(window);
 
         if(selectedTower!=nullptr){
-            bool isValidTower = false;
-            for(Tower* t : towers)
-                if(t==selectedTower){
-                    isValidTower = true;
-                    break;
-                }
-            if(isValidTower){
+            if(exists(selectedTower)){
                 Vec2i p = Vec2i(((double)selectedTower->getPosition().x+0.5)*pixelsPerSquare,
                                 ((double)selectedTower->getPosition().y+0.5)*pixelsPerSquare);
                 glLineWidth(1.0);
@@ -181,7 +175,7 @@ namespace Game{
     }
 
     std::list<Enemy*>::iterator kill(std::list<Enemy*>::iterator enemy){
-        /// TODO: set callbacks maybe
+        (*enemy)->killed();
         delete *enemy;
         return enemies.erase(enemy);
     }
