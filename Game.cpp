@@ -5,6 +5,12 @@
 
 namespace Game{
 
+    namespace Stats{
+
+        unsigned int enemiesKilled = 0;
+
+    }
+
     TowerManager* towerManager = nullptr;
     std::list<Tower*> towers;
     std::list<Enemy*> enemies;
@@ -176,6 +182,7 @@ namespace Game{
 
     std::list<Enemy*>::iterator kill(std::list<Enemy*>::iterator enemy){
         (*enemy)->killed();
+        ++Stats::enemiesKilled;
         delete *enemy;
         return enemies.erase(enemy);
     }

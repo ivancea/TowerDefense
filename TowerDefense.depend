@@ -371,7 +371,7 @@
 1452368097 c:\users\ivancea\desktop\github\towerdefense\vec.hpp
 	<cmath>
 
-1467990006 c:\users\ivancea\desktop\github\towerdefense\game.h
+1468339069 c:\users\ivancea\desktop\github\towerdefense\game.h
 	<list>
 	<SFML/Graphics.hpp>
 	<SFML/OpenGL.hpp>
@@ -421,7 +421,7 @@
 	"../Vec.hpp"
 	"../entity.h"
 
-1468181597 source:c:\users\ivancea\desktop\github\towerdefense\game.cpp
+1468339057 source:c:\users\ivancea\desktop\github\towerdefense\game.cpp
 	"Game.h"
 	<cmath>
 	<string>
@@ -528,12 +528,11 @@
 	"towers/SoldierTower.h"
 	"towers/FlameRingTower.h"
 
-1468182228 source:c:\users\ivancea\desktop\github\towerdefense\enemies\inhibitorenemy.cpp
+1468183083 source:c:\users\ivancea\desktop\github\towerdefense\enemies\inhibitorenemy.cpp
 	"InhibitorEnemy.h"
 	<SFML/OpenGL.hpp>
 	"Game.h"
 	"../entities/ExplosionEntity.h"
-	<iostream>
 
 1468181661 c:\users\ivancea\desktop\github\towerdefense\enemies\inhibitorenemy.h
 	"Enemy.h"

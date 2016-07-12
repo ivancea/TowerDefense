@@ -15,6 +15,12 @@
 
 namespace Game{
 
+    namespace Stats{
+
+        extern unsigned int enemiesKilled;
+
+    }
+
     enum TileType{
         EmptyTile,
         TowerTile,

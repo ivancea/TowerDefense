@@ -4,3 +4,20 @@ Any tower:
 RocketTower:
     -Rocket piercing
     -Fire Rocket
+
+
+Add Boomerang tower:
+    -Boomerang to enemy + X distance
+    -Velocity with sin/cos
+
+Add Recolector Tower:
+    -A guy that recolects Enemies armor
+    -Armor == Extra gold
+    -The guy moves around the map. If no armor, he returns to tower
+    -Armor as new special entity (new container in namespace Game?)
+    -Game::kill will search for an Recolector tower for drop armor or flag when create/destroy a recolector Tower?
+    -Maybe always drop armor?
+    -With low chance, drop a sword, that damage all enemies by % or by X points
+    -Gold recolected/damage depends of the recolector's level?
+
+Add towers that freeze/slow. Area/single shot/explosion shot
