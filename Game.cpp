@@ -358,7 +358,7 @@ namespace Game{
                                  (towerPosition.y+0.5)*Game::pixelsPerSquare));
     }
 
-    Vec2d getRealPosition(Vec2d towerPosition){
+    Vec2d getRealPosition(Vec2i towerPosition){
         return Vec2d(towerPosition.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2,
                      towerPosition.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2);
     }

@@ -62,7 +62,7 @@ namespace Game{
     bool exists(Entity* entities);
 
     double getDistance(Vec2i towerPosition, Vec2d position);
-    Vec2d getRealPosition(Vec2d towerPosition);
+    Vec2d getRealPosition(Vec2i towerPosition);
 }
 
 #endif // GAME_H

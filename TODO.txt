@@ -1,16 +1,23 @@
-Any tower:
-    -Burst mode (3 fast shots, increased reload)
-
 RocketTower:
+    -Burst mode (3 fast shots, increased reload)
     -Rocket piercing
     -Fire Rocket
 
+Add FlamethrowerTower
+    -Fast throw flames that grows
+    -Low, constant damage
+    -Maybe each flame hits each enemy only once?
+    -Maybe each flame dissapear on hit? Upgradeable?
+
+Add Electric tower:
+    -Fast low-damage shots that jumps between enemies
+    -Use LaserEntity for shot/jumps. Add random offset (electric shots)
 
 Add Boomerang tower:
     -Boomerang to enemy + X distance
     -Velocity with sin/cos
 
-Add Recolector Tower:
+Add Recolector tower:
     -A guy that recolects Enemies armor
     -Armor == Extra gold
     -The guy moves around the map. If no armor, he returns to tower
@@ -21,3 +28,5 @@ Add Recolector Tower:
     -Gold recolected/damage depends of the recolector's level?
 
 Add towers that freeze/slow. Area/single shot/explosion shot
+
+Tower::drawUpgrades and Tower receive upgrades-zone mouse events when selected
