@@ -1,5 +1,6 @@
 #include "ExplosionEntity.h"
 
+#include "../Resources.h"
 #include "../Game.h"
 #include <SFML/OpenGL.hpp>
 
@@ -8,6 +9,8 @@ ExplosionEntity::ExplosionEntity(Vec2d position, double range, int ticksAlive){
     _range = range;
     _ticksAlive = ticksAlive;
     _ticksLived = 0;
+
+    _spriteFrame = 0;
 }
 
 bool ExplosionEntity::tick(){
@@ -15,14 +18,14 @@ bool ExplosionEntity::tick(){
 }
 
 void ExplosionEntity::draw(sf::RenderWindow* window) const{
-    glColor4ub(255,127,0, 230);
-    glBegin(GL_TRIANGLES);
-        for(float i=0; i<=PI*2.00; i+=PI/360.0){
-            glVertex2i(_position.x+sin(i)*_range,
-                       _position.y+cos(i)*_range);
-            glVertex2i(_position.x+sin(i+PI/360.0)*_range,
-                       _position.y+cos(i+PI/360.0)*_range);
-            glVertex2i(_position.x,_position.y);
-        }
-    glEnd();
+    window->pushGLStates();
+        int frame = (_ticksLived*37)/_ticksAlive;
+        sf::Sprite fire(Resources::explosion);
+        fire.setColor(sf::Color(255,255,255, 175));
+        fire.setTextureRect(sf::IntRect((frame%6)*100,((frame/6)%7)*100, 100,100));
+        fire.scale(_range/100.0, _range/100.0);
+        fire.setPosition(_position.x-fire.getGlobalBounds().width/2, _position.y-fire.getGlobalBounds().height/2);
+        window->draw(fire);
+
+    window->popGLStates();
 }

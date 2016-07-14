@@ -1,24 +1,22 @@
-#ifndef EXPLOSIONENTITY_H
-#define EXPLOSIONENTITY_H
+#ifndef FIREENTITY_H
+#define FIREENTITY_H
 
 #include <SFML/Graphics.hpp>
 
 #include "../Vec.hpp"
 #include "../entity.h"
 
-class ExplosionEntity : public Entity {
+class FireEntity : public Entity {
     Vec2d _position;
-    double _range;
     int _ticksAlive;
     int _ticksLived;
-
     int _spriteFrame;
 
 public:
-    ExplosionEntity(Vec2d position, double range, int ticksAlive);
+    FireEntity(Vec2d position, int ticksAlive);
 
     virtual bool tick();
     virtual void draw(sf::RenderWindow* window) const;
 };
 
-#endif // EXPLOSIONENTITY_H
+#endif // FIREENTITY_H

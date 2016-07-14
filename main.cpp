@@ -7,6 +7,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/OpenGL.hpp>
 
+#include "Resources.h"
 #include "MapManager.h"
 #include "BasicTowerManager.h"
 #include "enemies/BasicEnemy.h"
@@ -94,6 +95,8 @@ int main(){
 
     glEnable (GL_BLEND);
     glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+    Resources::loadAll();
 
     int tickCount = 0;
 

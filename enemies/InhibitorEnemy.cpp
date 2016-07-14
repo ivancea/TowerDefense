@@ -3,7 +3,6 @@
 #include <SFML/OpenGL.hpp>
 
 #include "Game.h"
-#include "../entities/ExplosionEntity.h"
 
 
 InhibitorEnemy::InhibitorEnemy(double velocity, double life, double damage)
@@ -13,10 +12,6 @@ InhibitorEnemy::InhibitorEnemy(double velocity, double life, double damage)
     _damage = damage;
     if(Game::enemiesRoute.size()>=1)
         _position = Game::enemiesRoute[0];
-}
-
-void InhibitorEnemy::killed(){
-    Game::entities.push_back(new ExplosionEntity(_position, 20, 15));
 }
 
 bool InhibitorEnemy::tick(){

@@ -1,6 +1,7 @@
 #include "SniperTower.h"
 
 #include "../entities/LaserEntity.h"
+#include "../entities/FireEntity.h"
 
 SniperTower::SniperTower(int id){
     _id = id;
@@ -17,6 +18,7 @@ TowerEvent SniperTower::tick(){
         auto it = Game::findTarget(this);
         if(it != Game::enemies.end()){
             Game::entities.push_back(new LaserEntity(Game::getRealPosition(_position), (*it)->getPosition(), 10));
+            Game::entities.push_back(new FireEntity((*it)->getPosition(), 50));
             if((*it)->damage(_damage)){
                 Game::kill(it);
             }

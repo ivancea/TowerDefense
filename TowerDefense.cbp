@@ -24,6 +24,10 @@
 					<Add option="-s" />
 					<Add option="-static" />
 				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c xcopy &quot;$(PROJECT_DIR)resources\*&quot; &quot;$(PROJECT_DIR)$(TARGET_OUTPUT_DIR)resources\&quot; /E /I /Y' />
+					<Mode after="always" />
+				</ExtraCommands>
 			</Target>
 			<Target title="MapCreator">
 				<Option output="bin/MapCreator/MapCreator" prefix_auto="1" extension_auto="1" />
@@ -65,6 +69,12 @@
 		</Unit>
 		<Unit filename="MapManager.cpp" />
 		<Unit filename="MapManager.h" />
+		<Unit filename="Resources.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Resources.h">
+			<Option target="Release" />
+		</Unit>
 		<Unit filename="TODO.txt" />
 		<Unit filename="Tower.h">
 			<Option target="Release" />
@@ -104,6 +114,12 @@
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="entities/ExplosionEntity.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="entities/FireEntity.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="entities/FireEntity.h">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="entities/LaserEntity.cpp">

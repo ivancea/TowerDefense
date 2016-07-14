@@ -12,8 +12,6 @@ class InhibitorEnemy : public Enemy{
 public:
     InhibitorEnemy(double velocity, double life, double damage);
 
-    virtual void killed();
-
     virtual bool tick();
     virtual void draw(sf::RenderWindow* window) const;
 };

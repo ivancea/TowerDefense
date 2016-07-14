@@ -3,6 +3,8 @@
 #include <cmath>
 #include <string>
 
+#include "Resources.h"
+
 namespace Game{
 
     namespace Stats{
@@ -124,16 +126,19 @@ namespace Game{
 
         window->pushGLStates();
 
-            /*sf::Font fontArial;
+            sf::Font fontArial;
             sf::Text text;
             fontArial.loadFromFile("C:\\Windows\\Fonts\\Arial.ttf");
             text.setFont(fontArial);
-            text.setString(std::to_string(life));
-            text.setColor(sf::Color::Cyan);
-            text.setCharacterSize(50);
+            if(life>0)
+                text.setString("Lifes: " + std::to_string((int)life));
+            else
+                text.setString("Dead");
+            text.setColor(sf::Color::Black);
+            text.setCharacterSize(20);
             sf::FloatRect bounds = text.getGlobalBounds();
-            text.setPosition(window->getSize().x/2-bounds.width/2, window->getSize().y/2-bounds.height);
-            window->draw(text);*/
+            text.setPosition(0,0);
+            window->draw(text);
 
         window->popGLStates();
     }
