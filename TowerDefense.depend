@@ -371,7 +371,7 @@
 1452368097 c:\users\ivancea\desktop\github\towerdefense\vec.hpp
 	<cmath>
 
-1468508885 c:\users\ivancea\desktop\github\towerdefense\game.h
+1468511259 c:\users\ivancea\desktop\github\towerdefense\game.h
 	<list>
 	<SFML/Graphics.hpp>
 	<SFML/OpenGL.hpp>
@@ -411,19 +411,20 @@
 	"Enemy.h"
 	"Game.h"
 
-1468502052 source:c:\users\ivancea\desktop\github\towerdefense\entities\explosionentity.cpp
+1468511023 source:c:\users\ivancea\desktop\github\towerdefense\entities\explosionentity.cpp
 	"ExplosionEntity.h"
 	"../Resources.h"
 	"../Sprite.h"
 	"../Game.h"
 	<SFML/OpenGL.hpp>
 
-1468501809 c:\users\ivancea\desktop\github\towerdefense\entities\explosionentity.h
+1468510982 c:\users\ivancea\desktop\github\towerdefense\entities\explosionentity.h
 	<SFML/Graphics.hpp>
+	"../Sprite.h"
 	"../Vec.hpp"
 	"../Entity.h"
 
-1468508911 source:c:\users\ivancea\desktop\github\towerdefense\game.cpp
+1468511284 source:c:\users\ivancea\desktop\github\towerdefense\game.cpp
 	"Game.h"
 	<cmath>
 	<string>

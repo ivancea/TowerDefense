@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 
+#include "../Sprite.h"
 #include "../Vec.hpp"
 #include "../Entity.h"
 
@@ -11,6 +12,8 @@ class ExplosionEntity : public Entity {
     double _range;
     int _ticksAlive;
     int _ticksLived;
+
+    Sprite _sprite;
 
 public:
     ExplosionEntity(Vec2d position, double range, int ticksAlive);

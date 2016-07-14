@@ -36,9 +36,11 @@ namespace Game{
                 delete e;
                 it1 = enemies.erase(it1);
             }else it1++;
+
             if(life<=0){
                 money = 0;
-                removeTowers();
+                clearTowers();
+                clearEntities();
             }
         }
         auto it2 = entities.begin();
@@ -232,11 +234,6 @@ namespace Game{
         return ret;
     }
 
-    void removeTowers(){
-        for(auto it = towers.begin(); it!=towers.end();)
-            it = removeTower(it);
-    }
-
     std::list<Enemy*>::iterator kill(std::list<Enemy*>::iterator enemy){
         (*enemy)->killed();
         ++Stats::enemiesKilled;
@@ -408,6 +405,27 @@ namespace Game{
             if(e==entity)
                 return true;
         return false;
+    }
+
+
+    void clearTowers(){
+        for(auto it = towers.begin(); it!=towers.end();)
+            it = removeTower(it);
+    }
+
+    void clearEntities(){
+        for(auto it = entities.begin(); it!=entities.end();)
+            it = entities.erase(it);
+    }
+
+    void clearEnemies(){
+        for(auto it = enemies.begin(); it!=enemies.end();)
+            it = enemies.erase(it);
+    }
+
+    void killEnemies(){
+        for(auto it = enemies.begin(); it!=enemies.end();)
+            it = kill(it);
     }
 
     double getDistance(Vec2i towerPosition, Vec2d position){

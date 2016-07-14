@@ -51,7 +51,6 @@ namespace Game{
     bool putTower(Tower* tower);
     std::list<Tower*>::iterator removeTower(std::list<Tower*>::iterator tower);
     Tower* removeTower(Vec2i position);
-    void removeTowers();
 
     bool isInRange(Vec2i position, double minRange, double maxRange, Enemy* enemy);
 
@@ -62,6 +61,11 @@ namespace Game{
     bool exists(Enemy* enemy);
     bool exists(Tower* tower);
     bool exists(Entity* entities);
+
+    void clearTowers();
+    void clearEntities();
+    void clearEnemies();
+    void killEnemies();
 
     double getDistance(Vec2i towerPosition, Vec2d position);
     Vec2d getRealPosition(Vec2i towerPosition);
