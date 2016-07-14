@@ -14,6 +14,10 @@ InhibitorEnemy::InhibitorEnemy(double velocity, double life, double damage)
         _position = Game::enemiesRoute[0];
 }
 
+void InhibitorEnemy::killed(){
+    Game::money += 50;
+}
+
 bool InhibitorEnemy::tick(){
     ++_inhibitionTicks;
     if(_inhibitionTicks==50){

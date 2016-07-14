@@ -21,7 +21,10 @@ class RocketTower : public Tower{
     std::list<Rocket*> _rockets;
 
 public:
-    RocketTower(int id);
+
+    static int id;
+
+    RocketTower();
     ~RocketTower();
 
     virtual TowerEvent tick();

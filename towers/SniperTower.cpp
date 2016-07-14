@@ -3,7 +3,9 @@
 #include "../entities/LaserEntity.h"
 #include "../entities/FireEntity.h"
 
-SniperTower::SniperTower(int id){
+int SniperTower::id = -1;
+
+SniperTower::SniperTower(){
     _id = id;
     _ticksForShoot = 0;
     _ticksBetweenShoots = 60;

@@ -17,7 +17,8 @@ protected:
 public:
     virtual ~TowerManager();
 
-    virtual TowerType* getTowerType(int id) = 0;
+    virtual TowerType* getTowerType(int id);
+    virtual int getTowerCost(int id);
 };
 
 #endif // TOWERMANAGER_H

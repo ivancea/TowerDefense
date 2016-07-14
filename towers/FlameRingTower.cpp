@@ -1,6 +1,8 @@
 #include "FlameRingTower.h"
 
-FlameRingTower::FlameRingTower(int id){
+int FlameRingTower::id = -1;
+
+FlameRingTower::FlameRingTower(){
     _id = id;
     _ticksForShoot = 0;
     _ticksBetweenShoots = 5;

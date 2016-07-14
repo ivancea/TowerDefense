@@ -7,6 +7,7 @@ class BasicEnemy : public Enemy{
 public:
     BasicEnemy(double velocity, double life, double damage);
 
+    virtual void killed();
     virtual void draw(sf::RenderWindow* window) const;
 };
 

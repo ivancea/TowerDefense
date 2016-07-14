@@ -13,6 +13,10 @@ BasicEnemy::BasicEnemy(double velocity, double life, double damage)
         _position = Game::enemiesRoute[0];
 }
 
+void BasicEnemy::killed(){
+    Game::money += 10;
+}
+
 void BasicEnemy::draw(sf::RenderWindow* window) const{
     int sz = _life/2;
     if(sz<=0)

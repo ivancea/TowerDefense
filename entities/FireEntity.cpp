@@ -4,27 +4,25 @@
 #include "../Game.h"
 #include <SFML/OpenGL.hpp>
 
-FireEntity::FireEntity(Vec2d position, int ticksAlive){
+FireEntity::FireEntity(Vec2d position, int ticksAlive)
+:_sprite(Resources::fire, 8,4){
     _position = position;
     _ticksAlive = ticksAlive;
     _ticksLived = 0;
-    _spriteFrame = 0;
+
+    _sprite.setColor(sf::Color(255,255,255, 175));
+    _sprite.setPosition(_position.x-32, _position.y-100);
 }
 
 bool FireEntity::tick(){
+    _sprite.nextFrame();
     return _ticksLived++ >= _ticksAlive;
 }
 
 void FireEntity::draw(sf::RenderWindow* window) const{
     window->pushGLStates();
 
-        sf::Sprite fire(Resources::fire);
-        fire.setColor(sf::Color(255,255,255, 175));
-        fire.setPosition(_position.x-32, _position.y-100);
-        fire.setTextureRect(sf::IntRect((_spriteFrame%8)*64,((_spriteFrame/8)%4)*128, 64,128));
-
-        ++const_cast<int&>(_spriteFrame);
-        window->draw(fire);
+        window->draw(_sprite);
 
     window->popGLStates();
 }

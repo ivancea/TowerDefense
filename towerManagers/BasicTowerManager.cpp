@@ -7,29 +7,26 @@
 
 
 BasicTowerManager::BasicTowerManager(){
-    _towerTypes.push_back(new TowerType(new SoldierTower(_nextId++),
+    SoldierTower::id = 1;
+    SniperTower::id = 2;
+    RocketTower::id = 3;
+    FlameRingTower::id = 4;
+    _towerTypes.push_back(new TowerType(new SoldierTower(),
                                    "Soldier",
                                    "Fast shots, low damage",
-                                   200, nullptr, nullptr));
-    _towerTypes.push_back(new TowerType(new SniperTower(_nextId++),
+                                   150, nullptr, nullptr));
+    _towerTypes.push_back(new TowerType(new SniperTower(),
                                    "Sniper",
                                    "High damage and global range, but low attack rate",
                                    200, nullptr, nullptr));
-    _towerTypes.push_back(new TowerType(new RocketTower(_nextId++),
+    _towerTypes.push_back(new TowerType(new RocketTower(),
                                    "Rocket",
                                    "Ground area damage",
-                                   200, nullptr, nullptr));
-    _towerTypes.push_back(new TowerType(new FlameRingTower(_nextId++),
+                                   300, nullptr, nullptr));
+    _towerTypes.push_back(new TowerType(new FlameRingTower(),
                                    "Flame Ring",
                                    "Area damage, low range",
-                                   500, nullptr, nullptr));
+                                   300, nullptr, nullptr));
 
     _lastError = 0;
-}
-
-TowerType* BasicTowerManager::getTowerType(int id){
-    for(TowerType* tt : _towerTypes)
-        if(tt!=nullptr && tt->model!=nullptr && id==tt->model->getId())
-            return tt;
-    return nullptr;
 }

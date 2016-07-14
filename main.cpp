@@ -7,14 +7,21 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/OpenGL.hpp>
 
+#include "Game.h"
 #include "Resources.h"
 #include "MapManager.h"
 #include "BasicTowerManager.h"
+
+///Towers (TEMPORAL, will be replaced by TowerManager)
+#include "towers/SoldierTower.h"
+#include "towers/RocketTower.h"
+#include "towers/SniperTower.h"
+#include "towers/FlameRingTower.h"
+
+/// Enemies (TEMPORAL, will be replaced by some Rounds engine
 #include "enemies/BasicEnemy.h"
 #include "enemies/InhibitorEnemy.h"
 #include "enemies/InmortalEnemy.h"
-#include "towers/SoldierTower.h"
-#include "towers/FlameRingTower.h"
 
 using namespace std;
 
@@ -43,23 +50,24 @@ void initializeGame(){
             Game::map[9][i] = Game::TileType::RoadTile;
         }
 
-        Tower* t = new SniperTower(1);
+        Tower* t = new SniperTower();
         t->setPosition(Vec2i(3,3));
         t->setPriority(Near);
         if(!Game::putTower(t))
             delete t;
-        t = new SniperTower(1);
+        t = new SniperTower();
         t->setPosition(Vec2i(4,5));
         t->setPriority(Last);
         if(!Game::putTower(t))
             delete t;
-        t = new SniperTower(1);
+        t = new SniperTower();
         t->setPosition(Vec2i(5,4));
         if(!Game::putTower(t))
             delete t;
     }
 
     Game::life = 20;
+    Game::money = 1500;
 
 }
 
@@ -85,7 +93,7 @@ int main(){
         Game::map.push_back(vector<Game::TileType>(1, Game::TileType::EmptyTile));
 
 
-    window.create(sf::VideoMode(Game::map.size()*Game::pixelsPerSquare,
+    window.create(sf::VideoMode(Game::map.size()*Game::pixelsPerSquare + 200,
                                 Game::map[0].size()*Game::pixelsPerSquare), "Tower Defense", sf::Style::Titlebar|sf::Style::Close);
     window.setFramerateLimit(60);
 
@@ -102,6 +110,8 @@ int main(){
 
     double lastLife = 0;
 
+    bool paused = false;
+
     while(running && window.isOpen()){
         sf::Event ev;
         while(window.pollEvent(ev)){
@@ -115,6 +125,9 @@ int main(){
                 break;
             case sf::Event::KeyPressed:
                 keys[ev.key.code] = true;
+                if(ev.key.code == sf::Keyboard::Space){
+                    paused = !paused;
+                }
                 break;
             case sf::Event::KeyReleased:
                 keys[ev.key.code] = false;
@@ -129,15 +142,27 @@ int main(){
                         if(Game::map[p.x][p.y] == Game::TileType::EmptyTile){
                             Tower* t = nullptr;
                             if(keys[sf::Keyboard::Q]){
-                                t = new SoldierTower(1);
+                                if(Game::money>=150){
+                                    t = new SoldierTower();
+                                    Game::money -= 150;
+                                }
                             }else if(keys[sf::Keyboard::W]){
-                                t = new RocketTower(1);
-                                t->setPriority(Priority::MoreEnemiesTogether);
+                                if(Game::money>=200){
+                                    t = new SniperTower();
+                                    t->setPriority(MoreLife);
+                                    Game::money -= 200;
+                                }
                             }else if(keys[sf::Keyboard::E]){
-                                t = new SniperTower(1);
-                                t->setPriority(MoreLife);
+                                if(Game::money>=300){
+                                    t = new RocketTower();
+                                    t->setPriority(Priority::MoreEnemiesTogether);
+                                    Game::money -= 300;
+                                }
                             }else if(keys[sf::Keyboard::R]){
-                                t = new FlameRingTower(1);
+                                if(Game::money>=300){
+                                    t = new FlameRingTower();
+                                    Game::money -= 300;
+                                }
                             }
                             if(t!=nullptr){
                                 t->setPosition(p);
@@ -157,10 +182,12 @@ int main(){
                     Vec2i p = Vec2i(mouse.x,mouse.y)/Game::pixelsPerSquare;
                     if(Game::map[p.x][p.y] == Game::TileType::TowerTile){
                         Tower* t = Game::removeTower(p);
-                        if(t==nullptr)
+                        if(t==nullptr){
                             cout << "ERROR DELETING TOWER" << endl;
-                        else
+                        }else{
+                            Game::money += Game::towerManager->getTowerCost(t->getId());
                             delete t;
+                        }
                     }
                 }
                 break;
@@ -188,7 +215,7 @@ int main(){
             if(lastLife <= 0)
                 cout << "DEAD" << endl;
         }
-        if(true || Game::life>0){
+        if(!paused && Game::life>0){
             tickCount += 1;
             if(tickCount%400 == 1)
                 Game::enemies.push_back(new InhibitorEnemy(1.0, 30+tickCount/500, 1));

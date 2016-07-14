@@ -1,6 +1,8 @@
 #include "RocketTower.h"
 
-RocketTower::RocketTower(int id){
+int RocketTower::id = -1;
+
+RocketTower::RocketTower(){
     _id = id;
     _ticksForShoot = 0;
     _ticksBetweenShoots = 120;

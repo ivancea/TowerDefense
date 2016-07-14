@@ -17,7 +17,10 @@ class SoldierTower : public Tower{
     std::list<Bullet*> _bullets;
 
 public:
-    SoldierTower(int id);
+
+    static int id;
+
+    SoldierTower();
     ~SoldierTower();
 
     virtual TowerEvent tick();

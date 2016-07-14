@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 
+#include "../Sprite.h"
 #include "../Vec.hpp"
 #include "../entity.h"
 
@@ -10,7 +11,8 @@ class FireEntity : public Entity {
     Vec2d _position;
     int _ticksAlive;
     int _ticksLived;
-    int _spriteFrame;
+
+    Sprite _sprite;
 
 public:
     FireEntity(Vec2d position, int ticksAlive);

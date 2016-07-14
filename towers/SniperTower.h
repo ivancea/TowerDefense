@@ -10,7 +10,10 @@ class SniperTower : public Tower{
     double _damage;
 
 public:
-    SniperTower(int id);
+
+    static int id;
+
+    SniperTower();
 
     virtual TowerEvent tick();
     virtual void draw(sf::RenderWindow* window) const;

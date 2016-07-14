@@ -37,7 +37,7 @@ bool Bullet::tick(){
     }
     if(t!=Game::enemies.end()){
         if((*t)->damage(_damage))
-            Game::enemies.erase(t);
+            Game::kill(t);
         ret = true;
     }
     return ret;

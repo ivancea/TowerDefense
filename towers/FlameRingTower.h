@@ -14,7 +14,10 @@ class FlameRingTower : public Tower{
     double _damage;
 
 public:
-    FlameRingTower(int id);
+
+    static int id;
+
+    FlameRingTower();
 
     virtual TowerEvent tick();
     virtual void draw(sf::RenderWindow* window) const;

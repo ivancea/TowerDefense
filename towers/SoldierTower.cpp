@@ -1,6 +1,8 @@
 #include "SoldierTower.h"
 
-SoldierTower::SoldierTower(int id){
+int SoldierTower::id = -1;
+
+SoldierTower::SoldierTower(){
     _id = id;
     _ticksForShoot = 0;
     _ticksBetweenShoots = 12;

@@ -4,15 +4,13 @@
 #include <SFML/Graphics.hpp>
 
 #include "../Vec.hpp"
-#include "../entity.h"
+#include "../Entity.h"
 
 class ExplosionEntity : public Entity {
     Vec2d _position;
     double _range;
     int _ticksAlive;
     int _ticksLived;
-
-    int _spriteFrame;
 
 public:
     ExplosionEntity(Vec2d position, double range, int ticksAlive);

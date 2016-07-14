@@ -9,7 +9,7 @@
 			<Target title="Release">
 				<Option output="bin/Release/TowerDefense" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
-				<Option type="1" />
+				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
@@ -19,6 +19,7 @@
 					<Add directory="enemies" />
 					<Add directory="towers/entities" />
 					<Add directory="entities" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -73,6 +74,12 @@
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="Resources.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Sprite.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Sprite.h">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="TODO.txt" />

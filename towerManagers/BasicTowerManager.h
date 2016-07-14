@@ -10,8 +10,6 @@ class BasicTowerManager : public TowerManager{
 
 public:
     BasicTowerManager();
-
-    virtual TowerType* getTowerType(int id);
 };
 
 #endif // BASICTOWERMANAGER_H

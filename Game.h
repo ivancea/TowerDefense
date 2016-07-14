@@ -37,6 +37,7 @@ namespace Game{
     extern int pixelsPerSquare;
 
     extern double life;
+    extern int money;
 
     extern Tower* selectedTower;
 
@@ -50,6 +51,7 @@ namespace Game{
     bool putTower(Tower* tower);
     std::list<Tower*>::iterator removeTower(std::list<Tower*>::iterator tower);
     Tower* removeTower(Vec2i position);
+    void removeTowers();
 
     bool isInRange(Vec2i position, double minRange, double maxRange, Enemy* enemy);
 

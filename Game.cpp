@@ -23,6 +23,7 @@ namespace Game{
     int pixelsPerSquare = 0;
 
     double life = 0;
+    int money = 0;
 
     Tower* selectedTower = nullptr;
 
@@ -35,6 +36,10 @@ namespace Game{
                 delete e;
                 it1 = enemies.erase(it1);
             }else it1++;
+            if(life<=0){
+                money = 0;
+                removeTowers();
+            }
         }
         auto it2 = entities.begin();
         while(it2 != entities.end()){
@@ -133,11 +138,53 @@ namespace Game{
             if(life>0)
                 text.setString("Lifes: " + std::to_string((int)life));
             else
-                text.setString("Dead");
-            text.setColor(sf::Color::Black);
+                text.setString("Score: " + std::to_string(Stats::enemiesKilled));
+            text.setColor(sf::Color::White);
             text.setCharacterSize(20);
             sf::FloatRect bounds = text.getGlobalBounds();
-            text.setPosition(0,0);
+            text.setPosition(window->getSize().x-bounds.width-10, 10);
+            window->draw(text);
+
+            text.setString("Money: " + std::to_string(money));
+            text.setColor(sf::Color(255,255,150));
+            text.setCharacterSize(20);
+            bounds = text.getGlobalBounds();
+            text.setPosition(window->getSize().x-bounds.width-10, 50);
+            window->draw(text);
+
+            text.setString("Soldier (Q): 150");
+            text.setColor(sf::Color(255,255,255));
+            text.setCharacterSize(20);
+            bounds = text.getGlobalBounds();
+            text.setPosition(window->getSize().x-bounds.width-10, 100);
+            window->draw(text);
+
+            text.setString("Sniper (W): 200");
+            text.setColor(sf::Color(255,255,255));
+            text.setCharacterSize(20);
+            bounds = text.getGlobalBounds();
+            text.setPosition(window->getSize().x-bounds.width-10, 130);
+            window->draw(text);
+
+            text.setString("Rocket (E): 300");
+            text.setColor(sf::Color(255,255,255));
+            text.setCharacterSize(20);
+            bounds = text.getGlobalBounds();
+            text.setPosition(window->getSize().x-bounds.width-10, 160);
+            window->draw(text);
+
+            text.setString("FlameRing (R): 300");
+            text.setColor(sf::Color(255,255,255));
+            text.setCharacterSize(20);
+            bounds = text.getGlobalBounds();
+            text.setPosition(window->getSize().x-bounds.width-10, 190);
+            window->draw(text);
+
+            text.setString("Pause (Space)");
+            text.setColor(sf::Color(200,255,200));
+            text.setCharacterSize(20);
+            bounds = text.getGlobalBounds();
+            text.setPosition(window->getSize().x-bounds.width-10, 250);
             window->draw(text);
 
         window->popGLStates();
@@ -183,6 +230,11 @@ namespace Game{
                 break;
             }
         return ret;
+    }
+
+    void removeTowers(){
+        for(auto it = towers.begin(); it!=towers.end();)
+            it = removeTower(it);
     }
 
     std::list<Enemy*>::iterator kill(std::list<Enemy*>::iterator enemy){
