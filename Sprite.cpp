@@ -24,7 +24,7 @@ void Sprite::nextFrame(){
 
 void Sprite::setFrame(int n){
     _actualFrame = n%_count;
-    setTextureRect(sf::IntRect((_actualFrame%_countX)*_rect.width/_countX,((_actualFrame/_countX)%_countY)*_rect.height/_countY,
+    setTextureRect(sf::IntRect(_rect.left + (_actualFrame%_countX)*_rect.width/_countX, _rect.top + ((_actualFrame/_countX)%_countY)*_rect.height/_countY,
                                _rect.width/_countX,_rect.height/_countY));
 }
 

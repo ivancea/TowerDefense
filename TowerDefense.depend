@@ -464,8 +464,10 @@
 	"../../Vec.hpp"
 	"../../Enemy.h"
 
-1468504530 c:\users\ivancea\desktop\github\towerdefense\towers\snipertower.h
+1468631391 c:\users\ivancea\desktop\github\towerdefense\towers\snipertower.h
 	<SFML/Graphics.hpp>
+	"../Vec.hpp"
+	"../sprite.h"
 	"../Game.h"
 	"../Tower.h"
 
@@ -498,8 +500,10 @@
 1468504627 source:c:\users\ivancea\desktop\github\towerdefense\towers\rockettower.cpp
 	"RocketTower.h"
 
-1468504627 source:c:\users\ivancea\desktop\github\towerdefense\towers\snipertower.cpp
+1468632256 source:c:\users\ivancea\desktop\github\towerdefense\towers\snipertower.cpp
 	"SniperTower.h"
+	<cmath>
+	"../Resources.h"
 	"../entities/LaserEntity.h"
 	"../entities/FireEntity.h"
 
@@ -556,10 +560,10 @@
 	"../Vec.hpp"
 	"../entity.h"
 
-1468459961 source:c:\users\ivancea\desktop\github\towerdefense\resources.cpp
+1468632311 source:c:\users\ivancea\desktop\github\towerdefense\resources.cpp
 	"Resources.h"
 
-1468459746 c:\users\ivancea\desktop\github\towerdefense\resources.h
+1468629674 c:\users\ivancea\desktop\github\towerdefense\resources.h
 	<SFML/Graphics.hpp>
 
 1468503594 source:c:\users\ivancea\desktop\github\towerdefense\entities\fireentity.cpp
@@ -583,6 +587,6 @@
 1468503613 c:\users\ivancea\desktop\github\towerdefense\sprite.h
 	<SFML/Graphics.hpp>
 
-1468503606 source:c:\users\ivancea\desktop\github\towerdefense\sprite.cpp
+1468631531 source:c:\users\ivancea\desktop\github\towerdefense\sprite.cpp
 	"Sprite.h"
 
