@@ -39,6 +39,9 @@ namespace Game{
     extern double life;
     extern int money;
 
+    extern int tickCount;
+    extern int velocity;
+
     extern Tower* selectedTower;
 
     bool tick();
@@ -52,11 +55,11 @@ namespace Game{
     std::list<Tower*>::iterator removeTower(std::list<Tower*>::iterator tower);
     Tower* removeTower(Vec2i position);
 
-    bool isInRange(Vec2i position, double minRange, double maxRange, Enemy* enemy);
+    bool isInRange(Vec2d position, double minRange, double maxRange, Enemy* enemy);
 
     std::list<Enemy*>::iterator kill(std::list<Enemy*>::iterator enemy);
     std::list<Enemy*>::iterator findTarget(Tower* tower);
-    std::list< std::list<Enemy*>::iterator > findEnemiesInRange(Vec2i position, double minRange, double maxRange);
+    std::list< std::list<Enemy*>::iterator > findEnemiesInRange(Vec2d position, double minRange, double maxRange);
 
     bool exists(Enemy* enemy);
     bool exists(Tower* tower);

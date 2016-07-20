@@ -48,19 +48,19 @@ public:
     void setId(int id) { _id = id; }
 
     int getTicksForShoot() const { return _ticksForShoot; }
-    void setTicksForShoot(int ticksForShoot) { _ticksForShoot = ticksForShoot; }
+    virtual void setTicksForShoot(int ticksForShoot) { _ticksForShoot = ticksForShoot; }
     int getTicksBetweenShoots() const { return _ticksBetweenShoots; }
-    void setTicksBetweenShoots(int ticksBetweenShoots) { _ticksBetweenShoots = ticksBetweenShoots; }
+    virtual void setTicksBetweenShoots(int ticksBetweenShoots) { _ticksBetweenShoots = ticksBetweenShoots; }
 
     Vec2i getPosition() const { return _position; }
-    void setPosition(Vec2i position) { _position = position; }
+    virtual void setPosition(Vec2i position) { _position = position; }
     Priority getPriority() const { return _priority; }
-    void setPriority(Priority priority){ _priority = priority; }
+    virtual void setPriority(Priority priority){ _priority = priority; }
 
     double getMinRange() const { return _minRange; }
-    void setMinRange(double minRange){ _minRange = minRange; }
+    virtual void setMinRange(double minRange){ _minRange = minRange; }
     double getMaxRange() const { return _maxRange; }
-    void setMaxRange(double maxRange){ _maxRange = maxRange; }
+    virtual void setMaxRange(double maxRange){ _maxRange = maxRange; }
 
     virtual TowerEvent tick() = 0;
     virtual void draw(sf::RenderWindow* window) const {};

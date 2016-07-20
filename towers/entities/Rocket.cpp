@@ -84,7 +84,7 @@ bool Rocket::tick(){
     return false;
 }
 
-void Rocket::draw(sf::RenderWindow* window) const{
+void Rocket::drawOver(sf::RenderWindow* window) const{
     glColor3ub(0,0,0);
     glBegin(GL_POLYGON);
         for(float i=0; i<PI*2.0; i+=PI/360)

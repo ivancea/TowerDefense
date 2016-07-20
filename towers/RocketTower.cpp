@@ -4,7 +4,7 @@ int RocketTower::id = -1;
 
 RocketTower::RocketTower(){
     _id = id;
-    _ticksForShoot = 0;
+    _ticksForShoot = 120;
     _ticksBetweenShoots = 120;
     _damage = 5;
     _explosionRange = 40;
@@ -19,20 +19,11 @@ RocketTower::RocketTower(){
     _maxRange = 120;
 }
 
-RocketTower::~RocketTower(){
-    auto it = _rockets.begin();
-    while(it!=_rockets.end()){
-        delete *it;
-        it = _rockets.erase(it);
-    }
-}
-
 TowerEvent RocketTower::tick(){
     if(_ticksForShoot<=0){
         auto it = Game::findTarget(this);
         if(it != Game::enemies.end()){
-
-            _rockets.push_back(_followEnemy?
+            Game::entities.push_back(_followEnemy?
                                new Rocket(*it, _damage, _explosionRange,
                                           _rocketVelocity, _maxRocketDistance,
                                           _hitEnemiesInPath, ((Vec2d)_position+Vec2d(0.5,0.5))*Game::pixelsPerSquare)
@@ -43,14 +34,6 @@ TowerEvent RocketTower::tick(){
             _ticksForShoot = _ticksBetweenShoots;
         }
     }else --_ticksForShoot;
-
-    for(auto it = _rockets.begin(); it!=_rockets.end();){
-        Rocket* r = *it;
-        if(r->tick()){
-            delete r;
-            it = _rockets.erase(it);
-        }else it++;
-    }
 
     return TowerEvent::None;
 }
@@ -63,7 +46,7 @@ void RocketTower::draw(sf::RenderWindow* window) const {
             glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(i)*t,
                        _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*t);
     glEnd();
-    //t *= (double)_ticksForShoot/(double)_ticksBetweenShoots;
+
     glColor3ub(0,0,127);
     glBegin(GL_POLYGON);
         glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2,
@@ -72,16 +55,4 @@ void RocketTower::draw(sf::RenderWindow* window) const {
             glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(-i)*t,
                        _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i+PI)*t);
     glEnd();
-    /*glBegin(GL_POLYGON);
-        for(float i=0; i<PI*2.01; i+=PI/360)
-            glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(i)*t,
-                       _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*t);
-    glEnd();*/
-    for(Rocket* r : _rockets)
-        r->draw(window);
-}
-
-void RocketTower::drawOver(sf::RenderWindow* window) const {
-    for(Rocket* r : _rockets)
-        r->draw(window);
 }

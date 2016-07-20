@@ -20,6 +20,8 @@ public:
 
     SniperTower();
 
+    virtual void setPosition(Vec2i position);
+
     virtual TowerEvent tick();
     virtual void draw(sf::RenderWindow* window) const;
     virtual void drawOver(sf::RenderWindow* window) const;

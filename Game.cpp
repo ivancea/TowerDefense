@@ -5,6 +5,11 @@
 
 #include "Resources.h"
 
+/// Enemies (TEMPORAL, will be replaced by some Rounds engine
+#include "enemies/BasicEnemy.h"
+#include "enemies/InhibitorEnemy.h"
+#include "enemies/InmortalEnemy.h"
+
 namespace Game{
 
     namespace Stats{
@@ -25,34 +30,48 @@ namespace Game{
     double life = 0;
     int money = 0;
 
+    int tickCount = 0;
+    int velocity = 1;
+
     Tower* selectedTower = nullptr;
 
     bool tick(){
-        auto it1 = enemies.begin();
-        while(it1 != enemies.end()){
-            Enemy* e = *it1;
-            if(e->tick()){
-                life -= e->getDamage();
-                delete e;
-                it1 = enemies.erase(it1);
-            }else it1++;
+        for(unsigned int i=0; i<velocity; i++){ // TODO: Put here new enemies
+            auto it1 = enemies.begin();
+            while(it1 != enemies.end()){
+                Enemy* e = *it1;
+                if(e->tick()){
+                    life -= e->getDamage();
+                    delete e;
+                    it1 = enemies.erase(it1);
+                }else it1++;
 
-            if(life<=0){
-                money = 0;
-                clearTowers();
-                clearEntities();
+                if(life<=0){
+                    money = 0;
+                    clearTowers();
+                    clearEntities();
+                }
             }
+            auto it2 = entities.begin();
+            while(it2 != entities.end()){
+                Entity* e = *it2;
+                if(e->tick()){
+                    delete e;
+                    it2 = entities.erase(it2);
+                }else it2++;
+            }
+            for(Tower* t : towers){
+                t->tick();
+            }
+
+            if(tickCount%400 == 1)
+                enemies.push_back(new InhibitorEnemy(1.0, 30+tickCount/500, 1));
+            else if(tickCount%20 == 1)
+                enemies.push_back(new BasicEnemy(1.0 + (double)(rand()%10)/10.0, 15+tickCount/500, 1));
+
+            ++tickCount;
         }
-        auto it2 = entities.begin();
-        while(it2 != entities.end()){
-            Entity* e = *it2;
-            if(e->tick()){
-                delete e;
-                it2 = entities.erase(it2);
-            }else it2++;
-        }
-        for(Tower* t : towers)
-            t->tick();
+
         return false;
     }
 
@@ -78,7 +97,7 @@ namespace Game{
             glBegin(GL_LINES);
             for(int i=0; i<=sizeX; i++){
                 glVertex2i(i*pixelsPerSquare, 0);
-                glVertex2i(i*pixelsPerSquare, sizeX*pixelsPerSquare);
+                glVertex2i(i*pixelsPerSquare, sizeY*pixelsPerSquare);
 
                 glVertex2i(0, i*pixelsPerSquare);
                 glVertex2i(sizeX*pixelsPerSquare, i*pixelsPerSquare);
@@ -88,14 +107,13 @@ namespace Game{
 
         for(Enemy* e : enemies)
             e->draw(window);
-
         for(Entity* e : entities)
             e->draw(window);
-        for(Entity* e : entities)
-            e->drawOver(window);
-
         for(Tower* t : towers)
             t->draw(window);
+
+        for(Entity* e : entities)
+            e->drawOver(window);
         for(Tower* t : towers)
             t->drawOver(window);
 
@@ -189,6 +207,13 @@ namespace Game{
             text.setPosition(window->getSize().x-bounds.width-10, 250);
             window->draw(text);
 
+            text.setString("Restart (Enter)");
+            text.setColor(sf::Color(200,200,200));
+            text.setCharacterSize(20);
+            bounds = text.getGlobalBounds();
+            text.setPosition(window->getSize().x-bounds.width-10, 310);
+            window->draw(text);
+
         window->popGLStates();
     }
 
@@ -241,7 +266,7 @@ namespace Game{
         return enemies.erase(enemy);
     }
 
-    bool isInRange(Vec2i position, double minRange, double maxRange, Enemy* enemy){
+    bool isInRange(Vec2d position, double minRange, double maxRange, Enemy* enemy){
         if(maxRange<0)
             return true;
         if(maxRange<minRange)
@@ -255,7 +280,7 @@ namespace Game{
         int index = -1;
         double t = -1;
 
-        Vec2i p = Vec2i(((double)tower->getPosition().x+0.5)*Game::pixelsPerSquare,
+        Vec2d p = Vec2i(((double)tower->getPosition().x+0.5)*Game::pixelsPerSquare,
                         ((double)tower->getPosition().y+0.5)*Game::pixelsPerSquare);
 
         switch(tower->getPriority()){
@@ -370,7 +395,7 @@ namespace Game{
         return it;
     }
 
-    std::list< std::list<Enemy*>::iterator > findEnemiesInRange(Vec2i position, double minRange, double maxRange){
+    std::list< std::list<Enemy*>::iterator > findEnemiesInRange(Vec2d position, double minRange, double maxRange){
         std::list< std::list<Enemy*>::iterator > ret;
         for(auto it = enemies.begin();  it!=enemies.end(); it++){
             if(isInRange(position, minRange, maxRange, *it))
@@ -409,18 +434,24 @@ namespace Game{
 
 
     void clearTowers(){
-        for(auto it = towers.begin(); it!=towers.end();)
+        for(auto it = towers.begin(); it!=towers.end();){
+            delete *it;
             it = removeTower(it);
+        }
     }
 
     void clearEntities(){
-        for(auto it = entities.begin(); it!=entities.end();)
+        for(auto it = entities.begin(); it!=entities.end();){
+            delete *it;
             it = entities.erase(it);
+        }
     }
 
     void clearEnemies(){
-        for(auto it = enemies.begin(); it!=enemies.end();)
+        for(auto it = enemies.begin(); it!=enemies.end();){
+            delete *it;
             it = enemies.erase(it);
+        }
     }
 
     void killEnemies(){

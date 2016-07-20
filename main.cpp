@@ -18,11 +18,6 @@
 #include "towers/SniperTower.h"
 #include "towers/FlameRingTower.h"
 
-/// Enemies (TEMPORAL, will be replaced by some Rounds engine
-#include "enemies/BasicEnemy.h"
-#include "enemies/InhibitorEnemy.h"
-#include "enemies/InmortalEnemy.h"
-
 using namespace std;
 
 void initializeGame(){
@@ -68,17 +63,15 @@ void initializeGame(){
 
     Game::life = 20;
     Game::money = 1500;
-
+    Game::tickCount = 0;
 }
 
 void freeGame(){
-    delete Game::towerManager;
-    for(Enemy* e : Game::enemies)
-        delete e;
-    Game::enemies.clear();
-    for(Tower* t : Game::towers)
-        delete t;
-    Game::towers.clear();
+    if(Game::towerManager != nullptr)
+        delete Game::towerManager;
+    Game::clearEnemies();
+    Game::clearEntities();
+    Game::clearTowers();
 }
 
 int main(){
@@ -106,10 +99,6 @@ int main(){
 
     Resources::loadAll();
 
-    int tickCount = 0;
-
-    double lastLife = 0;
-
     bool paused = false;
 
     while(running && window.isOpen()){
@@ -127,6 +116,13 @@ int main(){
                 keys[ev.key.code] = true;
                 if(ev.key.code == sf::Keyboard::Space){
                     paused = !paused;
+                }else if(ev.key.code == sf::Keyboard::Return){
+                    Game::clearEnemies();
+                    Game::clearEntities();
+                    Game::clearTowers();
+                    Game::life = 20;
+                    Game::money = 1500;
+                    Game::tickCount = 0;
                 }
                 break;
             case sf::Event::KeyReleased:
@@ -206,22 +202,10 @@ int main(){
 
         this_thread::sleep_for(chrono::milliseconds(10));
 
-        if(tickCount%20==0)
+        if(Game::tickCount%20==0)
             window.setTitle(("Tower Defense + (" + to_string(1000/((clock()-cl)*1000/CLOCKS_PER_SEC + 1)) + " fps)").c_str());
 
-        if(lastLife != Game::life){
-            cout << "Vida: " << Game::life << endl;
-            lastLife = Game::life;
-            if(lastLife <= 0)
-                cout << "DEAD" << endl;
-        }
         if(!paused && Game::life>0){
-            tickCount += 1;
-            if(tickCount%400 == 1)
-                Game::enemies.push_back(new InhibitorEnemy(1.0, 30+tickCount/500, 1));
-            else if(tickCount%20 == 1)
-                Game::enemies.push_back(new BasicEnemy(1.0 + (double)(rand()%10)/10.0, 15+tickCount/500, 1));
-                //Game::enemies.push_back(new InmortalEnemy(1.0, 1));
             if(Game::tick())
                 running = false;
         }

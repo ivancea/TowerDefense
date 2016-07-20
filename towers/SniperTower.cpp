@@ -2,6 +2,8 @@
 
 #include <cmath>
 
+#include <SFML/OpenGL.hpp>
+
 #include "../Resources.h"
 #include "../entities/LaserEntity.h"
 #include "../entities/FireEntity.h"
@@ -12,7 +14,7 @@ SniperTower::SniperTower()
 :_spriteBase(Resources::sniperTower, sf::IntRect(0,0, 32,32), 1,1),
 _spriteCanon(Resources::sniperTower, sf::IntRect(32,0, 32,32), 1,1){
     _id = id;
-    _ticksForShoot = 0;
+    _ticksForShoot = 60;
     _ticksBetweenShoots = 60;
     _damage = 5;
 
@@ -25,14 +27,19 @@ _spriteCanon(Resources::sniperTower, sf::IntRect(32,0, 32,32), 1,1){
     _spriteCanon.scale(Game::pixelsPerSquare/32.0, Game::pixelsPerSquare/32.0);
 }
 
-TowerEvent SniperTower::tick(){
-    Vec2d pos = Game::getRealPosition(_position);
-    _spriteBase.setPosition(pos.x, pos.y); // TODO: setPosition of tower as virtual?
+void  SniperTower::setPosition(Vec2i position){
+    Tower::setPosition(position);
+    Vec2d pos = Game::getRealPosition(position);
+    _spriteBase.setPosition(pos.x, pos.y);
     _spriteCanon.setPosition(pos.x, pos.y);
+}
 
+TowerEvent SniperTower::tick(){
     if(_ticksForShoot<=0){
         auto it = Game::findTarget(this);
         if(it != Game::enemies.end()){
+            Vec2d pos = Game::getRealPosition(_position);
+
             Game::entities.push_back(new LaserEntity(pos, (*it)->getPosition(), 10));
             Game::entities.push_back(new FireEntity((*it)->getPosition(), 50));
 
@@ -49,16 +56,6 @@ TowerEvent SniperTower::tick(){
     }else --_ticksForShoot;
     return TowerEvent::None;
 }
-
-/*void SniperTower::draw(sf::RenderWindow* window) const{
-    int t = Game::pixelsPerSquare/2-2;
-    glColor3ub(_ticksForShoot*3,0,255);
-    glBegin(GL_POLYGON);
-        for(float i=0; i<PI*2.0; i+=PI/360)
-            glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(i)*t,
-                       _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*t);
-    glEnd();
-}*/
 
 void SniperTower::draw(sf::RenderWindow* window) const{
     window->pushGLStates();

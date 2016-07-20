@@ -1,10 +1,11 @@
 #ifndef ROCKET_H
 #define ROCKET_H
 
+#include "../../Entity.h"
 #include "../../Vec.hpp"
 #include "../../Enemy.h"
 
-class Rocket{
+class Rocket : public Entity{
 
     Vec2d _position;
 
@@ -28,8 +29,8 @@ public:
 
     void damageEnemies() const;
 
-    bool tick();
-    void draw(sf::RenderWindow* window) const;
+    virtual bool tick();
+    virtual void drawOver(sf::RenderWindow* window) const;
 };
 
 #endif // ROCKET_H
