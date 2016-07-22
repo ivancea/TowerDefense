@@ -11,22 +11,21 @@ BasicTowerManager::BasicTowerManager(){
     SniperTower::id = 2;
     RocketTower::id = 3;
     FlameRingTower::id = 4;
+
     _towerTypes.push_back(new TowerType(new SoldierTower(),
                                    "Soldier",
                                    "Fast shots, low damage",
-                                   150, nullptr, nullptr));
+                                   150));
     _towerTypes.push_back(new TowerType(new SniperTower(),
                                    "Sniper",
                                    "High damage and global range, but low attack rate",
-                                   200, nullptr, nullptr));
+                                   200));
     _towerTypes.push_back(new TowerType(new RocketTower(),
                                    "Rocket",
                                    "Ground area damage",
-                                   300, nullptr, nullptr));
+                                   300));
     _towerTypes.push_back(new TowerType(new FlameRingTower(),
                                    "Flame Ring",
                                    "Area damage, low range",
-                                   400, nullptr, nullptr));
-
-    _lastError = 0;
+                                   400));
 }

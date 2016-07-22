@@ -87,8 +87,11 @@ int main(){
 
 
     window.create(sf::VideoMode(Game::map.size()*Game::pixelsPerSquare + 200,
-                                Game::map[0].size()*Game::pixelsPerSquare), "Tower Defense", sf::Style::Titlebar|sf::Style::Close);
+                                Game::map[0].size()*Game::pixelsPerSquare + 200), "Tower Defense", sf::Style::Titlebar|sf::Style::Close);
     window.setFramerateLimit(60);
+
+    sf::IntRect towersZone(Game::map.size()*Game::pixelsPerSquare+1,100, 198,399),
+                upgradesZone(1,Game::map[0].size()*Game::pixelsPerSquare+1, 698,198);
 
     glViewport(0, 0, window.getSize().x, window.getSize().y);
     glOrtho(0,window.getSize().x, window.getSize().y,0, 0,1);
@@ -136,7 +139,7 @@ int main(){
                             Tower* t = nullptr;
                             if(keys[sf::Keyboard::Q]){
                                 if(Game::money>=150){
-                                    t = new SoldierTower();
+                                    t = Game::towerManager->getTowerType(1)->model->clone();//new SoldierTower();
                                     Game::money -= 150;
                                 }
                             }else if(keys[sf::Keyboard::W]){
@@ -189,18 +192,27 @@ int main(){
             }
         }
 
-        clock_t cl = clock();
-
         window.clear();
         glMatrixMode(GL_PROJECTION);
         glLoadIdentity();
+        window.pushGLStates();
+            sf::RectangleShape rect;
+            rect.setOutlineColor(sf::Color::White);
+            rect.setOutlineThickness(1);
+            rect.setFillColor(sf::Color::Blue);
+            rect.setPosition(towersZone.left, towersZone.top);
+            rect.setSize(sf::Vector2f(towersZone.width, towersZone.height));
+            window.draw(rect);
+            rect.setFillColor(sf::Color::Green);
+            rect.setPosition(upgradesZone.left, upgradesZone.top);
+            rect.setSize(sf::Vector2f(upgradesZone.width, upgradesZone.height));
+            window.draw(rect);
+        window.popGLStates();
         Game::draw(&window);
+
         window.display();
 
         this_thread::sleep_for(chrono::milliseconds(10));
-
-        if(Game::tickCount%20==0)
-            window.setTitle(("Tower Defense + (" + to_string(1000/((clock()-cl)*1000/CLOCKS_PER_SEC + 1)) + " fps)").c_str());
 
         if(!paused){
             if(Game::tick())

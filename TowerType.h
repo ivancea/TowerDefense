@@ -10,14 +10,12 @@ struct TowerType;
 
 struct TowerType{
     Tower* model;
-    std::string name,
-           description;
+    std::string name;
+    std::string description;
     int cost;
-    sf::Texture *baseTexture,
-                *canonTexture;
 
     TowerType();
-    TowerType(Tower* model, std::string name, std::string description, int cost, sf::Texture* baseTexture, sf::Texture* canonTexture);
+    TowerType(Tower* model, std::string name, std::string description, int cost);
 };
 
 #endif // TOWERTYPE_H

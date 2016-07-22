@@ -26,6 +26,8 @@ public:
 
     virtual TowerEvent tick();
     virtual void draw(sf::RenderWindow* window) const;
+
+    virtual Tower* clone() const;
 };
 
 #endif // ROCKETTOWER_H

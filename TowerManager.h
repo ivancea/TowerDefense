@@ -8,10 +8,9 @@ class TowerManager;
 
 #include "TowerType.h"
 
-class TowerManager{ /// TODO: redo clone method (or change schema)
+class TowerManager{
 
 protected:
-    int _lastError;
     std::list<TowerType*> _towerTypes;
 
 public:

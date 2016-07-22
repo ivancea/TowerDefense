@@ -65,3 +65,7 @@ void SoldierTower::drawOver(sf::RenderWindow* window) const {
     for(Bullet* b : _bullets)
         b->draw(window);
 }
+
+Tower* SoldierTower::clone() const {
+    return new SoldierTower();
+}

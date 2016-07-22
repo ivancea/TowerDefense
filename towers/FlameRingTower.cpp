@@ -41,3 +41,7 @@ void FlameRingTower::draw(sf::RenderWindow* window) const{
                        _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*t);
     glEnd();
 }
+
+Tower* FlameRingTower::clone() const {
+    return new FlameRingTower();
+}

@@ -65,6 +65,8 @@ public:
     virtual TowerEvent tick() = 0;
     virtual void draw(sf::RenderWindow* window) const {};
     virtual void drawOver(sf::RenderWindow* window) const {};
+
+    virtual Tower* clone() const = 0;
 };
 
 #endif // TOWER_H

@@ -73,3 +73,6 @@ void SniperTower::drawOver(sf::RenderWindow* window) const{
     window->popGLStates();
 }
 
+Tower* SniperTower::clone() const {
+    return new SniperTower();
+}

@@ -26,6 +26,8 @@ public:
     virtual TowerEvent tick();
     virtual void draw(sf::RenderWindow* window) const;
     virtual void drawOver(sf::RenderWindow* window) const;
+
+    virtual Tower* clone() const;
 };
 
 #endif // SOLDIERTOWER_H

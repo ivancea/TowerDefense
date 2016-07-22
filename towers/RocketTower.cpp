@@ -56,3 +56,7 @@ void RocketTower::draw(sf::RenderWindow* window) const {
                        _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i+PI)*t);
     glEnd();
 }
+
+Tower* RocketTower::clone() const {
+    return new RocketTower();
+}
