@@ -5,7 +5,7 @@
 #include <SFML/OpenGL.hpp>
 
 FireEntity::FireEntity(Vec2d position, int ticksAlive)
-:_sprite(Resources::fire, 8,4){
+:_sprite(*Resources::getTexture("sprites/fire.png"), 8,4){
     _position = position;
     _ticksAlive = ticksAlive;
     _ticksLived = 0;

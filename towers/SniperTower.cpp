@@ -11,8 +11,8 @@
 int SniperTower::id = -1;
 
 SniperTower::SniperTower()
-:_spriteBase(Resources::sniperTower, sf::IntRect(0,0, 32,32), 1,1),
-_spriteCanon(Resources::sniperTower, sf::IntRect(32,0, 32,32), 1,1){
+:_spriteBase(*Resources::getTexture("sprites/sniperTower.png"), sf::IntRect(0,0, 32,32), 1,1),
+_spriteCanon(*Resources::getTexture("sprites/sniperTower.png"), sf::IntRect(32,0, 32,32), 1,1){
     _id = id;
     _ticksForShoot = 60;
     _ticksBetweenShoots = 60;

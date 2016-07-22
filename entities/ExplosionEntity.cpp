@@ -6,7 +6,7 @@
 #include <SFML/OpenGL.hpp>
 
 ExplosionEntity::ExplosionEntity(Vec2d position, double range, int ticksAlive)
-:_sprite(Resources::explosion, 6,7, 37){
+:_sprite(*Resources::getTexture("sprites/explosion.png"), 6,7, 37){
     _position = position;
     _range = range;
     _ticksAlive = ticksAlive;
@@ -22,7 +22,7 @@ bool ExplosionEntity::tick(){
     return _ticksLived++ >= _ticksAlive;
 }
 
-void ExplosionEntity::draw(sf::RenderWindow* window) const{
+void ExplosionEntity::drawOver(sf::RenderWindow* window) const{
     window->pushGLStates();
 
         window->draw(_sprite);

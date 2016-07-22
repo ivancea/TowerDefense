@@ -5,10 +5,13 @@
 
 #include "Resources.h"
 
+#include "entities/ExplosionEntity.h"
+
 /// Enemies (TEMPORAL, will be replaced by some Rounds engine
 #include "enemies/BasicEnemy.h"
 #include "enemies/InhibitorEnemy.h"
 #include "enemies/InmortalEnemy.h"
+
 
 namespace Game{
 
@@ -36,9 +39,10 @@ namespace Game{
     Tower* selectedTower = nullptr;
 
     bool tick(){
-        for(unsigned int i=0; i<velocity; i++){ // TODO: Put here new enemies
+        for(unsigned int i=0; i<velocity; i++){ // TODO: Put here new enemies with RoundsManager
             auto it1 = enemies.begin();
             while(it1 != enemies.end()){
+                bool lost = life<=0;
                 Enemy* e = *it1;
                 if(e->tick()){
                     life -= e->getDamage();
@@ -46,10 +50,15 @@ namespace Game{
                     it1 = enemies.erase(it1);
                 }else it1++;
 
-                if(life<=0){
+                if(life<=0 && !lost){
                     money = 0;
-                    clearTowers();
                     clearEntities();
+
+                    for(Tower* t:towers){
+                        entities.push_back(new ExplosionEntity(getRealPosition(t->getPosition()), pixelsPerSquare, 200));
+                    }
+
+                    clearTowers();
                 }
             }
             auto it2 = entities.begin();
@@ -64,11 +73,12 @@ namespace Game{
                 t->tick();
             }
 
-            if(tickCount%400 == 1)
-                enemies.push_back(new InhibitorEnemy(1.0, 30+tickCount/500, 1));
-            else if(tickCount%20 == 1)
-                enemies.push_back(new BasicEnemy(1.0 + (double)(rand()%10)/10.0, 15+tickCount/500, 1));
-
+            if(life>0){
+                if(tickCount%400 == 1)
+                    enemies.push_back(new InhibitorEnemy(1.0, 30+tickCount/500, 1));
+                else if(tickCount%20 == 1)
+                    enemies.push_back(new BasicEnemy(1.0 + (double)(rand()%10)/10.0, 15+tickCount/500, 1));
+            }
             ++tickCount;
         }
 
@@ -112,6 +122,8 @@ namespace Game{
         for(Tower* t : towers)
             t->draw(window);
 
+        for(Enemy* e : enemies)
+            e->draw(window);
         for(Entity* e : entities)
             e->drawOver(window);
         for(Tower* t : towers)
@@ -193,7 +205,7 @@ namespace Game{
             text.setPosition(window->getSize().x-bounds.width-10, 160);
             window->draw(text);
 
-            text.setString("FlameRing (R): 300");
+            text.setString("FlameRing (R): 400");
             text.setColor(sf::Color(255,255,255));
             text.setCharacterSize(20);
             bounds = text.getGlobalBounds();

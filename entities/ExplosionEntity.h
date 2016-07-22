@@ -19,7 +19,7 @@ public:
     ExplosionEntity(Vec2d position, double range, int ticksAlive);
 
     virtual bool tick();
-    virtual void draw(sf::RenderWindow* window) const;
+    virtual void drawOver(sf::RenderWindow* window) const;
 };
 
 #endif // EXPLOSIONENTITY_H

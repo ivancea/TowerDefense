@@ -177,6 +177,12 @@
 		<Unit filename="towers/entities/Bullet.h">
 			<Option target="Release" />
 		</Unit>
+		<Unit filename="towers/entities/FlameRing.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="towers/entities/FlameRing.h">
+			<Option target="Release" />
+		</Unit>
 		<Unit filename="towers/entities/Rocket.cpp">
 			<Option target="Release" />
 		</Unit>

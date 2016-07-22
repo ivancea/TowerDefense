@@ -26,7 +26,7 @@ BasicTowerManager::BasicTowerManager(){
     _towerTypes.push_back(new TowerType(new FlameRingTower(),
                                    "Flame Ring",
                                    "Area damage, low range",
-                                   300, nullptr, nullptr));
+                                   400, nullptr, nullptr));
 
     _lastError = 0;
 }

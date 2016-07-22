@@ -21,7 +21,8 @@ public:
     virtual ~Enemy(){}
 
     virtual bool tick();
-    virtual void draw(sf::RenderWindow* window) const = 0;
+    virtual void draw(sf::RenderWindow* window) const {};
+    virtual void drawOver(sf::RenderWindow* window) const {};
 
     virtual bool damage(double n);
     virtual void killed();

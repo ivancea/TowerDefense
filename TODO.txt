@@ -34,3 +34,5 @@ Tower::drawUpgrades and Tower receive upgrades-zone mouse events when selected
 Add RoundController:
     -Call tick() at Game::tick()
     -Add enemies
+
+Load all resources at start. Maybe set file extensions and find files in "resources" folder?

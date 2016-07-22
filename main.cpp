@@ -91,13 +91,10 @@ int main(){
     window.setFramerateLimit(60);
 
     glViewport(0, 0, window.getSize().x, window.getSize().y);
-    glOrtho(0,window.getSize().x, window.getSize().y,0,0,1);
-    glMatrixMode(GL_PROJECTION);
+    glOrtho(0,window.getSize().x, window.getSize().y,0, 0,1);
 
     glEnable (GL_BLEND);
     glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-
-    Resources::loadAll();
 
     bool paused = false;
 
@@ -205,7 +202,7 @@ int main(){
         if(Game::tickCount%20==0)
             window.setTitle(("Tower Defense + (" + to_string(1000/((clock()-cl)*1000/CLOCKS_PER_SEC + 1)) + " fps)").c_str());
 
-        if(!paused && Game::life>0){
+        if(!paused){
             if(Game::tick())
                 running = false;
         }

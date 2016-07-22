@@ -14,7 +14,7 @@ public:
     LaserEntity(Vec2d from, Vec2d to, int ticks);
 
     virtual bool tick();
-    virtual void draw(sf::RenderWindow* window) const;
+    virtual void drawOver(sf::RenderWindow* window) const;
 };
 
 #endif // LASERENTITY_H

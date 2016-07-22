@@ -13,7 +13,7 @@ bool LaserEntity::tick(){
     return _ticksRemaining-- <= 0;
 }
 
-void LaserEntity::draw(sf::RenderWindow* window) const{
+void LaserEntity::drawOver(sf::RenderWindow* window) const{
     glLineWidth(1);
     glColor3ub(255,125,125);
     glBegin(GL_LINES);
