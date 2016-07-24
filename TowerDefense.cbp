@@ -70,6 +70,7 @@
 		</Unit>
 		<Unit filename="MapManager.cpp" />
 		<Unit filename="MapManager.h" />
+		<Unit filename="README.md" />
 		<Unit filename="Resources.cpp">
 			<Option target="Release" />
 		</Unit>
