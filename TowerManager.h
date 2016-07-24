@@ -21,7 +21,7 @@ public:
     virtual TowerType* getTowerType(int id) const;
     virtual int getTowerCost(int id) const;
 
-    virtual Tower* parseEvent(sf::Event event) const;
+    virtual TowerType* parseEvent(sf::Event event, Vec2i mouse, sf::Vector2i point) const;
     virtual sf::Vector2i getDrawRectSize() const;
     virtual void drawTowersPanel(sf::RenderWindow* window, sf::Vector2i point) const;
 };

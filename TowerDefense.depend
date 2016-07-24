@@ -381,12 +381,12 @@
 	"Entity.h"
 	"Vec.hpp"
 
-1469394090 c:\users\ivancea\desktop\github\towerdefense\towermanager.h
+1469404761 c:\users\ivancea\desktop\github\towerdefense\towermanager.h
 	<list>
 	<SFML/Graphics.hpp>
 	"TowerType.h"
 
-1469223463 c:\users\ivancea\desktop\github\towerdefense\towertype.h
+1469403758 c:\users\ivancea\desktop\github\towerdefense\towertype.h
 	<string>
 	<SFML/Graphics.hpp>
 	"Tower.h"
@@ -441,11 +441,12 @@
 	<fstream>
 	"Vec.hpp"
 
-1469397976 source:c:\users\ivancea\desktop\github\towerdefense\towermanager.cpp
+1469404761 source:c:\users\ivancea\desktop\github\towerdefense\towermanager.cpp
 	"TowerManager.h"
+	<vector>
 	"Game.h"
 
-1469397850 source:c:\users\ivancea\desktop\github\towerdefense\towermanagers\basictowermanager.cpp
+1469403620 source:c:\users\ivancea\desktop\github\towerdefense\towermanagers\basictowermanager.cpp
 	"BasicTowerManager.h"
 	"SoldierTower.h"
 	"SniperTower.h"
@@ -507,7 +508,7 @@
 1469396355 source:c:\users\ivancea\desktop\github\towerdefense\towers\rockettower.cpp
 	"RocketTower.h"
 
-1469398707 source:c:\users\ivancea\desktop\github\towerdefense\towers\snipertower.cpp
+1469405529 source:c:\users\ivancea\desktop\github\towerdefense\towers\snipertower.cpp
 	"SniperTower.h"
 	<cmath>
 	<SFML/OpenGL.hpp>
@@ -528,7 +529,7 @@
 1469223329 source:c:\users\ivancea\desktop\github\towerdefense\towertype.cpp
 	"TowerType.h"
 
-1469398870 source:c:\users\ivancea\desktop\github\towerdefense\main.cpp
+1469405265 source:c:\users\ivancea\desktop\github\towerdefense\main.cpp
 	<iostream>
 	<map>
 	<cmath>

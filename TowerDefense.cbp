@@ -11,7 +11,6 @@
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option use_console_runner="0" />
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="towers" />
@@ -88,6 +87,9 @@
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="Tooltip.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Tower.cpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="Tower.h">

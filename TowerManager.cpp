@@ -1,5 +1,7 @@
 #include "TowerManager.h"
 
+#include <vector>
+
 #include "Game.h"
 
 TowerManager::~TowerManager(){
@@ -32,8 +34,61 @@ int TowerManager::getTowerCost(int id) const{
     return 0;
 }
 
-Tower* TowerManager::parseEvent(sf::Event event) const{
+TowerType* TowerManager::parseEvent(sf::Event event, Vec2i mouse, sf::Vector2i point) const{
+    static const std::vector<sf::Keyboard::Key> bindings({
+        sf::Keyboard::Q,sf::Keyboard::W,sf::Keyboard::E,sf::Keyboard::R,
+        sf::Keyboard::A,sf::Keyboard::S,sf::Keyboard::D,sf::Keyboard::F
+    });
 
+    if(_towerTypes.size()==0)
+        return nullptr;
+    Vec2d p(point.x + 15, point.y + 15);
+    Vec2i t;
+    switch(event.type){
+    case sf::Event::MouseMoved:
+        t.x = (mouse.x-p.x)/(10+Game::pixelsPerSquare);
+        t.y = (mouse.y-p.y)/(10+Game::pixelsPerSquare);
+        if(mouse.x>=p.x && mouse.y>=p.y && t.x<=1 && t.y<=(_towerTypes.size()-1)/2
+        && mouse.x-p.x-t.x*(10+Game::pixelsPerSquare) <= Game::pixelsPerSquare
+        && mouse.y-p.y-t.y*(10+Game::pixelsPerSquare) <= Game::pixelsPerSquare
+        && t.y*2 + t.x < _towerTypes.size()){
+            auto it = _towerTypes.begin();
+            for(int i = t.y*2 + t.x; i>0; i--)
+                it++;
+            return *it;
+        }
+    case sf::Event::MouseButtonPressed:
+        if(event.mouseButton.button == sf::Mouse::Left){
+            t.x = (mouse.x-p.x)/(10+Game::pixelsPerSquare);
+            t.y = (mouse.y-p.y)/(10+Game::pixelsPerSquare);
+            if(mouse.x>=p.x && mouse.y>=p.y && t.x<=1 && t.y<=(_towerTypes.size()-1)/2
+            && mouse.x-p.x-t.x*(10+Game::pixelsPerSquare) <= Game::pixelsPerSquare
+            && mouse.y-p.y-t.y*(10+Game::pixelsPerSquare) <= Game::pixelsPerSquare
+            && t.y*2 + t.x < _towerTypes.size()){
+                auto it = _towerTypes.begin();
+                for(int i = t.y*2 + t.x; i>0; i--)
+                    it++;
+                return *it;
+            }
+        }
+        break;
+    case sf::Event::KeyPressed:
+        for(int i=0; i<bindings.size(); i++)
+            if(bindings[i] == event.key.code){
+                if(i<_towerTypes.size()){
+                    auto it = _towerTypes.begin();
+                    while(i-->0)
+                        ++it;
+                    return *it;
+                }
+                break;
+            }
+        break;
+    default:
+        break;
+    }
+
+    return nullptr;
 }
 
 sf::Vector2i TowerManager::getDrawRectSize() const{
@@ -67,7 +122,7 @@ void TowerManager::drawTowersPanel(sf::RenderWindow* window, sf::Vector2i point)
     for(TowerType* tt:_towerTypes){
         if(tt==nullptr || tt->model==nullptr)
             continue;
-        p.x = point.x + 15 + Game::pixelsPerSquare/2 + (i%2!=0? 10+Game::pixelsPerSquare:0);
+        p.x = point.x + 15 + Game::pixelsPerSquare/2 + (i%2)*(10+Game::pixelsPerSquare);
         p.y = point.y + 15 + Game::pixelsPerSquare/2 + (i/2)*(Game::pixelsPerSquare+10);
 
         tt->model->draw(window, p);

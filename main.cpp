@@ -78,28 +78,14 @@ void freeGame(){
     Game::clearTowers();
 }
 
-void setTooltip(Tooltip*& tooltip, Vec2i mouse){
-    Vec2i p = Vec2i(mouse.x,mouse.y)/Game::pixelsPerSquare;
-    bool mustDelete = true;
-
-    if(Game::map.size()>p.x && p.x>=0
-    && Game::map[p.x].size()>p.y && p.y>=0
-    && Game::map[p.x][p.y] == Game::TileType::TowerTile){
-        Tower* tower = Game::getTower(p);
-        if(tower!=nullptr){
-            TowerType* tt = Game::towerManager->getTowerType(tower->getId());
-            if(tt!=nullptr){
-                if(tooltip==nullptr)
-                    tooltip = new Tooltip();
-                tooltip->setPoint(mouse);
-                tooltip->setTitle(tt->name);
-                tooltip->setBody(tt->description + "\n\nCost: " + to_string(tt->cost));
-                mustDelete = false;
-            }
-        }
-    }
-
-    if(tooltip!=nullptr && mustDelete){
+void setTooltip(Tooltip*& tooltip, Vec2i mouse, TowerType* tt){
+    if(tt!=nullptr){
+        if(tooltip==nullptr)
+            tooltip = new Tooltip();
+        tooltip->setPoint(mouse);
+        tooltip->setTitle(tt->name);
+        tooltip->setBody(tt->description + "\n\nCost: " + to_string(tt->cost));
+    }else if(tooltip!=nullptr){
         delete tooltip;
         tooltip = nullptr;
     }
@@ -137,6 +123,7 @@ int main(){
     bool paused = false;
 
     Tooltip* tooltip = nullptr;
+    TowerType* placingTower = nullptr;
 
     while(running && window.isOpen()){
         sf::Event ev;
@@ -148,7 +135,6 @@ int main(){
             case sf::Event::MouseMoved:
                 mouse.x = ev.mouseMove.x;
                 mouse.y = ev.mouseMove.y;
-                setTooltip(tooltip, mouse);
                 break;
             case sf::Event::KeyPressed:
                 keys[ev.key.code] = true;
@@ -174,31 +160,9 @@ int main(){
                     && Game::map[p.x].size()>p.y && p.y>=0){
                         bool mustDeselect = true;
                         if(Game::map[p.x][p.y] == Game::TileType::EmptyTile){
-                            Tower* t = nullptr;
-                            if(keys[sf::Keyboard::Q]){
-                                if(Game::money>=150){
-                                    t = Game::towerManager->getTowerType(1)->model->clone();//new SoldierTower();
-                                    Game::money -= 150;
-                                }
-                            }else if(keys[sf::Keyboard::W]){
-                                if(Game::money>=200){
-                                    t = new SniperTower();
-                                    t->setPriority(MoreLife);
-                                    Game::money -= 200;
-                                }
-                            }else if(keys[sf::Keyboard::E]){
-                                if(Game::money>=300){
-                                    t = new RocketTower();
-                                    t->setPriority(Priority::MoreEnemiesTogether);
-                                    Game::money -= 300;
-                                }
-                            }else if(keys[sf::Keyboard::R]){
-                                if(Game::money>=300){
-                                    t = new FlameRingTower();
-                                    Game::money -= 300;
-                                }
-                            }
-                            if(t!=nullptr){
+                            if(placingTower != nullptr && Game::money >= placingTower->cost){
+                                Game::money -= placingTower->cost;
+                                Tower* t = placingTower->model->clone();
                                 t->setPosition(p);
                                 if(!Game::putTower(t))
                                     delete t;
@@ -212,6 +176,7 @@ int main(){
                         if(mustDeselect)
                             Game::selectedTower = nullptr;
                     }
+                    placingTower = nullptr;
                 }else if(ev.mouseButton.button == sf::Mouse::Right){
                     Vec2i p = Vec2i(mouse.x,mouse.y)/Game::pixelsPerSquare;
                     if(Game::map[p.x][p.y] == Game::TileType::TowerTile){
@@ -224,11 +189,19 @@ int main(){
                         }
                     }
                 }
-                setTooltip(tooltip, mouse);
                 break;
             default:
                 break;
             }
+
+            TowerType* tt = Game::towerManager->parseEvent(ev, mouse, sf::Vector2i(towersPanel.left,towersPanel.top));
+            if(ev.type==sf::Event::MouseMoved)
+                setTooltip(tooltip, mouse, tt);
+            else if(tt!=nullptr){
+                if(tt->cost <= Game::money)
+                    placingTower = tt;
+            }
+
         }
 
         window.clear();
@@ -248,6 +221,11 @@ int main(){
         Game::towerManager->drawTowersPanel(&window, sf::Vector2i(towersPanel.left,towersPanel.top));
 
         Game::draw(&window);
+
+        if(placingTower!=nullptr){
+            placingTower->model->draw(&window, mouse);
+            placingTower->model->drawOver(&window, mouse);
+        }
 
         if(tooltip!=nullptr)
             tooltip->draw(&window);

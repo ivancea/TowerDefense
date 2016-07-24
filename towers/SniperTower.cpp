@@ -43,8 +43,8 @@ TowerEvent SniperTower::tick(){
             Game::entities.push_back(new FireEntity((*it)->getPosition(), 50));
 
             Vec2d temp((*it)->getPosition()-pos);
-            if(temp.x!=0)
-                _spriteCanon.setRotation(90 + atan2(temp.y, temp.x) * 180/PI);
+
+            _spriteCanon.setRotation(90 + atan2(temp.y, temp.x) * 180/PI);
 
             if((*it)->damage(_damage)){
                 Game::kill(it);
