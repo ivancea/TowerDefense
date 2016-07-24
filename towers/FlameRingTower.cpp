@@ -32,13 +32,13 @@ TowerEvent FlameRingTower::tick(){
     return TowerEvent::None;
 }
 
-void FlameRingTower::draw(sf::RenderWindow* window) const{
+void FlameRingTower::draw(sf::RenderWindow* window, Vec2d point) const{
     int t = Game::pixelsPerSquare/2-2;
     glColor3ub(255,0,0);
     glBegin(GL_POLYGON);
         for(float i=0; i<PI*2.01; i+=PI/360)
-            glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(i)*t,
-                       _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*t);
+            glVertex2i(point.x+sin(i)*t,
+                       point.y+cos(i)*t);
     glEnd();
 }
 

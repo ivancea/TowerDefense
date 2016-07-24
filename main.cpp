@@ -22,9 +22,12 @@
 using namespace std;
 
 void initializeGame(){
-    Game::towerManager = new BasicTowerManager();
     vector< vector<bool> > tileMap;
     int n = MapManager::load(tileMap, Game::pixelsPerSquare, Game::enemiesRoute, "map.tdm");
+
+    /// Always after initialize Game::pixelsPerSquare
+    Game::towerManager = new BasicTowerManager();
+
     if(n==0){
         Game::map.resize(tileMap.size(), vector<Game::TileType>(tileMap[0].size(), Game::TileType::EmptyTile));
         for(int i=0; i<tileMap.size(); i++)
@@ -114,12 +117,16 @@ int main(){
         Game::map.push_back(vector<Game::TileType>(1, Game::TileType::EmptyTile));
 
 
-    window.create(sf::VideoMode(Game::map.size()*Game::pixelsPerSquare + 200,
-                                Game::map[0].size()*Game::pixelsPerSquare + 200), "Tower Defense", sf::Style::Titlebar|sf::Style::Close);
+    sf::IntRect towersPanel(sf::Vector2i(Game::map.size()*Game::pixelsPerSquare,100),
+                            Game::towerManager->getDrawRectSize()),
+                upgradesPanel(0,Game::map[0].size()*Game::pixelsPerSquare,
+                              towersPanel.left+towersPanel.width,200);
+
+
+    window.create(sf::VideoMode(upgradesPanel.left+upgradesPanel.width,
+                                upgradesPanel.top+upgradesPanel.height), "Tower Defense", sf::Style::Titlebar|sf::Style::Close);
     window.setFramerateLimit(60);
 
-    sf::IntRect towersZone(Game::map.size()*Game::pixelsPerSquare+1,100, 198,399),
-                upgradesZone(1,Game::map[0].size()*Game::pixelsPerSquare+1, 698,198);
 
     glViewport(0, 0, window.getSize().x, window.getSize().y);
     glOrtho(0,window.getSize().x, window.getSize().y,0, 0,1);
@@ -232,15 +239,14 @@ int main(){
             sf::RectangleShape rect;
             rect.setOutlineColor(sf::Color::White);
             rect.setOutlineThickness(1);
-            rect.setFillColor(sf::Color::Blue);
-            rect.setPosition(towersZone.left, towersZone.top);
-            rect.setSize(sf::Vector2f(towersZone.width, towersZone.height));
-            window.draw(rect);
             rect.setFillColor(sf::Color::Green);
-            rect.setPosition(upgradesZone.left, upgradesZone.top);
-            rect.setSize(sf::Vector2f(upgradesZone.width, upgradesZone.height));
+            rect.setPosition(upgradesPanel.left, upgradesPanel.top);
+            rect.setSize(sf::Vector2f(upgradesPanel.width, upgradesPanel.height));
             window.draw(rect);
         window.popGLStates();
+
+        Game::towerManager->drawTowersPanel(&window, sf::Vector2i(towersPanel.left,towersPanel.top));
+
         Game::draw(&window);
 
         if(tooltip!=nullptr)

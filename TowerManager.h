@@ -3,8 +3,8 @@
 
 class TowerManager;
 
-#include <string>
 #include <list>
+#include <SFML/Graphics.hpp>
 
 #include "TowerType.h"
 
@@ -16,8 +16,14 @@ protected:
 public:
     virtual ~TowerManager();
 
-    virtual TowerType* getTowerType(int id);
-    virtual int getTowerCost(int id);
+    int getTowerCount() const;
+
+    virtual TowerType* getTowerType(int id) const;
+    virtual int getTowerCost(int id) const;
+
+    virtual Tower* parseEvent(sf::Event event) const;
+    virtual sf::Vector2i getDrawRectSize() const;
+    virtual void drawTowersPanel(sf::RenderWindow* window, sf::Vector2i point) const;
 };
 
 #endif // TOWERMANAGER_H

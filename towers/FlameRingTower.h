@@ -20,7 +20,7 @@ public:
     FlameRingTower();
 
     virtual TowerEvent tick();
-    virtual void draw(sf::RenderWindow* window) const;
+    virtual void draw(sf::RenderWindow* window, Vec2d point) const;
 
     virtual Tower* clone() const;
 };

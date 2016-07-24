@@ -10,9 +10,7 @@
 
 int SniperTower::id = -1;
 
-SniperTower::SniperTower()
-:_spriteBase(*Resources::getTexture("sprites/sniperTower.png"), sf::IntRect(0,0, 32,32), 1,1),
-_spriteCanon(*Resources::getTexture("sprites/sniperTower.png"), sf::IntRect(32,0, 32,32), 1,1){
+SniperTower::SniperTower(){
     _id = id;
     _ticksForShoot = 60;
     _ticksBetweenShoots = 60;
@@ -21,17 +19,18 @@ _spriteCanon(*Resources::getTexture("sprites/sniperTower.png"), sf::IntRect(32,0
     _minRange = 0;
     _maxRange = -1;
 
+    sf::Texture* tex = Resources::getTexture("sprites/sniperTower.png");
+    if(tex!=nullptr){
+        _spriteBase.setTexture(*tex);
+        _spriteCanon.setTexture(*tex);
+    }
+    _spriteBase.setTextureRect(sf::IntRect(0,0, 32,32));
     _spriteBase.setOrigin(16,16);
     _spriteBase.scale(Game::pixelsPerSquare/32.0, Game::pixelsPerSquare/32.0);
+
+    _spriteCanon.setTextureRect(sf::IntRect(32,0, 32,32));
     _spriteCanon.setOrigin(16,26);
     _spriteCanon.scale(Game::pixelsPerSquare/32.0, Game::pixelsPerSquare/32.0);
-}
-
-void  SniperTower::setPosition(Vec2i position){
-    Tower::setPosition(position);
-    Vec2d pos = Game::getRealPosition(position);
-    _spriteBase.setPosition(pos.x, pos.y);
-    _spriteCanon.setPosition(pos.x, pos.y);
 }
 
 TowerEvent SniperTower::tick(){
@@ -57,18 +56,22 @@ TowerEvent SniperTower::tick(){
     return TowerEvent::None;
 }
 
-void SniperTower::draw(sf::RenderWindow* window) const{
+void SniperTower::draw(sf::RenderWindow* window, Vec2d point) const{
     window->pushGLStates();
 
-        window->draw(_spriteBase);
+        sf::RenderStates rs;
+        rs.transform.translate(point.x, point.y);
+        window->draw(_spriteBase, rs);
 
     window->popGLStates();
 }
 
-void SniperTower::drawOver(sf::RenderWindow* window) const{
+void SniperTower::drawOver(sf::RenderWindow* window, Vec2d point) const{
     window->pushGLStates();
 
-        window->draw(_spriteCanon);
+        sf::RenderStates rs;
+        rs.transform.translate(point.x, point.y);
+        window->draw(_spriteCanon, rs);
 
     window->popGLStates();
 }

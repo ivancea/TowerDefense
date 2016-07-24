@@ -43,7 +43,7 @@ bool Bullet::tick(){
     return ret;
 }
 
-void Bullet::draw(sf::RenderWindow* window) const{
+void Bullet::drawOver(sf::RenderWindow* window) const{
     glColor3ub(100,100,255);
     glBegin(GL_POLYGON);
         for(float i=0; i<PI*2.0; i+=PI/360)

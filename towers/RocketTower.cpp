@@ -38,22 +38,21 @@ TowerEvent RocketTower::tick(){
     return TowerEvent::None;
 }
 
-void RocketTower::draw(sf::RenderWindow* window) const {
+void RocketTower::draw(sf::RenderWindow* window, Vec2d point) const {
     double t = Game::pixelsPerSquare/2-2;
     glColor3ub(255,0,127);
     glBegin(GL_POLYGON);
         for(float i=0; i<PI*2.01; i+=PI/360)
-            glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(i)*t,
-                       _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i)*t);
+            glVertex2i(point.x+sin(i)*t,
+                       point.y+cos(i)*t);
     glEnd();
 
     glColor3ub(0,0,127);
     glBegin(GL_POLYGON);
-        glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2,
-                   _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2);
+        glVertex2i(point.x, point.y);
         for(float i=0; i<PI*2.0*((double)_ticksForShoot/(double)_ticksBetweenShoots); i+=PI/360)
-            glVertex2i(_position.x*Game::pixelsPerSquare+Game::pixelsPerSquare/2+sin(-i)*t,
-                       _position.y*Game::pixelsPerSquare+Game::pixelsPerSquare/2+cos(i+PI)*t);
+            glVertex2i(point.x+sin(-i)*t,
+                       point.y+cos(i+PI)*t);
     glEnd();
 }
 

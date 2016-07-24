@@ -38,3 +38,13 @@ Add RoundController:
 Load all resources at start. Maybe set file extensions and find files in "resources" folder?
 
 Add wrap-words to Tooltipo for not exceed maxWidth
+
+
+
+TowerManager sendEvent -> return nullptr OR Tower*
+when Tower*, save it and put it on the next click on the board (delete if invalid)
+
+TowerManager add key bindings
+TowerManager draw towers with key binded over them
+
+Bullet entity must heredit from Entity and be pushed to Game::entities list

@@ -14,18 +14,14 @@ class SoldierTower : public Tower{
 
     double _maxBulletDistance;
 
-    std::list<Bullet*> _bullets;
-
 public:
 
     static int id;
 
     SoldierTower();
-    ~SoldierTower();
 
     virtual TowerEvent tick();
-    virtual void draw(sf::RenderWindow* window) const;
-    virtual void drawOver(sf::RenderWindow* window) const;
+    virtual void draw(sf::RenderWindow* window, Vec2d point) const;
 
     virtual Tower* clone() const;
 };

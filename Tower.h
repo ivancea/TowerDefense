@@ -5,7 +5,6 @@ class Tower;
 
 #include <SFML/Graphics.hpp>
 
-#include "Game.h"
 #include "Vec.hpp"
 
 enum TowerEvent{
@@ -41,7 +40,7 @@ protected:
            _maxRange;
 
 public:
-    Tower() : _priority(Default){}
+    Tower();
     virtual ~Tower() {};
 
     int getId() const { return _id; }
@@ -63,8 +62,11 @@ public:
     virtual void setMaxRange(double maxRange){ _maxRange = maxRange; }
 
     virtual TowerEvent tick() = 0;
-    virtual void draw(sf::RenderWindow* window) const {};
-    virtual void drawOver(sf::RenderWindow* window) const {};
+    virtual void draw(sf::RenderWindow* window) const;
+    virtual void drawOver(sf::RenderWindow* window) const;
+
+    virtual void draw(sf::RenderWindow* window, Vec2d point) const {};
+    virtual void drawOver(sf::RenderWindow* window, Vec2d point) const {};
 
     virtual Tower* clone() const = 0;
 };

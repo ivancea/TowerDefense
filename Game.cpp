@@ -184,34 +184,6 @@ namespace Game{
             text.setPosition(window->getSize().x-bounds.width-10, 50);
             window->draw(text);
 
-            text.setString("Soldier (Q): 150");
-            text.setColor(sf::Color(255,255,255));
-            text.setCharacterSize(20);
-            bounds = text.getGlobalBounds();
-            text.setPosition(window->getSize().x-bounds.width-10, 100);
-            window->draw(text);
-
-            text.setString("Sniper (W): 200");
-            text.setColor(sf::Color(255,255,255));
-            text.setCharacterSize(20);
-            bounds = text.getGlobalBounds();
-            text.setPosition(window->getSize().x-bounds.width-10, 130);
-            window->draw(text);
-
-            text.setString("Rocket (E): 300");
-            text.setColor(sf::Color(255,255,255));
-            text.setCharacterSize(20);
-            bounds = text.getGlobalBounds();
-            text.setPosition(window->getSize().x-bounds.width-10, 160);
-            window->draw(text);
-
-            text.setString("FlameRing (R): 400");
-            text.setColor(sf::Color(255,255,255));
-            text.setCharacterSize(20);
-            bounds = text.getGlobalBounds();
-            text.setPosition(window->getSize().x-bounds.width-10, 190);
-            window->draw(text);
-
             text.setString("Pause (Space)");
             text.setColor(sf::Color(200,255,200));
             text.setCharacterSize(20);

@@ -1,10 +1,11 @@
 #ifndef BULLET_H
 #define BULLET_H
 
+#include "../../Entity.h"
 #include "../../Vec.hpp"
 #include "../../Enemy.h"
 
-class Bullet{
+class Bullet : public Entity{
 
     Vec2d _position;
 
@@ -17,8 +18,8 @@ public:
     Bullet(Vec2d target, double damage,
            double velocity, Vec2d position);
 
-    bool tick();
-    void draw(sf::RenderWindow* window) const;
+    virtual bool tick();
+    virtual void drawOver(sf::RenderWindow* window) const;
 };
 
 #endif // BULLET_H
