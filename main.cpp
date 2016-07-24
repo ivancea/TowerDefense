@@ -11,6 +11,7 @@
 #include "Resources.h"
 #include "MapManager.h"
 #include "BasicTowerManager.h"
+#include "Tooltip.h"
 
 ///Towers (TEMPORAL, will be replaced by TowerManager)
 #include "towers/SoldierTower.h"
@@ -74,6 +75,33 @@ void freeGame(){
     Game::clearTowers();
 }
 
+void setTooltip(Tooltip*& tooltip, Vec2i mouse){
+    Vec2i p = Vec2i(mouse.x,mouse.y)/Game::pixelsPerSquare;
+    bool mustDelete = true;
+
+    if(Game::map.size()>p.x && p.x>=0
+    && Game::map[p.x].size()>p.y && p.y>=0
+    && Game::map[p.x][p.y] == Game::TileType::TowerTile){
+        Tower* tower = Game::getTower(p);
+        if(tower!=nullptr){
+            TowerType* tt = Game::towerManager->getTowerType(tower->getId());
+            if(tt!=nullptr){
+                if(tooltip==nullptr)
+                    tooltip = new Tooltip();
+                tooltip->setPoint(mouse);
+                tooltip->setTitle(tt->name);
+                tooltip->setBody(tt->description + "\n\nCost: " + to_string(tt->cost));
+                mustDelete = false;
+            }
+        }
+    }
+
+    if(tooltip!=nullptr && mustDelete){
+        delete tooltip;
+        tooltip = nullptr;
+    }
+}
+
 int main(){
     srand(time(0));
     map<sf::Keyboard::Key, bool> keys;
@@ -101,6 +129,8 @@ int main(){
 
     bool paused = false;
 
+    Tooltip* tooltip = nullptr;
+
     while(running && window.isOpen()){
         sf::Event ev;
         while(window.pollEvent(ev)){
@@ -111,6 +141,7 @@ int main(){
             case sf::Event::MouseMoved:
                 mouse.x = ev.mouseMove.x;
                 mouse.y = ev.mouseMove.y;
+                setTooltip(tooltip, mouse);
                 break;
             case sf::Event::KeyPressed:
                 keys[ev.key.code] = true;
@@ -186,6 +217,7 @@ int main(){
                         }
                     }
                 }
+                setTooltip(tooltip, mouse);
                 break;
             default:
                 break;
@@ -195,6 +227,7 @@ int main(){
         window.clear();
         glMatrixMode(GL_PROJECTION);
         glLoadIdentity();
+
         window.pushGLStates();
             sf::RectangleShape rect;
             rect.setOutlineColor(sf::Color::White);
@@ -209,6 +242,9 @@ int main(){
             window.draw(rect);
         window.popGLStates();
         Game::draw(&window);
+
+        if(tooltip!=nullptr)
+            tooltip->draw(&window);
 
         window.display();
 

@@ -36,3 +36,5 @@ Add RoundController:
     -Add enemies
 
 Load all resources at start. Maybe set file extensions and find files in "resources" folder?
+
+Add wrap-words to Tooltipo for not exceed maxWidth

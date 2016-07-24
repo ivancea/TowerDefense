@@ -424,7 +424,7 @@
 	"../Vec.hpp"
 	"../Entity.h"
 
-1469205080 source:c:\users\ivancea\desktop\github\towerdefense\game.cpp
+1469325989 source:c:\users\ivancea\desktop\github\towerdefense\game.cpp
 	"Game.h"
 	<cmath>
 	<string>
@@ -527,7 +527,7 @@
 1469223329 source:c:\users\ivancea\desktop\github\towerdefense\towertype.cpp
 	"TowerType.h"
 
-1469227404 source:c:\users\ivancea\desktop\github\towerdefense\main.cpp
+1469328093 source:c:\users\ivancea\desktop\github\towerdefense\main.cpp
 	<iostream>
 	<map>
 	<cmath>
@@ -540,6 +540,7 @@
 	"Resources.h"
 	"MapManager.h"
 	"BasicTowerManager.h"
+	"Tooltip.h"
 	"towers/SoldierTower.h"
 	"towers/RocketTower.h"
 	"towers/SniperTower.h"
@@ -605,4 +606,11 @@
 	"../../Entity.h"
 	"../../Vec.hpp"
 	"../../Enemy.h"
+
+1469327467 source:c:\users\ivancea\desktop\github\towerdefense\tooltip.cpp
+	"Tooltip.h"
+
+1469327467 c:\users\ivancea\desktop\github\towerdefense\tooltip.h
+	<SFML/Graphics.hpp>
+	"Vec.hpp"
 

@@ -84,6 +84,12 @@
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="TODO.txt" />
+		<Unit filename="Tooltip.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Tooltip.h">
+			<Option target="Release" />
+		</Unit>
 		<Unit filename="Tower.h">
 			<Option target="Release" />
 		</Unit>
