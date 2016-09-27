@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_laser_entity_8cpp" kind="file" language="C++">
+    <compoundname>LaserEntity.cpp</compoundname>
+    <includes refid="_laser_entity_8h" local="yes">LaserEntity.h</includes>
+    <includes refid="_game_8h" local="yes">../Game.h</includes>
+    <includes local="no">SFML/OpenGL.hpp</includes>
+    <incdepgraph>
+      <node id="1248">
+        <label>list</label>
+      </node>
+      <node id="1243">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1249">
+        <label>SFML/OpenGL.hpp</label>
+      </node>
+      <node id="1245">
+        <label>cmath</label>
+      </node>
+      <node id="1252">
+        <label>string</label>
+      </node>
+      <node id="1254">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1243" relation="include">
+        </childnode>
+        <childnode refid="1244" relation="include">
+        </childnode>
+      </node>
+      <node id="1244">
+        <label>../Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1245" relation="include">
+        </childnode>
+      </node>
+      <node id="1250">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="1248" relation="include">
+        </childnode>
+        <childnode refid="1243" relation="include">
+        </childnode>
+        <childnode refid="1251" relation="include">
+        </childnode>
+      </node>
+      <node id="1247">
+        <label>../Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="1248" relation="include">
+        </childnode>
+        <childnode refid="1243" relation="include">
+        </childnode>
+        <childnode refid="1249" relation="include">
+        </childnode>
+        <childnode refid="1250" relation="include">
+        </childnode>
+        <childnode refid="1253" relation="include">
+        </childnode>
+        <childnode refid="1254" relation="include">
+        </childnode>
+        <childnode refid="1246" relation="include">
+        </childnode>
+        <childnode refid="1244" relation="include">
+        </childnode>
+      </node>
+      <node id="1241">
+        <label>LaserEntity.cpp</label>
+        <link refid="LaserEntity.cpp"/>
+        <childnode refid="1242" relation="include">
+        </childnode>
+        <childnode refid="1247" relation="include">
+        </childnode>
+        <childnode refid="1249" relation="include">
+        </childnode>
+      </node>
+      <node id="1251">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1252" relation="include">
+        </childnode>
+        <childnode refid="1243" relation="include">
+        </childnode>
+        <childnode refid="1253" relation="include">
+        </childnode>
+      </node>
+      <node id="1242">
+        <label>LaserEntity.h</label>
+        <link refid="_laser_entity_8h"/>
+        <childnode refid="1243" relation="include">
+        </childnode>
+        <childnode refid="1244" relation="include">
+        </childnode>
+        <childnode refid="1246" relation="include">
+        </childnode>
+      </node>
+      <node id="1246">
+        <label>../entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1243" relation="include">
+        </childnode>
+      </node>
+      <node id="1253">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1243" relation="include">
+        </childnode>
+        <childnode refid="1244" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_laser_entity_8h" kindref="compound">LaserEntity.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Game.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/OpenGL.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_laser_entity_1a20d8489a3ef6b5b75fe5646755c81ffe" refkind="member"><highlight class="normal"><ref refid="class_laser_entity_1a20d8489a3ef6b5b75fe5646755c81ffe" kindref="member">LaserEntity::LaserEntity</ref>(<ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>from,<sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>to,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ticks){</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_laser_entity_1a91990512ccb1b077a81756eadf51a093" kindref="member">_from</ref><sp/>=<sp/>from;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_laser_entity_1a6c1c772b0bff9b0a640c3dd2da9e62f5" kindref="member">_to</ref><sp/>=<sp/>to;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_laser_entity_1a8c1fd270b23ca39a65b0a65b4e73d138" kindref="member">_ticksRemaining</ref><sp/>=<sp/>ticks;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_laser_entity_1accad65a4103a21444da6afc412edf5ae" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_laser_entity_1accad65a4103a21444da6afc412edf5ae" kindref="member">LaserEntity::tick</ref>(){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_laser_entity_1a8c1fd270b23ca39a65b0a65b4e73d138" kindref="member">_ticksRemaining</ref>--<sp/>&lt;=<sp/>0;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_laser_entity_1a33b9659fd81951ae656a43806a8986f8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_laser_entity_1a33b9659fd81951ae656a43806a8986f8" kindref="member">LaserEntity::drawOver</ref>(sf::RenderWindow*<sp/>window)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>glLineWidth(1);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>glColor3ub(255,125,125);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>glBegin(GL_LINES);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_laser_entity_1a91990512ccb1b077a81756eadf51a093" kindref="member">_from</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>,<sp/><ref refid="class_laser_entity_1a91990512ccb1b077a81756eadf51a093" kindref="member">_from</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_laser_entity_1a6c1c772b0bff9b0a640c3dd2da9e62f5" kindref="member">_to</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>,<sp/><ref refid="class_laser_entity_1a6c1c772b0bff9b0a640c3dd2da9e62f5" kindref="member">_to</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnd();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/entities/LaserEntity.cpp"/>
+  </compounddef>
+</doxygen>

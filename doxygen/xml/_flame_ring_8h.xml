@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_flame_ring_8h" kind="file" language="C++">
+    <compoundname>FlameRing.h</compoundname>
+    <includes refid="_entity_8h" local="yes">../../Entity.h</includes>
+    <includes refid="_vec_8hpp" local="yes">../../Vec.hpp</includes>
+    <includes refid="_enemy_8h" local="yes">../../Enemy.h</includes>
+    <includedby refid="_flame_ring_tower_8cpp" local="yes">FlameRingTower.cpp</includedby>
+    <includedby refid="_flame_ring_8cpp" local="yes">FlameRing.cpp</includedby>
+    <incdepgraph>
+      <node id="1096">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1098">
+        <label>cmath</label>
+      </node>
+      <node id="1099">
+        <label>../../Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+      </node>
+      <node id="1097">
+        <label>../../Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1098" relation="include">
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>FlameRing.h</label>
+        <link refid="FlameRing.h"/>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1095">
+        <label>../../Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1096" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1101">
+        <label>FlameRingTower.cpp</label>
+        <link refid="_flame_ring_tower_8cpp"/>
+      </node>
+      <node id="1100">
+        <label>FlameRing.h</label>
+        <link refid="FlameRing.h"/>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1102" relation="include">
+        </childnode>
+      </node>
+      <node id="1102">
+        <label>FlameRing.cpp</label>
+        <link refid="_flame_ring_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_flame_ring" prot="public">FlameRing</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>FLAMERING_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLAMERING_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;../../Entity.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Vec.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Enemy.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_flame_ring" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_flame_ring" kindref="compound">FlameRing</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_entity" kindref="compound">Entity</ref>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_flame_ring_1aec0a08cbf21c7ba0668b064d6693710b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/><ref refid="class_flame_ring_1aec0a08cbf21c7ba0668b064d6693710b" kindref="member">_position</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_flame_ring_1a2259a769637ed6c70da6cf7fdc447aec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_1a2259a769637ed6c70da6cf7fdc447aec" kindref="member">_damage</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_flame_ring_1adeac8bc1d600b3d6c643c526a1e90e23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_1adeac8bc1d600b3d6c643c526a1e90e23" kindref="member">_maxRadius</ref>;</highlight></codeline>
+<codeline lineno="14" refid="class_flame_ring_1aa3d7d9677c3866ced21f71a92a3606c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_1aa3d7d9677c3866ced21f71a92a3606c8" kindref="member">_velocity</ref>;</highlight></codeline>
+<codeline lineno="15" refid="class_flame_ring_1a52108139bbfae9160dc7ae23ce87c3e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_1a52108139bbfae9160dc7ae23ce87c3e4" kindref="member">_actualRadius</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_flame_ring_1a7b53b534ac89ac08e991396a140107d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_1a7b53b534ac89ac08e991396a140107d3" kindref="member">_ringSize</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_1aae5a3dc53754fe10d8f9e82fe39a67c9" kindref="member">FlameRing</ref>(<ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>position,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ringSize,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>damage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>maxRadius,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>initialRadius);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_1ab07bb5baa7209a397126683e94114295" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_1ad1ef9bf878a0422d30d2bf488834d2b4" kindref="member">drawOver</ref>(sf::RenderWindow*<sp/>window)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>FLAMERING_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/FlameRing.h"/>
+  </compounddef>
+</doxygen>

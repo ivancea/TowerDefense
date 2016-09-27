@@ -1,0 +1,4 @@
+<map id="Enemy::tick" name="Enemy::tick">
+<area shape="rect" id="node2" href="$struct_vec2.html#a8f0f08fa249195af341222553c8db855" title="Vec2::distance" alt="" coords="149,5,258,32"/>
+<area shape="rect" id="node3" href="$struct_vec2.html#a73f59613a791abd955bf16fccd53777b" title="Vec2::normalize" alt="" coords="145,56,261,83"/>
+</map>

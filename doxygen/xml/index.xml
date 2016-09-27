@@ -1,0 +1,500 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="class_basic_enemy" kind="class"><name>BasicEnemy</name>
+    <member refid="class_basic_enemy_1ae7f70e587dcac7bb2c82f460bbe5ad26" kind="function"><name>BasicEnemy</name></member>
+    <member refid="class_basic_enemy_1a371a4209b7e53009991032189427a39d" kind="function"><name>killed</name></member>
+    <member refid="class_basic_enemy_1a3c07b473a552322bcba3d74ed718879e" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="class_basic_tower_manager" kind="class"><name>BasicTowerManager</name>
+    <member refid="class_basic_tower_manager_1a777f97aa1d6ee72c3a41ee50f0aeae16" kind="variable"><name>_nextId</name></member>
+    <member refid="class_basic_tower_manager_1ab94c20e1bf361ea01a1a7516095fccd5" kind="function"><name>BasicTowerManager</name></member>
+  </compound>
+  <compound refid="class_bullet" kind="class"><name>Bullet</name>
+    <member refid="class_bullet_1a7ba153a8c3f770efe060cec44fd3b9d4" kind="variable"><name>_position</name></member>
+    <member refid="class_bullet_1a6e518aa502479eb47925d96f3492f44c" kind="variable"><name>_target</name></member>
+    <member refid="class_bullet_1ad7f476df2633f19f568ba22fc635be17" kind="variable"><name>_damage</name></member>
+    <member refid="class_bullet_1ab0c6e97df8ec51572a3aae8163294db8" kind="variable"><name>_velocity</name></member>
+    <member refid="class_bullet_1a156e55f7392dbba145f647e52ff4cf5e" kind="function"><name>Bullet</name></member>
+    <member refid="class_bullet_1a1b20424d4c8d29c5c214bab2f62d72a1" kind="function"><name>tick</name></member>
+    <member refid="class_bullet_1a18e80bd6d18efa4db5e383bf6b67b042" kind="function"><name>drawOver</name></member>
+  </compound>
+  <compound refid="class_enemy" kind="class"><name>Enemy</name>
+    <member refid="class_enemy_1a59876d7ce834b7c6f99feea112e1a8e6" kind="variable"><name>_nextPositionIndex</name></member>
+    <member refid="class_enemy_1a70ddc801163c579dcd432e8553331602" kind="variable"><name>_life</name></member>
+    <member refid="class_enemy_1af742f414df708a7c62240b6bd73aad94" kind="variable"><name>_velocity</name></member>
+    <member refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kind="variable"><name>_position</name></member>
+    <member refid="class_enemy_1aa015dbea3090d6010d26169a6af9d9ed" kind="variable"><name>_damage</name></member>
+    <member refid="class_enemy_1a19816dfb5bbfe5efe3546364e1bed424" kind="variable"><name>_distanceToEnd</name></member>
+    <member refid="class_enemy_1a5a90dbd539ffb35f91b8183feeac46c2" kind="function"><name>reloadDistanceToEnd</name></member>
+    <member refid="class_enemy_1add9c4e25afbbcc2c50c96952cfe6a07b" kind="function"><name>Enemy</name></member>
+    <member refid="class_enemy_1a065a22a70c78bfc03da4c032312c6da5" kind="function"><name>~Enemy</name></member>
+    <member refid="class_enemy_1ad921c3a0eeab9d46eae08054814a0d0a" kind="function"><name>tick</name></member>
+    <member refid="class_enemy_1a6b18444f40dcc15b19b4664a9e335789" kind="function"><name>draw</name></member>
+    <member refid="class_enemy_1a2fcfd6cf10fa58c9b6963ccf3043cb73" kind="function"><name>drawOver</name></member>
+    <member refid="class_enemy_1af7c3be9e985c7551466bb31e8d51bbbb" kind="function"><name>damage</name></member>
+    <member refid="class_enemy_1a0cb411813c4dbdf7ba6716635d94046d" kind="function"><name>killed</name></member>
+    <member refid="class_enemy_1a8f6434a2485b61bb63388d6e719e252b" kind="function"><name>getLife</name></member>
+    <member refid="class_enemy_1a2f617118f5e390e8997907fe5f4dc155" kind="function"><name>getVelocity</name></member>
+    <member refid="class_enemy_1afd5331e1b8efb74c4722569b14934c61" kind="function"><name>getPosition</name></member>
+    <member refid="class_enemy_1a88b06a3cfbd5fd4293cd849cfd149da2" kind="function"><name>getDamage</name></member>
+    <member refid="class_enemy_1ad910d99ff1ef362a680719896b1725a9" kind="function"><name>getNextPositionIndex</name></member>
+    <member refid="class_enemy_1aacce8d4fdd045a55ee4548c3b9148598" kind="function"><name>setNextPositionIndex</name></member>
+    <member refid="class_enemy_1ab01196254c5c73cfaca964804f45c28a" kind="function"><name>getDistanceToNextPosition</name></member>
+    <member refid="class_enemy_1a95df3c4a64b8576874c5815877ee9d61" kind="function"><name>getDistanceToEnd</name></member>
+  </compound>
+  <compound refid="class_entity" kind="class"><name>Entity</name>
+    <member refid="class_entity_1a588098978eea6a3486b7361605ff3f0f" kind="function"><name>~Entity</name></member>
+    <member refid="class_entity_1a1ac1547ce618e2ec040c6a8498bb5201" kind="function"><name>tick</name></member>
+    <member refid="class_entity_1a5ab2eb129b6330823115239247fec4f5" kind="function"><name>draw</name></member>
+    <member refid="class_entity_1a78fdc76cd8111e1c403024f66f2e00a0" kind="function"><name>drawOver</name></member>
+  </compound>
+  <compound refid="class_explosion_entity" kind="class"><name>ExplosionEntity</name>
+    <member refid="class_explosion_entity_1acad7c31b46d3ee1fc463e2b5d2088316" kind="variable"><name>_position</name></member>
+    <member refid="class_explosion_entity_1a8af720a927919418fa3d13f51a7c9f69" kind="variable"><name>_range</name></member>
+    <member refid="class_explosion_entity_1a02c1b88d42144cbe71dc644e69c82658" kind="variable"><name>_ticksAlive</name></member>
+    <member refid="class_explosion_entity_1a9b73c7aa1c1a96c414e828f9fef99a35" kind="variable"><name>_ticksLived</name></member>
+    <member refid="class_explosion_entity_1aa14dfa3e54e220377cf3e7898df03fbf" kind="variable"><name>_sprite</name></member>
+    <member refid="class_explosion_entity_1a8484e8b2e4fc111c053d82e7a8b128af" kind="function"><name>ExplosionEntity</name></member>
+    <member refid="class_explosion_entity_1a84ef58c7602b0f6ce45c410b7d532aa5" kind="function"><name>tick</name></member>
+    <member refid="class_explosion_entity_1a59066ebe5d4588edd8a4cdf2c21d9c10" kind="function"><name>drawOver</name></member>
+  </compound>
+  <compound refid="class_fire_entity" kind="class"><name>FireEntity</name>
+    <member refid="class_fire_entity_1aad6423df3bee2af1f219f79bb135dd9d" kind="variable"><name>_position</name></member>
+    <member refid="class_fire_entity_1a04fe40bc1b739d302a30a4ef5306eb41" kind="variable"><name>_ticksAlive</name></member>
+    <member refid="class_fire_entity_1abda03646b735fcf48a5a1796c4ebce32" kind="variable"><name>_ticksLived</name></member>
+    <member refid="class_fire_entity_1a7ff2eafe728286ab7be66a913f8c746c" kind="variable"><name>_sprite</name></member>
+    <member refid="class_fire_entity_1a3a0d451f64cf200710f0091e79d9f4e7" kind="function"><name>FireEntity</name></member>
+    <member refid="class_fire_entity_1a22e38fdc101c077be7722352cf67396e" kind="function"><name>tick</name></member>
+    <member refid="class_fire_entity_1a000ede7b6148c5c1b01e1fcd5d512c93" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="class_flame_ring" kind="class"><name>FlameRing</name>
+    <member refid="class_flame_ring_1aec0a08cbf21c7ba0668b064d6693710b" kind="variable"><name>_position</name></member>
+    <member refid="class_flame_ring_1a2259a769637ed6c70da6cf7fdc447aec" kind="variable"><name>_damage</name></member>
+    <member refid="class_flame_ring_1adeac8bc1d600b3d6c643c526a1e90e23" kind="variable"><name>_maxRadius</name></member>
+    <member refid="class_flame_ring_1aa3d7d9677c3866ced21f71a92a3606c8" kind="variable"><name>_velocity</name></member>
+    <member refid="class_flame_ring_1a52108139bbfae9160dc7ae23ce87c3e4" kind="variable"><name>_actualRadius</name></member>
+    <member refid="class_flame_ring_1a7b53b534ac89ac08e991396a140107d3" kind="variable"><name>_ringSize</name></member>
+    <member refid="class_flame_ring_1aae5a3dc53754fe10d8f9e82fe39a67c9" kind="function"><name>FlameRing</name></member>
+    <member refid="class_flame_ring_1ab07bb5baa7209a397126683e94114295" kind="function"><name>tick</name></member>
+    <member refid="class_flame_ring_1ad1ef9bf878a0422d30d2bf488834d2b4" kind="function"><name>drawOver</name></member>
+  </compound>
+  <compound refid="class_flame_ring_tower" kind="class"><name>FlameRingTower</name>
+    <member refid="class_flame_ring_tower_1a426a443ba32beb37f68d919b79c83088" kind="variable"><name>_ringVelocity</name></member>
+    <member refid="class_flame_ring_tower_1adfe46cb7f7baac76ed662c6d5dcc4f74" kind="variable"><name>_ringSize</name></member>
+    <member refid="class_flame_ring_tower_1a666810b492598d4e77a3b26ab71fcbb6" kind="variable"><name>_ringActualRange</name></member>
+    <member refid="class_flame_ring_tower_1a9de7e32d674577d1b72b05e748ad20d7" kind="variable"><name>_damage</name></member>
+    <member refid="class_flame_ring_tower_1ad7e7182c61ff1d1f4c20a1d87807fd4c" kind="variable"><name>id</name></member>
+    <member refid="class_flame_ring_tower_1ad8ebcb202ae5f74f10591fdd1b0b7a0f" kind="function"><name>FlameRingTower</name></member>
+    <member refid="class_flame_ring_tower_1ac7b603fcbd551c39fd2bb789896fcb92" kind="function"><name>tick</name></member>
+    <member refid="class_flame_ring_tower_1a7eb91da364c81d4d93892223527ffe69" kind="function"><name>draw</name></member>
+    <member refid="class_flame_ring_tower_1a86d9b25684eb86180f09fabf43081c94" kind="function"><name>clone</name></member>
+  </compound>
+  <compound refid="class_inhibitor_enemy" kind="class"><name>InhibitorEnemy</name>
+    <member refid="class_inhibitor_enemy_1a5b732491c643ac9db52e695e6d99901c" kind="variable"><name>_inhibitionTicks</name></member>
+    <member refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" kind="variable"><name>_target</name></member>
+    <member refid="class_inhibitor_enemy_1aab4ba99fa36f9f23f029c9f81389c994" kind="function"><name>InhibitorEnemy</name></member>
+    <member refid="class_inhibitor_enemy_1a8f71068c25e671bad196882a44625c55" kind="function"><name>killed</name></member>
+    <member refid="class_inhibitor_enemy_1a6983ba240a56b1f78921020c1f25035b" kind="function"><name>tick</name></member>
+    <member refid="class_inhibitor_enemy_1aa1cc9aba289ede2197d684680e1be9d7" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="class_inmortal_enemy" kind="class"><name>InmortalEnemy</name>
+    <member refid="class_inmortal_enemy_1aa191e761100a47e3c0ade8e76a2746d8" kind="function"><name>InmortalEnemy</name></member>
+    <member refid="class_inmortal_enemy_1a81eaa0320f186d755160338068be2bba" kind="function"><name>damage</name></member>
+    <member refid="class_inmortal_enemy_1ad773b2e4fb4ed96da327bdeed1d33a0a" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="class_laser_entity" kind="class"><name>LaserEntity</name>
+    <member refid="class_laser_entity_1a91990512ccb1b077a81756eadf51a093" kind="variable"><name>_from</name></member>
+    <member refid="class_laser_entity_1a6c1c772b0bff9b0a640c3dd2da9e62f5" kind="variable"><name>_to</name></member>
+    <member refid="class_laser_entity_1a8c1fd270b23ca39a65b0a65b4e73d138" kind="variable"><name>_ticksRemaining</name></member>
+    <member refid="class_laser_entity_1a20d8489a3ef6b5b75fe5646755c81ffe" kind="function"><name>LaserEntity</name></member>
+    <member refid="class_laser_entity_1accad65a4103a21444da6afc412edf5ae" kind="function"><name>tick</name></member>
+    <member refid="class_laser_entity_1a33b9659fd81951ae656a43806a8986f8" kind="function"><name>drawOver</name></member>
+  </compound>
+  <compound refid="class_rocket" kind="class"><name>Rocket</name>
+    <member refid="class_rocket_1a709e85744e886fca6662c3ec626fca4f" kind="variable"><name>_position</name></member>
+    <member refid="class_rocket_1a64baa4198eafb02c97cbf886448a29cc" kind="variable"><name>_targetEnemy</name></member>
+    <member refid="class_rocket_1abe2eabd2a23839d30136b291bc655385" kind="variable"><name>_targetPosition</name></member>
+    <member refid="class_rocket_1aeb35b2a4c15bd4d1b195b4c44867040a" kind="variable"><name>_damage</name></member>
+    <member refid="class_rocket_1a8548f739f5d6f7fdc6998de11928e833" kind="variable"><name>_explosionRange</name></member>
+    <member refid="class_rocket_1a232ad9ef82cfa31e36220a4e139ca38c" kind="variable"><name>_velocity</name></member>
+    <member refid="class_rocket_1ab38346b404697945cb02c5c2343aad4d" kind="variable"><name>_distanceTraveled</name></member>
+    <member refid="class_rocket_1a26c1453a465705e8f364ea8c7eecfc98" kind="variable"><name>_maxDistance</name></member>
+    <member refid="class_rocket_1a798c5384ab3f205084fb5d7ec41c7474" kind="variable"><name>_hitEnemiesInPath</name></member>
+    <member refid="class_rocket_1a9c76ec279a2f1ad97c86850a9666faab" kind="function"><name>Rocket</name></member>
+    <member refid="class_rocket_1a89a41131057f7396121f0f16c7944498" kind="function"><name>Rocket</name></member>
+    <member refid="class_rocket_1a2081c885671bf36789e6e8b3af81081d" kind="function"><name>damageEnemies</name></member>
+    <member refid="class_rocket_1ad82fb42a0ae20e7157ede954020515b8" kind="function"><name>tick</name></member>
+    <member refid="class_rocket_1ac547764f02cbb614eb9e77d6a36786a0" kind="function"><name>drawOver</name></member>
+  </compound>
+  <compound refid="class_rocket_tower" kind="class"><name>RocketTower</name>
+    <member refid="class_rocket_tower_1a86b8c60830aedd59dacfcefd0b1a44d6" kind="variable"><name>_damage</name></member>
+    <member refid="class_rocket_tower_1ac78979c4795485d1a6a548f53ad08dbd" kind="variable"><name>_explosionRange</name></member>
+    <member refid="class_rocket_tower_1afa8ba83aece535a524f3d923032ba200" kind="variable"><name>_rocketVelocity</name></member>
+    <member refid="class_rocket_tower_1a34b8d23125680691a9234e9a780fc8f0" kind="variable"><name>_maxRocketDistance</name></member>
+    <member refid="class_rocket_tower_1af83cebcdc6889e0509eff9b179515bca" kind="variable"><name>_followEnemy</name></member>
+    <member refid="class_rocket_tower_1a1210d14f7aefc0d96d1a9937a2b6c561" kind="variable"><name>_hitEnemiesInPath</name></member>
+    <member refid="class_rocket_tower_1a788ccf186eaab4f093cc3e5b024a9d4b" kind="variable"><name>id</name></member>
+    <member refid="class_rocket_tower_1a760ea5f99ac54c33bd543035fea751ef" kind="function"><name>RocketTower</name></member>
+    <member refid="class_rocket_tower_1a6a577601ae706e981c833dfaf8675c59" kind="function"><name>tick</name></member>
+    <member refid="class_rocket_tower_1aeb6d89a594a58c05f723bd65ef4601af" kind="function"><name>draw</name></member>
+    <member refid="class_rocket_tower_1a3d088da5e8638dcb40cef934778d56de" kind="function"><name>clone</name></member>
+  </compound>
+  <compound refid="class_sniper_tower" kind="class"><name>SniperTower</name>
+    <member refid="class_sniper_tower_1a256e524d665f4edf2ef3e2f91a23a729" kind="variable"><name>_damage</name></member>
+    <member refid="class_sniper_tower_1aedfe43341fb2c85ea3f2558021bb734e" kind="variable"><name>_spriteBase</name></member>
+    <member refid="class_sniper_tower_1a6b420af0e9a7653e718a3641c7470d25" kind="variable"><name>_spriteCanon</name></member>
+    <member refid="class_sniper_tower_1a4c00cf0cb4ae062cb5ad652f1050c82d" kind="variable"><name>id</name></member>
+    <member refid="class_sniper_tower_1a93cc1454f3e6f239f8fca79be6ccc15a" kind="function"><name>SniperTower</name></member>
+    <member refid="class_sniper_tower_1ab0e4b579aa38c03b3a67f29471a96bd3" kind="function"><name>tick</name></member>
+    <member refid="class_sniper_tower_1a3f2c8bb1f2579dd0a7b7a37b3e191afb" kind="function"><name>draw</name></member>
+    <member refid="class_sniper_tower_1af8dc720e9a312f79e9083cfea8b510cf" kind="function"><name>drawOver</name></member>
+    <member refid="class_sniper_tower_1ade688996092dc825d1842877c917e9be" kind="function"><name>clone</name></member>
+  </compound>
+  <compound refid="class_soldier_tower" kind="class"><name>SoldierTower</name>
+    <member refid="class_soldier_tower_1aa3e3e42e7d60da94509e1aae7a8209a5" kind="variable"><name>_damage</name></member>
+    <member refid="class_soldier_tower_1a8cf4da2f6015618b06597e8ae39805da" kind="variable"><name>_bulletVelocity</name></member>
+    <member refid="class_soldier_tower_1ac20dd628e2251ff106d0a898ff3061cd" kind="variable"><name>_maxBulletDistance</name></member>
+    <member refid="class_soldier_tower_1ad7ee249e4686d9788751cf80075ef4d9" kind="variable"><name>id</name></member>
+    <member refid="class_soldier_tower_1a9d362b598d1b8eff829198b1c4af9182" kind="function"><name>SoldierTower</name></member>
+    <member refid="class_soldier_tower_1a2c203d4284bccc7ce7b1141e1d0651f5" kind="function"><name>tick</name></member>
+    <member refid="class_soldier_tower_1a9fb2e204e352e8eb03b52c5426e3ee82" kind="function"><name>draw</name></member>
+    <member refid="class_soldier_tower_1a8a56e44058a2cc92bbd7da3ece949a88" kind="function"><name>clone</name></member>
+  </compound>
+  <compound refid="class_sprite" kind="class"><name>Sprite</name>
+    <member refid="class_sprite_1a5cc96a574be16b968c4bda9efc76ea35" kind="variable"><name>_rect</name></member>
+    <member refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" kind="variable"><name>_countX</name></member>
+    <member refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" kind="variable"><name>_countY</name></member>
+    <member refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kind="variable"><name>_count</name></member>
+    <member refid="class_sprite_1af222b8a53d91bade06991f38dc3a260e" kind="variable"><name>_actualFrame</name></member>
+    <member refid="class_sprite_1a12cba3ac1868418add3c4d95ce87e615" kind="function"><name>Sprite</name></member>
+    <member refid="class_sprite_1afc49fccfd7f32386592cf1c08a670102" kind="function"><name>Sprite</name></member>
+    <member refid="class_sprite_1a862bf368bbeb1aada95f5d0f46ea44f0" kind="function"><name>Sprite</name></member>
+    <member refid="class_sprite_1ace1731bdb048bfd8f469cc3af889489b" kind="function"><name>setCount</name></member>
+    <member refid="class_sprite_1aad4221a926a6509c267dc309229fec6f" kind="function"><name>nextFrame</name></member>
+    <member refid="class_sprite_1a1d5409acfab40087ada2614ea85fabd5" kind="function"><name>setFrame</name></member>
+    <member refid="class_sprite_1a6a6a24cb29a60b88892adbfe35506bea" kind="function"><name>getFrame</name></member>
+    <member refid="class_sprite_1a868d94bb655c124f69b93d390f51ff20" kind="function"><name>getSize</name></member>
+  </compound>
+  <compound refid="class_tooltip" kind="class"><name>Tooltip</name>
+    <member refid="class_tooltip_1ace4127b05966b9e682d287364a226160" kind="variable"><name>_point</name></member>
+    <member refid="class_tooltip_1a65fc19ec7dbb5c04204d9c1cb3456ac8" kind="variable"><name>_maxWidth</name></member>
+    <member refid="class_tooltip_1a1df4148aa6035f0758e01fa2de0b0292" kind="variable"><name>_backColor</name></member>
+    <member refid="class_tooltip_1add17c3e3b6916609906a69eb8d72e764" kind="variable"><name>_foreColor</name></member>
+    <member refid="class_tooltip_1a67cc85e3ea6e9ca2c7e8b162d636e4c4" kind="variable"><name>_title</name></member>
+    <member refid="class_tooltip_1adcfae457b1d3c99003448eb6523d9385" kind="variable"><name>_body</name></member>
+    <member refid="class_tooltip_1a46a4bafd52456186b1fc7f48a554f8ef" kind="function"><name>Tooltip</name></member>
+    <member refid="class_tooltip_1a8755dc5b59166a63e15f042c0fa14b1a" kind="function"><name>Tooltip</name></member>
+    <member refid="class_tooltip_1ac18509cf67b5f48ed404fa68f64c0050" kind="function"><name>setTitle</name></member>
+    <member refid="class_tooltip_1a555900703700b27097ff0f456be8bc7f" kind="function"><name>setBody</name></member>
+    <member refid="class_tooltip_1ad5886a8a5359d90fc580b95cc603e1d3" kind="function"><name>setPoint</name></member>
+    <member refid="class_tooltip_1ac00ca1ff15192af7ca5de01bd51b8579" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="class_tower" kind="class"><name>Tower</name>
+    <member refid="class_tower_1a02ec2f8d1c4dea2f7fc002d8626c8b28" kind="variable"><name>_id</name></member>
+    <member refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kind="variable"><name>_ticksForShoot</name></member>
+    <member refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" kind="variable"><name>_ticksBetweenShoots</name></member>
+    <member refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" kind="variable"><name>_position</name></member>
+    <member refid="class_tower_1a45ff5669e9b1815222fbbd38bf4dbdd2" kind="variable"><name>_priority</name></member>
+    <member refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" kind="variable"><name>_minRange</name></member>
+    <member refid="class_tower_1a29cae98d3f1d863335b175597f61f8da" kind="variable"><name>_maxRange</name></member>
+    <member refid="class_tower_1a1b785dc1e9fb979a10620ca183b5761d" kind="function"><name>Tower</name></member>
+    <member refid="class_tower_1ac42ebf24f6aedbd4591fe3371f364600" kind="function"><name>~Tower</name></member>
+    <member refid="class_tower_1abf534cfa4be4208f490316de84a363c6" kind="function"><name>getId</name></member>
+    <member refid="class_tower_1a2a9705516e1db56532a8374cd980fe7f" kind="function"><name>setId</name></member>
+    <member refid="class_tower_1acbef4e9eed709d590b1bdb07257e9afc" kind="function"><name>getTicksForShoot</name></member>
+    <member refid="class_tower_1a06e9f714ebf6793416ca559a49f218f4" kind="function"><name>setTicksForShoot</name></member>
+    <member refid="class_tower_1a28b4e01cf370c3f583d83b904c5834bf" kind="function"><name>getTicksBetweenShoots</name></member>
+    <member refid="class_tower_1a7e39dc1fc516ef2c23df035fe6f37cfc" kind="function"><name>setTicksBetweenShoots</name></member>
+    <member refid="class_tower_1a892066fc6cbe882417e749a0829a713b" kind="function"><name>getPosition</name></member>
+    <member refid="class_tower_1ac95d4e39ad1e1d7aca4dd43114bfb35b" kind="function"><name>setPosition</name></member>
+    <member refid="class_tower_1ae6698f53a92e382f35c13faa1c8755c5" kind="function"><name>getPriority</name></member>
+    <member refid="class_tower_1a0e6f188ea4541160da9418cbab630c44" kind="function"><name>setPriority</name></member>
+    <member refid="class_tower_1af3974612b34698019596e847c20a0b5f" kind="function"><name>getMinRange</name></member>
+    <member refid="class_tower_1a4237103c1b5e5e9a31f0574616154b25" kind="function"><name>setMinRange</name></member>
+    <member refid="class_tower_1a1de58ad0b4454321b7581a95be903f84" kind="function"><name>getMaxRange</name></member>
+    <member refid="class_tower_1a25bd659fcdcff1d6defed633c11448e4" kind="function"><name>setMaxRange</name></member>
+    <member refid="class_tower_1a0b5a181ad1356b4d9a395347efdbe1a1" kind="function"><name>tick</name></member>
+    <member refid="class_tower_1a1a810f6750616a02e665eb41db5dff5f" kind="function"><name>draw</name></member>
+    <member refid="class_tower_1a6233d4726637efbe811fa3e471b17763" kind="function"><name>drawOver</name></member>
+    <member refid="class_tower_1a345caef621244125c0af480ddc041860" kind="function"><name>draw</name></member>
+    <member refid="class_tower_1a73e9bca05abf9d075cf255c605a5b7a0" kind="function"><name>drawOver</name></member>
+    <member refid="class_tower_1a1d444a99e396e60c804512ecd61dd25b" kind="function"><name>clone</name></member>
+  </compound>
+  <compound refid="class_tower_manager" kind="class"><name>TowerManager</name>
+    <member refid="class_tower_manager_1a504e2fafa56251db8777bf4313f0bb80" kind="variable"><name>_towerTypes</name></member>
+    <member refid="class_tower_manager_1aa2c2765238a8747803334c164e767e41" kind="function"><name>~TowerManager</name></member>
+    <member refid="class_tower_manager_1a9830128e0f2c22e842fb7dc8fc5f87f2" kind="function"><name>getTowerCount</name></member>
+    <member refid="class_tower_manager_1a0916b2c610768b4821d171734970696a" kind="function"><name>getTowerType</name></member>
+    <member refid="class_tower_manager_1a8474b8e86cf6e3082881d002ea26e012" kind="function"><name>getTowerCost</name></member>
+    <member refid="class_tower_manager_1a1831e2bb3e53169abdaa7760857cddd6" kind="function"><name>parseEvent</name></member>
+    <member refid="class_tower_manager_1a423707a6d9656610ddfc62691078ab6f" kind="function"><name>getDrawRectSize</name></member>
+    <member refid="class_tower_manager_1addf03520e1fe692d2a547374e58e5711" kind="function"><name>drawTowersPanel</name></member>
+  </compound>
+  <compound refid="struct_tower_type" kind="struct"><name>TowerType</name>
+    <member refid="struct_tower_type_1a137965897f2c4ec39a260f5561d1e70a" kind="variable"><name>model</name></member>
+    <member refid="struct_tower_type_1a24488ed3932873cb5be953fdaa3c733e" kind="variable"><name>name</name></member>
+    <member refid="struct_tower_type_1ab6e4e62dc59a798beaa0028a67dd6571" kind="variable"><name>description</name></member>
+    <member refid="struct_tower_type_1a298318e6f9d11a63daad82f48a87a205" kind="variable"><name>cost</name></member>
+    <member refid="struct_tower_type_1ad40e689f8161868c71d284ea859ff000" kind="function"><name>TowerType</name></member>
+    <member refid="struct_tower_type_1afc37bb8ff845c964771cab927a7f0987" kind="function"><name>TowerType</name></member>
+  </compound>
+  <compound refid="struct_vec2" kind="struct"><name>Vec2</name>
+    <member refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kind="variable"><name>x</name></member>
+    <member refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kind="variable"><name>y</name></member>
+    <member refid="struct_vec2_1a0d51ef92a3baedc006bca6a702cefc65" kind="function"><name>Vec2</name></member>
+    <member refid="struct_vec2_1ae4f3417996d97ced63c14896d50c86f9" kind="function"><name>Vec2</name></member>
+    <member refid="struct_vec2_1a75d06e735d280d9812a8bc1d2ecb4e94" kind="function"><name>Vec2</name></member>
+    <member refid="struct_vec2_1ad4be6924a3e7e61a5b97c33efa9541ca" kind="function"><name>clear</name></member>
+    <member refid="struct_vec2_1a73f59613a791abd955bf16fccd53777b" kind="function"><name>normalize</name></member>
+    <member refid="struct_vec2_1a8f0f08fa249195af341222553c8db855" kind="function"><name>distance</name></member>
+    <member refid="struct_vec2_1a7f614c509f46b773f169fe8b2d03ecbb" kind="function"><name>angle</name></member>
+    <member refid="struct_vec2_1a652b5381d256205d1f315551c223c161" kind="function"><name>distance</name></member>
+    <member refid="struct_vec2_1a505fa8ae0330a223ee1a3131a0a88c90" kind="function"><name>angle</name></member>
+    <member refid="struct_vec2_1aa9b9f3c8a4b23b9219ec61138e57de9c" kind="function"><name>operator+</name></member>
+    <member refid="struct_vec2_1a768e0ecb4deaad2c813560444b157f3e" kind="function"><name>operator-</name></member>
+    <member refid="struct_vec2_1ad901a2c2e0efc451ddfa5744fe2b3d40" kind="function"><name>operator*</name></member>
+    <member refid="struct_vec2_1abbe86e589c8d7683a8625eff3ac6a870" kind="function"><name>operator/</name></member>
+    <member refid="struct_vec2_1a65e13fd4d70702a572375a8d0f5726f6" kind="function"><name>operator*</name></member>
+    <member refid="struct_vec2_1a23708adfcc804f980c886dc03da6de82" kind="function"><name>operator=</name></member>
+    <member refid="struct_vec2_1aebaa01a21864be8949d01b95aa04b9a5" kind="function"><name>operator+=</name></member>
+    <member refid="struct_vec2_1a6e9ecd6d18f05618dba2112e14d1e71d" kind="function"><name>operator-=</name></member>
+    <member refid="struct_vec2_1a8889b897ee2f797af00328366e66028f" kind="function"><name>operator*=</name></member>
+    <member refid="struct_vec2_1a8aca56644471bee30f568f8aa1556cf2" kind="function"><name>operator/=</name></member>
+    <member refid="struct_vec2_1a7e58ef44311b38b7bcb3f3f4993dab7c" kind="function"><name>operator==</name></member>
+    <member refid="struct_vec2_1a0d7091e1b5063ac843796b800523d1a9" kind="function"><name>operator!=</name></member>
+    <member refid="struct_vec2_1a7890655224faa58caf7873ec90810dff" kind="function"><name>operator Vec2&lt; G &gt;</name></member>
+  </compound>
+  <compound refid="struct_vec3" kind="struct"><name>Vec3</name>
+    <member refid="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" kind="variable"><name>x</name></member>
+    <member refid="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" kind="variable"><name>y</name></member>
+    <member refid="struct_vec3_1a0f694311f956380952aee054cbabb8b6" kind="variable"><name>z</name></member>
+    <member refid="struct_vec3_1a7c150f37ecfa78ced8b83bd95908cc33" kind="function"><name>Vec3</name></member>
+    <member refid="struct_vec3_1ab5e07fff614504292d74e3d7f29fe6f9" kind="function"><name>Vec3</name></member>
+    <member refid="struct_vec3_1a8d0c4c2050b2784999cb991ec65c909d" kind="function"><name>Vec3</name></member>
+    <member refid="struct_vec3_1ab065f613072cf03bae74e0398fe03819" kind="function"><name>clear</name></member>
+    <member refid="struct_vec3_1aaa52699051347366ad9836673b688c0f" kind="function"><name>normalize</name></member>
+    <member refid="struct_vec3_1ac78863777884b592abb605ff3a605873" kind="function"><name>distance</name></member>
+    <member refid="struct_vec3_1a54cf6d04efc4cd495d9bf30a85cbaa36" kind="function"><name>angle</name></member>
+    <member refid="struct_vec3_1ad3b8a18c348e470cdebf4c05b88c73ae" kind="function"><name>distance</name></member>
+    <member refid="struct_vec3_1a33fb3a5de6f17cc4cfb50af46881ad97" kind="function"><name>angle</name></member>
+    <member refid="struct_vec3_1a136910239c8767d8ddda099c4e447b72" kind="function"><name>operator+</name></member>
+    <member refid="struct_vec3_1a401a0c33c4ebff4b78590a6c5a010f3d" kind="function"><name>operator-</name></member>
+    <member refid="struct_vec3_1aedc6a75a9cc9b09269dfb9c603e6d67b" kind="function"><name>operator*</name></member>
+    <member refid="struct_vec3_1a3f28aeaac3b37939603048919f07c901" kind="function"><name>operator/</name></member>
+    <member refid="struct_vec3_1a544cfb7946d54665b9a93925595141a5" kind="function"><name>operator*</name></member>
+    <member refid="struct_vec3_1a67250f3142016b46ca1fe6d2aa260bdb" kind="function"><name>operator^</name></member>
+    <member refid="struct_vec3_1a6357cc8bedaf8e78802e498543995370" kind="function"><name>operator=</name></member>
+    <member refid="struct_vec3_1a5268deb77835e359316ce9312e6d78b8" kind="function"><name>operator+=</name></member>
+    <member refid="struct_vec3_1a7e8380546b7a07f5a42ddc618843009c" kind="function"><name>operator-=</name></member>
+    <member refid="struct_vec3_1ab538e8b150f236bf307f4069a48e2f58" kind="function"><name>operator*=</name></member>
+    <member refid="struct_vec3_1a029288940a55ee43531803fcdc8ae6ef" kind="function"><name>operator/=</name></member>
+    <member refid="struct_vec3_1a92f13cfa00d9e63703b45876fde2ac08" kind="function"><name>operator^=</name></member>
+    <member refid="struct_vec3_1a163682ec6216cdf90e82e50640e78966" kind="function"><name>operator==</name></member>
+    <member refid="struct_vec3_1ac4f213839d154e0a42f137ca03b17f5a" kind="function"><name>operator!=</name></member>
+    <member refid="struct_vec3_1a77f8546fed96aae205892e2989c16056" kind="function"><name>operator Vec3&lt; G &gt;</name></member>
+  </compound>
+  <compound refid="namespace_game" kind="namespace"><name>Game</name>
+    <member refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3" kind="enum"><name>TileType</name></member>
+    <member refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a05554b8c93c03fab4a2469132ddbc92c" kind="enumvalue"><name>EmptyTile</name></member>
+    <member refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a238e31f792ea0a53d8182088b3179185" kind="enumvalue"><name>TowerTile</name></member>
+    <member refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a741af12eaf71b7dec93130c56ad9f86a" kind="enumvalue"><name>RoadTile</name></member>
+    <member refid="namespace_game_1a719e3885709c3dc073fd69bcf0d3d4ac" kind="variable"><name>towerManager</name></member>
+    <member refid="namespace_game_1acaee8a857e108ef391b58ba15f3897c9" kind="variable"><name>towers</name></member>
+    <member refid="namespace_game_1a567bf723c1182e15ffac0548a9b01a00" kind="variable"><name>enemies</name></member>
+    <member refid="namespace_game_1a19468d252754d2b9efe64258e7e3ccba" kind="variable"><name>entities</name></member>
+    <member refid="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" kind="variable"><name>enemiesRoute</name></member>
+    <member refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kind="variable"><name>map</name></member>
+    <member refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kind="variable"><name>pixelsPerSquare</name></member>
+    <member refid="namespace_game_1a57b7bb4913757b7f74496bcef9a5066a" kind="variable"><name>life</name></member>
+    <member refid="namespace_game_1a8c9e80bd9cfbe0ca529de0728ae63b7b" kind="variable"><name>money</name></member>
+    <member refid="namespace_game_1aff477320e2ca589ce1eb88d553763302" kind="variable"><name>tickCount</name></member>
+    <member refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kind="variable"><name>velocity</name></member>
+    <member refid="namespace_game_1ab5f09ff25c1bf41aa00e19951062349e" kind="variable"><name>selectedTower</name></member>
+    <member refid="namespace_game_1a83840990333d3cc33e50a8d944558125" kind="function"><name>tick</name></member>
+    <member refid="namespace_game_1ac8fed37d2d116b380d75962218826b1b" kind="function"><name>draw</name></member>
+    <member refid="namespace_game_1a3d96c03e83451dab8603f1e791d22fd6" kind="function"><name>getTower</name></member>
+    <member refid="namespace_game_1a45c3585e317f9cb5dfae27f54f1f019d" kind="function"><name>putTower</name></member>
+    <member refid="namespace_game_1a549aa0e7de912a178bb49190fab5a7f6" kind="function"><name>removeTower</name></member>
+    <member refid="namespace_game_1ac99a1484f601d4438ab49b9dc99dcc33" kind="function"><name>removeTower</name></member>
+    <member refid="namespace_game_1af2e314759bbe1f96478d79fda41d1c40" kind="function"><name>isInRange</name></member>
+    <member refid="namespace_game_1a1d9c21b5df867aeaf1ac00fc77a577b7" kind="function"><name>kill</name></member>
+    <member refid="namespace_game_1a06280777aa0c70527c6dfce295cc4220" kind="function"><name>findTarget</name></member>
+    <member refid="namespace_game_1a2f4d39b84db31e6af593f4f4e58fab2d" kind="function"><name>findEnemiesInRange</name></member>
+    <member refid="namespace_game_1ae0de9897a96ba2707f9648a563521c7d" kind="function"><name>exists</name></member>
+    <member refid="namespace_game_1a054c76dd36ea7fd2ac0fd34a132eddfb" kind="function"><name>exists</name></member>
+    <member refid="namespace_game_1a799152774e0478c9ffeb39c434faa6d1" kind="function"><name>exists</name></member>
+    <member refid="namespace_game_1a5ce72058030c0173b9f642f727fc3ce1" kind="function"><name>clearTowers</name></member>
+    <member refid="namespace_game_1af1500b3fbfc3bac86161440e3cc5703b" kind="function"><name>clearEntities</name></member>
+    <member refid="namespace_game_1a29cc92564c4cf32c7fd0c06d6c65898f" kind="function"><name>clearEnemies</name></member>
+    <member refid="namespace_game_1a16cce46904b2800511356b0e5e45b05a" kind="function"><name>killEnemies</name></member>
+    <member refid="namespace_game_1a71544153aaa8842c582ec15166796d45" kind="function"><name>getDistance</name></member>
+    <member refid="namespace_game_1a3a3a6fcb74f541d2dc4be77b0be28b71" kind="function"><name>getRealPosition</name></member>
+  </compound>
+  <compound refid="namespace_game_1_1_stats" kind="namespace"><name>Game::Stats</name>
+    <member refid="namespace_game_1_1_stats_1a6db33dedd8ef995c9187906dc6abc664" kind="variable"><name>enemiesKilled</name></member>
+  </compound>
+  <compound refid="namespace_map_manager" kind="namespace"><name>MapManager</name>
+    <member refid="namespace_map_manager_1a5556240067b673eedf80d7214f04b7df" kind="function"><name>save</name></member>
+    <member refid="namespace_map_manager_1ac303bfa11db51676fd16be01d0f9383b" kind="function"><name>load</name></member>
+    <member refid="namespace_map_manager_1a71db5c840f3d140697e1c07ab988ad78" kind="function"><name>toBinary</name></member>
+    <member refid="namespace_map_manager_1a3fa765d3962e46ee13bf0f4a3e3ab9af" kind="function"><name>toBinary</name></member>
+    <member refid="namespace_map_manager_1aaa2e7c638506a0169931d620012d0e3f" kind="function"><name>toBinary</name></member>
+  </compound>
+  <compound refid="namespace_resources" kind="namespace"><name>Resources</name>
+    <member refid="namespace_resources_1aca746512f813c1e1219bcc68e11580c0" kind="variable"><name>_textures</name></member>
+    <member refid="namespace_resources_1a5d69bd132d861b6f3a83486e871b0b0a" kind="function"><name>getTexture</name></member>
+    <member refid="namespace_resources_1a0cbbb47ce375a16826bbdcd8843b7aa9" kind="function"><name>normalizePath</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_basic_enemy_8cpp" kind="file"><name>BasicEnemy.cpp</name>
+  </compound>
+  <compound refid="_basic_enemy_8h" kind="file"><name>BasicEnemy.h</name>
+  </compound>
+  <compound refid="_basic_tower_manager_8cpp" kind="file"><name>BasicTowerManager.cpp</name>
+  </compound>
+  <compound refid="_basic_tower_manager_8h" kind="file"><name>BasicTowerManager.h</name>
+  </compound>
+  <compound refid="_bullet_8cpp" kind="file"><name>Bullet.cpp</name>
+  </compound>
+  <compound refid="_bullet_8h" kind="file"><name>Bullet.h</name>
+  </compound>
+  <compound refid="_enemy_8cpp" kind="file"><name>Enemy.cpp</name>
+  </compound>
+  <compound refid="_enemy_8h" kind="file"><name>Enemy.h</name>
+  </compound>
+  <compound refid="_entity_8h" kind="file"><name>Entity.h</name>
+  </compound>
+  <compound refid="_explosion_entity_8cpp" kind="file"><name>ExplosionEntity.cpp</name>
+  </compound>
+  <compound refid="_explosion_entity_8h" kind="file"><name>ExplosionEntity.h</name>
+  </compound>
+  <compound refid="_fire_entity_8cpp" kind="file"><name>FireEntity.cpp</name>
+  </compound>
+  <compound refid="_fire_entity_8h" kind="file"><name>FireEntity.h</name>
+  </compound>
+  <compound refid="_flame_ring_8cpp" kind="file"><name>FlameRing.cpp</name>
+  </compound>
+  <compound refid="_flame_ring_8h" kind="file"><name>FlameRing.h</name>
+  </compound>
+  <compound refid="_flame_ring_tower_8cpp" kind="file"><name>FlameRingTower.cpp</name>
+  </compound>
+  <compound refid="_flame_ring_tower_8h" kind="file"><name>FlameRingTower.h</name>
+  </compound>
+  <compound refid="_game_8cpp" kind="file"><name>Game.cpp</name>
+  </compound>
+  <compound refid="_game_8h" kind="file"><name>Game.h</name>
+    <member refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" kind="define"><name>PI</name></member>
+  </compound>
+  <compound refid="_inhibitor_enemy_8cpp" kind="file"><name>InhibitorEnemy.cpp</name>
+  </compound>
+  <compound refid="_inhibitor_enemy_8h" kind="file"><name>InhibitorEnemy.h</name>
+  </compound>
+  <compound refid="_inmortal_enemy_8cpp" kind="file"><name>InmortalEnemy.cpp</name>
+  </compound>
+  <compound refid="_inmortal_enemy_8h" kind="file"><name>InmortalEnemy.h</name>
+  </compound>
+  <compound refid="_laser_entity_8cpp" kind="file"><name>LaserEntity.cpp</name>
+  </compound>
+  <compound refid="_laser_entity_8h" kind="file"><name>LaserEntity.h</name>
+  </compound>
+  <compound refid="map_creator_2main_8cpp" kind="file"><name>mapCreator/main.cpp</name>
+    <member refid="map_creator_2main_8cpp_1ac2a3b52910dd7bd7d24ab3b653c59639" kind="variable"><name>tileMap</name></member>
+    <member refid="map_creator_2main_8cpp_1ae7457af59de824c7a2eee127204b01dd" kind="variable"><name>pathPoints</name></member>
+    <member refid="map_creator_2main_8cpp_1a14bad0028dd1b02b569d181eda643dce" kind="variable"><name>pixelsPerSquare</name></member>
+    <member refid="map_creator_2main_8cpp_1a61ecf7a2f9a9e7ba717b4e00244ebe6f" kind="function"><name>draw</name></member>
+    <member refid="map_creator_2main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a5901170f346e94ad9e3f88c0c7275522" kind="function"><name>initializeGame</name></member>
+    <member refid="main_8cpp_1a3f1f2de8ad16ee00d98289cf4270761f" kind="function"><name>freeGame</name></member>
+    <member refid="main_8cpp_1ab8f3da104f8cd64675c808a1d882a61a" kind="function"><name>setTooltip</name></member>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_map_manager_8cpp" kind="file"><name>MapManager.cpp</name>
+  </compound>
+  <compound refid="_map_manager_8h" kind="file"><name>MapManager.h</name>
+  </compound>
+  <compound refid="_resources_8cpp" kind="file"><name>Resources.cpp</name>
+  </compound>
+  <compound refid="_resources_8h" kind="file"><name>Resources.h</name>
+  </compound>
+  <compound refid="_rocket_8cpp" kind="file"><name>Rocket.cpp</name>
+  </compound>
+  <compound refid="_rocket_8h" kind="file"><name>Rocket.h</name>
+  </compound>
+  <compound refid="_rocket_tower_8cpp" kind="file"><name>RocketTower.cpp</name>
+  </compound>
+  <compound refid="_rocket_tower_8h" kind="file"><name>RocketTower.h</name>
+  </compound>
+  <compound refid="_sniper_tower_8cpp" kind="file"><name>SniperTower.cpp</name>
+  </compound>
+  <compound refid="_sniper_tower_8h" kind="file"><name>SniperTower.h</name>
+  </compound>
+  <compound refid="_soldier_tower_8cpp" kind="file"><name>SoldierTower.cpp</name>
+  </compound>
+  <compound refid="_soldier_tower_8h" kind="file"><name>SoldierTower.h</name>
+  </compound>
+  <compound refid="_sprite_8cpp" kind="file"><name>Sprite.cpp</name>
+  </compound>
+  <compound refid="_sprite_8h" kind="file"><name>Sprite.h</name>
+  </compound>
+  <compound refid="_tooltip_8cpp" kind="file"><name>Tooltip.cpp</name>
+  </compound>
+  <compound refid="_tooltip_8h" kind="file"><name>Tooltip.h</name>
+  </compound>
+  <compound refid="_tower_8cpp" kind="file"><name>Tower.cpp</name>
+  </compound>
+  <compound refid="_tower_8h" kind="file"><name>Tower.h</name>
+    <member refid="_tower_8h_1a515c655d051e131462a497de3df0e8eb" kind="enum"><name>TowerEvent</name></member>
+    <member refid="_tower_8h_1a515c655d051e131462a497de3df0e8ebac9d3e887722f2bc482bcca9d41c512af" kind="enumvalue"><name>None</name></member>
+    <member refid="_tower_8h_1a315655b1bb5848c063491adffde62b15" kind="enum"><name>Priority</name></member>
+    <member refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a79935518a3889663d8688b6b01fff051" kind="enumvalue"><name>Default</name></member>
+    <member refid="_tower_8h_1a315655b1bb5848c063491adffde62b15ac5222d41f21bc883f0c0b9754191b350" kind="enumvalue"><name>First</name></member>
+    <member refid="_tower_8h_1a315655b1bb5848c063491adffde62b15ac2a3856002491cf465725e8d1108f796" kind="enumvalue"><name>Last</name></member>
+    <member refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a72f6cdd6b6b9a86c93a38bc8ecc8025a" kind="enumvalue"><name>Near</name></member>
+    <member refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a2dacbd805425996a5d37778b02e24dde" kind="enumvalue"><name>Far</name></member>
+    <member refid="_tower_8h_1a315655b1bb5848c063491adffde62b15af5b140d7cf39661c84d7e52e13b0c3db" kind="enumvalue"><name>MoreLife</name></member>
+    <member refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a344ebf67c51ee0e28e8b1c370696eb99" kind="enumvalue"><name>LessLife</name></member>
+    <member refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a1c8c8710e5a8d3afbe9499b22bd020c3" kind="enumvalue"><name>MoreDamage</name></member>
+    <member refid="_tower_8h_1a315655b1bb5848c063491adffde62b15ade1117e4e38b558fda4490a817553c3d" kind="enumvalue"><name>LessDamage</name></member>
+    <member refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a599c478c80ca66aa854dbd917f1ecef8" kind="enumvalue"><name>MoreEnemiesTogether</name></member>
+  </compound>
+  <compound refid="_tower_manager_8cpp" kind="file"><name>TowerManager.cpp</name>
+  </compound>
+  <compound refid="_tower_manager_8h" kind="file"><name>TowerManager.h</name>
+  </compound>
+  <compound refid="_tower_type_8cpp" kind="file"><name>TowerType.cpp</name>
+  </compound>
+  <compound refid="_tower_type_8h" kind="file"><name>TowerType.h</name>
+  </compound>
+  <compound refid="_vec_8hpp" kind="file"><name>Vec.hpp</name>
+    <member refid="_vec_8hpp_1ab2b69827ad7e42df1b74a25da1b3db8d" kind="typedef"><name>Vec3f</name></member>
+    <member refid="_vec_8hpp_1ac7030f700e7e312e526c66765cc26f2c" kind="typedef"><name>Vec3d</name></member>
+    <member refid="_vec_8hpp_1a89609394e25ab0e1acccd6e2a0a50055" kind="typedef"><name>Vec3i</name></member>
+    <member refid="_vec_8hpp_1ac1c4cd00167ed98e70b8dae0131297df" kind="typedef"><name>Vec3l</name></member>
+    <member refid="_vec_8hpp_1a5bba51046f8678fc315d18709ac24dab" kind="typedef"><name>Vec2f</name></member>
+    <member refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kind="typedef"><name>Vec2d</name></member>
+    <member refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kind="typedef"><name>Vec2i</name></member>
+    <member refid="_vec_8hpp_1a7fc9840095007916e432f63ef64cc4d8" kind="typedef"><name>Vec2l</name></member>
+    <member refid="_vec_8hpp_1a58856e2d33c314e592ceed4f297e1b6d" kind="function"><name>operator-</name></member>
+    <member refid="_vec_8hpp_1aca0f7947079f701001d7beee5e48185c" kind="function"><name>operator-</name></member>
+    <member refid="_vec_8hpp_1a89ce39d80de6e0d6ea7085eff17c9d11" kind="function"><name>mixedProduct</name></member>
+    <member refid="_vec_8hpp_1afb4316fdff9c2e3e932e94e1f3ba2ff1" kind="function"><name>distance</name></member>
+    <member refid="_vec_8hpp_1a5e8aa63c73f6ac775322dd0f56e5431d" kind="function"><name>angle</name></member>
+    <member refid="_vec_8hpp_1a647ac4aa5d6e46f61b06b95b199955c9" kind="function"><name>distance</name></member>
+    <member refid="_vec_8hpp_1ac0ffa07f4206b7f8587d4c7e81d77fed" kind="function"><name>angle</name></member>
+  </compound>
+  <compound refid="dir_9b529ab1e48fba7128847ca189c09696" kind="dir"><name>enemies</name>
+  </compound>
+  <compound refid="dir_9404ca00d5cf333c309ae0ebf80749c4" kind="dir"><name>entities</name>
+  </compound>
+  <compound refid="dir_6e4ab86176cf0f693527fdb4dbb0e20a" kind="dir"><name>entities</name>
+  </compound>
+  <compound refid="dir_45791bb5bca9224197d93f32b34958c0" kind="dir"><name>mapCreator</name>
+  </compound>
+  <compound refid="dir_ddf485014d9549d3359e5c4b8667fc4d" kind="dir"><name>towerManagers</name>
+  </compound>
+  <compound refid="dir_c8f430f9c4c3d0d03e434b2c727549e1" kind="dir"><name>towers</name>
+  </compound>
+</doxygenindex>

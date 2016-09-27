@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_sprite" kind="class" language="C++" prot="public">
+    <compoundname>Sprite</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Sprite</basecompoundref>
+    <includes refid="_sprite_8h" local="no">Sprite.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sprite_1a5cc96a574be16b968c4bda9efc76ea35" prot="private" static="no" mutable="no">
+        <type>sf::IntRect</type>
+        <definition>sf::IntRect Sprite::_rect</definition>
+        <argsstring></argsstring>
+        <name>_rect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" line="7" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Sprite::_countX</definition>
+        <argsstring></argsstring>
+        <name>_countX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" line="8" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Sprite::_countY</definition>
+        <argsstring></argsstring>
+        <name>_countY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" line="9" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Sprite::_count</definition>
+        <argsstring></argsstring>
+        <name>_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" line="10" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sprite_1af222b8a53d91bade06991f38dc3a260e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Sprite::_actualFrame</definition>
+        <argsstring></argsstring>
+        <name>_actualFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" line="12" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sprite_1a12cba3ac1868418add3c4d95ce87e615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Sprite::Sprite</definition>
+        <argsstring>()</argsstring>
+        <name>Sprite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" line="15" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.cpp" bodystart="3" bodyend="8"/>
+        <references refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" compoundref="_sprite_8h" startline="8">_countX</references>
+        <references refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" compoundref="_sprite_8h" startline="9">_countY</references>
+        <references refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" compoundref="_sprite_8h" startline="10">_count</references>
+        <references refid="class_sprite_1af222b8a53d91bade06991f38dc3a260e" compoundref="_sprite_8h" startline="12">_actualFrame</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sprite_1afc49fccfd7f32386592cf1c08a670102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Sprite::Sprite</definition>
+        <argsstring>(const sf::Texture &amp;texture, int countX, int countY, int count=0)</argsstring>
+        <name>Sprite</name>
+        <param>
+          <type>const sf::Texture &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>countX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>countY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" line="16" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.cpp" bodystart="10" bodyend="17"/>
+        <references refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" compoundref="_sprite_8h" startline="10">_count</references>
+        <references refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" compoundref="_sprite_8h" startline="8">_countX</references>
+        <references refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" compoundref="_sprite_8h" startline="9">_countY</references>
+        <references refid="class_sprite_1a1d5409acfab40087ada2614ea85fabd5" compoundref="_sprite_8cpp" startline="41" endline="47">setFrame</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sprite_1a862bf368bbeb1aada95f5d0f46ea44f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Sprite::Sprite</definition>
+        <argsstring>(const sf::Texture &amp;texture, const sf::IntRect &amp;rect, int countX, int countY, int count=0)</argsstring>
+        <name>Sprite</name>
+        <param>
+          <type>const sf::Texture &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>const sf::IntRect &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>countX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>countY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" line="17" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.cpp" bodystart="19" bodyend="26"/>
+        <references refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" compoundref="_sprite_8h" startline="10">_count</references>
+        <references refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" compoundref="_sprite_8h" startline="8">_countX</references>
+        <references refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" compoundref="_sprite_8h" startline="9">_countY</references>
+        <references refid="class_sprite_1a1d5409acfab40087ada2614ea85fabd5" compoundref="_sprite_8cpp" startline="41" endline="47">setFrame</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sprite_1ace1731bdb048bfd8f469cc3af889489b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sprite::setCount</definition>
+        <argsstring>(int countX, int countY, int count=0)</argsstring>
+        <name>setCount</name>
+        <param>
+          <type>int</type>
+          <declname>countX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>countY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" line="19" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.cpp" bodystart="28" bodyend="35"/>
+        <references refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" compoundref="_sprite_8h" startline="8">_countX</references>
+        <references refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" compoundref="_sprite_8h" startline="9">_countY</references>
+        <references refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" compoundref="_sprite_8h" startline="10">_count</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sprite_1aad4221a926a6509c267dc309229fec6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sprite::nextFrame</definition>
+        <argsstring>()</argsstring>
+        <name>nextFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" line="21" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.cpp" bodystart="37" bodyend="39"/>
+        <references refid="class_sprite_1a1d5409acfab40087ada2614ea85fabd5" compoundref="_sprite_8cpp" startline="41" endline="47">setFrame</references>
+        <references refid="class_sprite_1af222b8a53d91bade06991f38dc3a260e" compoundref="_sprite_8h" startline="12">_actualFrame</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sprite_1a1d5409acfab40087ada2614ea85fabd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sprite::setFrame</definition>
+        <argsstring>(int n)</argsstring>
+        <name>setFrame</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" line="22" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.cpp" bodystart="41" bodyend="47"/>
+        <references refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" compoundref="_sprite_8h" startline="10">_count</references>
+        <references refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" compoundref="_sprite_8h" startline="8">_countX</references>
+        <references refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" compoundref="_sprite_8h" startline="9">_countY</references>
+        <references refid="class_sprite_1af222b8a53d91bade06991f38dc3a260e" compoundref="_sprite_8h" startline="12">_actualFrame</references>
+        <references refid="class_sprite_1a5cc96a574be16b968c4bda9efc76ea35" compoundref="_sprite_8h" startline="7">_rect</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sprite_1a6a6a24cb29a60b88892adbfe35506bea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Sprite::getFrame</definition>
+        <argsstring>() const </argsstring>
+        <name>getFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" line="23" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.cpp" bodystart="49" bodyend="51"/>
+        <references refid="class_sprite_1af222b8a53d91bade06991f38dc3a260e" compoundref="_sprite_8h" startline="12">_actualFrame</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sprite_1a868d94bb655c124f69b93d390f51ff20" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>sf::Vector2i</type>
+        <definition>sf::Vector2i Sprite::getSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" line="25" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.cpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="212">
+        <label>sf::Sprite</label>
+      </node>
+      <node id="211">
+        <label>Sprite</label>
+        <link refid="class_sprite"/>
+        <childnode refid="212" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="214">
+        <label>sf::Sprite</label>
+      </node>
+      <node id="213">
+        <label>Sprite</label>
+        <link refid="class_sprite"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" line="6" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.h" bodystart="6" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_sprite_1af222b8a53d91bade06991f38dc3a260e" prot="private" virt="non-virtual"><scope>Sprite</scope><name>_actualFrame</name></member>
+      <member refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" prot="private" virt="non-virtual"><scope>Sprite</scope><name>_count</name></member>
+      <member refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" prot="private" virt="non-virtual"><scope>Sprite</scope><name>_countX</name></member>
+      <member refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" prot="private" virt="non-virtual"><scope>Sprite</scope><name>_countY</name></member>
+      <member refid="class_sprite_1a5cc96a574be16b968c4bda9efc76ea35" prot="private" virt="non-virtual"><scope>Sprite</scope><name>_rect</name></member>
+      <member refid="class_sprite_1a6a6a24cb29a60b88892adbfe35506bea" prot="public" virt="non-virtual"><scope>Sprite</scope><name>getFrame</name></member>
+      <member refid="class_sprite_1a868d94bb655c124f69b93d390f51ff20" prot="public" virt="non-virtual"><scope>Sprite</scope><name>getSize</name></member>
+      <member refid="class_sprite_1aad4221a926a6509c267dc309229fec6f" prot="public" virt="non-virtual"><scope>Sprite</scope><name>nextFrame</name></member>
+      <member refid="class_sprite_1ace1731bdb048bfd8f469cc3af889489b" prot="public" virt="non-virtual"><scope>Sprite</scope><name>setCount</name></member>
+      <member refid="class_sprite_1a1d5409acfab40087ada2614ea85fabd5" prot="public" virt="non-virtual"><scope>Sprite</scope><name>setFrame</name></member>
+      <member refid="class_sprite_1a12cba3ac1868418add3c4d95ce87e615" prot="public" virt="non-virtual"><scope>Sprite</scope><name>Sprite</name></member>
+      <member refid="class_sprite_1afc49fccfd7f32386592cf1c08a670102" prot="public" virt="non-virtual"><scope>Sprite</scope><name>Sprite</name></member>
+      <member refid="class_sprite_1a862bf368bbeb1aada95f5d0f46ea44f0" prot="public" virt="non-virtual"><scope>Sprite</scope><name>Sprite</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

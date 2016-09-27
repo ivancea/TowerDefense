@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_inmortal_enemy_8cpp" kind="file" language="C++">
+    <compoundname>InmortalEnemy.cpp</compoundname>
+    <includes refid="_inmortal_enemy_8h" local="yes">InmortalEnemy.h</includes>
+    <includes local="no">SFML/OpenGL.hpp</includes>
+    <includes refid="_game_8h" local="yes">Game.h</includes>
+    <incdepgraph>
+      <node id="1226">
+        <label>list</label>
+      </node>
+      <node id="1221">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1224">
+        <label>SFML/OpenGL.hpp</label>
+      </node>
+      <node id="1218">
+        <label>InmortalEnemy.cpp</label>
+        <link refid="InmortalEnemy.cpp"/>
+        <childnode refid="1219" relation="include">
+        </childnode>
+        <childnode refid="1224" relation="include">
+        </childnode>
+        <childnode refid="1225" relation="include">
+        </childnode>
+      </node>
+      <node id="1223">
+        <label>cmath</label>
+      </node>
+      <node id="1229">
+        <label>string</label>
+      </node>
+      <node id="1220">
+        <label>../Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1221" relation="include">
+        </childnode>
+        <childnode refid="1222" relation="include">
+        </childnode>
+      </node>
+      <node id="1219">
+        <label>InmortalEnemy.h</label>
+        <link refid="_inmortal_enemy_8h"/>
+        <childnode refid="1220" relation="include">
+        </childnode>
+      </node>
+      <node id="1222">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1223" relation="include">
+        </childnode>
+      </node>
+      <node id="1227">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="1226" relation="include">
+        </childnode>
+        <childnode refid="1221" relation="include">
+        </childnode>
+        <childnode refid="1228" relation="include">
+        </childnode>
+      </node>
+      <node id="1225">
+        <label>Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="1226" relation="include">
+        </childnode>
+        <childnode refid="1221" relation="include">
+        </childnode>
+        <childnode refid="1224" relation="include">
+        </childnode>
+        <childnode refid="1227" relation="include">
+        </childnode>
+        <childnode refid="1230" relation="include">
+        </childnode>
+        <childnode refid="1220" relation="include">
+        </childnode>
+        <childnode refid="1231" relation="include">
+        </childnode>
+        <childnode refid="1222" relation="include">
+        </childnode>
+      </node>
+      <node id="1228">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1229" relation="include">
+        </childnode>
+        <childnode refid="1221" relation="include">
+        </childnode>
+        <childnode refid="1230" relation="include">
+        </childnode>
+      </node>
+      <node id="1231">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1221" relation="include">
+        </childnode>
+      </node>
+      <node id="1230">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1221" relation="include">
+        </childnode>
+        <childnode refid="1222" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_inmortal_enemy_8h" kindref="compound">InmortalEnemy.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/OpenGL.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_8h" kindref="compound">Game.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_inmortal_enemy_1aa191e761100a47e3c0ade8e76a2746d8" refkind="member"><highlight class="normal"><ref refid="class_inmortal_enemy_1aa191e761100a47e3c0ade8e76a2746d8" kindref="member">InmortalEnemy::InmortalEnemy</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>damage)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">:<sp/><ref refid="class_enemy" kindref="compound">Enemy</ref>(1){</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_enemy_1af742f414df708a7c62240b6bd73aad94" kindref="member">_velocity</ref><sp/>=<sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_enemy_1a70ddc801163c579dcd432e8553331602" kindref="member">_life</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_enemy_1aa015dbea3090d6010d26169a6af9d9ed" kindref="member">_damage</ref><sp/>=<sp/><ref refid="class_inmortal_enemy_1a81eaa0320f186d755160338068be2bba" kindref="member">damage</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" kindref="member">Game::enemiesRoute</ref>.size()&gt;=1)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref><sp/>=<sp/><ref refid="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" kindref="member">Game::enemiesRoute</ref>[0];</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_inmortal_enemy_1a81eaa0320f186d755160338068be2bba" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_inmortal_enemy_1a81eaa0320f186d755160338068be2bba" kindref="member">InmortalEnemy::damage</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>n){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_inmortal_enemy_1ad773b2e4fb4ed96da327bdeed1d33a0a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_inmortal_enemy_1ad773b2e4fb4ed96da327bdeed1d33a0a" kindref="member">InmortalEnemy::draw</ref>(sf::RenderWindow*<sp/>window)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sz<sp/>=<sp/><ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>/3;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>glColor3ub(255,255,255);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>glBegin(GL_POLYGON);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>-sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>-sz);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>-sz);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+sz);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>-sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+sz);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnd();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>glLineWidth(1.0);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>glColor3ub(0,0,0);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>glBegin(GL_LINE_LOOP);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>-sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>-sz);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>-sz);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+sz);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>-sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+sz);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>-sz);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+sz);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>-sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>-sz);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>-sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+sz);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnd();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InmortalEnemy.cpp"/>
+  </compounddef>
+</doxygen>

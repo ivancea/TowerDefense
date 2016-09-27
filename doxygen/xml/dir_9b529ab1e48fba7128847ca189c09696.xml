@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_9b529ab1e48fba7128847ca189c09696" kind="dir">
+    <compoundname>enemies</compoundname>
+    <innerfile refid="_basic_enemy_8cpp">BasicEnemy.cpp</innerfile>
+    <innerfile refid="_basic_enemy_8h">BasicEnemy.h</innerfile>
+    <innerfile refid="_inhibitor_enemy_8cpp">InhibitorEnemy.cpp</innerfile>
+    <innerfile refid="_inhibitor_enemy_8h">InhibitorEnemy.h</innerfile>
+    <innerfile refid="_inmortal_enemy_8cpp">InmortalEnemy.cpp</innerfile>
+    <innerfile refid="_inmortal_enemy_8h">InmortalEnemy.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_explosion_entity_8cpp" kind="file" language="C++">
+    <compoundname>ExplosionEntity.cpp</compoundname>
+    <includes refid="_explosion_entity_8h" local="yes">ExplosionEntity.h</includes>
+    <includes refid="_resources_8h" local="yes">../Resources.h</includes>
+    <includes refid="_sprite_8h" local="yes">../Sprite.h</includes>
+    <includes refid="_game_8h" local="yes">../Game.h</includes>
+    <includes local="no">SFML/OpenGL.hpp</includes>
+    <incdepgraph>
+      <node id="1034">
+        <label>list</label>
+      </node>
+      <node id="1026">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1035">
+        <label>SFML/OpenGL.hpp</label>
+      </node>
+      <node id="1029">
+        <label>cmath</label>
+      </node>
+      <node id="1025">
+        <label>ExplosionEntity.h</label>
+        <link refid="_explosion_entity_8h"/>
+        <childnode refid="1026" relation="include">
+        </childnode>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1028" relation="include">
+        </childnode>
+        <childnode refid="1030" relation="include">
+        </childnode>
+      </node>
+      <node id="1038">
+        <label>string</label>
+      </node>
+      <node id="1032">
+        <label>map</label>
+      </node>
+      <node id="1040">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1026" relation="include">
+        </childnode>
+        <childnode refid="1028" relation="include">
+        </childnode>
+      </node>
+      <node id="1028">
+        <label>../Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1029" relation="include">
+        </childnode>
+      </node>
+      <node id="1036">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="1034" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+        <childnode refid="1037" relation="include">
+        </childnode>
+      </node>
+      <node id="1033">
+        <label>../Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="1034" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1036" relation="include">
+        </childnode>
+        <childnode refid="1039" relation="include">
+        </childnode>
+        <childnode refid="1040" relation="include">
+        </childnode>
+        <childnode refid="1030" relation="include">
+        </childnode>
+        <childnode refid="1028" relation="include">
+        </childnode>
+      </node>
+      <node id="1024">
+        <label>ExplosionEntity.cpp</label>
+        <link refid="ExplosionEntity.cpp"/>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1031" relation="include">
+        </childnode>
+        <childnode refid="1027" relation="include">
+        </childnode>
+        <childnode refid="1033" relation="include">
+        </childnode>
+        <childnode refid="1035" relation="include">
+        </childnode>
+      </node>
+      <node id="1037">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1038" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+        <childnode refid="1039" relation="include">
+        </childnode>
+      </node>
+      <node id="1030">
+        <label>../Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1039">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1026" relation="include">
+        </childnode>
+        <childnode refid="1028" relation="include">
+        </childnode>
+      </node>
+      <node id="1027">
+        <label>../Sprite.h</label>
+        <link refid="_sprite_8h"/>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1031">
+        <label>../Resources.h</label>
+        <link refid="_resources_8h"/>
+        <childnode refid="1032" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_explosion_entity_8h" kindref="compound">ExplosionEntity.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Resources.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Sprite.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Game.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/OpenGL.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_explosion_entity_1a8484e8b2e4fc111c053d82e7a8b128af" refkind="member"><highlight class="normal"><ref refid="class_explosion_entity_1a8484e8b2e4fc111c053d82e7a8b128af" kindref="member">ExplosionEntity::ExplosionEntity</ref>(<ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>position,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>range,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ticksAlive)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">:_sprite(*<ref refid="namespace_resources" kindref="compound">Resources</ref>::<ref refid="namespace_resources_1a5d69bd132d861b6f3a83486e871b0b0a" kindref="member">getTexture</ref>(</highlight><highlight class="stringliteral">&quot;sprites/explosion.png&quot;</highlight><highlight class="normal">),<sp/>6,7,<sp/>37){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_explosion_entity_1acad7c31b46d3ee1fc463e2b5d2088316" kindref="member">_position</ref><sp/>=<sp/>position;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_explosion_entity_1a8af720a927919418fa3d13f51a7c9f69" kindref="member">_range</ref><sp/>=<sp/>range;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_explosion_entity_1a02c1b88d42144cbe71dc644e69c82658" kindref="member">_ticksAlive</ref><sp/>=<sp/>ticksAlive;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_explosion_entity_1a9b73c7aa1c1a96c414e828f9fef99a35" kindref="member">_ticksLived</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_explosion_entity_1aa14dfa3e54e220377cf3e7898df03fbf" kindref="member">_sprite</ref>.setColor(sf::Color(255,255,255,<sp/>175));</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_explosion_entity_1aa14dfa3e54e220377cf3e7898df03fbf" kindref="member">_sprite</ref>.scale(<ref refid="class_explosion_entity_1a8af720a927919418fa3d13f51a7c9f69" kindref="member">_range</ref>/<ref refid="class_explosion_entity_1aa14dfa3e54e220377cf3e7898df03fbf" kindref="member">_sprite</ref>.<ref refid="class_sprite_1a868d94bb655c124f69b93d390f51ff20" kindref="member">getSize</ref>().x,<sp/><ref refid="class_explosion_entity_1a8af720a927919418fa3d13f51a7c9f69" kindref="member">_range</ref>/<ref refid="class_explosion_entity_1aa14dfa3e54e220377cf3e7898df03fbf" kindref="member">_sprite</ref>.<ref refid="class_sprite_1a868d94bb655c124f69b93d390f51ff20" kindref="member">getSize</ref>().y);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_explosion_entity_1aa14dfa3e54e220377cf3e7898df03fbf" kindref="member">_sprite</ref>.setPosition(<ref refid="class_explosion_entity_1acad7c31b46d3ee1fc463e2b5d2088316" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>-<ref refid="class_explosion_entity_1aa14dfa3e54e220377cf3e7898df03fbf" kindref="member">_sprite</ref>.<ref refid="class_sprite_1a868d94bb655c124f69b93d390f51ff20" kindref="member">getSize</ref>().x/2,<sp/><ref refid="class_explosion_entity_1acad7c31b46d3ee1fc463e2b5d2088316" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>-<ref refid="class_explosion_entity_1aa14dfa3e54e220377cf3e7898df03fbf" kindref="member">_sprite</ref>.<ref refid="class_sprite_1a868d94bb655c124f69b93d390f51ff20" kindref="member">getSize</ref>().y/2);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_explosion_entity_1a84ef58c7602b0f6ce45c410b7d532aa5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_explosion_entity_1a84ef58c7602b0f6ce45c410b7d532aa5" kindref="member">ExplosionEntity::tick</ref>(){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_explosion_entity_1aa14dfa3e54e220377cf3e7898df03fbf" kindref="member">_sprite</ref>.<ref refid="class_sprite_1a1d5409acfab40087ada2614ea85fabd5" kindref="member">setFrame</ref>((<ref refid="class_explosion_entity_1a9b73c7aa1c1a96c414e828f9fef99a35" kindref="member">_ticksLived</ref>*37)/<ref refid="class_explosion_entity_1a02c1b88d42144cbe71dc644e69c82658" kindref="member">_ticksAlive</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_explosion_entity_1a9b73c7aa1c1a96c414e828f9fef99a35" kindref="member">_ticksLived</ref>++<sp/>&gt;=<sp/><ref refid="class_explosion_entity_1a02c1b88d42144cbe71dc644e69c82658" kindref="member">_ticksAlive</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="class_explosion_entity_1a59066ebe5d4588edd8a4cdf2c21d9c10" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_explosion_entity_1a59066ebe5d4588edd8a4cdf2c21d9c10" kindref="member">ExplosionEntity::drawOver</ref>(sf::RenderWindow*<sp/>window)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;pushGLStates();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window-&gt;draw(<ref refid="class_explosion_entity_1aa14dfa3e54e220377cf3e7898df03fbf" kindref="member">_sprite</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;popGLStates();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/entities/ExplosionEntity.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_basic_enemy_8cpp" kind="file" language="C++">
+    <compoundname>BasicEnemy.cpp</compoundname>
+    <includes refid="_basic_enemy_8h" local="yes">BasicEnemy.h</includes>
+    <includes local="no">SFML/OpenGL.hpp</includes>
+    <includes refid="_game_8h" local="yes">Game.h</includes>
+    <incdepgraph>
+      <node id="856">
+        <label>list</label>
+      </node>
+      <node id="851">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="854">
+        <label>SFML/OpenGL.hpp</label>
+      </node>
+      <node id="853">
+        <label>cmath</label>
+      </node>
+      <node id="859">
+        <label>string</label>
+      </node>
+      <node id="850">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="852" relation="include">
+        </childnode>
+      </node>
+      <node id="852">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="853" relation="include">
+        </childnode>
+      </node>
+      <node id="857">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="856" relation="include">
+        </childnode>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="858" relation="include">
+        </childnode>
+      </node>
+      <node id="855">
+        <label>Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="856" relation="include">
+        </childnode>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="854" relation="include">
+        </childnode>
+        <childnode refid="857" relation="include">
+        </childnode>
+        <childnode refid="860" relation="include">
+        </childnode>
+        <childnode refid="850" relation="include">
+        </childnode>
+        <childnode refid="861" relation="include">
+        </childnode>
+        <childnode refid="852" relation="include">
+        </childnode>
+      </node>
+      <node id="849">
+        <label>BasicEnemy.h</label>
+        <link refid="_basic_enemy_8h"/>
+        <childnode refid="850" relation="include">
+        </childnode>
+      </node>
+      <node id="858">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="859" relation="include">
+        </childnode>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="860" relation="include">
+        </childnode>
+      </node>
+      <node id="848">
+        <label>BasicEnemy.cpp</label>
+        <link refid="BasicEnemy.cpp"/>
+        <childnode refid="849" relation="include">
+        </childnode>
+        <childnode refid="854" relation="include">
+        </childnode>
+        <childnode refid="855" relation="include">
+        </childnode>
+      </node>
+      <node id="861">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="851" relation="include">
+        </childnode>
+      </node>
+      <node id="860">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="852" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_basic_enemy_8h" kindref="compound">BasicEnemy.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/OpenGL.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_8h" kindref="compound">Game.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_basic_enemy_1ae7f70e587dcac7bb2c82f460bbe5ad26" refkind="member"><highlight class="normal"><ref refid="class_basic_enemy_1ae7f70e587dcac7bb2c82f460bbe5ad26" kindref="member">BasicEnemy::BasicEnemy</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a57b7bb4913757b7f74496bcef9a5066a" kindref="member">life</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>damage)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">:<sp/><ref refid="class_enemy" kindref="compound">Enemy</ref>(1){</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_enemy_1af742f414df708a7c62240b6bd73aad94" kindref="member">_velocity</ref><sp/>=<sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_enemy_1a70ddc801163c579dcd432e8553331602" kindref="member">_life</ref><sp/>=<sp/><ref refid="namespace_game_1a57b7bb4913757b7f74496bcef9a5066a" kindref="member">life</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_enemy_1aa015dbea3090d6010d26169a6af9d9ed" kindref="member">_damage</ref><sp/>=<sp/><ref refid="class_enemy_1af7c3be9e985c7551466bb31e8d51bbbb" kindref="member">damage</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" kindref="member">Game::enemiesRoute</ref>.size()&gt;=1)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref><sp/>=<sp/><ref refid="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" kindref="member">Game::enemiesRoute</ref>[0];</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_basic_enemy_1a371a4209b7e53009991032189427a39d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_basic_enemy_1a371a4209b7e53009991032189427a39d" kindref="member">BasicEnemy::killed</ref>(){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a8c9e80bd9cfbe0ca529de0728ae63b7b" kindref="member">Game::money</ref><sp/>+=<sp/>10;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_basic_enemy_1a3c07b473a552322bcba3d74ed718879e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_basic_enemy_1a3c07b473a552322bcba3d74ed718879e" kindref="member">BasicEnemy::draw</ref>(sf::RenderWindow*<sp/>window)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sz<sp/>=<sp/><ref refid="class_enemy_1a70ddc801163c579dcd432e8553331602" kindref="member">_life</ref>/2;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sz&lt;=0)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sz<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>glColor3ub(255,0,0);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>glBegin(GL_POLYGON);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>-sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>-sz);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>-sz);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+sz);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>-sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+sz);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnd();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/BasicEnemy.cpp"/>
+  </compounddef>
+</doxygen>

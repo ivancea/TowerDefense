@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_flame_ring_tower" kind="class" language="C++" prot="public">
+    <compoundname>FlameRingTower</compoundname>
+    <basecompoundref refid="class_tower" prot="public" virt="non-virtual">Tower</basecompoundref>
+    <includes refid="_flame_ring_tower_8h" local="no">FlameRingTower.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_flame_ring_tower_1a426a443ba32beb37f68d919b79c83088" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FlameRingTower::_ringVelocity</definition>
+        <argsstring></argsstring>
+        <name>_ringVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" line="10" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_flame_ring_tower_1adfe46cb7f7baac76ed662c6d5dcc4f74" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FlameRingTower::_ringSize</definition>
+        <argsstring></argsstring>
+        <name>_ringSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" line="11" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_flame_ring_tower_1a666810b492598d4e77a3b26ab71fcbb6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FlameRingTower::_ringActualRange</definition>
+        <argsstring></argsstring>
+        <name>_ringActualRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" line="12" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_flame_ring_tower_1a9de7e32d674577d1b72b05e748ad20d7" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FlameRingTower::_damage</definition>
+        <argsstring></argsstring>
+        <name>_damage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" line="14" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_flame_ring_tower_1ad7e7182c61ff1d1f4c20a1d87807fd4c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int FlameRingTower::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" line="18" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_flame_ring_tower_1ad8ebcb202ae5f74f10591fdd1b0b7a0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FlameRingTower::FlameRingTower</definition>
+        <argsstring>()</argsstring>
+        <name>FlameRingTower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" line="20" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.cpp" bodystart="7" bodyend="17"/>
+        <references refid="class_tower_1a02ec2f8d1c4dea2f7fc002d8626c8b28" compoundref="_tower_8h" startline="31">Tower::_id</references>
+        <references refid="class_flame_ring_tower_1ad7e7182c61ff1d1f4c20a1d87807fd4c" compoundref="_flame_ring_tower_8h" startline="18">id</references>
+        <references refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" compoundref="_tower_8h" startline="33">Tower::_ticksForShoot</references>
+        <references refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" compoundref="_tower_8h" startline="34">Tower::_ticksBetweenShoots</references>
+        <references refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" compoundref="_tower_8h" startline="39">Tower::_minRange</references>
+        <references refid="class_tower_1a29cae98d3f1d863335b175597f61f8da" compoundref="_tower_8h" startline="39">Tower::_maxRange</references>
+        <references refid="class_flame_ring_tower_1a426a443ba32beb37f68d919b79c83088" compoundref="_flame_ring_tower_8h" startline="10">_ringVelocity</references>
+        <references refid="class_flame_ring_tower_1a666810b492598d4e77a3b26ab71fcbb6" compoundref="_flame_ring_tower_8h" startline="12">_ringActualRange</references>
+        <references refid="class_flame_ring_tower_1adfe46cb7f7baac76ed662c6d5dcc4f74" compoundref="_flame_ring_tower_8h" startline="11">_ringSize</references>
+        <references refid="class_flame_ring_tower_1a9de7e32d674577d1b72b05e748ad20d7" compoundref="_flame_ring_tower_8h" startline="14">_damage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_flame_ring_tower_1ac7b603fcbd551c39fd2bb789896fcb92" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_tower_8h_1a515c655d051e131462a497de3df0e8eb" kindref="member">TowerEvent</ref></type>
+        <definition>TowerEvent FlameRingTower::tick</definition>
+        <argsstring>()</argsstring>
+        <name>tick</name>
+        <reimplements refid="class_tower_1a0b5a181ad1356b4d9a395347efdbe1a1">tick</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" line="22" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.cpp" bodystart="19" bodyend="33"/>
+        <references refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" compoundref="_tower_8h" startline="33">Tower::_ticksForShoot</references>
+        <references refid="namespace_game_1a19468d252754d2b9efe64258e7e3ccba" compoundref="_game_8cpp" startline="27">Game::entities</references>
+        <references refid="namespace_game_1a3a3a6fcb74f541d2dc4be77b0be28b71" compoundref="_game_8cpp" startline="451" endline="454">Game::getRealPosition</references>
+        <references refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" compoundref="_tower_8h" startline="36">Tower::_position</references>
+        <references refid="class_flame_ring_tower_1adfe46cb7f7baac76ed662c6d5dcc4f74" compoundref="_flame_ring_tower_8h" startline="11">_ringSize</references>
+        <references refid="class_flame_ring_tower_1a9de7e32d674577d1b72b05e748ad20d7" compoundref="_flame_ring_tower_8h" startline="14">_damage</references>
+        <references refid="class_flame_ring_tower_1a426a443ba32beb37f68d919b79c83088" compoundref="_flame_ring_tower_8h" startline="10">_ringVelocity</references>
+        <references refid="class_tower_1a29cae98d3f1d863335b175597f61f8da" compoundref="_tower_8h" startline="39">Tower::_maxRange</references>
+        <references refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" compoundref="_tower_8h" startline="39">Tower::_minRange</references>
+        <references refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" compoundref="_tower_8h" startline="34">Tower::_ticksBetweenShoots</references>
+        <references refid="_tower_8h_1a515c655d051e131462a497de3df0e8ebac9d3e887722f2bc482bcca9d41c512af" compoundref="_tower_8h" startline="11">None</references>
+      </memberdef>
+      <memberdef kind="function" id="class_flame_ring_tower_1a7eb91da364c81d4d93892223527ffe69" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FlameRingTower::draw</definition>
+        <argsstring>(sf::RenderWindow *window, Vec2d point) const </argsstring>
+        <name>draw</name>
+        <reimplements refid="class_tower_1a345caef621244125c0af480ddc041860">draw</reimplements>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" line="23" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.cpp" bodystart="35" bodyend="43"/>
+        <references refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" compoundref="_game_8cpp" startline="31">Game::pixelsPerSquare</references>
+        <references refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" compoundref="_game_8h" startline="4">PI</references>
+        <references refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::x</references>
+        <references refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_flame_ring_tower_1a86d9b25684eb86180f09fabf43081c94" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_tower" kindref="compound">Tower</ref> *</type>
+        <definition>Tower * FlameRingTower::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="class_tower_1a1d444a99e396e60c804512ecd61dd25b">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" line="25" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.cpp" bodystart="45" bodyend="47"/>
+        <references refid="class_flame_ring_tower_1ad8ebcb202ae5f74f10591fdd1b0b7a0f" compoundref="_flame_ring_tower_8cpp" startline="7" endline="17">FlameRingTower</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="166">
+        <label>FlameRingTower</label>
+        <link refid="class_flame_ring_tower"/>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>Tower</label>
+        <link refid="class_tower"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="168">
+        <label>FlameRingTower</label>
+        <link refid="class_flame_ring_tower"/>
+        <childnode refid="169" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>Vec2&lt; int &gt;</label>
+        <link refid="struct_vec2"/>
+      </node>
+      <node id="169">
+        <label>Tower</label>
+        <link refid="class_tower"/>
+        <childnode refid="170" relation="usage">
+          <edgelabel>_position</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" line="9" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h" bodystart="9" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_flame_ring_tower_1a9de7e32d674577d1b72b05e748ad20d7" prot="private" virt="non-virtual"><scope>FlameRingTower</scope><name>_damage</name></member>
+      <member refid="class_tower_1a02ec2f8d1c4dea2f7fc002d8626c8b28" prot="protected" virt="non-virtual"><scope>FlameRingTower</scope><name>_id</name></member>
+      <member refid="class_tower_1a29cae98d3f1d863335b175597f61f8da" prot="protected" virt="non-virtual"><scope>FlameRingTower</scope><name>_maxRange</name></member>
+      <member refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" prot="protected" virt="non-virtual"><scope>FlameRingTower</scope><name>_minRange</name></member>
+      <member refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" prot="protected" virt="non-virtual"><scope>FlameRingTower</scope><name>_position</name></member>
+      <member refid="class_tower_1a45ff5669e9b1815222fbbd38bf4dbdd2" prot="protected" virt="non-virtual"><scope>FlameRingTower</scope><name>_priority</name></member>
+      <member refid="class_flame_ring_tower_1a666810b492598d4e77a3b26ab71fcbb6" prot="private" virt="non-virtual"><scope>FlameRingTower</scope><name>_ringActualRange</name></member>
+      <member refid="class_flame_ring_tower_1adfe46cb7f7baac76ed662c6d5dcc4f74" prot="private" virt="non-virtual"><scope>FlameRingTower</scope><name>_ringSize</name></member>
+      <member refid="class_flame_ring_tower_1a426a443ba32beb37f68d919b79c83088" prot="private" virt="non-virtual"><scope>FlameRingTower</scope><name>_ringVelocity</name></member>
+      <member refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" prot="protected" virt="non-virtual"><scope>FlameRingTower</scope><name>_ticksBetweenShoots</name></member>
+      <member refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" prot="protected" virt="non-virtual"><scope>FlameRingTower</scope><name>_ticksForShoot</name></member>
+      <member refid="class_flame_ring_tower_1a86d9b25684eb86180f09fabf43081c94" prot="public" virt="virtual"><scope>FlameRingTower</scope><name>clone</name></member>
+      <member refid="class_flame_ring_tower_1a7eb91da364c81d4d93892223527ffe69" prot="public" virt="virtual"><scope>FlameRingTower</scope><name>draw</name></member>
+      <member refid="class_tower_1a1a810f6750616a02e665eb41db5dff5f" prot="public" virt="virtual" ambiguityscope="Tower::"><scope>FlameRingTower</scope><name>draw</name></member>
+      <member refid="class_tower_1a6233d4726637efbe811fa3e471b17763" prot="public" virt="virtual"><scope>FlameRingTower</scope><name>drawOver</name></member>
+      <member refid="class_tower_1a73e9bca05abf9d075cf255c605a5b7a0" prot="public" virt="virtual"><scope>FlameRingTower</scope><name>drawOver</name></member>
+      <member refid="class_flame_ring_tower_1ad8ebcb202ae5f74f10591fdd1b0b7a0f" prot="public" virt="non-virtual"><scope>FlameRingTower</scope><name>FlameRingTower</name></member>
+      <member refid="class_tower_1abf534cfa4be4208f490316de84a363c6" prot="public" virt="non-virtual"><scope>FlameRingTower</scope><name>getId</name></member>
+      <member refid="class_tower_1a1de58ad0b4454321b7581a95be903f84" prot="public" virt="non-virtual"><scope>FlameRingTower</scope><name>getMaxRange</name></member>
+      <member refid="class_tower_1af3974612b34698019596e847c20a0b5f" prot="public" virt="non-virtual"><scope>FlameRingTower</scope><name>getMinRange</name></member>
+      <member refid="class_tower_1a892066fc6cbe882417e749a0829a713b" prot="public" virt="non-virtual"><scope>FlameRingTower</scope><name>getPosition</name></member>
+      <member refid="class_tower_1ae6698f53a92e382f35c13faa1c8755c5" prot="public" virt="non-virtual"><scope>FlameRingTower</scope><name>getPriority</name></member>
+      <member refid="class_tower_1a28b4e01cf370c3f583d83b904c5834bf" prot="public" virt="non-virtual"><scope>FlameRingTower</scope><name>getTicksBetweenShoots</name></member>
+      <member refid="class_tower_1acbef4e9eed709d590b1bdb07257e9afc" prot="public" virt="non-virtual"><scope>FlameRingTower</scope><name>getTicksForShoot</name></member>
+      <member refid="class_flame_ring_tower_1ad7e7182c61ff1d1f4c20a1d87807fd4c" prot="public" virt="non-virtual"><scope>FlameRingTower</scope><name>id</name></member>
+      <member refid="class_tower_1a2a9705516e1db56532a8374cd980fe7f" prot="public" virt="non-virtual"><scope>FlameRingTower</scope><name>setId</name></member>
+      <member refid="class_tower_1a25bd659fcdcff1d6defed633c11448e4" prot="public" virt="virtual"><scope>FlameRingTower</scope><name>setMaxRange</name></member>
+      <member refid="class_tower_1a4237103c1b5e5e9a31f0574616154b25" prot="public" virt="virtual"><scope>FlameRingTower</scope><name>setMinRange</name></member>
+      <member refid="class_tower_1ac95d4e39ad1e1d7aca4dd43114bfb35b" prot="public" virt="virtual"><scope>FlameRingTower</scope><name>setPosition</name></member>
+      <member refid="class_tower_1a0e6f188ea4541160da9418cbab630c44" prot="public" virt="virtual"><scope>FlameRingTower</scope><name>setPriority</name></member>
+      <member refid="class_tower_1a7e39dc1fc516ef2c23df035fe6f37cfc" prot="public" virt="virtual"><scope>FlameRingTower</scope><name>setTicksBetweenShoots</name></member>
+      <member refid="class_tower_1a06e9f714ebf6793416ca559a49f218f4" prot="public" virt="virtual"><scope>FlameRingTower</scope><name>setTicksForShoot</name></member>
+      <member refid="class_flame_ring_tower_1ac7b603fcbd551c39fd2bb789896fcb92" prot="public" virt="virtual"><scope>FlameRingTower</scope><name>tick</name></member>
+      <member refid="class_tower_1a1b785dc1e9fb979a10620ca183b5761d" prot="public" virt="non-virtual"><scope>FlameRingTower</scope><name>Tower</name></member>
+      <member refid="class_tower_1ac42ebf24f6aedbd4591fe3371f364600" prot="public" virt="virtual"><scope>FlameRingTower</scope><name>~Tower</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

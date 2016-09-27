@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_tower_8cpp" kind="file" language="C++">
+    <compoundname>Tower.cpp</compoundname>
+    <includes refid="_tower_8h" local="yes">Tower.h</includes>
+    <includes refid="_game_8h" local="yes">Game.h</includes>
+    <incdepgraph>
+      <node id="1516">
+        <label>list</label>
+      </node>
+      <node id="1512">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1517">
+        <label>SFML/OpenGL.hpp</label>
+      </node>
+      <node id="1514">
+        <label>cmath</label>
+      </node>
+      <node id="1520">
+        <label>string</label>
+      </node>
+      <node id="1521">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1512" relation="include">
+        </childnode>
+        <childnode refid="1513" relation="include">
+        </childnode>
+      </node>
+      <node id="1513">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1514" relation="include">
+        </childnode>
+      </node>
+      <node id="1518">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="1516" relation="include">
+        </childnode>
+        <childnode refid="1512" relation="include">
+        </childnode>
+        <childnode refid="1519" relation="include">
+        </childnode>
+      </node>
+      <node id="1515">
+        <label>Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="1516" relation="include">
+        </childnode>
+        <childnode refid="1512" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+        <childnode refid="1518" relation="include">
+        </childnode>
+        <childnode refid="1511" relation="include">
+        </childnode>
+        <childnode refid="1521" relation="include">
+        </childnode>
+        <childnode refid="1522" relation="include">
+        </childnode>
+        <childnode refid="1513" relation="include">
+        </childnode>
+      </node>
+      <node id="1510">
+        <label>Tower.cpp</label>
+        <link refid="Tower.cpp"/>
+        <childnode refid="1511" relation="include">
+        </childnode>
+        <childnode refid="1515" relation="include">
+        </childnode>
+      </node>
+      <node id="1519">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1520" relation="include">
+        </childnode>
+        <childnode refid="1512" relation="include">
+        </childnode>
+        <childnode refid="1511" relation="include">
+        </childnode>
+      </node>
+      <node id="1522">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1512" relation="include">
+        </childnode>
+      </node>
+      <node id="1511">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1512" relation="include">
+        </childnode>
+        <childnode refid="1513" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_tower_8h" kindref="compound">Tower.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_8h" kindref="compound">Game.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_tower_1a1b785dc1e9fb979a10620ca183b5761d" refkind="member"><highlight class="normal"><ref refid="class_tower_1a1b785dc1e9fb979a10620ca183b5761d" kindref="member">Tower::Tower</ref>():_priority(<ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a79935518a3889663d8688b6b01fff051" kindref="member">Default</ref>){}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_tower_1a1a810f6750616a02e665eb41db5dff5f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a1a810f6750616a02e665eb41db5dff5f" kindref="member">Tower::draw</ref>(sf::RenderWindow*<sp/>window)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a1a810f6750616a02e665eb41db5dff5f" kindref="member">draw</ref>(window,<sp/><ref refid="namespace_game_1a3a3a6fcb74f541d2dc4be77b0be28b71" kindref="member">Game::getRealPosition</ref>(<ref refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" kindref="member">_position</ref>));</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_tower_1a6233d4726637efbe811fa3e471b17763" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a6233d4726637efbe811fa3e471b17763" kindref="member">Tower::drawOver</ref>(sf::RenderWindow*<sp/>window)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a6233d4726637efbe811fa3e471b17763" kindref="member">drawOver</ref>(window,<sp/><ref refid="namespace_game_1a3a3a6fcb74f541d2dc4be77b0be28b71" kindref="member">Game::getRealPosition</ref>(<ref refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" kindref="member">_position</ref>));</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.cpp"/>
+  </compounddef>
+</doxygen>

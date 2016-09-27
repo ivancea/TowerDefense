@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_inhibitor_enemy" kind="class" language="C++" prot="public">
+    <compoundname>InhibitorEnemy</compoundname>
+    <basecompoundref refid="class_enemy" prot="public" virt="non-virtual">Enemy</basecompoundref>
+    <includes refid="_inhibitor_enemy_8h" local="no">InhibitorEnemy.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_inhibitor_enemy_1a5b732491c643ac9db52e695e6d99901c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InhibitorEnemy::_inhibitionTicks</definition>
+        <argsstring></argsstring>
+        <name>_inhibitionTicks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.h" line="9" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_tower" kindref="compound">Tower</ref> *</type>
+        <definition>Tower* InhibitorEnemy::_target</definition>
+        <argsstring></argsstring>
+        <name>_target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.h" line="10" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_inhibitor_enemy_1aab4ba99fa36f9f23f029c9f81389c994" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InhibitorEnemy::InhibitorEnemy</definition>
+        <argsstring>(double velocity, double life, double damage)</argsstring>
+        <name>InhibitorEnemy</name>
+        <param>
+          <type>double</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>life</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.h" line="13" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.cpp" bodystart="8" bodyend="15"/>
+        <references refid="class_enemy_1af742f414df708a7c62240b6bd73aad94" compoundref="_enemy_8h" startline="12">Enemy::_velocity</references>
+        <references refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" compoundref="_game_8cpp" startline="37">Game::velocity</references>
+        <references refid="class_enemy_1a70ddc801163c579dcd432e8553331602" compoundref="_enemy_8h" startline="11">Enemy::_life</references>
+        <references refid="namespace_game_1a57b7bb4913757b7f74496bcef9a5066a" compoundref="_game_8cpp" startline="33">Game::life</references>
+        <references refid="class_enemy_1aa015dbea3090d6010d26169a6af9d9ed" compoundref="_enemy_8h" startline="14">Enemy::_damage</references>
+        <references refid="class_enemy_1af7c3be9e985c7551466bb31e8d51bbbb" compoundref="_enemy_8cpp" startline="11" endline="13">Enemy::damage</references>
+        <references refid="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" compoundref="_game_8cpp" startline="29">Game::enemiesRoute</references>
+        <references refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" compoundref="_enemy_8h" startline="13">Enemy::_position</references>
+      </memberdef>
+      <memberdef kind="function" id="class_inhibitor_enemy_1a8f71068c25e671bad196882a44625c55" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InhibitorEnemy::killed</definition>
+        <argsstring>()</argsstring>
+        <name>killed</name>
+        <reimplements refid="class_enemy_1a0cb411813c4dbdf7ba6716635d94046d">killed</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.h" line="15" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.cpp" bodystart="17" bodyend="19"/>
+        <references refid="namespace_game_1a8c9e80bd9cfbe0ca529de0728ae63b7b" compoundref="_game_8cpp" startline="34">Game::money</references>
+      </memberdef>
+      <memberdef kind="function" id="class_inhibitor_enemy_1a6983ba240a56b1f78921020c1f25035b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool InhibitorEnemy::tick</definition>
+        <argsstring>()</argsstring>
+        <name>tick</name>
+        <reimplements refid="class_enemy_1ad921c3a0eeab9d46eae08054814a0d0a">tick</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.h" line="16" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.cpp" bodystart="21" bodyend="57"/>
+        <references refid="class_inhibitor_enemy_1a5b732491c643ac9db52e695e6d99901c" compoundref="_inhibitor_enemy_8h" startline="9">_inhibitionTicks</references>
+        <references refid="namespace_game_1acaee8a857e108ef391b58ba15f3897c9" compoundref="_game_8cpp" startline="25">Game::towers</references>
+        <references refid="namespace_game_1a71544153aaa8842c582ec15166796d45" compoundref="_game_8cpp" startline="446" endline="449">Game::getDistance</references>
+        <references refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" compoundref="_enemy_8h" startline="13">Enemy::_position</references>
+        <references refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" compoundref="_inhibitor_enemy_8h" startline="10">_target</references>
+        <references refid="namespace_game_1ae0de9897a96ba2707f9648a563521c7d" compoundref="_game_8cpp" startline="392" endline="399">Game::exists</references>
+        <references refid="class_tower_1a892066fc6cbe882417e749a0829a713b" compoundref="_tower_8h" startline="54" endline="54">Tower::getPosition</references>
+        <references refid="class_tower_1a06e9f714ebf6793416ca559a49f218f4" compoundref="_tower_8h" startline="50" endline="50">Tower::setTicksForShoot</references>
+        <references refid="class_tower_1a28b4e01cf370c3f583d83b904c5834bf" compoundref="_tower_8h" startline="51" endline="51">Tower::getTicksBetweenShoots</references>
+        <references refid="class_enemy_1ad921c3a0eeab9d46eae08054814a0d0a" compoundref="_enemy_8cpp" startline="29" endline="57">Enemy::tick</references>
+      </memberdef>
+      <memberdef kind="function" id="class_inhibitor_enemy_1aa1cc9aba289ede2197d684680e1be9d7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InhibitorEnemy::draw</definition>
+        <argsstring>(sf::RenderWindow *window) const </argsstring>
+        <name>draw</name>
+        <reimplements refid="class_enemy_1a6b18444f40dcc15b19b4664a9e335789">draw</reimplements>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.h" line="17" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.cpp" bodystart="59" bodyend="78"/>
+        <references refid="class_enemy_1a70ddc801163c579dcd432e8553331602" compoundref="_enemy_8h" startline="11">Enemy::_life</references>
+        <references refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" compoundref="_enemy_8h" startline="13">Enemy::_position</references>
+        <references refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::x</references>
+        <references refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::y</references>
+        <references refid="namespace_game_1ae0de9897a96ba2707f9648a563521c7d" compoundref="_game_8cpp" startline="392" endline="399">Game::exists</references>
+        <references refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" compoundref="_inhibitor_enemy_8h" startline="10">_target</references>
+        <references refid="class_tower_1a892066fc6cbe882417e749a0829a713b" compoundref="_tower_8h" startline="54" endline="54">Tower::getPosition</references>
+        <references refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" compoundref="_game_8cpp" startline="31">Game::pixelsPerSquare</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="171">
+        <label>InhibitorEnemy</label>
+        <link refid="class_inhibitor_enemy"/>
+        <childnode refid="172" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="177">
+        <label>Vec2&lt; int &gt;</label>
+        <link refid="struct_vec2"/>
+      </node>
+      <node id="175">
+        <label>Vec2&lt; double &gt;</label>
+        <link refid="struct_vec2"/>
+      </node>
+      <node id="176">
+        <label>Tower</label>
+        <link refid="class_tower"/>
+        <childnode refid="177" relation="usage">
+          <edgelabel>_position</edgelabel>
+        </childnode>
+      </node>
+      <node id="173">
+        <label>InhibitorEnemy</label>
+        <link refid="class_inhibitor_enemy"/>
+        <childnode refid="174" relation="public-inheritance">
+        </childnode>
+        <childnode refid="176" relation="usage">
+          <edgelabel>_target</edgelabel>
+        </childnode>
+      </node>
+      <node id="174">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="175" relation="usage">
+          <edgelabel>_position</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.h" line="7" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.h" bodystart="7" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_enemy_1aa015dbea3090d6010d26169a6af9d9ed" prot="protected" virt="non-virtual"><scope>InhibitorEnemy</scope><name>_damage</name></member>
+      <member refid="class_enemy_1a19816dfb5bbfe5efe3546364e1bed424" prot="protected" virt="non-virtual"><scope>InhibitorEnemy</scope><name>_distanceToEnd</name></member>
+      <member refid="class_inhibitor_enemy_1a5b732491c643ac9db52e695e6d99901c" prot="private" virt="non-virtual"><scope>InhibitorEnemy</scope><name>_inhibitionTicks</name></member>
+      <member refid="class_enemy_1a70ddc801163c579dcd432e8553331602" prot="protected" virt="non-virtual"><scope>InhibitorEnemy</scope><name>_life</name></member>
+      <member refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" prot="protected" virt="non-virtual"><scope>InhibitorEnemy</scope><name>_position</name></member>
+      <member refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" prot="private" virt="non-virtual"><scope>InhibitorEnemy</scope><name>_target</name></member>
+      <member refid="class_enemy_1af742f414df708a7c62240b6bd73aad94" prot="protected" virt="non-virtual"><scope>InhibitorEnemy</scope><name>_velocity</name></member>
+      <member refid="class_enemy_1af7c3be9e985c7551466bb31e8d51bbbb" prot="public" virt="virtual"><scope>InhibitorEnemy</scope><name>damage</name></member>
+      <member refid="class_inhibitor_enemy_1aa1cc9aba289ede2197d684680e1be9d7" prot="public" virt="virtual"><scope>InhibitorEnemy</scope><name>draw</name></member>
+      <member refid="class_enemy_1a2fcfd6cf10fa58c9b6963ccf3043cb73" prot="public" virt="virtual"><scope>InhibitorEnemy</scope><name>drawOver</name></member>
+      <member refid="class_enemy_1add9c4e25afbbcc2c50c96952cfe6a07b" prot="public" virt="non-virtual"><scope>InhibitorEnemy</scope><name>Enemy</name></member>
+      <member refid="class_enemy_1a88b06a3cfbd5fd4293cd849cfd149da2" prot="public" virt="non-virtual"><scope>InhibitorEnemy</scope><name>getDamage</name></member>
+      <member refid="class_enemy_1a95df3c4a64b8576874c5815877ee9d61" prot="public" virt="non-virtual"><scope>InhibitorEnemy</scope><name>getDistanceToEnd</name></member>
+      <member refid="class_enemy_1ab01196254c5c73cfaca964804f45c28a" prot="public" virt="non-virtual"><scope>InhibitorEnemy</scope><name>getDistanceToNextPosition</name></member>
+      <member refid="class_enemy_1a8f6434a2485b61bb63388d6e719e252b" prot="public" virt="non-virtual"><scope>InhibitorEnemy</scope><name>getLife</name></member>
+      <member refid="class_enemy_1ad910d99ff1ef362a680719896b1725a9" prot="public" virt="non-virtual"><scope>InhibitorEnemy</scope><name>getNextPositionIndex</name></member>
+      <member refid="class_enemy_1afd5331e1b8efb74c4722569b14934c61" prot="public" virt="non-virtual"><scope>InhibitorEnemy</scope><name>getPosition</name></member>
+      <member refid="class_enemy_1a2f617118f5e390e8997907fe5f4dc155" prot="public" virt="non-virtual"><scope>InhibitorEnemy</scope><name>getVelocity</name></member>
+      <member refid="class_inhibitor_enemy_1aab4ba99fa36f9f23f029c9f81389c994" prot="public" virt="non-virtual"><scope>InhibitorEnemy</scope><name>InhibitorEnemy</name></member>
+      <member refid="class_inhibitor_enemy_1a8f71068c25e671bad196882a44625c55" prot="public" virt="virtual"><scope>InhibitorEnemy</scope><name>killed</name></member>
+      <member refid="class_enemy_1a5a90dbd539ffb35f91b8183feeac46c2" prot="protected" virt="non-virtual"><scope>InhibitorEnemy</scope><name>reloadDistanceToEnd</name></member>
+      <member refid="class_enemy_1aacce8d4fdd045a55ee4548c3b9148598" prot="public" virt="non-virtual"><scope>InhibitorEnemy</scope><name>setNextPositionIndex</name></member>
+      <member refid="class_inhibitor_enemy_1a6983ba240a56b1f78921020c1f25035b" prot="public" virt="virtual"><scope>InhibitorEnemy</scope><name>tick</name></member>
+      <member refid="class_enemy_1a065a22a70c78bfc03da4c032312c6da5" prot="public" virt="virtual"><scope>InhibitorEnemy</scope><name>~Enemy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

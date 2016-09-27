@@ -1,0 +1,5 @@
+<map id="Enemy" name="Enemy">
+<area shape="rect" id="node2" href="$class_basic_enemy.html" title="BasicEnemy" alt="" coords="5,80,101,107"/>
+<area shape="rect" id="node3" href="$class_inhibitor_enemy.html" title="InhibitorEnemy" alt="" coords="126,80,234,107"/>
+<area shape="rect" id="node4" href="$class_inmortal_enemy.html" title="InmortalEnemy" alt="" coords="259,80,368,107"/>
+</map>

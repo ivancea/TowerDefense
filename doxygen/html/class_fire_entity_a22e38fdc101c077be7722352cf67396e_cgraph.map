@@ -1,0 +1,4 @@
+<map id="FireEntity::tick" name="FireEntity::tick">
+<area shape="rect" id="node2" href="$class_sprite.html#aad4221a926a6509c267dc309229fec6f" title="Sprite::nextFrame" alt="" coords="160,5,287,32"/>
+<area shape="rect" id="node3" href="$class_sprite.html#a1d5409acfab40087ada2614ea85fabd5" title="Sprite::setFrame" alt="" coords="335,5,453,32"/>
+</map>

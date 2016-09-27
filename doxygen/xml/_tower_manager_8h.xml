@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_tower_manager_8h" kind="file" language="C++">
+    <compoundname>TowerManager.h</compoundname>
+    <includes local="no">list</includes>
+    <includes local="no">SFML/Graphics.hpp</includes>
+    <includes refid="_tower_type_8h" local="yes">TowerType.h</includes>
+    <includedby refid="_game_8h" local="yes">Game.h</includedby>
+    <includedby refid="_basic_tower_manager_8h" local="yes">BasicTowerManager.h</includedby>
+    <includedby refid="_tower_manager_8cpp" local="yes">TowerManager.cpp</includedby>
+    <incdepgraph>
+      <node id="1574">
+        <label>list</label>
+      </node>
+      <node id="1575">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1580">
+        <label>cmath</label>
+      </node>
+      <node id="1577">
+        <label>string</label>
+      </node>
+      <node id="1579">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1580" relation="include">
+        </childnode>
+      </node>
+      <node id="1573">
+        <label>TowerManager.h</label>
+        <link refid="TowerManager.h"/>
+        <childnode refid="1574" relation="include">
+        </childnode>
+        <childnode refid="1575" relation="include">
+        </childnode>
+        <childnode refid="1576" relation="include">
+        </childnode>
+      </node>
+      <node id="1576">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1577" relation="include">
+        </childnode>
+        <childnode refid="1575" relation="include">
+        </childnode>
+        <childnode refid="1578" relation="include">
+        </childnode>
+      </node>
+      <node id="1578">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1575" relation="include">
+        </childnode>
+        <childnode refid="1579" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1605">
+        <label>Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="1594">
+        <label>SniperTower.cpp</label>
+        <link refid="_sniper_tower_8cpp"/>
+      </node>
+      <node id="1586">
+        <label>BasicTowerManager.cpp</label>
+        <link refid="_basic_tower_manager_8cpp"/>
+      </node>
+      <node id="1584">
+        <label>FlameRingTower.h</label>
+        <link refid="_flame_ring_tower_8h"/>
+        <childnode refid="1585" relation="include">
+        </childnode>
+        <childnode refid="1586" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+      </node>
+      <node id="1587">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1593">
+        <label>SniperTower.h</label>
+        <link refid="_sniper_tower_8h"/>
+        <childnode refid="1590" relation="include">
+        </childnode>
+        <childnode refid="1594" relation="include">
+        </childnode>
+        <childnode refid="1586" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+      </node>
+      <node id="1604">
+        <label>InmortalEnemy.cpp</label>
+        <link refid="_inmortal_enemy_8cpp"/>
+      </node>
+      <node id="1606">
+        <label>InhibitorEnemy.cpp</label>
+        <link refid="_inhibitor_enemy_8cpp"/>
+      </node>
+      <node id="1589">
+        <label>RocketTower.h</label>
+        <link refid="_rocket_tower_8h"/>
+        <childnode refid="1590" relation="include">
+        </childnode>
+        <childnode refid="1591" relation="include">
+        </childnode>
+        <childnode refid="1586" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+      </node>
+      <node id="1597">
+        <label>SoldierTower.cpp</label>
+        <link refid="_soldier_tower_8cpp"/>
+      </node>
+      <node id="1591">
+        <label>RocketTower.cpp</label>
+        <link refid="_rocket_tower_8cpp"/>
+      </node>
+      <node id="1588">
+        <label>TowerManager.cpp</label>
+        <link refid="_tower_manager_8cpp"/>
+      </node>
+      <node id="1581">
+        <label>TowerManager.h</label>
+        <link refid="TowerManager.h"/>
+        <childnode refid="1582" relation="include">
+        </childnode>
+        <childnode refid="1590" relation="include">
+        </childnode>
+        <childnode refid="1588" relation="include">
+        </childnode>
+      </node>
+      <node id="1583">
+        <label>Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="1585">
+        <label>FlameRingTower.cpp</label>
+        <link refid="_flame_ring_tower_8cpp"/>
+      </node>
+      <node id="1598">
+        <label>Bullet.cpp</label>
+        <link refid="_bullet_8cpp"/>
+      </node>
+      <node id="1582">
+        <label>Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="1583" relation="include">
+        </childnode>
+        <childnode refid="1584" relation="include">
+        </childnode>
+        <childnode refid="1588" relation="include">
+        </childnode>
+        <childnode refid="1589" relation="include">
+        </childnode>
+        <childnode refid="1592" relation="include">
+        </childnode>
+        <childnode refid="1593" relation="include">
+        </childnode>
+        <childnode refid="1595" relation="include">
+        </childnode>
+        <childnode refid="1596" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+        <childnode refid="1599" relation="include">
+        </childnode>
+        <childnode refid="1600" relation="include">
+        </childnode>
+        <childnode refid="1601" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1603" relation="include">
+        </childnode>
+        <childnode refid="1604" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+        <childnode refid="1606" relation="include">
+        </childnode>
+      </node>
+      <node id="1602">
+        <label>FireEntity.cpp</label>
+        <link refid="_fire_entity_8cpp"/>
+      </node>
+      <node id="1600">
+        <label>Tower.cpp</label>
+        <link refid="_tower_8cpp"/>
+      </node>
+      <node id="1603">
+        <label>ExplosionEntity.cpp</label>
+        <link refid="_explosion_entity_8cpp"/>
+      </node>
+      <node id="1601">
+        <label>LaserEntity.cpp</label>
+        <link refid="_laser_entity_8cpp"/>
+      </node>
+      <node id="1596">
+        <label>SoldierTower.h</label>
+        <link refid="_soldier_tower_8h"/>
+        <childnode refid="1586" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1597" relation="include">
+        </childnode>
+      </node>
+      <node id="1592">
+        <label>Rocket.cpp</label>
+        <link refid="_rocket_8cpp"/>
+      </node>
+      <node id="1599">
+        <label>FlameRing.cpp</label>
+        <link refid="_flame_ring_8cpp"/>
+      </node>
+      <node id="1595">
+        <label>BasicEnemy.cpp</label>
+        <link refid="_basic_enemy_8cpp"/>
+      </node>
+      <node id="1590">
+        <label>BasicTowerManager.h</label>
+        <link refid="_basic_tower_manager_8h"/>
+        <childnode refid="1586" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_tower_manager" prot="public">TowerManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TOWERMANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOWERMANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_tower_manager" kindref="compound">TowerManager</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Graphics.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_tower_type_8h" kindref="compound">TowerType.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_tower_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_tower_manager" kindref="compound">TowerManager</ref>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14" refid="class_tower_manager_1a504e2fafa56251db8777bf4313f0bb80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;TowerType*&gt;<sp/><ref refid="class_tower_manager_1a504e2fafa56251db8777bf4313f0bb80" kindref="member">_towerTypes</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_tower_manager_1aa2c2765238a8747803334c164e767e41" kindref="member">~TowerManager</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_tower_manager_1a9830128e0f2c22e842fb7dc8fc5f87f2" kindref="member">getTowerCount</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="struct_tower_type" kindref="compound">TowerType</ref>*<sp/><ref refid="class_tower_manager_1a0916b2c610768b4821d171734970696a" kindref="member">getTowerType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_tower_manager_1a8474b8e86cf6e3082881d002ea26e012" kindref="member">getTowerCost</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="struct_tower_type" kindref="compound">TowerType</ref>*<sp/><ref refid="class_tower_manager_1a1831e2bb3e53169abdaa7760857cddd6" kindref="member">parseEvent</ref>(sf::Event<sp/>event,<sp/><ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/>mouse,<sp/>sf::Vector2i<sp/>point)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>sf::Vector2i<sp/><ref refid="class_tower_manager_1a423707a6d9656610ddfc62691078ab6f" kindref="member">getDrawRectSize</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tower_manager_1addf03520e1fe692d2a547374e58e5711" kindref="member">drawTowersPanel</ref>(sf::RenderWindow*<sp/>window,<sp/>sf::Vector2i<sp/>point)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TOWERMANAGER_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/TowerManager.h"/>
+  </compounddef>
+</doxygen>

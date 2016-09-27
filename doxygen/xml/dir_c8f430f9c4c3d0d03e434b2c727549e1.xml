@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_c8f430f9c4c3d0d03e434b2c727549e1" kind="dir">
+    <compoundname>towers</compoundname>
+    <innerdir refid="dir_6e4ab86176cf0f693527fdb4dbb0e20a">entities</innerdir>
+    <innerfile refid="_flame_ring_tower_8cpp">FlameRingTower.cpp</innerfile>
+    <innerfile refid="_flame_ring_tower_8h">FlameRingTower.h</innerfile>
+    <innerfile refid="_rocket_tower_8cpp">RocketTower.cpp</innerfile>
+    <innerfile refid="_rocket_tower_8h">RocketTower.h</innerfile>
+    <innerfile refid="_sniper_tower_8cpp">SniperTower.cpp</innerfile>
+    <innerfile refid="_sniper_tower_8h">SniperTower.h</innerfile>
+    <innerfile refid="_soldier_tower_8cpp">SoldierTower.cpp</innerfile>
+    <innerfile refid="_soldier_tower_8h">SoldierTower.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/"/>
+  </compounddef>
+</doxygen>

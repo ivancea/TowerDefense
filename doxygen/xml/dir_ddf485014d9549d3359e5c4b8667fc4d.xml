@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_ddf485014d9549d3359e5c4b8667fc4d" kind="dir">
+    <compoundname>towerManagers</compoundname>
+    <innerfile refid="_basic_tower_manager_8cpp">BasicTowerManager.cpp</innerfile>
+    <innerfile refid="_basic_tower_manager_8h">BasicTowerManager.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towerManagers/"/>
+  </compounddef>
+</doxygen>

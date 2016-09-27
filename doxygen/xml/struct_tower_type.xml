@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_tower_type" kind="struct" language="C++" prot="public">
+    <compoundname>TowerType</compoundname>
+    <includes refid="_tower_type_8h" local="no">TowerType.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_tower_type_1a137965897f2c4ec39a260f5561d1e70a" prot="public" static="no" mutable="no">
+        <type><ref refid="class_tower" kindref="compound">Tower</ref> *</type>
+        <definition>Tower* TowerType::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.h" line="12" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tower_type_1a24488ed3932873cb5be953fdaa3c733e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string TowerType::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.h" line="13" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tower_type_1ab6e4e62dc59a798beaa0028a67dd6571" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string TowerType::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.h" line="14" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tower_type_1a298318e6f9d11a63daad82f48a87a205" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TowerType::cost</definition>
+        <argsstring></argsstring>
+        <name>cost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.h" line="15" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_tower_type_1ad40e689f8161868c71d284ea859ff000" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TowerType::TowerType</definition>
+        <argsstring>()</argsstring>
+        <name>TowerType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.h" line="17" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.cpp" bodystart="4" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_tower_type_1afc37bb8ff845c964771cab927a7f0987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TowerType::TowerType</definition>
+        <argsstring>(Tower *model, std::string name, std::string description, int cost)</argsstring>
+        <name>TowerType</name>
+        <param>
+          <type><ref refid="class_tower" kindref="compound">Tower</ref> *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>description</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.h" line="18" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.cpp" bodystart="7" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="231">
+        <label>Vec2&lt; int &gt;</label>
+        <link refid="struct_vec2"/>
+      </node>
+      <node id="229">
+        <label>TowerType</label>
+        <link refid="struct_tower_type"/>
+        <childnode refid="230" relation="usage">
+          <edgelabel>model</edgelabel>
+        </childnode>
+      </node>
+      <node id="230">
+        <label>Tower</label>
+        <link refid="class_tower"/>
+        <childnode refid="231" relation="usage">
+          <edgelabel>_position</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.h" line="11" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.h" bodystart="11" bodyend="19"/>
+    <listofallmembers>
+      <member refid="struct_tower_type_1a298318e6f9d11a63daad82f48a87a205" prot="public" virt="non-virtual"><scope>TowerType</scope><name>cost</name></member>
+      <member refid="struct_tower_type_1ab6e4e62dc59a798beaa0028a67dd6571" prot="public" virt="non-virtual"><scope>TowerType</scope><name>description</name></member>
+      <member refid="struct_tower_type_1a137965897f2c4ec39a260f5561d1e70a" prot="public" virt="non-virtual"><scope>TowerType</scope><name>model</name></member>
+      <member refid="struct_tower_type_1a24488ed3932873cb5be953fdaa3c733e" prot="public" virt="non-virtual"><scope>TowerType</scope><name>name</name></member>
+      <member refid="struct_tower_type_1ad40e689f8161868c71d284ea859ff000" prot="public" virt="non-virtual"><scope>TowerType</scope><name>TowerType</name></member>
+      <member refid="struct_tower_type_1afc37bb8ff845c964771cab927a7f0987" prot="public" virt="non-virtual"><scope>TowerType</scope><name>TowerType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

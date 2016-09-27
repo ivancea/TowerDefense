@@ -1,0 +1,11 @@
+<map id="Game::tick" name="Game::tick">
+<area shape="rect" id="node2" href="$class_enemy.html#ad921c3a0eeab9d46eae08054814a0d0a" title="Enemy::tick" alt="" coords="172,31,264,57"/>
+<area shape="rect" id="node5" href="$class_enemy.html#a88b06a3cfbd5fd4293cd849cfd149da2" title="Enemy::getDamage" alt="" coords="149,81,287,108"/>
+<area shape="rect" id="node6" href="$namespace_game.html#af1500b3fbfc3bac86161440e3cc5703b" title="Game::clearEntities" alt="" coords="149,132,287,159"/>
+<area shape="rect" id="node7" href="$namespace_game.html#a3a3a6fcb74f541d2dc4be77b0be28b71" title="Game::getRealPosition" alt="" coords="140,183,296,209"/>
+<area shape="rect" id="node8" href="$namespace_game.html#a5ce72058030c0173b9f642f727fc3ce1" title="Game::clearTowers" alt="" coords="151,233,285,260"/>
+<area shape="rect" id="node10" href="$class_entity.html#a1ac1547ce618e2ec040c6a8498bb5201" title="Entity::tick" alt="" coords="175,284,261,311"/>
+<area shape="rect" id="node3" href="$struct_vec2.html#a8f0f08fa249195af341222553c8db855" title="Vec2::distance" alt="" coords="359,5,469,32"/>
+<area shape="rect" id="node4" href="$struct_vec2.html#a73f59613a791abd955bf16fccd53777b" title="Vec2::normalize" alt="" coords="356,56,472,83"/>
+<area shape="rect" id="node9" href="$namespace_game.html#a549aa0e7de912a178bb49190fab5a7f6" title="Game::removeTower" alt="" coords="344,233,484,260"/>
+</map>

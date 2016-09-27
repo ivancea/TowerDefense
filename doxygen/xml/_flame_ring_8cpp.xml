@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_flame_ring_8cpp" kind="file" language="C++">
+    <compoundname>FlameRing.cpp</compoundname>
+    <includes refid="_flame_ring_8h" local="yes">FlameRing.h</includes>
+    <includes local="no">SFML/Graphics.hpp</includes>
+    <includes local="no">SFML/OpenGL.hpp</includes>
+    <includes refid="_game_8h" local="yes">../../Game.h</includes>
+    <incdepgraph>
+      <node id="1088">
+        <label>list</label>
+      </node>
+      <node id="1082">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1086">
+        <label>SFML/OpenGL.hpp</label>
+      </node>
+      <node id="1084">
+        <label>cmath</label>
+      </node>
+      <node id="1091">
+        <label>string</label>
+      </node>
+      <node id="1085">
+        <label>../../Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1082" relation="include">
+        </childnode>
+        <childnode refid="1083" relation="include">
+        </childnode>
+      </node>
+      <node id="1083">
+        <label>../../Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1084" relation="include">
+        </childnode>
+      </node>
+      <node id="1089">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1082" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+      </node>
+      <node id="1087">
+        <label>../../Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1082" relation="include">
+        </childnode>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+        <childnode refid="1081" relation="include">
+        </childnode>
+        <childnode refid="1083" relation="include">
+        </childnode>
+      </node>
+      <node id="1080">
+        <label>FlameRing.h</label>
+        <link refid="_flame_ring_8h"/>
+        <childnode refid="1081" relation="include">
+        </childnode>
+        <childnode refid="1083" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+      </node>
+      <node id="1090">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1082" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+      </node>
+      <node id="1079">
+        <label>FlameRing.cpp</label>
+        <link refid="FlameRing.cpp"/>
+        <childnode refid="1080" relation="include">
+        </childnode>
+        <childnode refid="1082" relation="include">
+        </childnode>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+      </node>
+      <node id="1081">
+        <label>../../Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1082" relation="include">
+        </childnode>
+      </node>
+      <node id="1092">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1082" relation="include">
+        </childnode>
+        <childnode refid="1083" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_flame_ring_8h" kindref="compound">FlameRing.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Graphics.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/OpenGL.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Game.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_flame_ring_1aae5a3dc53754fe10d8f9e82fe39a67c9" refkind="member"><highlight class="normal"><ref refid="class_flame_ring_1aae5a3dc53754fe10d8f9e82fe39a67c9" kindref="member">FlameRing::FlameRing</ref>(<ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>position,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ringSize,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>damage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>maxRadius,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>initialRadius){</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_1aec0a08cbf21c7ba0668b064d6693710b" kindref="member">_position</ref><sp/>=<sp/>position;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_1a7b53b534ac89ac08e991396a140107d3" kindref="member">_ringSize</ref><sp/>=<sp/>ringSize;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_1a2259a769637ed6c70da6cf7fdc447aec" kindref="member">_damage</ref><sp/>=<sp/>damage;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_1aa3d7d9677c3866ced21f71a92a3606c8" kindref="member">_velocity</ref><sp/>=<sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_1adeac8bc1d600b3d6c643c526a1e90e23" kindref="member">_maxRadius</ref><sp/>=<sp/>maxRadius;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_1a52108139bbfae9160dc7ae23ce87c3e4" kindref="member">_actualRadius</ref><sp/>=<sp/>initialRadius;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_flame_ring_1ab07bb5baa7209a397126683e94114295" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_1ab07bb5baa7209a397126683e94114295" kindref="member">FlameRing::tick</ref>(){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>li<sp/>=<sp/><ref refid="namespace_game_1a2f4d39b84db31e6af593f4f4e58fab2d" kindref="member">Game::findEnemiesInRange</ref>(<ref refid="class_flame_ring_1aec0a08cbf21c7ba0668b064d6693710b" kindref="member">_position</ref>,<sp/><ref refid="class_flame_ring_1a52108139bbfae9160dc7ae23ce87c3e4" kindref="member">_actualRadius</ref>,<sp/><ref refid="class_flame_ring_1a52108139bbfae9160dc7ae23ce87c3e4" kindref="member">_actualRadius</ref>+<ref refid="class_flame_ring_1a7b53b534ac89ac08e991396a140107d3" kindref="member">_ringSize</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it:li){</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((*it)-&gt;damage(<ref refid="class_flame_ring_1a2259a769637ed6c70da6cf7fdc447aec" kindref="member">_damage</ref>)){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a1d9c21b5df867aeaf1ac00fc77a577b7" kindref="member">Game::kill</ref>(it);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_1a52108139bbfae9160dc7ae23ce87c3e4" kindref="member">_actualRadius</ref><sp/>+=<sp/><ref refid="class_flame_ring_1aa3d7d9677c3866ced21f71a92a3606c8" kindref="member">_velocity</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_1a52108139bbfae9160dc7ae23ce87c3e4" kindref="member">_actualRadius</ref><sp/>+<sp/><ref refid="class_flame_ring_1a7b53b534ac89ac08e991396a140107d3" kindref="member">_ringSize</ref><sp/>&gt;=<sp/><ref refid="class_flame_ring_1adeac8bc1d600b3d6c643c526a1e90e23" kindref="member">_maxRadius</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_flame_ring_1ad1ef9bf878a0422d30d2bf488834d2b4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_1ad1ef9bf878a0422d30d2bf488834d2b4" kindref="member">FlameRing::drawOver</ref>(sf::RenderWindow*<sp/>window)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>glColor4ub(127,127,0,<sp/>200);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>glBegin(GL_TRIANGLE_STRIP);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;=<ref refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref>*2.01;<sp/>i+=<ref refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref>/360.0){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_flame_ring_1aec0a08cbf21c7ba0668b064d6693710b" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sin(i)*<ref refid="class_flame_ring_1a52108139bbfae9160dc7ae23ce87c3e4" kindref="member">_actualRadius</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_1aec0a08cbf21c7ba0668b064d6693710b" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+cos(i)*_actualRadius);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_flame_ring_1aec0a08cbf21c7ba0668b064d6693710b" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sin(i)*(_actualRadius+<ref refid="class_flame_ring_1a7b53b534ac89ac08e991396a140107d3" kindref="member">_ringSize</ref>),</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_1aec0a08cbf21c7ba0668b064d6693710b" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+cos(i)*(_actualRadius+<ref refid="class_flame_ring_1a7b53b534ac89ac08e991396a140107d3" kindref="member">_ringSize</ref>));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnd();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/FlameRing.cpp"/>
+  </compounddef>
+</doxygen>

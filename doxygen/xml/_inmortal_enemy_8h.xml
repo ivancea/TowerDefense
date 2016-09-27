@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_inmortal_enemy_8h" kind="file" language="C++">
+    <compoundname>InmortalEnemy.h</compoundname>
+    <includes refid="_enemy_8h" local="yes">../Enemy.h</includes>
+    <includedby refid="_inmortal_enemy_8cpp" local="yes">InmortalEnemy.cpp</includedby>
+    <includedby refid="_game_8cpp" local="yes">Game.cpp</includedby>
+    <incdepgraph>
+      <node id="1235">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1237">
+        <label>cmath</label>
+      </node>
+      <node id="1234">
+        <label>../Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1235" relation="include">
+        </childnode>
+        <childnode refid="1236" relation="include">
+        </childnode>
+      </node>
+      <node id="1233">
+        <label>InmortalEnemy.h</label>
+        <link refid="InmortalEnemy.h"/>
+        <childnode refid="1234" relation="include">
+        </childnode>
+      </node>
+      <node id="1236">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1237" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1240">
+        <label>Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="1239">
+        <label>InmortalEnemy.cpp</label>
+        <link refid="_inmortal_enemy_8cpp"/>
+      </node>
+      <node id="1238">
+        <label>InmortalEnemy.h</label>
+        <link refid="InmortalEnemy.h"/>
+        <childnode refid="1239" relation="include">
+        </childnode>
+        <childnode refid="1240" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_inmortal_enemy" prot="public">InmortalEnemy</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>INMORTALENEMY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INMORTALENEMY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Enemy.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_inmortal_enemy" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_inmortal_enemy" kindref="compound">InmortalEnemy</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_enemy" kindref="compound">Enemy</ref>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_inmortal_enemy_1aa191e761100a47e3c0ade8e76a2746d8" kindref="member">InmortalEnemy</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_inmortal_enemy_1a81eaa0320f186d755160338068be2bba" kindref="member">damage</ref>);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_inmortal_enemy_1a81eaa0320f186d755160338068be2bba" kindref="member">damage</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_inmortal_enemy_1ad773b2e4fb4ed96da327bdeed1d33a0a" kindref="member">draw</ref>(sf::RenderWindow*<sp/>window)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>INMORTALENEMY_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InmortalEnemy.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,10 @@
+<map id="InhibitorEnemy::tick" name="InhibitorEnemy::tick">
+<area shape="rect" id="node2" href="$namespace_game.html#a71544153aaa8842c582ec15166796d45" title="Game::getDistance" alt="" coords="225,5,360,32"/>
+<area shape="rect" id="node4" href="$namespace_game.html#ae0de9897a96ba2707f9648a563521c7d" title="Game::exists" alt="" coords="243,56,343,83"/>
+<area shape="rect" id="node5" href="$class_tower.html#a892066fc6cbe882417e749a0829a713b" title="Tower::getPosition" alt="" coords="228,107,357,133"/>
+<area shape="rect" id="node6" href="$class_tower.html#a06e9f714ebf6793416ca559a49f218f4" title="Tower::setTicksForShoot" alt="" coords="209,157,376,184"/>
+<area shape="rect" id="node7" href="$class_tower.html#a28b4e01cf370c3f583d83b904c5834bf" title="Tower::getTicksBetweenShoots" alt="" coords="191,208,395,235"/>
+<area shape="rect" id="node8" href="$class_enemy.html#ad921c3a0eeab9d46eae08054814a0d0a" title="Enemy::tick" alt="" coords="247,259,339,285"/>
+<area shape="rect" id="node3" href="$struct_vec2.html#a8f0f08fa249195af341222553c8db855" title="Vec2::distance" alt="" coords="446,107,555,133"/>
+<area shape="rect" id="node9" href="$struct_vec2.html#a73f59613a791abd955bf16fccd53777b" title="Vec2::normalize" alt="" coords="443,259,559,285"/>
+</map>

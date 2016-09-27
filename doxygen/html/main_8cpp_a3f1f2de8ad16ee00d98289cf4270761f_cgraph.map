@@ -1,0 +1,6 @@
+<map id="freeGame" name="freeGame">
+<area shape="rect" id="node2" href="$namespace_game.html#a29cc92564c4cf32c7fd0c06d6c65898f" title="Game::clearEnemies" alt="" coords="132,5,276,32"/>
+<area shape="rect" id="node3" href="$namespace_game.html#af1500b3fbfc3bac86161440e3cc5703b" title="Game::clearEntities" alt="" coords="135,56,273,83"/>
+<area shape="rect" id="node4" href="$namespace_game.html#a5ce72058030c0173b9f642f727fc3ce1" title="Game::clearTowers" alt="" coords="137,107,271,133"/>
+<area shape="rect" id="node5" href="$namespace_game.html#a549aa0e7de912a178bb49190fab5a7f6" title="Game::removeTower" alt="" coords="324,107,464,133"/>
+</map>

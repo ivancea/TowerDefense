@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_entity" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Entity</compoundname>
+    <derivedcompoundref refid="class_bullet" prot="public" virt="non-virtual">Bullet</derivedcompoundref>
+    <derivedcompoundref refid="class_explosion_entity" prot="public" virt="non-virtual">ExplosionEntity</derivedcompoundref>
+    <derivedcompoundref refid="class_fire_entity" prot="public" virt="non-virtual">FireEntity</derivedcompoundref>
+    <derivedcompoundref refid="class_flame_ring" prot="public" virt="non-virtual">FlameRing</derivedcompoundref>
+    <derivedcompoundref refid="class_laser_entity" prot="public" virt="non-virtual">LaserEntity</derivedcompoundref>
+    <derivedcompoundref refid="class_rocket" prot="public" virt="non-virtual">Rocket</derivedcompoundref>
+    <includes refid="_entity_8h" local="no">Entity.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_entity_1a588098978eea6a3486b7361605ff3f0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Entity::~Entity</definition>
+        <argsstring>()</argsstring>
+        <name>~Entity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Entity.h" line="9" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Entity.h" bodystart="9" bodyend="9"/>
+        <references refid="class_entity_1a1ac1547ce618e2ec040c6a8498bb5201">tick</references>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a1ac1547ce618e2ec040c6a8498bb5201" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Entity::tick</definition>
+        <argsstring>()=0</argsstring>
+        <name>tick</name>
+        <reimplementedby refid="class_laser_entity_1accad65a4103a21444da6afc412edf5ae">tick</reimplementedby>
+        <reimplementedby refid="class_fire_entity_1a22e38fdc101c077be7722352cf67396e">tick</reimplementedby>
+        <reimplementedby refid="class_bullet_1a1b20424d4c8d29c5c214bab2f62d72a1">tick</reimplementedby>
+        <reimplementedby refid="class_explosion_entity_1a84ef58c7602b0f6ce45c410b7d532aa5">tick</reimplementedby>
+        <reimplementedby refid="class_flame_ring_1ab07bb5baa7209a397126683e94114295">tick</reimplementedby>
+        <reimplementedby refid="class_rocket_1ad82fb42a0ae20e7157ede954020515b8">tick</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Entity.h" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a5ab2eb129b6330823115239247fec4f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Entity::draw</definition>
+        <argsstring>(sf::RenderWindow *window) const </argsstring>
+        <name>draw</name>
+        <reimplementedby refid="class_fire_entity_1a000ede7b6148c5c1b01e1fcd5d512c93">draw</reimplementedby>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Entity.h" line="12" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Entity.h" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entity_1a78fdc76cd8111e1c403024f66f2e00a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Entity::drawOver</definition>
+        <argsstring>(sf::RenderWindow *window) const </argsstring>
+        <name>drawOver</name>
+        <reimplementedby refid="class_laser_entity_1a33b9659fd81951ae656a43806a8986f8">drawOver</reimplementedby>
+        <reimplementedby refid="class_bullet_1a18e80bd6d18efa4db5e383bf6b67b042">drawOver</reimplementedby>
+        <reimplementedby refid="class_explosion_entity_1a59066ebe5d4588edd8a4cdf2c21d9c10">drawOver</reimplementedby>
+        <reimplementedby refid="class_flame_ring_1ad1ef9bf878a0422d30d2bf488834d2b4">drawOver</reimplementedby>
+        <reimplementedby refid="class_rocket_1ac547764f02cbb614eb9e77d6a36786a0">drawOver</reimplementedby>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Entity.h" line="13" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Entity.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="141">
+        <label>ExplosionEntity</label>
+        <link refid="class_explosion_entity"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>FireEntity</label>
+        <link refid="class_fire_entity"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>FlameRing</label>
+        <link refid="class_flame_ring"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>Entity</label>
+        <link refid="class_entity"/>
+      </node>
+      <node id="140">
+        <label>Bullet</label>
+        <link refid="class_bullet"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>Rocket</label>
+        <link refid="class_rocket"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>LaserEntity</label>
+        <link refid="class_laser_entity"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Entity.h" line="6" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Entity.h" bodystart="6" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_entity_1a5ab2eb129b6330823115239247fec4f5" prot="public" virt="virtual"><scope>Entity</scope><name>draw</name></member>
+      <member refid="class_entity_1a78fdc76cd8111e1c403024f66f2e00a0" prot="public" virt="virtual"><scope>Entity</scope><name>drawOver</name></member>
+      <member refid="class_entity_1a1ac1547ce618e2ec040c6a8498bb5201" prot="public" virt="pure-virtual"><scope>Entity</scope><name>tick</name></member>
+      <member refid="class_entity_1a588098978eea6a3486b7361605ff3f0f" prot="public" virt="virtual"><scope>Entity</scope><name>~Entity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

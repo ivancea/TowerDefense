@@ -1,0 +1,4 @@
+<map id="FlameRingTower" name="FlameRingTower">
+<area shape="rect" id="node2" href="$class_tower.html" title="Tower" alt="" coords="37,95,93,121"/>
+<area shape="rect" id="node3" href="$struct_vec2.html" title="Vec2\&lt; int \&gt;" alt="" coords="19,5,110,32"/>
+</map>

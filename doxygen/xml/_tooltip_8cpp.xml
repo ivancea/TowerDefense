@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_tooltip_8cpp" kind="file" language="C++">
+    <compoundname>Tooltip.cpp</compoundname>
+    <includes refid="_tooltip_8h" local="yes">Tooltip.h</includes>
+    <incdepgraph>
+      <node id="1499">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1501">
+        <label>cmath</label>
+      </node>
+      <node id="1500">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1501" relation="include">
+        </childnode>
+      </node>
+      <node id="1498">
+        <label>Tooltip.h</label>
+        <link refid="_tooltip_8h"/>
+        <childnode refid="1499" relation="include">
+        </childnode>
+        <childnode refid="1500" relation="include">
+        </childnode>
+      </node>
+      <node id="1497">
+        <label>Tooltip.cpp</label>
+        <link refid="Tooltip.cpp"/>
+        <childnode refid="1498" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_tooltip_8h" kindref="compound">Tooltip.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_tooltip_1a46a4bafd52456186b1fc7f48a554f8ef" refkind="member"><highlight class="normal"><ref refid="class_tooltip_1a46a4bafd52456186b1fc7f48a554f8ef" kindref="member">Tooltip::Tooltip</ref>(){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip_1a65fc19ec7dbb5c04204d9c1cb3456ac8" kindref="member">_maxWidth</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip_1a1df4148aa6035f0758e01fa2de0b0292" kindref="member">_backColor</ref><sp/>=<sp/>sf::Color(255,255,200,220);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip_1add17c3e3b6916609906a69eb8d72e764" kindref="member">_foreColor</ref><sp/>=<sp/>sf::Color::Black;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_tooltip_1a8755dc5b59166a63e15f042c0fa14b1a" refkind="member"><highlight class="normal"><ref refid="class_tooltip_1a46a4bafd52456186b1fc7f48a554f8ef" kindref="member">Tooltip::Tooltip</ref>(std::string<sp/>title,<sp/>std::string<sp/>body,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/>point,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxWidth,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::Color<sp/>backColor,<sp/>sf::Color<sp/>foreColor){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip_1a67cc85e3ea6e9ca2c7e8b162d636e4c4" kindref="member">_title</ref><sp/>=<sp/>title;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip_1adcfae457b1d3c99003448eb6523d9385" kindref="member">_body</ref><sp/>=<sp/>body;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip_1ace4127b05966b9e682d287364a226160" kindref="member">_point</ref><sp/>=<sp/>point;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip_1a65fc19ec7dbb5c04204d9c1cb3456ac8" kindref="member">_maxWidth</ref><sp/>=<sp/>maxWidth;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip_1a1df4148aa6035f0758e01fa2de0b0292" kindref="member">_backColor</ref><sp/>=<sp/>backColor;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip_1add17c3e3b6916609906a69eb8d72e764" kindref="member">_foreColor</ref><sp/>=<sp/>foreColor;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_tooltip_1ac18509cf67b5f48ed404fa68f64c0050" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tooltip_1ac18509cf67b5f48ed404fa68f64c0050" kindref="member">Tooltip::setTitle</ref>(std::string<sp/>title){</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip_1a67cc85e3ea6e9ca2c7e8b162d636e4c4" kindref="member">_title</ref><sp/>=<sp/>title;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_tooltip_1a555900703700b27097ff0f456be8bc7f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tooltip_1a555900703700b27097ff0f456be8bc7f" kindref="member">Tooltip::setBody</ref>(std::string<sp/>body){</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip_1adcfae457b1d3c99003448eb6523d9385" kindref="member">_body</ref><sp/>=<sp/>body;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_tooltip_1ad5886a8a5359d90fc580b95cc603e1d3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tooltip_1ad5886a8a5359d90fc580b95cc603e1d3" kindref="member">Tooltip::setPoint</ref>(<ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/>point){</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip_1ace4127b05966b9e682d287364a226160" kindref="member">_point</ref><sp/>=<sp/>point;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_tooltip_1ac00ca1ff15192af7ca5de01bd51b8579" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tooltip_1ac00ca1ff15192af7ca5de01bd51b8579" kindref="member">Tooltip::draw</ref>(sf::RenderWindow*<sp/>window)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;pushGLStates();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::Font<sp/>fontArial;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fontArial.loadFromFile(</highlight><highlight class="stringliteral">&quot;C:\\Windows\\Fonts\\Arial.ttf&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::Text<sp/>titleText,<sp/>bodyText;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>titleText.setFont(fontArial);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>titleText.setString(<ref refid="class_tooltip_1a67cc85e3ea6e9ca2c7e8b162d636e4c4" kindref="member">_title</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>titleText.setColor(<ref refid="class_tooltip_1add17c3e3b6916609906a69eb8d72e764" kindref="member">_foreColor</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>titleText.setCharacterSize(15);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>titleText.setStyle(sf::Text::Bold);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bodyText.setFont(fontArial);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bodyText.setString(<ref refid="class_tooltip_1adcfae457b1d3c99003448eb6523d9385" kindref="member">_body</ref>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bodyText.setColor(<ref refid="class_tooltip_1add17c3e3b6916609906a69eb8d72e764" kindref="member">_foreColor</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bodyText.setCharacterSize(12);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::FloatRect<sp/>titleBounds<sp/>=<sp/>titleText.getGlobalBounds(),</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bodyBounds<sp/>=<sp/>bodyText.getGlobalBounds();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>10<sp/>+<sp/>(titleBounds.width&gt;bodyBounds.width?titleBounds.width:bodyBounds.width);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height<sp/>=<sp/>5<sp/>+<sp/>10<sp/>+<sp/>titleBounds.height<sp/>+<sp/>bodyBounds.height;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::RectangleShape<sp/>rect(sf::Vector2f(width,height));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rect.setPosition(<ref refid="class_tooltip_1ace4127b05966b9e682d287364a226160" kindref="member">_point</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>-width,<sp/><ref refid="class_tooltip_1ace4127b05966b9e682d287364a226160" kindref="member">_point</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rect.setFillColor(<ref refid="class_tooltip_1a1df4148aa6035f0758e01fa2de0b0292" kindref="member">_backColor</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rect.setOutlineThickness(1);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window-&gt;draw(rect);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>titleText.setPosition(<ref refid="class_tooltip_1ace4127b05966b9e682d287364a226160" kindref="member">_point</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>-width+5,<sp/><ref refid="class_tooltip_1ace4127b05966b9e682d287364a226160" kindref="member">_point</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bodyText.setPosition(<ref refid="class_tooltip_1ace4127b05966b9e682d287364a226160" kindref="member">_point</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>-width+5,<sp/><ref refid="class_tooltip_1ace4127b05966b9e682d287364a226160" kindref="member">_point</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref><sp/>+<sp/>titleBounds.height<sp/>+<sp/>10);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window-&gt;draw(titleText);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window-&gt;draw(bodyText);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;popGLStates();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.cpp"/>
+  </compounddef>
+</doxygen>

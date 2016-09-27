@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_inhibitor_enemy_8cpp" kind="file" language="C++">
+    <compoundname>InhibitorEnemy.cpp</compoundname>
+    <includes refid="_inhibitor_enemy_8h" local="yes">InhibitorEnemy.h</includes>
+    <includes local="no">SFML/OpenGL.hpp</includes>
+    <includes refid="_game_8h" local="yes">Game.h</includes>
+    <incdepgraph>
+      <node id="1203">
+        <label>list</label>
+      </node>
+      <node id="1197">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1201">
+        <label>SFML/OpenGL.hpp</label>
+      </node>
+      <node id="1195">
+        <label>InhibitorEnemy.h</label>
+        <link refid="_inhibitor_enemy_8h"/>
+        <childnode refid="1196" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+      </node>
+      <node id="1194">
+        <label>InhibitorEnemy.cpp</label>
+        <link refid="InhibitorEnemy.cpp"/>
+        <childnode refid="1195" relation="include">
+        </childnode>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1202" relation="include">
+        </childnode>
+      </node>
+      <node id="1199">
+        <label>cmath</label>
+      </node>
+      <node id="1206">
+        <label>string</label>
+      </node>
+      <node id="1196">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+      </node>
+      <node id="1198">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1199" relation="include">
+        </childnode>
+      </node>
+      <node id="1204">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="1203" relation="include">
+        </childnode>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1205" relation="include">
+        </childnode>
+      </node>
+      <node id="1202">
+        <label>Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="1203" relation="include">
+        </childnode>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1204" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1196" relation="include">
+        </childnode>
+        <childnode refid="1207" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+      </node>
+      <node id="1205">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1206" relation="include">
+        </childnode>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+      </node>
+      <node id="1207">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1197" relation="include">
+        </childnode>
+      </node>
+      <node id="1200">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_inhibitor_enemy_8h" kindref="compound">InhibitorEnemy.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/OpenGL.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_8h" kindref="compound">Game.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_inhibitor_enemy_1aab4ba99fa36f9f23f029c9f81389c994" refkind="member"><highlight class="normal"><ref refid="class_inhibitor_enemy_1aab4ba99fa36f9f23f029c9f81389c994" kindref="member">InhibitorEnemy::InhibitorEnemy</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a57b7bb4913757b7f74496bcef9a5066a" kindref="member">life</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>damage)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">:<sp/><ref refid="class_enemy" kindref="compound">Enemy</ref>(1),<sp/>_inhibitionTicks(0){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_enemy_1af742f414df708a7c62240b6bd73aad94" kindref="member">_velocity</ref><sp/>=<sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_enemy_1a70ddc801163c579dcd432e8553331602" kindref="member">_life</ref><sp/>=<sp/><ref refid="namespace_game_1a57b7bb4913757b7f74496bcef9a5066a" kindref="member">life</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_enemy_1aa015dbea3090d6010d26169a6af9d9ed" kindref="member">_damage</ref><sp/>=<sp/><ref refid="class_enemy_1af7c3be9e985c7551466bb31e8d51bbbb" kindref="member">damage</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" kindref="member">Game::enemiesRoute</ref>.size()&gt;=1)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref><sp/>=<sp/><ref refid="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" kindref="member">Game::enemiesRoute</ref>[0];</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_inhibitor_enemy_1a8f71068c25e671bad196882a44625c55" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_inhibitor_enemy_1a8f71068c25e671bad196882a44625c55" kindref="member">InhibitorEnemy::killed</ref>(){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a8c9e80bd9cfbe0ca529de0728ae63b7b" kindref="member">Game::money</ref><sp/>+=<sp/>50;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_inhibitor_enemy_1a6983ba240a56b1f78921020c1f25035b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_inhibitor_enemy_1a6983ba240a56b1f78921020c1f25035b" kindref="member">InhibitorEnemy::tick</ref>(){</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>++<ref refid="class_inhibitor_enemy_1a5b732491c643ac9db52e695e6d99901c" kindref="member">_inhibitionTicks</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_inhibitor_enemy_1a5b732491c643ac9db52e695e6d99901c" kindref="member">_inhibitionTicks</ref>==50){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tower" kindref="compound">Tower</ref>*<sp/>t<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d<sp/>=<sp/>151;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="class_tower" kindref="compound">Tower</ref>*<sp/>tower<sp/>:<sp/><ref refid="namespace_game_1acaee8a857e108ef391b58ba15f3897c9" kindref="member">Game::towers</ref>){</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dist<sp/>=<sp/><ref refid="namespace_game_1a71544153aaa8842c582ec15166796d45" kindref="member">Game::getDistance</ref>(tower-&gt;getPosition(),<sp/><ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dist<sp/>&lt;<sp/>d){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t<sp/>=<sp/>tower;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d<sp/>=<sp/>dist;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(t<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" kindref="member">_target</ref><sp/>=<sp/>t;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inhibitor_enemy_1a5b732491c643ac9db52e695e6d99901c" kindref="member">_inhibitionTicks</ref><sp/>=<sp/>49;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_inhibitor_enemy_1a5b732491c643ac9db52e695e6d99901c" kindref="member">_inhibitionTicks</ref>&gt;100){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inhibitor_enemy_1a5b732491c643ac9db52e695e6d99901c" kindref="member">_inhibitionTicks</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" kindref="member">_target</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_inhibitor_enemy_1a5b732491c643ac9db52e695e6d99901c" kindref="member">_inhibitionTicks</ref>&gt;50){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" kindref="member">_target</ref>==</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inhibitor_enemy_1a5b732491c643ac9db52e695e6d99901c" kindref="member">_inhibitionTicks</ref><sp/>=<sp/>49;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="namespace_game_1ae0de9897a96ba2707f9648a563521c7d" kindref="member">Game::exists</ref>(<ref refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" kindref="member">_target</ref>)){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" kindref="member">_target</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inhibitor_enemy_1a5b732491c643ac9db52e695e6d99901c" kindref="member">_inhibitionTicks</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_game_1a71544153aaa8842c582ec15166796d45" kindref="member">Game::getDistance</ref>(<ref refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" kindref="member">_target</ref>-&gt;<ref refid="class_tower_1a892066fc6cbe882417e749a0829a713b" kindref="member">getPosition</ref>(),<sp/><ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>)<sp/>&lt;<sp/>150){</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" kindref="member">_target</ref>-&gt;<ref refid="class_tower_1a06e9f714ebf6793416ca559a49f218f4" kindref="member">setTicksForShoot</ref>(<ref refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" kindref="member">_target</ref>-&gt;<ref refid="class_tower_1a28b4e01cf370c3f583d83b904c5834bf" kindref="member">getTicksBetweenShoots</ref>());</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" kindref="member">_target</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_inhibitor_enemy_1a5b732491c643ac9db52e695e6d99901c" kindref="member">_inhibitionTicks</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_enemy_1ad921c3a0eeab9d46eae08054814a0d0a" kindref="member">Enemy::tick</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_inhibitor_enemy_1aa1cc9aba289ede2197d684680e1be9d7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_inhibitor_enemy_1aa1cc9aba289ede2197d684680e1be9d7" kindref="member">InhibitorEnemy::draw</ref>(sf::RenderWindow*<sp/>window)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sz<sp/>=<sp/><ref refid="class_enemy_1a70ddc801163c579dcd432e8553331602" kindref="member">_life</ref>/3;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sz&lt;=0)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sz<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>glColor3ub(0,150,200);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>glBegin(GL_POLYGON);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>-sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>-sz);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>-sz);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+sz);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>-sz,<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+sz);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnd();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_game_1ae0de9897a96ba2707f9648a563521c7d" kindref="member">Game::exists</ref>(<ref refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" kindref="member">_target</ref>)){</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glLineWidth(3);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glColor4ub(200,50,50,<sp/>125);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glBegin(GL_LINES);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>,<sp/><ref refid="class_enemy_1a1bf385b88624441c10a926f41c2a194e" kindref="member">_position</ref>.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(<ref refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" kindref="member">_target</ref>-&gt;<ref refid="class_tower_1a892066fc6cbe882417e749a0829a713b" kindref="member">getPosition</ref>().<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>*<ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref><sp/>+<sp/><ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>/2,<sp/><ref refid="class_inhibitor_enemy_1a7781ab7e7197f57a3adc10a03e50dda0" kindref="member">_target</ref>-&gt;<ref refid="class_tower_1a892066fc6cbe882417e749a0829a713b" kindref="member">getPosition</ref>().<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>*<ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref><sp/>+<sp/><ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>/2);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glEnd();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/InhibitorEnemy.cpp"/>
+  </compounddef>
+</doxygen>

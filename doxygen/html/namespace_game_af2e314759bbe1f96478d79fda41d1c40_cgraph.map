@@ -1,0 +1,4 @@
+<map id="Game::isInRange" name="Game::isInRange">
+<area shape="rect" id="node2" href="$struct_vec2.html#a8f0f08fa249195af341222553c8db855" title="Vec2::distance" alt="" coords="189,5,299,32"/>
+<area shape="rect" id="node3" href="$class_enemy.html#afd5331e1b8efb74c4722569b14934c61" title="Enemy::getPosition" alt="" coords="176,56,312,83"/>
+</map>

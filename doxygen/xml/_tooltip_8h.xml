@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_tooltip_8h" kind="file" language="C++">
+    <compoundname>Tooltip.h</compoundname>
+    <includes local="no">SFML/Graphics.hpp</includes>
+    <includes refid="_vec_8hpp" local="yes">Vec.hpp</includes>
+    <includedby refid="_tooltip_8cpp" local="yes">Tooltip.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <incdepgraph>
+      <node id="1504">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1506">
+        <label>cmath</label>
+      </node>
+      <node id="1505">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1506" relation="include">
+        </childnode>
+      </node>
+      <node id="1503">
+        <label>Tooltip.h</label>
+        <link refid="Tooltip.h"/>
+        <childnode refid="1504" relation="include">
+        </childnode>
+        <childnode refid="1505" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1509">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1507">
+        <label>Tooltip.h</label>
+        <link refid="Tooltip.h"/>
+        <childnode refid="1508" relation="include">
+        </childnode>
+        <childnode refid="1509" relation="include">
+        </childnode>
+      </node>
+      <node id="1508">
+        <label>Tooltip.cpp</label>
+        <link refid="_tooltip_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_tooltip" prot="public">Tooltip</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TOOLTIP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOOLTIP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Graphics.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vec_8hpp" kindref="compound">Vec.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_tooltip" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_tooltip" kindref="compound">Tooltip</ref>{</highlight></codeline>
+<codeline lineno="9" refid="class_tooltip_1ace4127b05966b9e682d287364a226160" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/><ref refid="class_tooltip_1ace4127b05966b9e682d287364a226160" kindref="member">_point</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_tooltip_1a65fc19ec7dbb5c04204d9c1cb3456ac8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_tooltip_1a65fc19ec7dbb5c04204d9c1cb3456ac8" kindref="member">_maxWidth</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_tooltip_1a1df4148aa6035f0758e01fa2de0b0292" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>sf::Color<sp/><ref refid="class_tooltip_1a1df4148aa6035f0758e01fa2de0b0292" kindref="member">_backColor</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_tooltip_1add17c3e3b6916609906a69eb8d72e764" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>sf::Color<sp/><ref refid="class_tooltip_1add17c3e3b6916609906a69eb8d72e764" kindref="member">_foreColor</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_tooltip_1a67cc85e3ea6e9ca2c7e8b162d636e4c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_tooltip_1a67cc85e3ea6e9ca2c7e8b162d636e4c4" kindref="member">_title</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_tooltip_1adcfae457b1d3c99003448eb6523d9385" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_tooltip_1adcfae457b1d3c99003448eb6523d9385" kindref="member">_body</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip_1a46a4bafd52456186b1fc7f48a554f8ef" kindref="member">Tooltip</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip_1a46a4bafd52456186b1fc7f48a554f8ef" kindref="member">Tooltip</ref>(std::string<sp/>title,<sp/>std::string<sp/>body,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/>point,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxWidth<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::Color<sp/>backColor<sp/>=<sp/>sf::Color(255,255,200,220),</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::Color<sp/>foreColor<sp/>=<sp/>sf::Color::Black);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tooltip_1ac18509cf67b5f48ed404fa68f64c0050" kindref="member">setTitle</ref>(std::string<sp/>title);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tooltip_1a555900703700b27097ff0f456be8bc7f" kindref="member">setBody</ref>(std::string<sp/>body);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tooltip_1ad5886a8a5359d90fc580b95cc603e1d3" kindref="member">setPoint</ref>(<ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/>point);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tooltip_1ac00ca1ff15192af7ca5de01bd51b8579" kindref="member">draw</ref>(sf::RenderWindow*<sp/>window)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TOOLTIP_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h"/>
+  </compounddef>
+</doxygen>

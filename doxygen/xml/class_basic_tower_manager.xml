@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_basic_tower_manager" kind="class" language="C++" prot="public">
+    <compoundname>BasicTowerManager</compoundname>
+    <basecompoundref refid="class_tower_manager" prot="public" virt="non-virtual">TowerManager</basecompoundref>
+    <includes refid="_basic_tower_manager_8h" local="no">BasicTowerManager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_basic_tower_manager_1a777f97aa1d6ee72c3a41ee50f0aeae16" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BasicTowerManager::_nextId</definition>
+        <argsstring></argsstring>
+        <name>_nextId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towerManagers/BasicTowerManager.h" line="9" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towerManagers/BasicTowerManager.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_basic_tower_manager_1ab94c20e1bf361ea01a1a7516095fccd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BasicTowerManager::BasicTowerManager</definition>
+        <argsstring>()</argsstring>
+        <name>BasicTowerManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towerManagers/BasicTowerManager.h" line="12" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towerManagers/BasicTowerManager.cpp" bodystart="9" bodyend="31"/>
+        <references refid="class_soldier_tower_1ad7ee249e4686d9788751cf80075ef4d9" compoundref="_soldier_tower_8h" startline="19">SoldierTower::id</references>
+        <references refid="class_sniper_tower_1a4c00cf0cb4ae062cb5ad652f1050c82d" compoundref="_sniper_tower_8h" startline="19">SniperTower::id</references>
+        <references refid="class_rocket_tower_1a788ccf186eaab4f093cc3e5b024a9d4b" compoundref="_rocket_tower_8h" startline="23">RocketTower::id</references>
+        <references refid="class_flame_ring_tower_1ad7e7182c61ff1d1f4c20a1d87807fd4c" compoundref="_flame_ring_tower_8h" startline="18">FlameRingTower::id</references>
+        <references refid="class_tower_manager_1a504e2fafa56251db8777bf4313f0bb80" compoundref="_tower_manager_8h" startline="14">TowerManager::_towerTypes</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="124">
+        <label>BasicTowerManager</label>
+        <link refid="class_basic_tower_manager"/>
+        <childnode refid="125" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>TowerManager</label>
+        <link refid="class_tower_manager"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="126">
+        <label>BasicTowerManager</label>
+        <link refid="class_basic_tower_manager"/>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>TowerManager</label>
+        <link refid="class_tower_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towerManagers/BasicTowerManager.h" line="8" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towerManagers/BasicTowerManager.h" bodystart="8" bodyend="13"/>
+    <listofallmembers>
+      <member refid="class_basic_tower_manager_1a777f97aa1d6ee72c3a41ee50f0aeae16" prot="private" virt="non-virtual"><scope>BasicTowerManager</scope><name>_nextId</name></member>
+      <member refid="class_tower_manager_1a504e2fafa56251db8777bf4313f0bb80" prot="protected" virt="non-virtual"><scope>BasicTowerManager</scope><name>_towerTypes</name></member>
+      <member refid="class_basic_tower_manager_1ab94c20e1bf361ea01a1a7516095fccd5" prot="public" virt="non-virtual"><scope>BasicTowerManager</scope><name>BasicTowerManager</name></member>
+      <member refid="class_tower_manager_1addf03520e1fe692d2a547374e58e5711" prot="public" virt="virtual"><scope>BasicTowerManager</scope><name>drawTowersPanel</name></member>
+      <member refid="class_tower_manager_1a423707a6d9656610ddfc62691078ab6f" prot="public" virt="virtual"><scope>BasicTowerManager</scope><name>getDrawRectSize</name></member>
+      <member refid="class_tower_manager_1a8474b8e86cf6e3082881d002ea26e012" prot="public" virt="virtual"><scope>BasicTowerManager</scope><name>getTowerCost</name></member>
+      <member refid="class_tower_manager_1a9830128e0f2c22e842fb7dc8fc5f87f2" prot="public" virt="non-virtual"><scope>BasicTowerManager</scope><name>getTowerCount</name></member>
+      <member refid="class_tower_manager_1a0916b2c610768b4821d171734970696a" prot="public" virt="virtual"><scope>BasicTowerManager</scope><name>getTowerType</name></member>
+      <member refid="class_tower_manager_1a1831e2bb3e53169abdaa7760857cddd6" prot="public" virt="virtual"><scope>BasicTowerManager</scope><name>parseEvent</name></member>
+      <member refid="class_tower_manager_1aa2c2765238a8747803334c164e767e41" prot="public" virt="virtual"><scope>BasicTowerManager</scope><name>~TowerManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,11 @@
+<map id="RocketTower::tick" name="RocketTower::tick">
+<area shape="rect" id="node2" href="$namespace_game.html#a06280777aa0c70527c6dfce295cc4220" title="Game::findTarget" alt="" coords="180,157,301,184"/>
+<area shape="rect" id="node3" href="$class_tower.html#a892066fc6cbe882417e749a0829a713b" title="Tower::getPosition" alt="" coords="373,5,503,32"/>
+<area shape="rect" id="node4" href="$class_tower.html#ae6698f53a92e382f35c13faa1c8755c5" title="Tower::getPriority" alt="" coords="377,56,499,83"/>
+<area shape="rect" id="node5" href="$namespace_game.html#af2e314759bbe1f96478d79fda41d1c40" title="Game::isInRange" alt="" coords="377,157,499,184"/>
+<area shape="rect" id="node6" href="$struct_vec2.html#a8f0f08fa249195af341222553c8db855" title="Vec2::distance" alt="" coords="588,107,697,133"/>
+<area shape="rect" id="node8" href="$class_tower.html#af3974612b34698019596e847c20a0b5f" title="Tower::getMinRange" alt="" coords="368,208,508,235"/>
+<area shape="rect" id="node9" href="$class_tower.html#a1de58ad0b4454321b7581a95be903f84" title="Tower::getMaxRange" alt="" coords="366,259,510,285"/>
+<area shape="rect" id="node10" href="$class_enemy.html#a95df3c4a64b8576874c5815877ee9d61" title="Enemy::getDistanceToEnd" alt="" coords="349,309,527,336"/>
+<area shape="rect" id="node7" href="$class_enemy.html#afd5331e1b8efb74c4722569b14934c61" title="Enemy::getPosition" alt="" coords="575,157,711,184"/>
+</map>

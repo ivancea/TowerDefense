@@ -1,0 +1,621 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_vec3" kind="struct" language="C++" prot="public">
+    <compoundname>Vec3</compoundname>
+    <includes refid="_vec_8hpp" local="no">Vec.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Vec3&lt; T &gt;::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="7" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Vec3&lt; T &gt;::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="7" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_vec3_1a0f694311f956380952aee054cbabb8b6" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Vec3&lt; T &gt;::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="7" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_vec3_1a7c150f37ecfa78ced8b83bd95908cc33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vec3&lt; T &gt;::Vec3</definition>
+        <argsstring>()</argsstring>
+        <name>Vec3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="9" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1ab5e07fff614504292d74e3d7f29fe6f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vec3&lt; T &gt;::Vec3</definition>
+        <argsstring>(T _x, T _y, T _z)</argsstring>
+        <name>Vec3</name>
+        <param>
+          <type>T</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>_y</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>_z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="10" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a8d0c4c2050b2784999cb991ec65c909d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vec3&lt; T &gt;::Vec3</definition>
+        <argsstring>(const Vec3&lt; T &gt; &amp;v)</argsstring>
+        <name>Vec3</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="11" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="11" bodyend="11"/>
+        <references refid="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::x</references>
+        <references refid="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::y</references>
+        <references refid="struct_vec3_1a0f694311f956380952aee054cbabb8b6" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::z</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1ab065f613072cf03bae74e0398fe03819" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vec3&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="12" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1aaa52699051347366ad9836673b688c0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vec3&lt; T &gt;::normalize</definition>
+        <argsstring>()</argsstring>
+        <name>normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="13" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="13" bodyend="19"/>
+        <references refid="struct_vec3_1ac78863777884b592abb605ff3a605873" compoundref="_vec_8hpp" startline="20" endline="20">Vec3&lt; T &gt;::distance</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1ac78863777884b592abb605ff3a605873" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Vec3&lt; T &gt;::distance</definition>
+        <argsstring>() const </argsstring>
+        <name>distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="20" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="20" bodyend="20"/>
+        <references refid="struct_vec3_1ac78863777884b592abb605ff3a605873" compoundref="_vec_8hpp" startline="20" endline="20">Vec3&lt; T &gt;::distance</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a54cf6d04efc4cd495d9bf30a85cbaa36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Vec3&lt; T &gt;::angle</definition>
+        <argsstring>() const </argsstring>
+        <name>angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="21" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="21" bodyend="21"/>
+        <references refid="struct_vec3_1a54cf6d04efc4cd495d9bf30a85cbaa36" compoundref="_vec_8hpp" startline="21" endline="21">Vec3&lt; T &gt;::angle</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1ad3b8a18c348e470cdebf4c05b88c73ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double Vec3&lt; T &gt;::distance</definition>
+        <argsstring>(const Vec3&lt; G &gt; v) const </argsstring>
+        <name>distance</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; G &gt;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="22" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="22" bodyend="22"/>
+        <references refid="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::x</references>
+        <references refid="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::y</references>
+        <references refid="struct_vec3_1a0f694311f956380952aee054cbabb8b6" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::z</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a33fb3a5de6f17cc4cfb50af46881ad97" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double Vec3&lt; T &gt;::angle</definition>
+        <argsstring>(const Vec3&lt; G &gt; v) const </argsstring>
+        <name>angle</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; G &gt;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="23" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="23" bodyend="23"/>
+        <references refid="struct_vec3_1a33fb3a5de6f17cc4cfb50af46881ad97" compoundref="_vec_8hpp" startline="23" endline="23">Vec3&lt; T &gt;::angle</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a136910239c8767d8ddda099c4e447b72" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; T &gt;</type>
+        <definition>Vec3&lt;T&gt; Vec3&lt; T &gt;::operator+</definition>
+        <argsstring>(const Vec3&lt; G &gt; v) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; G &gt;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="25" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="25" bodyend="25"/>
+        <references refid="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::x</references>
+        <references refid="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::y</references>
+        <references refid="struct_vec3_1a0f694311f956380952aee054cbabb8b6" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::z</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a401a0c33c4ebff4b78590a6c5a010f3d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; T &gt;</type>
+        <definition>Vec3&lt;T&gt; Vec3&lt; T &gt;::operator-</definition>
+        <argsstring>(const Vec3&lt; G &gt; v) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; G &gt;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="26" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="26" bodyend="26"/>
+        <references refid="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::x</references>
+        <references refid="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::y</references>
+        <references refid="struct_vec3_1a0f694311f956380952aee054cbabb8b6" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::z</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1aedc6a75a9cc9b09269dfb9c603e6d67b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; T &gt;</type>
+        <definition>Vec3&lt;T&gt; Vec3&lt; T &gt;::operator*</definition>
+        <argsstring>(const G d) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const G</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="27" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a3f28aeaac3b37939603048919f07c901" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; T &gt;</type>
+        <definition>Vec3&lt;T&gt; Vec3&lt; T &gt;::operator/</definition>
+        <argsstring>(const G d) const </argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const G</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="28" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a544cfb7946d54665b9a93925595141a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T Vec3&lt; T &gt;::operator*</definition>
+        <argsstring>(const Vec3&lt; G &gt; v) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; G &gt;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="29" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="29" bodyend="29"/>
+        <references refid="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::x</references>
+        <references refid="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::y</references>
+        <references refid="struct_vec3_1a0f694311f956380952aee054cbabb8b6" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::z</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a67250f3142016b46ca1fe6d2aa260bdb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; T &gt;</type>
+        <definition>Vec3&lt;T&gt; Vec3&lt; T &gt;::operator^</definition>
+        <argsstring>(const Vec3&lt; G &gt; v) const </argsstring>
+        <name>operator^</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; G &gt;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="30" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="30" bodyend="30"/>
+        <references refid="struct_vec3_1a0f694311f956380952aee054cbabb8b6" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::z</references>
+        <references refid="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::y</references>
+        <references refid="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::x</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a6357cc8bedaf8e78802e498543995370" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; T &gt;</type>
+        <definition>Vec3&lt;T&gt; Vec3&lt; T &gt;::operator=</definition>
+        <argsstring>(const Vec3&lt; G &gt; v)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; G &gt;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="32" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="32" bodyend="32"/>
+        <references refid="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::x</references>
+        <references refid="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::y</references>
+        <references refid="struct_vec3_1a0f694311f956380952aee054cbabb8b6" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::z</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a5268deb77835e359316ce9312e6d78b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; T &gt;</type>
+        <definition>Vec3&lt;T&gt; Vec3&lt; T &gt;::operator+=</definition>
+        <argsstring>(const Vec3&lt; G &gt; v)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; G &gt;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="33" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="33" bodyend="33"/>
+        <references refid="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::x</references>
+        <references refid="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::y</references>
+        <references refid="struct_vec3_1a0f694311f956380952aee054cbabb8b6" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::z</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a7e8380546b7a07f5a42ddc618843009c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; T &gt;</type>
+        <definition>Vec3&lt;T&gt; Vec3&lt; T &gt;::operator-=</definition>
+        <argsstring>(const Vec3&lt; G &gt; v)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; G &gt;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="34" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="34" bodyend="34"/>
+        <references refid="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::x</references>
+        <references refid="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::y</references>
+        <references refid="struct_vec3_1a0f694311f956380952aee054cbabb8b6" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::z</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1ab538e8b150f236bf307f4069a48e2f58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; T &gt;</type>
+        <definition>Vec3&lt;T&gt; Vec3&lt; T &gt;::operator*=</definition>
+        <argsstring>(const G d)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const G</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="35" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a029288940a55ee43531803fcdc8ae6ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; T &gt;</type>
+        <definition>Vec3&lt;T&gt; Vec3&lt; T &gt;::operator/=</definition>
+        <argsstring>(const G d)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>const G</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="36" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a92f13cfa00d9e63703b45876fde2ac08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; T &gt;</type>
+        <definition>Vec3&lt;T&gt; Vec3&lt; T &gt;::operator^=</definition>
+        <argsstring>(const Vec3&lt; G &gt; v)</argsstring>
+        <name>operator^=</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; G &gt;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="37" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a163682ec6216cdf90e82e50640e78966" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Vec3&lt; T &gt;::operator==</definition>
+        <argsstring>(const Vec3&lt; G &gt; v)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; G &gt;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="39" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="39" bodyend="39"/>
+        <references refid="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::x</references>
+        <references refid="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::y</references>
+        <references refid="struct_vec3_1a0f694311f956380952aee054cbabb8b6" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::z</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1ac4f213839d154e0a42f137ca03b17f5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Vec3&lt; T &gt;::operator!=</definition>
+        <argsstring>(const Vec3&lt; G &gt; v)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="struct_vec3" kindref="compound">Vec3</ref>&lt; G &gt;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="40" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="40" bodyend="40"/>
+        <references refid="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::x</references>
+        <references refid="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::y</references>
+        <references refid="struct_vec3_1a0f694311f956380952aee054cbabb8b6" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::z</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vec3_1a77f8546fed96aae205892e2989c16056" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class G</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>Vec3&lt; T &gt;::operator Vec3&lt; G &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>operator Vec3&lt; G &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="42" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="42" bodyend="42"/>
+        <references refid="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::x</references>
+        <references refid="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" compoundref="_vec_8hpp" startline="7">Vec3&lt; T &gt;::y</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="237">
+        <label>T</label>
+      </node>
+      <node id="236">
+        <label>Vec3&lt; T &gt;</label>
+        <link refid="struct_vec3"/>
+        <childnode refid="237" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" line="6" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Vec.hpp" bodystart="6" bodyend="43"/>
+    <listofallmembers>
+      <member refid="struct_vec3_1a54cf6d04efc4cd495d9bf30a85cbaa36" prot="public" virt="non-virtual"><scope>Vec3</scope><name>angle</name></member>
+      <member refid="struct_vec3_1a33fb3a5de6f17cc4cfb50af46881ad97" prot="public" virt="non-virtual"><scope>Vec3</scope><name>angle</name></member>
+      <member refid="struct_vec3_1ab065f613072cf03bae74e0398fe03819" prot="public" virt="non-virtual"><scope>Vec3</scope><name>clear</name></member>
+      <member refid="struct_vec3_1ac78863777884b592abb605ff3a605873" prot="public" virt="non-virtual"><scope>Vec3</scope><name>distance</name></member>
+      <member refid="struct_vec3_1ad3b8a18c348e470cdebf4c05b88c73ae" prot="public" virt="non-virtual"><scope>Vec3</scope><name>distance</name></member>
+      <member refid="struct_vec3_1aaa52699051347366ad9836673b688c0f" prot="public" virt="non-virtual"><scope>Vec3</scope><name>normalize</name></member>
+      <member refid="struct_vec3_1a77f8546fed96aae205892e2989c16056" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator Vec3&lt; G &gt;</name></member>
+      <member refid="struct_vec3_1ac4f213839d154e0a42f137ca03b17f5a" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator!=</name></member>
+      <member refid="struct_vec3_1aedc6a75a9cc9b09269dfb9c603e6d67b" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator*</name></member>
+      <member refid="struct_vec3_1a544cfb7946d54665b9a93925595141a5" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator*</name></member>
+      <member refid="struct_vec3_1ab538e8b150f236bf307f4069a48e2f58" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator*=</name></member>
+      <member refid="struct_vec3_1a136910239c8767d8ddda099c4e447b72" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator+</name></member>
+      <member refid="struct_vec3_1a5268deb77835e359316ce9312e6d78b8" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator+=</name></member>
+      <member refid="struct_vec3_1a401a0c33c4ebff4b78590a6c5a010f3d" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator-</name></member>
+      <member refid="struct_vec3_1a7e8380546b7a07f5a42ddc618843009c" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator-=</name></member>
+      <member refid="struct_vec3_1a3f28aeaac3b37939603048919f07c901" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator/</name></member>
+      <member refid="struct_vec3_1a029288940a55ee43531803fcdc8ae6ef" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator/=</name></member>
+      <member refid="struct_vec3_1a6357cc8bedaf8e78802e498543995370" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator=</name></member>
+      <member refid="struct_vec3_1a163682ec6216cdf90e82e50640e78966" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator==</name></member>
+      <member refid="struct_vec3_1a67250f3142016b46ca1fe6d2aa260bdb" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator^</name></member>
+      <member refid="struct_vec3_1a92f13cfa00d9e63703b45876fde2ac08" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator^=</name></member>
+      <member refid="struct_vec3_1a7c150f37ecfa78ced8b83bd95908cc33" prot="public" virt="non-virtual"><scope>Vec3</scope><name>Vec3</name></member>
+      <member refid="struct_vec3_1ab5e07fff614504292d74e3d7f29fe6f9" prot="public" virt="non-virtual"><scope>Vec3</scope><name>Vec3</name></member>
+      <member refid="struct_vec3_1a8d0c4c2050b2784999cb991ec65c909d" prot="public" virt="non-virtual"><scope>Vec3</scope><name>Vec3</name></member>
+      <member refid="struct_vec3_1aeba95c52e15a5a7476550c1798210db2" prot="public" virt="non-virtual"><scope>Vec3</scope><name>x</name></member>
+      <member refid="struct_vec3_1a76f06eaf078504ac1d09c910ddb24696" prot="public" virt="non-virtual"><scope>Vec3</scope><name>y</name></member>
+      <member refid="struct_vec3_1a0f694311f956380952aee054cbabb8b6" prot="public" virt="non-virtual"><scope>Vec3</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

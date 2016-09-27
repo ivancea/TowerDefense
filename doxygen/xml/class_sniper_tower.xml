@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_sniper_tower" kind="class" language="C++" prot="public">
+    <compoundname>SniperTower</compoundname>
+    <basecompoundref refid="class_tower" prot="public" virt="non-virtual">Tower</basecompoundref>
+    <includes refid="_sniper_tower_8h" local="no">SniperTower.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sniper_tower_1a256e524d665f4edf2ef3e2f91a23a729" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SniperTower::_damage</definition>
+        <argsstring></argsstring>
+        <name>_damage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" line="12" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sniper_tower_1aedfe43341fb2c85ea3f2558021bb734e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_sprite" kindref="compound">Sprite</ref></type>
+        <definition>Sprite SniperTower::_spriteBase</definition>
+        <argsstring></argsstring>
+        <name>_spriteBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" line="14" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sniper_tower_1a6b420af0e9a7653e718a3641c7470d25" prot="private" static="no" mutable="no">
+        <type><ref refid="class_sprite" kindref="compound">Sprite</ref></type>
+        <definition>Sprite SniperTower::_spriteCanon</definition>
+        <argsstring></argsstring>
+        <name>_spriteCanon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" line="15" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_sniper_tower_1a4c00cf0cb4ae062cb5ad652f1050c82d" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int SniperTower::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" line="19" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sniper_tower_1a93cc1454f3e6f239f8fca79be6ccc15a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SniperTower::SniperTower</definition>
+        <argsstring>()</argsstring>
+        <name>SniperTower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" line="21" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.cpp" bodystart="13" bodyend="34"/>
+        <references refid="class_tower_1a02ec2f8d1c4dea2f7fc002d8626c8b28" compoundref="_tower_8h" startline="31">Tower::_id</references>
+        <references refid="class_sniper_tower_1a4c00cf0cb4ae062cb5ad652f1050c82d" compoundref="_sniper_tower_8h" startline="19">id</references>
+        <references refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" compoundref="_tower_8h" startline="33">Tower::_ticksForShoot</references>
+        <references refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" compoundref="_tower_8h" startline="34">Tower::_ticksBetweenShoots</references>
+        <references refid="class_sniper_tower_1a256e524d665f4edf2ef3e2f91a23a729" compoundref="_sniper_tower_8h" startline="12">_damage</references>
+        <references refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" compoundref="_tower_8h" startline="39">Tower::_minRange</references>
+        <references refid="class_tower_1a29cae98d3f1d863335b175597f61f8da" compoundref="_tower_8h" startline="39">Tower::_maxRange</references>
+        <references refid="namespace_resources_1a5d69bd132d861b6f3a83486e871b0b0a" compoundref="_resources_8cpp" startline="24" endline="37">Resources::getTexture</references>
+        <references refid="class_sniper_tower_1aedfe43341fb2c85ea3f2558021bb734e" compoundref="_sniper_tower_8h" startline="14">_spriteBase</references>
+        <references refid="class_sniper_tower_1a6b420af0e9a7653e718a3641c7470d25" compoundref="_sniper_tower_8h" startline="14">_spriteCanon</references>
+        <references refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" compoundref="_game_8cpp" startline="31">Game::pixelsPerSquare</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sniper_tower_1ab0e4b579aa38c03b3a67f29471a96bd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_tower_8h_1a515c655d051e131462a497de3df0e8eb" kindref="member">TowerEvent</ref></type>
+        <definition>TowerEvent SniperTower::tick</definition>
+        <argsstring>()</argsstring>
+        <name>tick</name>
+        <reimplements refid="class_tower_1a0b5a181ad1356b4d9a395347efdbe1a1">tick</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" line="23" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.cpp" bodystart="36" bodyend="57"/>
+        <references refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" compoundref="_tower_8h" startline="33">Tower::_ticksForShoot</references>
+        <references refid="namespace_game_1a06280777aa0c70527c6dfce295cc4220" compoundref="_game_8cpp" startline="262" endline="380">Game::findTarget</references>
+        <references refid="namespace_game_1a567bf723c1182e15ffac0548a9b01a00" compoundref="_game_8cpp" startline="26">Game::enemies</references>
+        <references refid="namespace_game_1a3a3a6fcb74f541d2dc4be77b0be28b71" compoundref="_game_8cpp" startline="451" endline="454">Game::getRealPosition</references>
+        <references refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" compoundref="_tower_8h" startline="36">Tower::_position</references>
+        <references refid="namespace_game_1a19468d252754d2b9efe64258e7e3ccba" compoundref="_game_8cpp" startline="27">Game::entities</references>
+        <references refid="class_sniper_tower_1a6b420af0e9a7653e718a3641c7470d25" compoundref="_sniper_tower_8h" startline="14">_spriteCanon</references>
+        <references refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" compoundref="_game_8h" startline="4">PI</references>
+        <references refid="class_sniper_tower_1a256e524d665f4edf2ef3e2f91a23a729" compoundref="_sniper_tower_8h" startline="12">_damage</references>
+        <references refid="namespace_game_1a1d9c21b5df867aeaf1ac00fc77a577b7" compoundref="_game_8cpp" startline="246" endline="251">Game::kill</references>
+        <references refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" compoundref="_tower_8h" startline="34">Tower::_ticksBetweenShoots</references>
+        <references refid="_tower_8h_1a515c655d051e131462a497de3df0e8ebac9d3e887722f2bc482bcca9d41c512af" compoundref="_tower_8h" startline="11">None</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sniper_tower_1a3f2c8bb1f2579dd0a7b7a37b3e191afb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SniperTower::draw</definition>
+        <argsstring>(sf::RenderWindow *window, Vec2d point) const </argsstring>
+        <name>draw</name>
+        <reimplements refid="class_tower_1a345caef621244125c0af480ddc041860">draw</reimplements>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" line="24" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.cpp" bodystart="59" bodyend="67"/>
+        <references refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::x</references>
+        <references refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::y</references>
+        <references refid="class_sniper_tower_1aedfe43341fb2c85ea3f2558021bb734e" compoundref="_sniper_tower_8h" startline="14">_spriteBase</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sniper_tower_1af8dc720e9a312f79e9083cfea8b510cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SniperTower::drawOver</definition>
+        <argsstring>(sf::RenderWindow *window, Vec2d point) const </argsstring>
+        <name>drawOver</name>
+        <reimplements refid="class_tower_1a73e9bca05abf9d075cf255c605a5b7a0">drawOver</reimplements>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" line="25" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.cpp" bodystart="69" bodyend="77"/>
+        <references refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::x</references>
+        <references refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::y</references>
+        <references refid="class_sniper_tower_1a6b420af0e9a7653e718a3641c7470d25" compoundref="_sniper_tower_8h" startline="14">_spriteCanon</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sniper_tower_1ade688996092dc825d1842877c917e9be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_tower" kindref="compound">Tower</ref> *</type>
+        <definition>Tower * SniperTower::clone</definition>
+        <argsstring>() const </argsstring>
+        <name>clone</name>
+        <reimplements refid="class_tower_1a1d444a99e396e60c804512ecd61dd25b">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" line="27" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.cpp" bodystart="79" bodyend="81"/>
+        <references refid="class_sniper_tower_1a93cc1454f3e6f239f8fca79be6ccc15a" compoundref="_sniper_tower_8cpp" startline="13" endline="34">SniperTower</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="200">
+        <label>Tower</label>
+        <link refid="class_tower"/>
+      </node>
+      <node id="199">
+        <label>SniperTower</label>
+        <link refid="class_sniper_tower"/>
+        <childnode refid="200" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="205">
+        <label>sf::Sprite</label>
+      </node>
+      <node id="203">
+        <label>Vec2&lt; int &gt;</label>
+        <link refid="struct_vec2"/>
+      </node>
+      <node id="204">
+        <label>Sprite</label>
+        <link refid="class_sprite"/>
+        <childnode refid="205" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>Tower</label>
+        <link refid="class_tower"/>
+        <childnode refid="203" relation="usage">
+          <edgelabel>_position</edgelabel>
+        </childnode>
+      </node>
+      <node id="201">
+        <label>SniperTower</label>
+        <link refid="class_sniper_tower"/>
+        <childnode refid="202" relation="public-inheritance">
+        </childnode>
+        <childnode refid="204" relation="usage">
+          <edgelabel>_spriteBase</edgelabel>
+          <edgelabel>_spriteCanon</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" line="11" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.h" bodystart="11" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_sniper_tower_1a256e524d665f4edf2ef3e2f91a23a729" prot="private" virt="non-virtual"><scope>SniperTower</scope><name>_damage</name></member>
+      <member refid="class_tower_1a02ec2f8d1c4dea2f7fc002d8626c8b28" prot="protected" virt="non-virtual"><scope>SniperTower</scope><name>_id</name></member>
+      <member refid="class_tower_1a29cae98d3f1d863335b175597f61f8da" prot="protected" virt="non-virtual"><scope>SniperTower</scope><name>_maxRange</name></member>
+      <member refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" prot="protected" virt="non-virtual"><scope>SniperTower</scope><name>_minRange</name></member>
+      <member refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" prot="protected" virt="non-virtual"><scope>SniperTower</scope><name>_position</name></member>
+      <member refid="class_tower_1a45ff5669e9b1815222fbbd38bf4dbdd2" prot="protected" virt="non-virtual"><scope>SniperTower</scope><name>_priority</name></member>
+      <member refid="class_sniper_tower_1aedfe43341fb2c85ea3f2558021bb734e" prot="private" virt="non-virtual"><scope>SniperTower</scope><name>_spriteBase</name></member>
+      <member refid="class_sniper_tower_1a6b420af0e9a7653e718a3641c7470d25" prot="private" virt="non-virtual"><scope>SniperTower</scope><name>_spriteCanon</name></member>
+      <member refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" prot="protected" virt="non-virtual"><scope>SniperTower</scope><name>_ticksBetweenShoots</name></member>
+      <member refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" prot="protected" virt="non-virtual"><scope>SniperTower</scope><name>_ticksForShoot</name></member>
+      <member refid="class_sniper_tower_1ade688996092dc825d1842877c917e9be" prot="public" virt="virtual"><scope>SniperTower</scope><name>clone</name></member>
+      <member refid="class_sniper_tower_1a3f2c8bb1f2579dd0a7b7a37b3e191afb" prot="public" virt="virtual"><scope>SniperTower</scope><name>draw</name></member>
+      <member refid="class_tower_1a1a810f6750616a02e665eb41db5dff5f" prot="public" virt="virtual" ambiguityscope="Tower::"><scope>SniperTower</scope><name>draw</name></member>
+      <member refid="class_sniper_tower_1af8dc720e9a312f79e9083cfea8b510cf" prot="public" virt="virtual"><scope>SniperTower</scope><name>drawOver</name></member>
+      <member refid="class_tower_1a6233d4726637efbe811fa3e471b17763" prot="public" virt="virtual" ambiguityscope="Tower::"><scope>SniperTower</scope><name>drawOver</name></member>
+      <member refid="class_tower_1abf534cfa4be4208f490316de84a363c6" prot="public" virt="non-virtual"><scope>SniperTower</scope><name>getId</name></member>
+      <member refid="class_tower_1a1de58ad0b4454321b7581a95be903f84" prot="public" virt="non-virtual"><scope>SniperTower</scope><name>getMaxRange</name></member>
+      <member refid="class_tower_1af3974612b34698019596e847c20a0b5f" prot="public" virt="non-virtual"><scope>SniperTower</scope><name>getMinRange</name></member>
+      <member refid="class_tower_1a892066fc6cbe882417e749a0829a713b" prot="public" virt="non-virtual"><scope>SniperTower</scope><name>getPosition</name></member>
+      <member refid="class_tower_1ae6698f53a92e382f35c13faa1c8755c5" prot="public" virt="non-virtual"><scope>SniperTower</scope><name>getPriority</name></member>
+      <member refid="class_tower_1a28b4e01cf370c3f583d83b904c5834bf" prot="public" virt="non-virtual"><scope>SniperTower</scope><name>getTicksBetweenShoots</name></member>
+      <member refid="class_tower_1acbef4e9eed709d590b1bdb07257e9afc" prot="public" virt="non-virtual"><scope>SniperTower</scope><name>getTicksForShoot</name></member>
+      <member refid="class_sniper_tower_1a4c00cf0cb4ae062cb5ad652f1050c82d" prot="public" virt="non-virtual"><scope>SniperTower</scope><name>id</name></member>
+      <member refid="class_tower_1a2a9705516e1db56532a8374cd980fe7f" prot="public" virt="non-virtual"><scope>SniperTower</scope><name>setId</name></member>
+      <member refid="class_tower_1a25bd659fcdcff1d6defed633c11448e4" prot="public" virt="virtual"><scope>SniperTower</scope><name>setMaxRange</name></member>
+      <member refid="class_tower_1a4237103c1b5e5e9a31f0574616154b25" prot="public" virt="virtual"><scope>SniperTower</scope><name>setMinRange</name></member>
+      <member refid="class_tower_1ac95d4e39ad1e1d7aca4dd43114bfb35b" prot="public" virt="virtual"><scope>SniperTower</scope><name>setPosition</name></member>
+      <member refid="class_tower_1a0e6f188ea4541160da9418cbab630c44" prot="public" virt="virtual"><scope>SniperTower</scope><name>setPriority</name></member>
+      <member refid="class_tower_1a7e39dc1fc516ef2c23df035fe6f37cfc" prot="public" virt="virtual"><scope>SniperTower</scope><name>setTicksBetweenShoots</name></member>
+      <member refid="class_tower_1a06e9f714ebf6793416ca559a49f218f4" prot="public" virt="virtual"><scope>SniperTower</scope><name>setTicksForShoot</name></member>
+      <member refid="class_sniper_tower_1a93cc1454f3e6f239f8fca79be6ccc15a" prot="public" virt="non-virtual"><scope>SniperTower</scope><name>SniperTower</name></member>
+      <member refid="class_sniper_tower_1ab0e4b579aa38c03b3a67f29471a96bd3" prot="public" virt="virtual"><scope>SniperTower</scope><name>tick</name></member>
+      <member refid="class_tower_1a1b785dc1e9fb979a10620ca183b5761d" prot="public" virt="non-virtual"><scope>SniperTower</scope><name>Tower</name></member>
+      <member refid="class_tower_1ac42ebf24f6aedbd4591fe3371f364600" prot="public" virt="virtual"><scope>SniperTower</scope><name>~Tower</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

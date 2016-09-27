@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_basic_enemy_8h" kind="file" language="C++">
+    <compoundname>BasicEnemy.h</compoundname>
+    <includes refid="_enemy_8h" local="yes">Enemy.h</includes>
+    <includedby refid="_basic_enemy_8cpp" local="yes">BasicEnemy.cpp</includedby>
+    <includedby refid="_game_8cpp" local="yes">Game.cpp</includedby>
+    <incdepgraph>
+      <node id="865">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="867">
+        <label>cmath</label>
+      </node>
+      <node id="864">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="865" relation="include">
+        </childnode>
+        <childnode refid="866" relation="include">
+        </childnode>
+      </node>
+      <node id="866">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="867" relation="include">
+        </childnode>
+      </node>
+      <node id="863">
+        <label>BasicEnemy.h</label>
+        <link refid="BasicEnemy.h"/>
+        <childnode refid="864" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="870">
+        <label>Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="868">
+        <label>BasicEnemy.h</label>
+        <link refid="BasicEnemy.h"/>
+        <childnode refid="869" relation="include">
+        </childnode>
+        <childnode refid="870" relation="include">
+        </childnode>
+      </node>
+      <node id="869">
+        <label>BasicEnemy.cpp</label>
+        <link refid="_basic_enemy_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_basic_enemy" prot="public">BasicEnemy</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>BASICENEMY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BASICENEMY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_enemy_8h" kindref="compound">Enemy.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_basic_enemy" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_basic_enemy" kindref="compound">BasicEnemy</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_enemy" kindref="compound">Enemy</ref>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_basic_enemy_1ae7f70e587dcac7bb2c82f460bbe5ad26" kindref="member">BasicEnemy</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a57b7bb4913757b7f74496bcef9a5066a" kindref="member">life</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_enemy_1af7c3be9e985c7551466bb31e8d51bbbb" kindref="member">damage</ref>);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_basic_enemy_1a371a4209b7e53009991032189427a39d" kindref="member">killed</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_basic_enemy_1a3c07b473a552322bcba3d74ed718879e" kindref="member">draw</ref>(sf::RenderWindow*<sp/>window)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>BASICENEMY_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/enemies/BasicEnemy.h"/>
+  </compounddef>
+</doxygen>

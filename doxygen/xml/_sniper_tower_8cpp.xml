@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_sniper_tower_8cpp" kind="file" language="C++">
+    <compoundname>SniperTower.cpp</compoundname>
+    <includes refid="_sniper_tower_8h" local="yes">SniperTower.h</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">SFML/OpenGL.hpp</includes>
+    <includes refid="_resources_8h" local="yes">../Resources.h</includes>
+    <includes refid="_laser_entity_8h" local="yes">../entities/LaserEntity.h</includes>
+    <includes refid="_fire_entity_8h" local="yes">../entities/FireEntity.h</includes>
+    <incdepgraph>
+      <node id="1412">
+        <label>list</label>
+      </node>
+      <node id="1405">
+        <label>SniperTower.cpp</label>
+        <link refid="SniperTower.cpp"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1409" relation="include">
+        </childnode>
+        <childnode refid="1413" relation="include">
+        </childnode>
+        <childnode refid="1420" relation="include">
+        </childnode>
+        <childnode refid="1422" relation="include">
+        </childnode>
+        <childnode refid="1423" relation="include">
+        </childnode>
+      </node>
+      <node id="1407">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1406">
+        <label>SniperTower.h</label>
+        <link refid="_sniper_tower_8h"/>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+        <childnode refid="1410" relation="include">
+        </childnode>
+        <childnode refid="1411" relation="include">
+        </childnode>
+        <childnode refid="1417" relation="include">
+        </childnode>
+      </node>
+      <node id="1413">
+        <label>SFML/OpenGL.hpp</label>
+      </node>
+      <node id="1409">
+        <label>cmath</label>
+      </node>
+      <node id="1416">
+        <label>string</label>
+      </node>
+      <node id="1421">
+        <label>map</label>
+      </node>
+      <node id="1418">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+      </node>
+      <node id="1408">
+        <label>../Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1409" relation="include">
+        </childnode>
+      </node>
+      <node id="1414">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="1412" relation="include">
+        </childnode>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1415" relation="include">
+        </childnode>
+      </node>
+      <node id="1411">
+        <label>../Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="1412" relation="include">
+        </childnode>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1413" relation="include">
+        </childnode>
+        <childnode refid="1414" relation="include">
+        </childnode>
+        <childnode refid="1417" relation="include">
+        </childnode>
+        <childnode refid="1418" relation="include">
+        </childnode>
+        <childnode refid="1419" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+      </node>
+      <node id="1415">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1416" relation="include">
+        </childnode>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1417" relation="include">
+        </childnode>
+      </node>
+      <node id="1423">
+        <label>../entities/FireEntity.h</label>
+        <link refid="_fire_entity_8h"/>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1410" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+        <childnode refid="1419" relation="include">
+        </childnode>
+      </node>
+      <node id="1422">
+        <label>../entities/LaserEntity.h</label>
+        <link refid="_laser_entity_8h"/>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+        <childnode refid="1419" relation="include">
+        </childnode>
+      </node>
+      <node id="1419">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1407" relation="include">
+        </childnode>
+      </node>
+      <node id="1417">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+      </node>
+      <node id="1410">
+        <label>../sprite.h</label>
+        <link refid="_sprite_8h"/>
+        <childnode refid="1407" relation="include">
+        </childnode>
+      </node>
+      <node id="1420">
+        <label>../Resources.h</label>
+        <link refid="_resources_8h"/>
+        <childnode refid="1421" relation="include">
+        </childnode>
+        <childnode refid="1407" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sniper_tower_8h" kindref="compound">SniperTower.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/OpenGL.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Resources.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../entities/LaserEntity.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../entities/FireEntity.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_sniper_tower_1a4c00cf0cb4ae062cb5ad652f1050c82d" kindref="member">SniperTower::id</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_sniper_tower_1a93cc1454f3e6f239f8fca79be6ccc15a" refkind="member"><highlight class="normal"><ref refid="class_sniper_tower_1a93cc1454f3e6f239f8fca79be6ccc15a" kindref="member">SniperTower::SniperTower</ref>(){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a02ec2f8d1c4dea2f7fc002d8626c8b28" kindref="member">_id</ref><sp/>=<sp/><ref refid="class_sniper_tower_1a4c00cf0cb4ae062cb5ad652f1050c82d" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref><sp/>=<sp/>60;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" kindref="member">_ticksBetweenShoots</ref><sp/>=<sp/>60;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sniper_tower_1a256e524d665f4edf2ef3e2f91a23a729" kindref="member">_damage</ref><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" kindref="member">_minRange</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a29cae98d3f1d863335b175597f61f8da" kindref="member">_maxRange</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>sf::Texture*<sp/>tex<sp/>=<sp/><ref refid="namespace_resources_1a5d69bd132d861b6f3a83486e871b0b0a" kindref="member">Resources::getTexture</ref>(</highlight><highlight class="stringliteral">&quot;sprites/sniperTower.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tex!=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sniper_tower_1aedfe43341fb2c85ea3f2558021bb734e" kindref="member">_spriteBase</ref>.setTexture(*tex);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sniper_tower_1a6b420af0e9a7653e718a3641c7470d25" kindref="member">_spriteCanon</ref>.setTexture(*tex);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sniper_tower_1aedfe43341fb2c85ea3f2558021bb734e" kindref="member">_spriteBase</ref>.setTextureRect(sf::IntRect(0,0,<sp/>32,32));</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sniper_tower_1aedfe43341fb2c85ea3f2558021bb734e" kindref="member">_spriteBase</ref>.setOrigin(16,16);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sniper_tower_1aedfe43341fb2c85ea3f2558021bb734e" kindref="member">_spriteBase</ref>.scale(<ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>/32.0,<sp/><ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>/32.0);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sniper_tower_1a6b420af0e9a7653e718a3641c7470d25" kindref="member">_spriteCanon</ref>.setTextureRect(sf::IntRect(32,0,<sp/>32,32));</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sniper_tower_1a6b420af0e9a7653e718a3641c7470d25" kindref="member">_spriteCanon</ref>.setOrigin(16,26);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sniper_tower_1a6b420af0e9a7653e718a3641c7470d25" kindref="member">_spriteCanon</ref>.scale(<ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>/32.0,<sp/><ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>/32.0);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_sniper_tower_1ab0e4b579aa38c03b3a67f29471a96bd3" refkind="member"><highlight class="normal"><ref refid="_tower_8h_1a515c655d051e131462a497de3df0e8eb" kindref="member">TowerEvent</ref><sp/><ref refid="class_sniper_tower_1ab0e4b579aa38c03b3a67f29471a96bd3" kindref="member">SniperTower::tick</ref>(){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref>&lt;=0){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/><ref refid="namespace_game_1a06280777aa0c70527c6dfce295cc4220" kindref="member">Game::findTarget</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(it<sp/>!=<sp/><ref refid="namespace_game_1a567bf723c1182e15ffac0548a9b01a00" kindref="member">Game::enemies</ref>.end()){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>pos<sp/>=<sp/><ref refid="namespace_game_1a3a3a6fcb74f541d2dc4be77b0be28b71" kindref="member">Game::getRealPosition</ref>(<ref refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" kindref="member">_position</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a19468d252754d2b9efe64258e7e3ccba" kindref="member">Game::entities</ref>.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_laser_entity" kindref="compound">LaserEntity</ref>(pos,<sp/>(*it)-&gt;getPosition(),<sp/>10));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a19468d252754d2b9efe64258e7e3ccba" kindref="member">Game::entities</ref>.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_fire_entity" kindref="compound">FireEntity</ref>((*it)-&gt;getPosition(),<sp/>50));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>temp((*it)-&gt;getPosition()-pos);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sniper_tower_1a6b420af0e9a7653e718a3641c7470d25" kindref="member">_spriteCanon</ref>.setRotation(90<sp/>+<sp/>atan2(temp.y,<sp/>temp.x)<sp/>*<sp/>180/<ref refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((*it)-&gt;damage(<ref refid="class_sniper_tower_1a256e524d665f4edf2ef3e2f91a23a729" kindref="member">_damage</ref>)){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a1d9c21b5df867aeaf1ac00fc77a577b7" kindref="member">Game::kill</ref>(it);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref><sp/>=<sp/><ref refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" kindref="member">_ticksBetweenShoots</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>--<ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_tower_8h_1a515c655d051e131462a497de3df0e8ebac9d3e887722f2bc482bcca9d41c512af" kindref="member">TowerEvent::None</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_sniper_tower_1a3f2c8bb1f2579dd0a7b7a37b3e191afb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sniper_tower_1a3f2c8bb1f2579dd0a7b7a37b3e191afb" kindref="member">SniperTower::draw</ref>(sf::RenderWindow*<sp/>window,<sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>point)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;pushGLStates();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::RenderStates<sp/>rs;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rs.transform.translate(point.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>,<sp/>point.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window-&gt;draw(<ref refid="class_sniper_tower_1aedfe43341fb2c85ea3f2558021bb734e" kindref="member">_spriteBase</ref>,<sp/>rs);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;popGLStates();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="class_sniper_tower_1af8dc720e9a312f79e9083cfea8b510cf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sniper_tower_1af8dc720e9a312f79e9083cfea8b510cf" kindref="member">SniperTower::drawOver</ref>(sf::RenderWindow*<sp/>window,<sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>point)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;pushGLStates();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::RenderStates<sp/>rs;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rs.transform.translate(point.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>,<sp/>point.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window-&gt;draw(<ref refid="class_sniper_tower_1a6b420af0e9a7653e718a3641c7470d25" kindref="member">_spriteCanon</ref>,<sp/>rs);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>window-&gt;popGLStates();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_sniper_tower_1ade688996092dc825d1842877c917e9be" refkind="member"><highlight class="normal"><ref refid="class_tower" kindref="compound">Tower</ref>*<sp/><ref refid="class_sniper_tower_1ade688996092dc825d1842877c917e9be" kindref="member">SniperTower::clone</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_sniper_tower_1a93cc1454f3e6f239f8fca79be6ccc15a" kindref="member">SniperTower</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SniperTower.cpp"/>
+  </compounddef>
+</doxygen>

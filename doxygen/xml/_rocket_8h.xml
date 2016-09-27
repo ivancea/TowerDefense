@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_rocket_8h" kind="file" language="C++">
+    <compoundname>Rocket.h</compoundname>
+    <includes refid="_entity_8h" local="yes">../../Entity.h</includes>
+    <includes refid="_vec_8hpp" local="yes">../../Vec.hpp</includes>
+    <includes refid="_enemy_8h" local="yes">../../Enemy.h</includes>
+    <includedby refid="_rocket_tower_8h" local="yes">RocketTower.h</includedby>
+    <includedby refid="_rocket_8cpp" local="yes">Rocket.cpp</includedby>
+    <incdepgraph>
+      <node id="1359">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1361">
+        <label>cmath</label>
+      </node>
+      <node id="1362">
+        <label>../../Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+      </node>
+      <node id="1360">
+        <label>../../Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1361" relation="include">
+        </childnode>
+      </node>
+      <node id="1357">
+        <label>Rocket.h</label>
+        <link refid="Rocket.h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1362" relation="include">
+        </childnode>
+      </node>
+      <node id="1358">
+        <label>../../Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1359" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1366">
+        <label>BasicTowerManager.cpp</label>
+        <link refid="_basic_tower_manager_8cpp"/>
+      </node>
+      <node id="1367">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1364">
+        <label>RocketTower.h</label>
+        <link refid="_rocket_tower_8h"/>
+        <childnode refid="1365" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+      </node>
+      <node id="1368">
+        <label>RocketTower.cpp</label>
+        <link refid="_rocket_tower_8cpp"/>
+      </node>
+      <node id="1369">
+        <label>Rocket.cpp</label>
+        <link refid="_rocket_8cpp"/>
+      </node>
+      <node id="1365">
+        <label>BasicTowerManager.h</label>
+        <link refid="_basic_tower_manager_8h"/>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+      </node>
+      <node id="1363">
+        <label>Rocket.h</label>
+        <link refid="Rocket.h"/>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1369" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_rocket" prot="public">Rocket</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ROCKET_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROCKET_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Entity.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Vec.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Enemy.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_rocket" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_rocket" kindref="compound">Rocket</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_entity" kindref="compound">Entity</ref>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_rocket_1a709e85744e886fca6662c3ec626fca4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/><ref refid="class_rocket_1a709e85744e886fca6662c3ec626fca4f" kindref="member">_position</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_rocket_1a64baa4198eafb02c97cbf886448a29cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_enemy" kindref="compound">Enemy</ref>*<sp/><ref refid="class_rocket_1a64baa4198eafb02c97cbf886448a29cc" kindref="member">_targetEnemy</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_rocket_1abe2eabd2a23839d30136b291bc655385" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/><ref refid="class_rocket_1abe2eabd2a23839d30136b291bc655385" kindref="member">_targetPosition</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_rocket_1aeb35b2a4c15bd4d1b195b4c44867040a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_rocket_1aeb35b2a4c15bd4d1b195b4c44867040a" kindref="member">_damage</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_rocket_1a8548f739f5d6f7fdc6998de11928e833" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_rocket_1a8548f739f5d6f7fdc6998de11928e833" kindref="member">_explosionRange</ref>;</highlight></codeline>
+<codeline lineno="17" refid="class_rocket_1a232ad9ef82cfa31e36220a4e139ca38c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_rocket_1a232ad9ef82cfa31e36220a4e139ca38c" kindref="member">_velocity</ref>;</highlight></codeline>
+<codeline lineno="18" refid="class_rocket_1ab38346b404697945cb02c5c2343aad4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_rocket_1ab38346b404697945cb02c5c2343aad4d" kindref="member">_distanceTraveled</ref>;</highlight></codeline>
+<codeline lineno="19" refid="class_rocket_1a26c1453a465705e8f364ea8c7eecfc98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_rocket_1a26c1453a465705e8f364ea8c7eecfc98" kindref="member">_maxDistance</ref>;</highlight></codeline>
+<codeline lineno="20" refid="class_rocket_1a798c5384ab3f205084fb5d7ec41c7474" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_rocket_1a798c5384ab3f205084fb5d7ec41c7474" kindref="member">_hitEnemiesInPath</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_rocket_1a9c76ec279a2f1ad97c86850a9666faab" kindref="member">Rocket</ref>(<ref refid="class_enemy" kindref="compound">Enemy</ref>*<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>damage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>explosionRange,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>maxDistance,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hitEnemiesInPath,<sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>position);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_rocket_1a9c76ec279a2f1ad97c86850a9666faab" kindref="member">Rocket</ref>(<ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>damage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>explosionRange,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>maxDistance,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hitEnemiesInPath,<sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>position);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_rocket_1a2081c885671bf36789e6e8b3af81081d" kindref="member">damageEnemies</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_rocket_1ad82fb42a0ae20e7157ede954020515b8" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_rocket_1ac547764f02cbb614eb9e77d6a36786a0" kindref="member">drawOver</ref>(sf::RenderWindow*<sp/>window)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ROCKET_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h"/>
+  </compounddef>
+</doxygen>

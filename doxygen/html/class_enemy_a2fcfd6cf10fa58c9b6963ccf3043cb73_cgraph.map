@@ -1,0 +1,4 @@
+<map id="Enemy::drawOver" name="Enemy::drawOver">
+<area shape="rect" id="node2" href="$class_enemy.html#af7c3be9e985c7551466bb31e8d51bbbb" title="Enemy::damage" alt="" coords="177,5,295,32"/>
+<area shape="rect" id="node3" href="$class_enemy.html#a0cb411813c4dbdf7ba6716635d94046d" title="Enemy::killed" alt="" coords="185,56,287,83"/>
+</map>

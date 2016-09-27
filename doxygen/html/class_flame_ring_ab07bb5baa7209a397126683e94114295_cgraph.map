@@ -1,0 +1,7 @@
+<map id="FlameRing::tick" name="FlameRing::tick">
+<area shape="rect" id="node2" href="$namespace_game.html#a2f4d39b84db31e6af593f4f4e58fab2d" title="Game::findEnemiesInRange" alt="" coords="167,31,349,57"/>
+<area shape="rect" id="node6" href="$namespace_game.html#a1d9c21b5df867aeaf1ac00fc77a577b7" title="Game::kill" alt="" coords="217,81,299,108"/>
+<area shape="rect" id="node3" href="$namespace_game.html#af2e314759bbe1f96478d79fda41d1c40" title="Game::isInRange" alt="" coords="397,31,520,57"/>
+<area shape="rect" id="node4" href="$struct_vec2.html#a8f0f08fa249195af341222553c8db855" title="Vec2::distance" alt="" coords="581,5,691,32"/>
+<area shape="rect" id="node5" href="$class_enemy.html#afd5331e1b8efb74c4722569b14934c61" title="Enemy::getPosition" alt="" coords="568,56,704,83"/>
+</map>

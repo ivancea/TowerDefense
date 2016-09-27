@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_tower_type_8cpp" kind="file" language="C++">
+    <compoundname>TowerType.cpp</compoundname>
+    <includes refid="_tower_type_8h" local="yes">TowerType.h</includes>
+    <incdepgraph>
+      <node id="1610">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1613">
+        <label>cmath</label>
+      </node>
+      <node id="1609">
+        <label>string</label>
+      </node>
+      <node id="1612">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1613" relation="include">
+        </childnode>
+      </node>
+      <node id="1607">
+        <label>TowerType.cpp</label>
+        <link refid="TowerType.cpp"/>
+        <childnode refid="1608" relation="include">
+        </childnode>
+      </node>
+      <node id="1608">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1609" relation="include">
+        </childnode>
+        <childnode refid="1610" relation="include">
+        </childnode>
+        <childnode refid="1611" relation="include">
+        </childnode>
+      </node>
+      <node id="1611">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1610" relation="include">
+        </childnode>
+        <childnode refid="1612" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_tower_type_8h" kindref="compound">TowerType.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="struct_tower_type_1ad40e689f8161868c71d284ea859ff000" refkind="member"><highlight class="normal"><ref refid="struct_tower_type_1ad40e689f8161868c71d284ea859ff000" kindref="member">TowerType::TowerType</ref>()</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">:<sp/>model(nullptr),<sp/>name(),<sp/>description(),<sp/>cost(0){}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="struct_tower_type_1afc37bb8ff845c964771cab927a7f0987" refkind="member"><highlight class="normal"><ref refid="struct_tower_type_1ad40e689f8161868c71d284ea859ff000" kindref="member">TowerType::TowerType</ref>(<ref refid="class_tower" kindref="compound">Tower</ref>*<sp/>_model,<sp/>std::string<sp/>_name,<sp/>std::string<sp/>_description,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_cost)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">:<sp/><ref refid="struct_tower_type_1a137965897f2c4ec39a260f5561d1e70a" kindref="member">model</ref>(_model),<sp/><ref refid="struct_tower_type_1a24488ed3932873cb5be953fdaa3c733e" kindref="member">name</ref>(_name),<sp/><ref refid="struct_tower_type_1ab6e4e62dc59a798beaa0028a67dd6571" kindref="member">description</ref>(_description),<sp/><ref refid="struct_tower_type_1a298318e6f9d11a63daad82f48a87a205" kindref="member">cost</ref>(_cost){}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/TowerType.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_laser_entity_8h" kind="file" language="C++">
+    <compoundname>LaserEntity.h</compoundname>
+    <includes local="no">SFML/Graphics.hpp</includes>
+    <includes refid="_vec_8hpp" local="yes">../Vec.hpp</includes>
+    <includes refid="_entity_8h" local="yes">../entity.h</includes>
+    <includedby refid="_sniper_tower_8cpp" local="yes">SniperTower.cpp</includedby>
+    <includedby refid="_laser_entity_8cpp" local="yes">LaserEntity.cpp</includedby>
+    <incdepgraph>
+      <node id="1257">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1259">
+        <label>cmath</label>
+      </node>
+      <node id="1258">
+        <label>../Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1259" relation="include">
+        </childnode>
+      </node>
+      <node id="1256">
+        <label>LaserEntity.h</label>
+        <link refid="LaserEntity.h"/>
+        <childnode refid="1257" relation="include">
+        </childnode>
+        <childnode refid="1258" relation="include">
+        </childnode>
+        <childnode refid="1260" relation="include">
+        </childnode>
+      </node>
+      <node id="1260">
+        <label>../entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1257" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1262">
+        <label>SniperTower.cpp</label>
+        <link refid="_sniper_tower_8cpp"/>
+      </node>
+      <node id="1263">
+        <label>LaserEntity.cpp</label>
+        <link refid="_laser_entity_8cpp"/>
+      </node>
+      <node id="1261">
+        <label>LaserEntity.h</label>
+        <link refid="LaserEntity.h"/>
+        <childnode refid="1262" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_laser_entity" prot="public">LaserEntity</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LASERENTITY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LASERENTITY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Graphics.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Vec.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../entity.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_laser_entity" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_laser_entity" kindref="compound">LaserEntity</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_entity" kindref="compound">Entity</ref><sp/>{</highlight></codeline>
+<codeline lineno="10" refid="class_laser_entity_1a6c1c772b0bff9b0a640c3dd2da9e62f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/><ref refid="class_laser_entity_1a91990512ccb1b077a81756eadf51a093" kindref="member">_from</ref>,<sp/><ref refid="class_laser_entity_1a6c1c772b0bff9b0a640c3dd2da9e62f5" kindref="member">_to</ref>;</highlight></codeline>
+<codeline lineno="11" refid="class_laser_entity_1a8c1fd270b23ca39a65b0a65b4e73d138" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_laser_entity_1a8c1fd270b23ca39a65b0a65b4e73d138" kindref="member">_ticksRemaining</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_laser_entity_1a20d8489a3ef6b5b75fe5646755c81ffe" kindref="member">LaserEntity</ref>(<ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>from,<sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>to,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ticks);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_laser_entity_1accad65a4103a21444da6afc412edf5ae" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_laser_entity_1a33b9659fd81951ae656a43806a8986f8" kindref="member">drawOver</ref>(sf::RenderWindow*<sp/>window)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>LASERENTITY_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/entities/LaserEntity.h"/>
+  </compounddef>
+</doxygen>

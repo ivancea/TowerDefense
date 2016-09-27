@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_sprite_8cpp" kind="file" language="C++">
+    <compoundname>Sprite.cpp</compoundname>
+    <includes refid="_sprite_8h" local="yes">Sprite.h</includes>
+    <incdepgraph>
+      <node id="1480">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1478">
+        <label>Sprite.cpp</label>
+        <link refid="Sprite.cpp"/>
+        <childnode refid="1479" relation="include">
+        </childnode>
+      </node>
+      <node id="1479">
+        <label>Sprite.h</label>
+        <link refid="_sprite_8h"/>
+        <childnode refid="1480" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sprite_8h" kindref="compound">Sprite.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_sprite_1a12cba3ac1868418add3c4d95ce87e615" refkind="member"><highlight class="normal"><ref refid="class_sprite_1a12cba3ac1868418add3c4d95ce87e615" kindref="member">Sprite::Sprite</ref>(){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" kindref="member">_countX</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" kindref="member">_countY</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kindref="member">_count</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sprite_1af222b8a53d91bade06991f38dc3a260e" kindref="member">_actualFrame</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_sprite_1afc49fccfd7f32386592cf1c08a670102" refkind="member"><highlight class="normal"><ref refid="class_sprite_1a12cba3ac1868418add3c4d95ce87e615" kindref="member">Sprite::Sprite</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sf::Texture&amp;<sp/>texture,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>countX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>countY,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">:sf::<ref refid="class_sprite" kindref="compound">Sprite</ref>(texture),<ref refid="class_sprite_1a5cc96a574be16b968c4bda9efc76ea35" kindref="member">_rect</ref>(0,0,<sp/>texture.<ref refid="class_sprite_1a868d94bb655c124f69b93d390f51ff20" kindref="member">getSize</ref>().x,<sp/>texture.<ref refid="class_sprite_1a868d94bb655c124f69b93d390f51ff20" kindref="member">getSize</ref>().y),<ref refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" kindref="member">_countX</ref>(countX),<ref refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" kindref="member">_countY</ref>(countY),<ref refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kindref="member">_count</ref>(count),<ref refid="class_sprite_1af222b8a53d91bade06991f38dc3a260e" kindref="member">_actualFrame</ref>(0){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kindref="member">_count</ref>&lt;=0)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kindref="member">_count</ref><sp/>=<sp/><ref refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" kindref="member">_countX</ref>*<ref refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" kindref="member">_countY</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kindref="member">_count</ref>&lt;=0<sp/>||<ref refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" kindref="member">_countX</ref>&lt;=0<sp/>||<sp/>_countY&lt;=0)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Sprite<sp/>frame<sp/>count<sp/>cannot<sp/>be<sp/>less<sp/>than<sp/>1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sprite_1a1d5409acfab40087ada2614ea85fabd5" kindref="member">setFrame</ref>(0);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_sprite_1a862bf368bbeb1aada95f5d0f46ea44f0" refkind="member"><highlight class="normal"><ref refid="class_sprite_1a12cba3ac1868418add3c4d95ce87e615" kindref="member">Sprite::Sprite</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sf::Texture&amp;<sp/>texture,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sf::IntRect&amp;<sp/>rect,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>countX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>countY,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">:sf::<ref refid="class_sprite" kindref="compound">Sprite</ref>(texture),<ref refid="class_sprite_1a5cc96a574be16b968c4bda9efc76ea35" kindref="member">_rect</ref>(rect),<ref refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" kindref="member">_countX</ref>(countX),<ref refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" kindref="member">_countY</ref>(countY),<ref refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kindref="member">_count</ref>(count),<ref refid="class_sprite_1af222b8a53d91bade06991f38dc3a260e" kindref="member">_actualFrame</ref>(0){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kindref="member">_count</ref>&lt;=0)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kindref="member">_count</ref><sp/>=<sp/><ref refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" kindref="member">_countX</ref>*<ref refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" kindref="member">_countY</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kindref="member">_count</ref>&lt;=0<sp/>||<sp/><ref refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" kindref="member">_countX</ref>&lt;=0<sp/>||<sp/>_countY&lt;=0)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Sprite<sp/>frame<sp/>count<sp/>less<sp/>than<sp/>1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sprite_1a1d5409acfab40087ada2614ea85fabd5" kindref="member">setFrame</ref>(0);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_sprite_1ace1731bdb048bfd8f469cc3af889489b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sprite_1ace1731bdb048bfd8f469cc3af889489b" kindref="member">Sprite::setCount</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>countX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>countY,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" kindref="member">_countX</ref><sp/>=<sp/>countX;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" kindref="member">_countY</ref><sp/>=<sp/>countY;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kindref="member">_count</ref>&lt;=0)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kindref="member">_count</ref><sp/>=<sp/><ref refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" kindref="member">_countX</ref>*<ref refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" kindref="member">_countY</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kindref="member">_count</ref>&lt;=0<sp/>||<sp/><ref refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" kindref="member">_countX</ref>&lt;=0<sp/>||<sp/>_countY&lt;=0)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Sprite<sp/>frame<sp/>count<sp/>less<sp/>than<sp/>1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_sprite_1aad4221a926a6509c267dc309229fec6f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sprite_1aad4221a926a6509c267dc309229fec6f" kindref="member">Sprite::nextFrame</ref>(){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sprite_1a1d5409acfab40087ada2614ea85fabd5" kindref="member">setFrame</ref>(<ref refid="class_sprite_1af222b8a53d91bade06991f38dc3a260e" kindref="member">_actualFrame</ref>+1);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_sprite_1a1d5409acfab40087ada2614ea85fabd5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sprite_1a1d5409acfab40087ada2614ea85fabd5" kindref="member">Sprite::setFrame</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kindref="member">_count</ref>&lt;=0<sp/>||<sp/><ref refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" kindref="member">_countX</ref>&lt;=0<sp/>||<sp/><ref refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" kindref="member">_countY</ref>&lt;=0)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Sprite<sp/>frame<sp/>count<sp/>less<sp/>than<sp/>1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sprite_1af222b8a53d91bade06991f38dc3a260e" kindref="member">_actualFrame</ref><sp/>=<sp/>n%<ref refid="class_sprite_1afebe0e64ffc8c1e291f5f151406c1e20" kindref="member">_count</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>setTextureRect(sf::IntRect(<ref refid="class_sprite_1a5cc96a574be16b968c4bda9efc76ea35" kindref="member">_rect</ref>.left<sp/>+<sp/>(<ref refid="class_sprite_1af222b8a53d91bade06991f38dc3a260e" kindref="member">_actualFrame</ref>%<ref refid="class_sprite_1ab60ebf38ad7c6b4fb0d88109e5222cc3" kindref="member">_countX</ref>)*<ref refid="class_sprite_1a5cc96a574be16b968c4bda9efc76ea35" kindref="member">_rect</ref>.width/_countX,<sp/><ref refid="class_sprite_1a5cc96a574be16b968c4bda9efc76ea35" kindref="member">_rect</ref>.top<sp/>+<sp/>((<ref refid="class_sprite_1af222b8a53d91bade06991f38dc3a260e" kindref="member">_actualFrame</ref>/_countX)%<ref refid="class_sprite_1a5e266cec8813ff61cb559304b2c582e3" kindref="member">_countY</ref>)*<ref refid="class_sprite_1a5cc96a574be16b968c4bda9efc76ea35" kindref="member">_rect</ref>.height/_countY,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_sprite_1a5cc96a574be16b968c4bda9efc76ea35" kindref="member">_rect</ref>.width/_countX,<ref refid="class_sprite_1a5cc96a574be16b968c4bda9efc76ea35" kindref="member">_rect</ref>.height/_countY));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_sprite_1a6a6a24cb29a60b88892adbfe35506bea" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_sprite_1a6a6a24cb29a60b88892adbfe35506bea" kindref="member">Sprite::getFrame</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_sprite_1af222b8a53d91bade06991f38dc3a260e" kindref="member">_actualFrame</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_sprite_1a868d94bb655c124f69b93d390f51ff20" refkind="member"><highlight class="normal">sf::Vector2i<sp/><ref refid="class_sprite_1a868d94bb655c124f69b93d390f51ff20" kindref="member">Sprite::getSize</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>sf::FloatRect<sp/>t<sp/>=<sp/>getGlobalBounds();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sf::Vector2i(t.width,<sp/>t.height);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Sprite.cpp"/>
+  </compounddef>
+</doxygen>

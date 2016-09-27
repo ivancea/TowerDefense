@@ -4,26 +4,30 @@ Tooltip::Tooltip(){
     _maxWidth = 0;
     _backColor = sf::Color(255,255,200,220);
     _foreColor = sf::Color::Black;
+
+    _fontArial.loadFromFile("C:\\Windows\\Fonts\\Arial.ttf");
 }
 
-Tooltip::Tooltip(std::string title, std::string body,
+Tooltip::Tooltip(const std::string& title, const std::string& body,
                  Vec2i point, int maxWidth,
                  sf::Color backColor, sf::Color foreColor){
-    _title = title;
-    _body = body;
+    setTitle(title);
+    setBody(body);
 
     _point = point;
     _maxWidth = maxWidth;
 
     _backColor = backColor;
     _foreColor = foreColor;
+
+    _fontArial.loadFromFile("C:\\Windows\\Fonts\\Arial.ttf");
 }
 
-void Tooltip::setTitle(std::string title){
+void Tooltip::setTitle(const std::string& title){
     _title = title;
 }
 
-void Tooltip::setBody(std::string body){
+void Tooltip::setBody(const std::string& body){
     _body = body;
 }
 
@@ -34,16 +38,13 @@ void Tooltip::setPoint(Vec2i point){
 void Tooltip::draw(sf::RenderWindow* window) const {
     window->pushGLStates();
 
-        sf::Font fontArial;
-        fontArial.loadFromFile("C:\\Windows\\Fonts\\Arial.ttf");
-
         sf::Text titleText, bodyText;
-        titleText.setFont(fontArial);
+        titleText.setFont(_fontArial);
         titleText.setString(_title);
         titleText.setColor(_foreColor);
         titleText.setCharacterSize(15);
         titleText.setStyle(sf::Text::Bold);
-        bodyText.setFont(fontArial);
+        bodyText.setFont(_fontArial);
         bodyText.setString(_body);
         bodyText.setColor(_foreColor);
         bodyText.setCharacterSize(12);

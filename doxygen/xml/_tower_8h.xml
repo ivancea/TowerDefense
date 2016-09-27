@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_tower_8h" kind="file" language="C++">
+    <compoundname>Tower.h</compoundname>
+    <includes local="no">SFML/Graphics.hpp</includes>
+    <includes refid="_vec_8hpp" local="yes">Vec.hpp</includes>
+    <includedby refid="_tower_type_8h" local="yes">TowerType.h</includedby>
+    <includedby refid="_game_8h" local="yes">Game.h</includedby>
+    <includedby refid="_flame_ring_tower_8h" local="yes">FlameRingTower.h</includedby>
+    <includedby refid="_rocket_tower_8h" local="yes">RocketTower.h</includedby>
+    <includedby refid="_sniper_tower_8h" local="yes">SniperTower.h</includedby>
+    <includedby refid="_soldier_tower_8h" local="yes">SoldierTower.h</includedby>
+    <includedby refid="_tower_8cpp" local="yes">Tower.cpp</includedby>
+    <includedby refid="_inhibitor_enemy_8h" local="yes">InhibitorEnemy.h</includedby>
+    <incdepgraph>
+      <node id="1525">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1527">
+        <label>cmath</label>
+      </node>
+      <node id="1526">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1527" relation="include">
+        </childnode>
+      </node>
+      <node id="1524">
+        <label>Tower.h</label>
+        <link refid="Tower.h"/>
+        <childnode refid="1525" relation="include">
+        </childnode>
+        <childnode refid="1526" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1554">
+        <label>Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="1543">
+        <label>SniperTower.cpp</label>
+        <link refid="_sniper_tower_8cpp"/>
+      </node>
+      <node id="1535">
+        <label>BasicTowerManager.cpp</label>
+        <link refid="_basic_tower_manager_8cpp"/>
+      </node>
+      <node id="1533">
+        <label>FlameRingTower.h</label>
+        <link refid="_flame_ring_tower_8h"/>
+        <childnode refid="1534" relation="include">
+        </childnode>
+        <childnode refid="1535" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+      </node>
+      <node id="1536">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1542">
+        <label>SniperTower.h</label>
+        <link refid="_sniper_tower_8h"/>
+        <childnode refid="1539" relation="include">
+        </childnode>
+        <childnode refid="1543" relation="include">
+        </childnode>
+        <childnode refid="1535" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+      </node>
+      <node id="1553">
+        <label>InmortalEnemy.cpp</label>
+        <link refid="_inmortal_enemy_8cpp"/>
+      </node>
+      <node id="1557">
+        <label>InhibitorEnemy.h</label>
+        <link refid="_inhibitor_enemy_8h"/>
+        <childnode refid="1554" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+      </node>
+      <node id="1555">
+        <label>InhibitorEnemy.cpp</label>
+        <link refid="_inhibitor_enemy_8cpp"/>
+      </node>
+      <node id="1538">
+        <label>RocketTower.h</label>
+        <link refid="_rocket_tower_8h"/>
+        <childnode refid="1539" relation="include">
+        </childnode>
+        <childnode refid="1540" relation="include">
+        </childnode>
+        <childnode refid="1535" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+      </node>
+      <node id="1546">
+        <label>SoldierTower.cpp</label>
+        <link refid="_soldier_tower_8cpp"/>
+      </node>
+      <node id="1540">
+        <label>RocketTower.cpp</label>
+        <link refid="_rocket_tower_8cpp"/>
+      </node>
+      <node id="1537">
+        <label>TowerManager.cpp</label>
+        <link refid="_tower_manager_8cpp"/>
+      </node>
+      <node id="1530">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="1531" relation="include">
+        </childnode>
+        <childnode refid="1539" relation="include">
+        </childnode>
+        <childnode refid="1537" relation="include">
+        </childnode>
+      </node>
+      <node id="1556">
+        <label>TowerType.cpp</label>
+        <link refid="_tower_type_8cpp"/>
+      </node>
+      <node id="1532">
+        <label>Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="1534">
+        <label>FlameRingTower.cpp</label>
+        <link refid="_flame_ring_tower_8cpp"/>
+      </node>
+      <node id="1547">
+        <label>Bullet.cpp</label>
+        <link refid="_bullet_8cpp"/>
+      </node>
+      <node id="1531">
+        <label>Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="1532" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+        <childnode refid="1537" relation="include">
+        </childnode>
+        <childnode refid="1538" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+        <childnode refid="1542" relation="include">
+        </childnode>
+        <childnode refid="1544" relation="include">
+        </childnode>
+        <childnode refid="1545" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1550" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+        <childnode refid="1553" relation="include">
+        </childnode>
+        <childnode refid="1554" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+      </node>
+      <node id="1551">
+        <label>FireEntity.cpp</label>
+        <link refid="_fire_entity_8cpp"/>
+      </node>
+      <node id="1549">
+        <label>Tower.cpp</label>
+        <link refid="_tower_8cpp"/>
+      </node>
+      <node id="1552">
+        <label>ExplosionEntity.cpp</label>
+        <link refid="_explosion_entity_8cpp"/>
+      </node>
+      <node id="1550">
+        <label>LaserEntity.cpp</label>
+        <link refid="_laser_entity_8cpp"/>
+      </node>
+      <node id="1529">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1530" relation="include">
+        </childnode>
+        <childnode refid="1556" relation="include">
+        </childnode>
+      </node>
+      <node id="1545">
+        <label>SoldierTower.h</label>
+        <link refid="_soldier_tower_8h"/>
+        <childnode refid="1535" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1546" relation="include">
+        </childnode>
+      </node>
+      <node id="1541">
+        <label>Rocket.cpp</label>
+        <link refid="_rocket_8cpp"/>
+      </node>
+      <node id="1548">
+        <label>FlameRing.cpp</label>
+        <link refid="_flame_ring_8cpp"/>
+      </node>
+      <node id="1544">
+        <label>BasicEnemy.cpp</label>
+        <link refid="_basic_enemy_8cpp"/>
+      </node>
+      <node id="1539">
+        <label>BasicTowerManager.h</label>
+        <link refid="_basic_tower_manager_8h"/>
+        <childnode refid="1535" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+      </node>
+      <node id="1528">
+        <label>Tower.h</label>
+        <link refid="Tower.h"/>
+        <childnode refid="1529" relation="include">
+        </childnode>
+        <childnode refid="1531" relation="include">
+        </childnode>
+        <childnode refid="1533" relation="include">
+        </childnode>
+        <childnode refid="1538" relation="include">
+        </childnode>
+        <childnode refid="1542" relation="include">
+        </childnode>
+        <childnode refid="1545" relation="include">
+        </childnode>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1557" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_tower" prot="public">Tower</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_tower_8h_1a515c655d051e131462a497de3df0e8eb" prot="public" static="no">
+        <name>TowerEvent</name>
+        <enumvalue id="_tower_8h_1a515c655d051e131462a497de3df0e8ebac9d3e887722f2bc482bcca9d41c512af" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="10" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="enum" id="_tower_8h_1a315655b1bb5848c063491adffde62b15" prot="public" static="no">
+        <name>Priority</name>
+        <enumvalue id="_tower_8h_1a315655b1bb5848c063491adffde62b15a79935518a3889663d8688b6b01fff051" prot="public">
+          <name>Default</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tower_8h_1a315655b1bb5848c063491adffde62b15ac5222d41f21bc883f0c0b9754191b350" prot="public">
+          <name>First</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tower_8h_1a315655b1bb5848c063491adffde62b15ac2a3856002491cf465725e8d1108f796" prot="public">
+          <name>Last</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tower_8h_1a315655b1bb5848c063491adffde62b15a72f6cdd6b6b9a86c93a38bc8ecc8025a" prot="public">
+          <name>Near</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tower_8h_1a315655b1bb5848c063491adffde62b15a2dacbd805425996a5d37778b02e24dde" prot="public">
+          <name>Far</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tower_8h_1a315655b1bb5848c063491adffde62b15af5b140d7cf39661c84d7e52e13b0c3db" prot="public">
+          <name>MoreLife</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tower_8h_1a315655b1bb5848c063491adffde62b15a344ebf67c51ee0e28e8b1c370696eb99" prot="public">
+          <name>LessLife</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tower_8h_1a315655b1bb5848c063491adffde62b15a1c8c8710e5a8d3afbe9499b22bd020c3" prot="public">
+          <name>MoreDamage</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tower_8h_1a315655b1bb5848c063491adffde62b15ade1117e4e38b558fda4490a817553c3d" prot="public">
+          <name>LessDamage</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_tower_8h_1a315655b1bb5848c063491adffde62b15a599c478c80ca66aa854dbd917f1ecef8" prot="public">
+          <name>MoreEnemiesTogether</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="14" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="14" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TOWER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOWER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_tower" kindref="compound">Tower</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Graphics.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vec_8hpp" kindref="compound">Vec.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="_tower_8h_1a515c655d051e131462a497de3df0e8eb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_tower_8h_1a515c655d051e131462a497de3df0e8eb" kindref="member">TowerEvent</ref>{</highlight></codeline>
+<codeline lineno="11" refid="_tower_8h_1a515c655d051e131462a497de3df0e8ebac9d3e887722f2bc482bcca9d41c512af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tower_8h_1a515c655d051e131462a497de3df0e8ebac9d3e887722f2bc482bcca9d41c512af" kindref="member">None</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="_tower_8h_1a315655b1bb5848c063491adffde62b15" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15" kindref="member">Priority</ref>{</highlight></codeline>
+<codeline lineno="15" refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a79935518a3889663d8688b6b01fff051" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a79935518a3889663d8688b6b01fff051" kindref="member">Default</ref>,</highlight></codeline>
+<codeline lineno="16" refid="_tower_8h_1a315655b1bb5848c063491adffde62b15ac5222d41f21bc883f0c0b9754191b350" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15ac5222d41f21bc883f0c0b9754191b350" kindref="member">First</ref>,</highlight></codeline>
+<codeline lineno="17" refid="_tower_8h_1a315655b1bb5848c063491adffde62b15ac2a3856002491cf465725e8d1108f796" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15ac2a3856002491cf465725e8d1108f796" kindref="member">Last</ref>,</highlight></codeline>
+<codeline lineno="18" refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a72f6cdd6b6b9a86c93a38bc8ecc8025a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a72f6cdd6b6b9a86c93a38bc8ecc8025a" kindref="member">Near</ref>,</highlight></codeline>
+<codeline lineno="19" refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a2dacbd805425996a5d37778b02e24dde" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a2dacbd805425996a5d37778b02e24dde" kindref="member">Far</ref>,</highlight></codeline>
+<codeline lineno="20" refid="_tower_8h_1a315655b1bb5848c063491adffde62b15af5b140d7cf39661c84d7e52e13b0c3db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15af5b140d7cf39661c84d7e52e13b0c3db" kindref="member">MoreLife</ref>,</highlight></codeline>
+<codeline lineno="21" refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a344ebf67c51ee0e28e8b1c370696eb99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a344ebf67c51ee0e28e8b1c370696eb99" kindref="member">LessLife</ref>,</highlight></codeline>
+<codeline lineno="22" refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a1c8c8710e5a8d3afbe9499b22bd020c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a1c8c8710e5a8d3afbe9499b22bd020c3" kindref="member">MoreDamage</ref>,</highlight></codeline>
+<codeline lineno="23" refid="_tower_8h_1a315655b1bb5848c063491adffde62b15ade1117e4e38b558fda4490a817553c3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15ade1117e4e38b558fda4490a817553c3d" kindref="member">LessDamage</ref>,</highlight></codeline>
+<codeline lineno="24" refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a599c478c80ca66aa854dbd917f1ecef8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a599c478c80ca66aa854dbd917f1ecef8" kindref="member">MoreEnemiesTogether</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_tower" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_tower" kindref="compound">Tower</ref>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31" refid="class_tower_1a02ec2f8d1c4dea2f7fc002d8626c8b28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a02ec2f8d1c4dea2f7fc002d8626c8b28" kindref="member">_id</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref>;</highlight></codeline>
+<codeline lineno="34" refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" kindref="member">_ticksBetweenShoots</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/><ref refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" kindref="member">_position</ref>;</highlight></codeline>
+<codeline lineno="37" refid="class_tower_1a45ff5669e9b1815222fbbd38bf4dbdd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15" kindref="member">Priority</ref><sp/><ref refid="class_tower_1a45ff5669e9b1815222fbbd38bf4dbdd2" kindref="member">_priority</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" kindref="member">_minRange</ref>,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tower_1a29cae98d3f1d863335b175597f61f8da" kindref="member">_maxRange</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a1b785dc1e9fb979a10620ca183b5761d" kindref="member">Tower</ref>();</highlight></codeline>
+<codeline lineno="44" refid="class_tower_1ac42ebf24f6aedbd4591fe3371f364600" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_tower_1ac42ebf24f6aedbd4591fe3371f364600" kindref="member">~Tower</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_tower_1abf534cfa4be4208f490316de84a363c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_tower_1abf534cfa4be4208f490316de84a363c6" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a02ec2f8d1c4dea2f7fc002d8626c8b28" kindref="member">_id</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="47" refid="class_tower_1a2a9705516e1db56532a8374cd980fe7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a2a9705516e1db56532a8374cd980fe7f" kindref="member">setId</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{<sp/>_id<sp/>=<sp/>id;<sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_tower_1acbef4e9eed709d590b1bdb07257e9afc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_tower_1acbef4e9eed709d590b1bdb07257e9afc" kindref="member">getTicksForShoot</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="50" refid="class_tower_1a06e9f714ebf6793416ca559a49f218f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a06e9f714ebf6793416ca559a49f218f4" kindref="member">setTicksForShoot</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ticksForShoot)<sp/>{<sp/>_ticksForShoot<sp/>=<sp/>ticksForShoot;<sp/>}</highlight></codeline>
+<codeline lineno="51" refid="class_tower_1a28b4e01cf370c3f583d83b904c5834bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a28b4e01cf370c3f583d83b904c5834bf" kindref="member">getTicksBetweenShoots</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" kindref="member">_ticksBetweenShoots</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="52" refid="class_tower_1a7e39dc1fc516ef2c23df035fe6f37cfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a7e39dc1fc516ef2c23df035fe6f37cfc" kindref="member">setTicksBetweenShoots</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ticksBetweenShoots)<sp/>{<sp/>_ticksBetweenShoots<sp/>=<sp/>ticksBetweenShoots;<sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_tower_1a892066fc6cbe882417e749a0829a713b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/><ref refid="class_tower_1a892066fc6cbe882417e749a0829a713b" kindref="member">getPosition</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" kindref="member">_position</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="55" refid="class_tower_1ac95d4e39ad1e1d7aca4dd43114bfb35b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tower_1ac95d4e39ad1e1d7aca4dd43114bfb35b" kindref="member">setPosition</ref>(<ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/>position)<sp/>{<sp/>_position<sp/>=<sp/>position;<sp/>}</highlight></codeline>
+<codeline lineno="56" refid="class_tower_1ae6698f53a92e382f35c13faa1c8755c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15" kindref="member">Priority</ref><sp/><ref refid="class_tower_1ae6698f53a92e382f35c13faa1c8755c5" kindref="member">getPriority</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a45ff5669e9b1815222fbbd38bf4dbdd2" kindref="member">_priority</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="57" refid="class_tower_1a0e6f188ea4541160da9418cbab630c44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a0e6f188ea4541160da9418cbab630c44" kindref="member">setPriority</ref>(<ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15" kindref="member">Priority</ref><sp/>priority){<sp/>_priority<sp/>=<sp/>priority;<sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_tower_1af3974612b34698019596e847c20a0b5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_tower_1af3974612b34698019596e847c20a0b5f" kindref="member">getMinRange</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" kindref="member">_minRange</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="60" refid="class_tower_1a4237103c1b5e5e9a31f0574616154b25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a4237103c1b5e5e9a31f0574616154b25" kindref="member">setMinRange</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>minRange){<sp/>_minRange<sp/>=<sp/>minRange;<sp/>}</highlight></codeline>
+<codeline lineno="61" refid="class_tower_1a1de58ad0b4454321b7581a95be903f84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a1de58ad0b4454321b7581a95be903f84" kindref="member">getMaxRange</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a29cae98d3f1d863335b175597f61f8da" kindref="member">_maxRange</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="62" refid="class_tower_1a25bd659fcdcff1d6defed633c11448e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a25bd659fcdcff1d6defed633c11448e4" kindref="member">setMaxRange</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>maxRange){<sp/>_maxRange<sp/>=<sp/>maxRange;<sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_tower_8h_1a515c655d051e131462a497de3df0e8eb" kindref="member">TowerEvent</ref><sp/><ref refid="class_tower_1a0b5a181ad1356b4d9a395347efdbe1a1" kindref="member">tick</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a1a810f6750616a02e665eb41db5dff5f" kindref="member">draw</ref>(sf::RenderWindow*<sp/>window)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a6233d4726637efbe811fa3e471b17763" kindref="member">drawOver</ref>(sf::RenderWindow*<sp/>window)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_tower_1a345caef621244125c0af480ddc041860" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a345caef621244125c0af480ddc041860" kindref="member">draw</ref>(sf::RenderWindow*<sp/>window,<sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>point)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{};</highlight></codeline>
+<codeline lineno="69" refid="class_tower_1a73e9bca05abf9d075cf255c605a5b7a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tower_1a73e9bca05abf9d075cf255c605a5b7a0" kindref="member">drawOver</ref>(sf::RenderWindow*<sp/>window,<sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>point)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_tower" kindref="compound">Tower</ref>*<sp/><ref refid="class_tower_1a1d444a99e396e60c804512ecd61dd25b" kindref="member">clone</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TOWER_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h"/>
+  </compounddef>
+</doxygen>

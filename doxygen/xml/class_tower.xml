@@ -1,0 +1,551 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_tower" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Tower</compoundname>
+    <derivedcompoundref refid="class_flame_ring_tower" prot="public" virt="non-virtual">FlameRingTower</derivedcompoundref>
+    <derivedcompoundref refid="class_rocket_tower" prot="public" virt="non-virtual">RocketTower</derivedcompoundref>
+    <derivedcompoundref refid="class_sniper_tower" prot="public" virt="non-virtual">SniperTower</derivedcompoundref>
+    <derivedcompoundref refid="class_soldier_tower" prot="public" virt="non-virtual">SoldierTower</derivedcompoundref>
+    <includes refid="_tower_8h" local="no">Tower.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_tower_1a02ec2f8d1c4dea2f7fc002d8626c8b28" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Tower::_id</definition>
+        <argsstring></argsstring>
+        <name>_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="31" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tower_1a73940ff5a1f498c890ba840716b830e6" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Tower::_ticksForShoot</definition>
+        <argsstring></argsstring>
+        <name>_ticksForShoot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="33" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Tower::_ticksBetweenShoots</definition>
+        <argsstring></argsstring>
+        <name>_ticksBetweenShoots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="34" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" prot="protected" static="no" mutable="no">
+        <type><ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref></type>
+        <definition>Vec2i Tower::_position</definition>
+        <argsstring></argsstring>
+        <name>_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="36" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tower_1a45ff5669e9b1815222fbbd38bf4dbdd2" prot="protected" static="no" mutable="no">
+        <type><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15" kindref="member">Priority</ref></type>
+        <definition>Priority Tower::_priority</definition>
+        <argsstring></argsstring>
+        <name>_priority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="37" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tower_1af5f048591ed3980f02dec3ee5c045b84" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Tower::_minRange</definition>
+        <argsstring></argsstring>
+        <name>_minRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="39" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tower_1a29cae98d3f1d863335b175597f61f8da" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Tower::_maxRange</definition>
+        <argsstring></argsstring>
+        <name>_maxRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="40" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_tower_1a1b785dc1e9fb979a10620ca183b5761d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Tower::Tower</definition>
+        <argsstring>()</argsstring>
+        <name>Tower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="43" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1ac42ebf24f6aedbd4591fe3371f364600" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Tower::~Tower</definition>
+        <argsstring>()</argsstring>
+        <name>~Tower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="44" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1abf534cfa4be4208f490316de84a363c6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Tower::getId</definition>
+        <argsstring>() const </argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="46" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="46" bodyend="46"/>
+        <references refid="class_tower_1a02ec2f8d1c4dea2f7fc002d8626c8b28" compoundref="_tower_8h" startline="31">_id</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a2a9705516e1db56532a8374cd980fe7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Tower::setId</definition>
+        <argsstring>(int id)</argsstring>
+        <name>setId</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="47" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1acbef4e9eed709d590b1bdb07257e9afc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Tower::getTicksForShoot</definition>
+        <argsstring>() const </argsstring>
+        <name>getTicksForShoot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="49" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="49" bodyend="49"/>
+        <references refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" compoundref="_tower_8h" startline="33">_ticksForShoot</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a06e9f714ebf6793416ca559a49f218f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Tower::setTicksForShoot</definition>
+        <argsstring>(int ticksForShoot)</argsstring>
+        <name>setTicksForShoot</name>
+        <param>
+          <type>int</type>
+          <declname>ticksForShoot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="50" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a28b4e01cf370c3f583d83b904c5834bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Tower::getTicksBetweenShoots</definition>
+        <argsstring>() const </argsstring>
+        <name>getTicksBetweenShoots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="51" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="51" bodyend="51"/>
+        <references refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" compoundref="_tower_8h" startline="34">_ticksBetweenShoots</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a7e39dc1fc516ef2c23df035fe6f37cfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Tower::setTicksBetweenShoots</definition>
+        <argsstring>(int ticksBetweenShoots)</argsstring>
+        <name>setTicksBetweenShoots</name>
+        <param>
+          <type>int</type>
+          <declname>ticksBetweenShoots</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="52" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a892066fc6cbe882417e749a0829a713b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref></type>
+        <definition>Vec2i Tower::getPosition</definition>
+        <argsstring>() const </argsstring>
+        <name>getPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="54" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="54" bodyend="54"/>
+        <references refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" compoundref="_tower_8h" startline="36">_position</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1ac95d4e39ad1e1d7aca4dd43114bfb35b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Tower::setPosition</definition>
+        <argsstring>(Vec2i position)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type><ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="55" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1ae6698f53a92e382f35c13faa1c8755c5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15" kindref="member">Priority</ref></type>
+        <definition>Priority Tower::getPriority</definition>
+        <argsstring>() const </argsstring>
+        <name>getPriority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="56" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="56" bodyend="56"/>
+        <references refid="class_tower_1a45ff5669e9b1815222fbbd38bf4dbdd2" compoundref="_tower_8h" startline="37">_priority</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a0e6f188ea4541160da9418cbab630c44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Tower::setPriority</definition>
+        <argsstring>(Priority priority)</argsstring>
+        <name>setPriority</name>
+        <param>
+          <type><ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15" kindref="member">Priority</ref></type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="57" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1af3974612b34698019596e847c20a0b5f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Tower::getMinRange</definition>
+        <argsstring>() const </argsstring>
+        <name>getMinRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="59" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="59" bodyend="59"/>
+        <references refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" compoundref="_tower_8h" startline="39">_minRange</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a4237103c1b5e5e9a31f0574616154b25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Tower::setMinRange</definition>
+        <argsstring>(double minRange)</argsstring>
+        <name>setMinRange</name>
+        <param>
+          <type>double</type>
+          <declname>minRange</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="60" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a1de58ad0b4454321b7581a95be903f84" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Tower::getMaxRange</definition>
+        <argsstring>() const </argsstring>
+        <name>getMaxRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="61" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="61" bodyend="61"/>
+        <references refid="class_tower_1a29cae98d3f1d863335b175597f61f8da" compoundref="_tower_8h" startline="39">_maxRange</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a25bd659fcdcff1d6defed633c11448e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Tower::setMaxRange</definition>
+        <argsstring>(double maxRange)</argsstring>
+        <name>setMaxRange</name>
+        <param>
+          <type>double</type>
+          <declname>maxRange</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="62" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="62" bodyend="62"/>
+        <references refid="class_tower_1a0b5a181ad1356b4d9a395347efdbe1a1">tick</references>
+        <references refid="class_tower_1a1a810f6750616a02e665eb41db5dff5f" compoundref="_tower_8cpp" startline="7" endline="9">draw</references>
+        <references refid="class_tower_1a6233d4726637efbe811fa3e471b17763" compoundref="_tower_8cpp" startline="11" endline="13">drawOver</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a0b5a181ad1356b4d9a395347efdbe1a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_tower_8h_1a515c655d051e131462a497de3df0e8eb" kindref="member">TowerEvent</ref></type>
+        <definition>virtual TowerEvent Tower::tick</definition>
+        <argsstring>()=0</argsstring>
+        <name>tick</name>
+        <reimplementedby refid="class_flame_ring_tower_1ac7b603fcbd551c39fd2bb789896fcb92">tick</reimplementedby>
+        <reimplementedby refid="class_soldier_tower_1a2c203d4284bccc7ce7b1141e1d0651f5">tick</reimplementedby>
+        <reimplementedby refid="class_sniper_tower_1ab0e4b579aa38c03b3a67f29471a96bd3">tick</reimplementedby>
+        <reimplementedby refid="class_rocket_tower_1a6a577601ae706e981c833dfaf8675c59">tick</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a1a810f6750616a02e665eb41db5dff5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Tower::draw</definition>
+        <argsstring>(sf::RenderWindow *window) const </argsstring>
+        <name>draw</name>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="65" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.cpp" bodystart="7" bodyend="9"/>
+        <references refid="namespace_game_1a3a3a6fcb74f541d2dc4be77b0be28b71" compoundref="_game_8cpp" startline="451" endline="454">Game::getRealPosition</references>
+        <references refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" compoundref="_tower_8h" startline="36">_position</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a6233d4726637efbe811fa3e471b17763" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Tower::drawOver</definition>
+        <argsstring>(sf::RenderWindow *window) const </argsstring>
+        <name>drawOver</name>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="66" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.cpp" bodystart="11" bodyend="13"/>
+        <references refid="namespace_game_1a3a3a6fcb74f541d2dc4be77b0be28b71" compoundref="_game_8cpp" startline="451" endline="454">Game::getRealPosition</references>
+        <references refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" compoundref="_tower_8h" startline="36">_position</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a345caef621244125c0af480ddc041860" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Tower::draw</definition>
+        <argsstring>(sf::RenderWindow *window, Vec2d point) const </argsstring>
+        <name>draw</name>
+        <reimplementedby refid="class_flame_ring_tower_1a7eb91da364c81d4d93892223527ffe69">draw</reimplementedby>
+        <reimplementedby refid="class_soldier_tower_1a9fb2e204e352e8eb03b52c5426e3ee82">draw</reimplementedby>
+        <reimplementedby refid="class_sniper_tower_1a3f2c8bb1f2579dd0a7b7a37b3e191afb">draw</reimplementedby>
+        <reimplementedby refid="class_rocket_tower_1aeb6d89a594a58c05f723bd65ef4601af">draw</reimplementedby>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="68" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a73e9bca05abf9d075cf255c605a5b7a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Tower::drawOver</definition>
+        <argsstring>(sf::RenderWindow *window, Vec2d point) const </argsstring>
+        <name>drawOver</name>
+        <reimplementedby refid="class_sniper_tower_1af8dc720e9a312f79e9083cfea8b510cf">drawOver</reimplementedby>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="69" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="69" bodyend="69"/>
+        <references refid="class_tower_1a1d444a99e396e60c804512ecd61dd25b">clone</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tower_1a1d444a99e396e60c804512ecd61dd25b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_tower" kindref="compound">Tower</ref> *</type>
+        <definition>virtual Tower* Tower::clone</definition>
+        <argsstring>() const  =0</argsstring>
+        <name>clone</name>
+        <reimplementedby refid="class_flame_ring_tower_1a86d9b25684eb86180f09fabf43081c94">clone</reimplementedby>
+        <reimplementedby refid="class_soldier_tower_1a8a56e44058a2cc92bbd7da3ece949a88">clone</reimplementedby>
+        <reimplementedby refid="class_sniper_tower_1ade688996092dc825d1842877c917e9be">clone</reimplementedby>
+        <reimplementedby refid="class_rocket_tower_1a3d088da5e8638dcb40cef934778d56de">clone</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="71" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="219">
+        <label>FlameRingTower</label>
+        <link refid="class_flame_ring_tower"/>
+        <childnode refid="218" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>Tower</label>
+        <link refid="class_tower"/>
+      </node>
+      <node id="222">
+        <label>SoldierTower</label>
+        <link refid="class_soldier_tower"/>
+        <childnode refid="218" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>RocketTower</label>
+        <link refid="class_rocket_tower"/>
+        <childnode refid="218" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="221">
+        <label>SniperTower</label>
+        <link refid="class_sniper_tower"/>
+        <childnode refid="218" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="224">
+        <label>Vec2&lt; int &gt;</label>
+        <link refid="struct_vec2"/>
+      </node>
+      <node id="223">
+        <label>Tower</label>
+        <link refid="class_tower"/>
+        <childnode refid="224" relation="usage">
+          <edgelabel>_position</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" line="28" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tower.h" bodystart="28" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_tower_1a02ec2f8d1c4dea2f7fc002d8626c8b28" prot="protected" virt="non-virtual"><scope>Tower</scope><name>_id</name></member>
+      <member refid="class_tower_1a29cae98d3f1d863335b175597f61f8da" prot="protected" virt="non-virtual"><scope>Tower</scope><name>_maxRange</name></member>
+      <member refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" prot="protected" virt="non-virtual"><scope>Tower</scope><name>_minRange</name></member>
+      <member refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" prot="protected" virt="non-virtual"><scope>Tower</scope><name>_position</name></member>
+      <member refid="class_tower_1a45ff5669e9b1815222fbbd38bf4dbdd2" prot="protected" virt="non-virtual"><scope>Tower</scope><name>_priority</name></member>
+      <member refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" prot="protected" virt="non-virtual"><scope>Tower</scope><name>_ticksBetweenShoots</name></member>
+      <member refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" prot="protected" virt="non-virtual"><scope>Tower</scope><name>_ticksForShoot</name></member>
+      <member refid="class_tower_1a1d444a99e396e60c804512ecd61dd25b" prot="public" virt="pure-virtual"><scope>Tower</scope><name>clone</name></member>
+      <member refid="class_tower_1a1a810f6750616a02e665eb41db5dff5f" prot="public" virt="virtual"><scope>Tower</scope><name>draw</name></member>
+      <member refid="class_tower_1a345caef621244125c0af480ddc041860" prot="public" virt="virtual"><scope>Tower</scope><name>draw</name></member>
+      <member refid="class_tower_1a6233d4726637efbe811fa3e471b17763" prot="public" virt="virtual"><scope>Tower</scope><name>drawOver</name></member>
+      <member refid="class_tower_1a73e9bca05abf9d075cf255c605a5b7a0" prot="public" virt="virtual"><scope>Tower</scope><name>drawOver</name></member>
+      <member refid="class_tower_1abf534cfa4be4208f490316de84a363c6" prot="public" virt="non-virtual"><scope>Tower</scope><name>getId</name></member>
+      <member refid="class_tower_1a1de58ad0b4454321b7581a95be903f84" prot="public" virt="non-virtual"><scope>Tower</scope><name>getMaxRange</name></member>
+      <member refid="class_tower_1af3974612b34698019596e847c20a0b5f" prot="public" virt="non-virtual"><scope>Tower</scope><name>getMinRange</name></member>
+      <member refid="class_tower_1a892066fc6cbe882417e749a0829a713b" prot="public" virt="non-virtual"><scope>Tower</scope><name>getPosition</name></member>
+      <member refid="class_tower_1ae6698f53a92e382f35c13faa1c8755c5" prot="public" virt="non-virtual"><scope>Tower</scope><name>getPriority</name></member>
+      <member refid="class_tower_1a28b4e01cf370c3f583d83b904c5834bf" prot="public" virt="non-virtual"><scope>Tower</scope><name>getTicksBetweenShoots</name></member>
+      <member refid="class_tower_1acbef4e9eed709d590b1bdb07257e9afc" prot="public" virt="non-virtual"><scope>Tower</scope><name>getTicksForShoot</name></member>
+      <member refid="class_tower_1a2a9705516e1db56532a8374cd980fe7f" prot="public" virt="non-virtual"><scope>Tower</scope><name>setId</name></member>
+      <member refid="class_tower_1a25bd659fcdcff1d6defed633c11448e4" prot="public" virt="virtual"><scope>Tower</scope><name>setMaxRange</name></member>
+      <member refid="class_tower_1a4237103c1b5e5e9a31f0574616154b25" prot="public" virt="virtual"><scope>Tower</scope><name>setMinRange</name></member>
+      <member refid="class_tower_1ac95d4e39ad1e1d7aca4dd43114bfb35b" prot="public" virt="virtual"><scope>Tower</scope><name>setPosition</name></member>
+      <member refid="class_tower_1a0e6f188ea4541160da9418cbab630c44" prot="public" virt="virtual"><scope>Tower</scope><name>setPriority</name></member>
+      <member refid="class_tower_1a7e39dc1fc516ef2c23df035fe6f37cfc" prot="public" virt="virtual"><scope>Tower</scope><name>setTicksBetweenShoots</name></member>
+      <member refid="class_tower_1a06e9f714ebf6793416ca559a49f218f4" prot="public" virt="virtual"><scope>Tower</scope><name>setTicksForShoot</name></member>
+      <member refid="class_tower_1a0b5a181ad1356b4d9a395347efdbe1a1" prot="public" virt="pure-virtual"><scope>Tower</scope><name>tick</name></member>
+      <member refid="class_tower_1a1b785dc1e9fb979a10620ca183b5761d" prot="public" virt="non-virtual"><scope>Tower</scope><name>Tower</name></member>
+      <member refid="class_tower_1ac42ebf24f6aedbd4591fe3371f364600" prot="public" virt="virtual"><scope>Tower</scope><name>~Tower</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

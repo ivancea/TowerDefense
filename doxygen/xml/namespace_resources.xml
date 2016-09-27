@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_resources" kind="namespace" language="C++">
+    <compoundname>Resources</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_resources_1aca746512f813c1e1219bcc68e11580c0" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, sf::Texture * &gt;</type>
+        <definition>std::map&lt;std::string, sf::Texture*&gt; Resources::_textures</definition>
+        <argsstring></argsstring>
+        <name>_textures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Resources.cpp" line="5" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Resources.cpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_resources_1a5d69bd132d861b6f3a83486e871b0b0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sf::Texture *</type>
+        <definition>sf::Texture * Resources::getTexture</definition>
+        <argsstring>(std::string texture)</argsstring>
+        <name>getTexture</name>
+        <param>
+          <type>std::string</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Resources.h" line="9" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Resources.cpp" bodystart="24" bodyend="37"/>
+        <references refid="namespace_resources_1a0cbbb47ce375a16826bbdcd8843b7aa9" compoundref="_resources_8cpp" startline="7" endline="22">normalizePath</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_resources_1a0cbbb47ce375a16826bbdcd8843b7aa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Resources::normalizePath</definition>
+        <argsstring>(std::string &amp;path)</argsstring>
+        <name>normalizePath</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Resources.cpp" line="7" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Resources.cpp" bodystart="7" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Resources.h" line="7" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,6 @@
+<map id="Tower::setMaxRange" name="Tower::setMaxRange">
+<area shape="rect" id="node2" href="$class_tower.html#a0b5a181ad1356b4d9a395347efdbe1a1" title="Tower::tick" alt="" coords="213,5,299,32"/>
+<area shape="rect" id="node3" href="$class_tower.html#a1a810f6750616a02e665eb41db5dff5f" title="Tower::draw" alt="" coords="211,56,301,83"/>
+<area shape="rect" id="node5" href="$class_tower.html#a6233d4726637efbe811fa3e471b17763" title="Tower::drawOver" alt="" coords="197,107,315,133"/>
+<area shape="rect" id="node4" href="$namespace_game.html#a3a3a6fcb74f541d2dc4be77b0be28b71" title="Game::getRealPosition" alt="" coords="363,81,519,108"/>
+</map>

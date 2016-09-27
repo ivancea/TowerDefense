@@ -1,0 +1,12 @@
+<map id="SoldierTower::tick" name="SoldierTower::tick">
+<area shape="rect" id="node2" href="$namespace_game.html#a06280777aa0c70527c6dfce295cc4220" title="Game::findTarget" alt="" coords="179,157,300,184"/>
+<area shape="rect" id="node11" href="$struct_vec2.html#a73f59613a791abd955bf16fccd53777b" title="Vec2::normalize" alt="" coords="181,208,297,235"/>
+<area shape="rect" id="node3" href="$class_tower.html#a892066fc6cbe882417e749a0829a713b" title="Tower::getPosition" alt="" coords="372,5,501,32"/>
+<area shape="rect" id="node4" href="$class_tower.html#ae6698f53a92e382f35c13faa1c8755c5" title="Tower::getPriority" alt="" coords="375,56,498,83"/>
+<area shape="rect" id="node5" href="$namespace_game.html#af2e314759bbe1f96478d79fda41d1c40" title="Game::isInRange" alt="" coords="375,157,498,184"/>
+<area shape="rect" id="node6" href="$struct_vec2.html#a8f0f08fa249195af341222553c8db855" title="Vec2::distance" alt="" coords="587,107,696,133"/>
+<area shape="rect" id="node8" href="$class_tower.html#af3974612b34698019596e847c20a0b5f" title="Tower::getMinRange" alt="" coords="367,208,507,235"/>
+<area shape="rect" id="node9" href="$class_tower.html#a1de58ad0b4454321b7581a95be903f84" title="Tower::getMaxRange" alt="" coords="365,259,509,285"/>
+<area shape="rect" id="node10" href="$class_enemy.html#a95df3c4a64b8576874c5815877ee9d61" title="Enemy::getDistanceToEnd" alt="" coords="348,309,525,336"/>
+<area shape="rect" id="node7" href="$class_enemy.html#afd5331e1b8efb74c4722569b14934c61" title="Enemy::getPosition" alt="" coords="573,157,709,184"/>
+</map>

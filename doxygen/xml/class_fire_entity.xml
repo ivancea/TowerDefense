@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_fire_entity" kind="class" language="C++" prot="public">
+    <compoundname>FireEntity</compoundname>
+    <basecompoundref refid="class_entity" prot="public" virt="non-virtual">Entity</basecompoundref>
+    <includes refid="_fire_entity_8h" local="no">FireEntity.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_fire_entity_1aad6423df3bee2af1f219f79bb135dd9d" prot="private" static="no" mutable="no">
+        <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+        <definition>Vec2d FireEntity::_position</definition>
+        <argsstring></argsstring>
+        <name>_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.h" line="11" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fire_entity_1a04fe40bc1b739d302a30a4ef5306eb41" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FireEntity::_ticksAlive</definition>
+        <argsstring></argsstring>
+        <name>_ticksAlive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.h" line="12" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fire_entity_1abda03646b735fcf48a5a1796c4ebce32" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FireEntity::_ticksLived</definition>
+        <argsstring></argsstring>
+        <name>_ticksLived</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.h" line="13" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fire_entity_1a7ff2eafe728286ab7be66a913f8c746c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_sprite" kindref="compound">Sprite</ref></type>
+        <definition>Sprite FireEntity::_sprite</definition>
+        <argsstring></argsstring>
+        <name>_sprite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.h" line="15" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_fire_entity_1a3a0d451f64cf200710f0091e79d9f4e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FireEntity::FireEntity</definition>
+        <argsstring>(Vec2d position, int ticksAlive)</argsstring>
+        <name>FireEntity</name>
+        <param>
+          <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ticksAlive</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.h" line="18" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.cpp" bodystart="7" bodyend="15"/>
+        <references refid="class_fire_entity_1aad6423df3bee2af1f219f79bb135dd9d" compoundref="_fire_entity_8h" startline="11">_position</references>
+        <references refid="class_fire_entity_1a04fe40bc1b739d302a30a4ef5306eb41" compoundref="_fire_entity_8h" startline="12">_ticksAlive</references>
+        <references refid="class_fire_entity_1abda03646b735fcf48a5a1796c4ebce32" compoundref="_fire_entity_8h" startline="13">_ticksLived</references>
+        <references refid="class_fire_entity_1a7ff2eafe728286ab7be66a913f8c746c" compoundref="_fire_entity_8h" startline="15">_sprite</references>
+        <references refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::x</references>
+        <references refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_fire_entity_1a22e38fdc101c077be7722352cf67396e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FireEntity::tick</definition>
+        <argsstring>()</argsstring>
+        <name>tick</name>
+        <reimplements refid="class_entity_1a1ac1547ce618e2ec040c6a8498bb5201">tick</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.h" line="20" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.cpp" bodystart="17" bodyend="20"/>
+        <references refid="class_fire_entity_1a7ff2eafe728286ab7be66a913f8c746c" compoundref="_fire_entity_8h" startline="15">_sprite</references>
+        <references refid="class_sprite_1aad4221a926a6509c267dc309229fec6f" compoundref="_sprite_8cpp" startline="37" endline="39">Sprite::nextFrame</references>
+        <references refid="class_fire_entity_1abda03646b735fcf48a5a1796c4ebce32" compoundref="_fire_entity_8h" startline="13">_ticksLived</references>
+        <references refid="class_fire_entity_1a04fe40bc1b739d302a30a4ef5306eb41" compoundref="_fire_entity_8h" startline="12">_ticksAlive</references>
+      </memberdef>
+      <memberdef kind="function" id="class_fire_entity_1a000ede7b6148c5c1b01e1fcd5d512c93" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FireEntity::draw</definition>
+        <argsstring>(sf::RenderWindow *window) const </argsstring>
+        <name>draw</name>
+        <reimplements refid="class_entity_1a5ab2eb129b6330823115239247fec4f5">draw</reimplements>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.h" line="21" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.cpp" bodystart="22" bodyend="28"/>
+        <references refid="class_fire_entity_1a7ff2eafe728286ab7be66a913f8c746c" compoundref="_fire_entity_8h" startline="15">_sprite</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="154">
+        <label>FireEntity</label>
+        <link refid="class_fire_entity"/>
+        <childnode refid="155" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>Entity</label>
+        <link refid="class_entity"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="159">
+        <label>sf::Sprite</label>
+      </node>
+      <node id="156">
+        <label>FireEntity</label>
+        <link refid="class_fire_entity"/>
+        <childnode refid="157" relation="public-inheritance">
+        </childnode>
+        <childnode refid="158" relation="usage">
+          <edgelabel>_sprite</edgelabel>
+        </childnode>
+        <childnode refid="160" relation="usage">
+          <edgelabel>_position</edgelabel>
+        </childnode>
+      </node>
+      <node id="160">
+        <label>Vec2&lt; double &gt;</label>
+        <link refid="struct_vec2"/>
+      </node>
+      <node id="158">
+        <label>Sprite</label>
+        <link refid="class_sprite"/>
+        <childnode refid="159" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>Entity</label>
+        <link refid="class_entity"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.h" line="10" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.h" bodystart="10" bodyend="22"/>
+    <listofallmembers>
+      <member refid="class_fire_entity_1aad6423df3bee2af1f219f79bb135dd9d" prot="private" virt="non-virtual"><scope>FireEntity</scope><name>_position</name></member>
+      <member refid="class_fire_entity_1a7ff2eafe728286ab7be66a913f8c746c" prot="private" virt="non-virtual"><scope>FireEntity</scope><name>_sprite</name></member>
+      <member refid="class_fire_entity_1a04fe40bc1b739d302a30a4ef5306eb41" prot="private" virt="non-virtual"><scope>FireEntity</scope><name>_ticksAlive</name></member>
+      <member refid="class_fire_entity_1abda03646b735fcf48a5a1796c4ebce32" prot="private" virt="non-virtual"><scope>FireEntity</scope><name>_ticksLived</name></member>
+      <member refid="class_fire_entity_1a000ede7b6148c5c1b01e1fcd5d512c93" prot="public" virt="virtual"><scope>FireEntity</scope><name>draw</name></member>
+      <member refid="class_entity_1a78fdc76cd8111e1c403024f66f2e00a0" prot="public" virt="virtual"><scope>FireEntity</scope><name>drawOver</name></member>
+      <member refid="class_fire_entity_1a3a0d451f64cf200710f0091e79d9f4e7" prot="public" virt="non-virtual"><scope>FireEntity</scope><name>FireEntity</name></member>
+      <member refid="class_fire_entity_1a22e38fdc101c077be7722352cf67396e" prot="public" virt="virtual"><scope>FireEntity</scope><name>tick</name></member>
+      <member refid="class_entity_1a588098978eea6a3486b7361605ff3f0f" prot="public" virt="virtual"><scope>FireEntity</scope><name>~Entity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

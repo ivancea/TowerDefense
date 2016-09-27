@@ -1,0 +1,7 @@
+<map id="initializeGame" name="initializeGame">
+<area shape="rect" id="node2" href="$namespace_map_manager.html#ac303bfa11db51676fd16be01d0f9383b" title="MapManager::load" alt="" coords="157,5,287,32"/>
+<area shape="rect" id="node3" href="$class_tower.html#ac95d4e39ad1e1d7aca4dd43114bfb35b" title="Tower::setPosition" alt="" coords="157,56,287,83"/>
+<area shape="rect" id="node4" href="$class_tower.html#a0e6f188ea4541160da9418cbab630c44" title="Tower::setPriority" alt="" coords="161,107,283,133"/>
+<area shape="rect" id="node5" href="$namespace_game.html#a45c3585e317f9cb5dfae27f54f1f019d" title="Game::putTower" alt="" coords="163,157,281,184"/>
+<area shape="rect" id="node6" href="$class_tower.html#a892066fc6cbe882417e749a0829a713b" title="Tower::getPosition" alt="" coords="335,157,464,184"/>
+</map>

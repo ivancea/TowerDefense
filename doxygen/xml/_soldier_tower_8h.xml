@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_soldier_tower_8h" kind="file" language="C++">
+    <compoundname>SoldierTower.h</compoundname>
+    <includes local="no">list</includes>
+    <includes local="no">SFML/Graphics.hpp</includes>
+    <includes refid="_game_8h" local="yes">../Game.h</includes>
+    <includes refid="_tower_8h" local="yes">../Tower.h</includes>
+    <includes refid="_bullet_8h" local="yes">entities/Bullet.h</includes>
+    <includedby refid="_basic_tower_manager_8cpp" local="yes">BasicTowerManager.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <includedby refid="_soldier_tower_8cpp" local="yes">SoldierTower.cpp</includedby>
+    <incdepgraph>
+      <node id="1461">
+        <label>list</label>
+      </node>
+      <node id="1462">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1464">
+        <label>SFML/OpenGL.hpp</label>
+      </node>
+      <node id="1470">
+        <label>cmath</label>
+      </node>
+      <node id="1467">
+        <label>string</label>
+      </node>
+      <node id="1471">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1462" relation="include">
+        </childnode>
+        <childnode refid="1469" relation="include">
+        </childnode>
+      </node>
+      <node id="1469">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1470" relation="include">
+        </childnode>
+      </node>
+      <node id="1473">
+        <label>entities/Bullet.h</label>
+        <link refid="_bullet_8h"/>
+        <childnode refid="1472" relation="include">
+        </childnode>
+        <childnode refid="1469" relation="include">
+        </childnode>
+        <childnode refid="1471" relation="include">
+        </childnode>
+      </node>
+      <node id="1465">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1462" relation="include">
+        </childnode>
+        <childnode refid="1466" relation="include">
+        </childnode>
+      </node>
+      <node id="1463">
+        <label>../Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1462" relation="include">
+        </childnode>
+        <childnode refid="1464" relation="include">
+        </childnode>
+        <childnode refid="1465" relation="include">
+        </childnode>
+        <childnode refid="1468" relation="include">
+        </childnode>
+        <childnode refid="1471" relation="include">
+        </childnode>
+        <childnode refid="1472" relation="include">
+        </childnode>
+        <childnode refid="1469" relation="include">
+        </childnode>
+      </node>
+      <node id="1466">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1467" relation="include">
+        </childnode>
+        <childnode refid="1462" relation="include">
+        </childnode>
+        <childnode refid="1468" relation="include">
+        </childnode>
+      </node>
+      <node id="1460">
+        <label>SoldierTower.h</label>
+        <link refid="SoldierTower.h"/>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1462" relation="include">
+        </childnode>
+        <childnode refid="1463" relation="include">
+        </childnode>
+        <childnode refid="1468" relation="include">
+        </childnode>
+        <childnode refid="1473" relation="include">
+        </childnode>
+      </node>
+      <node id="1472">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1462" relation="include">
+        </childnode>
+      </node>
+      <node id="1468">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1462" relation="include">
+        </childnode>
+        <childnode refid="1469" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1475">
+        <label>BasicTowerManager.cpp</label>
+        <link refid="_basic_tower_manager_8cpp"/>
+      </node>
+      <node id="1476">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1477">
+        <label>SoldierTower.cpp</label>
+        <link refid="_soldier_tower_8cpp"/>
+      </node>
+      <node id="1474">
+        <label>SoldierTower.h</label>
+        <link refid="SoldierTower.h"/>
+        <childnode refid="1475" relation="include">
+        </childnode>
+        <childnode refid="1476" relation="include">
+        </childnode>
+        <childnode refid="1477" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_soldier_tower" prot="public">SoldierTower</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SOLDIERTOWER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SOLDIERTOWER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Graphics.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Game.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Tower.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_bullet_8h" kindref="compound">entities/Bullet.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_soldier_tower" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_soldier_tower" kindref="compound">SoldierTower</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_tower" kindref="compound">Tower</ref>{</highlight></codeline>
+<codeline lineno="12" refid="class_soldier_tower_1aa3e3e42e7d60da94509e1aae7a8209a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_soldier_tower_1aa3e3e42e7d60da94509e1aae7a8209a5" kindref="member">_damage</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_soldier_tower_1a8cf4da2f6015618b06597e8ae39805da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_soldier_tower_1a8cf4da2f6015618b06597e8ae39805da" kindref="member">_bulletVelocity</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_soldier_tower_1ac20dd628e2251ff106d0a898ff3061cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_soldier_tower_1ac20dd628e2251ff106d0a898ff3061cd" kindref="member">_maxBulletDistance</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_soldier_tower_1ad7ee249e4686d9788751cf80075ef4d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_soldier_tower_1ad7ee249e4686d9788751cf80075ef4d9" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_soldier_tower_1a9d362b598d1b8eff829198b1c4af9182" kindref="member">SoldierTower</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_tower_8h_1a515c655d051e131462a497de3df0e8eb" kindref="member">TowerEvent</ref><sp/><ref refid="class_soldier_tower_1a2c203d4284bccc7ce7b1141e1d0651f5" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_soldier_tower_1a9fb2e204e352e8eb03b52c5426e3ee82" kindref="member">draw</ref>(sf::RenderWindow*<sp/>window,<sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>point)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_tower" kindref="compound">Tower</ref>*<sp/><ref refid="class_soldier_tower_1a8a56e44058a2cc92bbd7da3ece949a88" kindref="member">clone</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>SOLDIERTOWER_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/SoldierTower.h"/>
+  </compounddef>
+</doxygen>

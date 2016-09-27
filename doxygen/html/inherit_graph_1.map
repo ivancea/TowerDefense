@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_entity.html" title="Entity" alt="" coords="5,132,61,159"/>
+<area shape="rect" id="node2" href="$class_bullet.html" title="Bullet" alt="" coords="139,5,193,32"/>
+<area shape="rect" id="node3" href="$class_explosion_entity.html" title="ExplosionEntity" alt="" coords="109,56,223,83"/>
+<area shape="rect" id="node4" href="$class_fire_entity.html" title="FireEntity" alt="" coords="127,107,205,133"/>
+<area shape="rect" id="node5" href="$class_flame_ring.html" title="FlameRing" alt="" coords="124,157,208,184"/>
+<area shape="rect" id="node6" href="$class_laser_entity.html" title="LaserEntity" alt="" coords="122,208,210,235"/>
+<area shape="rect" id="node7" href="$class_rocket.html" title="Rocket" alt="" coords="135,259,197,285"/>
+</map>

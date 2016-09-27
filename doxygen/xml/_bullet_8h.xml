@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_bullet_8h" kind="file" language="C++">
+    <compoundname>Bullet.h</compoundname>
+    <includes refid="_entity_8h" local="yes">../../Entity.h</includes>
+    <includes refid="_vec_8hpp" local="yes">../../Vec.hpp</includes>
+    <includes refid="_enemy_8h" local="yes">../../Enemy.h</includes>
+    <includedby refid="_soldier_tower_8h" local="yes">SoldierTower.h</includedby>
+    <includedby refid="_bullet_8cpp" local="yes">Bullet.cpp</includedby>
+    <incdepgraph>
+      <node id="930">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="932">
+        <label>cmath</label>
+      </node>
+      <node id="933">
+        <label>../../Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="930" relation="include">
+        </childnode>
+        <childnode refid="931" relation="include">
+        </childnode>
+      </node>
+      <node id="931">
+        <label>../../Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="932" relation="include">
+        </childnode>
+      </node>
+      <node id="928">
+        <label>Bullet.h</label>
+        <link refid="Bullet.h"/>
+        <childnode refid="929" relation="include">
+        </childnode>
+        <childnode refid="931" relation="include">
+        </childnode>
+        <childnode refid="933" relation="include">
+        </childnode>
+      </node>
+      <node id="929">
+        <label>../../Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="930" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="936">
+        <label>BasicTowerManager.cpp</label>
+        <link refid="_basic_tower_manager_8cpp"/>
+      </node>
+      <node id="937">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="938">
+        <label>SoldierTower.cpp</label>
+        <link refid="_soldier_tower_8cpp"/>
+      </node>
+      <node id="934">
+        <label>Bullet.h</label>
+        <link refid="Bullet.h"/>
+        <childnode refid="935" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+      </node>
+      <node id="939">
+        <label>Bullet.cpp</label>
+        <link refid="_bullet_8cpp"/>
+      </node>
+      <node id="935">
+        <label>SoldierTower.h</label>
+        <link refid="_soldier_tower_8h"/>
+        <childnode refid="936" relation="include">
+        </childnode>
+        <childnode refid="937" relation="include">
+        </childnode>
+        <childnode refid="938" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_bullet" prot="public">Bullet</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>BULLET_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BULLET_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Entity.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Vec.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Enemy.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_bullet" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bullet" kindref="compound">Bullet</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_entity" kindref="compound">Entity</ref>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_bullet_1a7ba153a8c3f770efe060cec44fd3b9d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/><ref refid="class_bullet_1a7ba153a8c3f770efe060cec44fd3b9d4" kindref="member">_position</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_bullet_1a6e518aa502479eb47925d96f3492f44c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/><ref refid="class_bullet_1a6e518aa502479eb47925d96f3492f44c" kindref="member">_target</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_bullet_1ad7f476df2633f19f568ba22fc635be17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1ad7f476df2633f19f568ba22fc635be17" kindref="member">_damage</ref>;</highlight></codeline>
+<codeline lineno="15" refid="class_bullet_1ab0c6e97df8ec51572a3aae8163294db8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1ab0c6e97df8ec51572a3aae8163294db8" kindref="member">_velocity</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bullet_1a156e55f7392dbba145f647e52ff4cf5e" kindref="member">Bullet</ref>(<ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>damage,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>,<sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>position);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a1b20424d4c8d29c5c214bab2f62d72a1" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a18e80bd6d18efa4db5e383bf6b67b042" kindref="member">drawOver</ref>(sf::RenderWindow*<sp/>window)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>BULLET_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Bullet.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_flame_ring_tower_8h" kind="file" language="C++">
+    <compoundname>FlameRingTower.h</compoundname>
+    <includes local="no">SFML/Graphics.hpp</includes>
+    <includes refid="_game_8h" local="yes">../Game.h</includes>
+    <includes refid="_tower_8h" local="yes">../Tower.h</includes>
+    <includedby refid="_flame_ring_tower_8cpp" local="yes">FlameRingTower.cpp</includedby>
+    <includedby refid="_basic_tower_manager_8cpp" local="yes">BasicTowerManager.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <incdepgraph>
+      <node id="1122">
+        <label>list</label>
+      </node>
+      <node id="1120">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1119">
+        <label>FlameRingTower.h</label>
+        <link refid="FlameRingTower.h"/>
+        <childnode refid="1120" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1127" relation="include">
+        </childnode>
+      </node>
+      <node id="1123">
+        <label>SFML/OpenGL.hpp</label>
+      </node>
+      <node id="1129">
+        <label>cmath</label>
+      </node>
+      <node id="1126">
+        <label>string</label>
+      </node>
+      <node id="1130">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1120" relation="include">
+        </childnode>
+        <childnode refid="1128" relation="include">
+        </childnode>
+      </node>
+      <node id="1128">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1129" relation="include">
+        </childnode>
+      </node>
+      <node id="1124">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="1122" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
+        <childnode refid="1125" relation="include">
+        </childnode>
+      </node>
+      <node id="1121">
+        <label>../Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="1122" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
+        <childnode refid="1123" relation="include">
+        </childnode>
+        <childnode refid="1124" relation="include">
+        </childnode>
+        <childnode refid="1127" relation="include">
+        </childnode>
+        <childnode refid="1130" relation="include">
+        </childnode>
+        <childnode refid="1131" relation="include">
+        </childnode>
+        <childnode refid="1128" relation="include">
+        </childnode>
+      </node>
+      <node id="1125">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1126" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
+        <childnode refid="1127" relation="include">
+        </childnode>
+      </node>
+      <node id="1131">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1120" relation="include">
+        </childnode>
+      </node>
+      <node id="1127">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1120" relation="include">
+        </childnode>
+        <childnode refid="1128" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1134">
+        <label>BasicTowerManager.cpp</label>
+        <link refid="_basic_tower_manager_8cpp"/>
+      </node>
+      <node id="1132">
+        <label>FlameRingTower.h</label>
+        <link refid="FlameRingTower.h"/>
+        <childnode refid="1133" relation="include">
+        </childnode>
+        <childnode refid="1134" relation="include">
+        </childnode>
+        <childnode refid="1135" relation="include">
+        </childnode>
+      </node>
+      <node id="1135">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1133">
+        <label>FlameRingTower.cpp</label>
+        <link refid="_flame_ring_tower_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_flame_ring_tower" prot="public">FlameRingTower</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>FLAMERINGTOWER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLAMERINGTOWER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Graphics.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Game.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Tower.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_flame_ring_tower" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_flame_ring_tower" kindref="compound">FlameRingTower</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_tower" kindref="compound">Tower</ref>{</highlight></codeline>
+<codeline lineno="10" refid="class_flame_ring_tower_1a426a443ba32beb37f68d919b79c83088" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_tower_1a426a443ba32beb37f68d919b79c83088" kindref="member">_ringVelocity</ref>;</highlight></codeline>
+<codeline lineno="11" refid="class_flame_ring_tower_1adfe46cb7f7baac76ed662c6d5dcc4f74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_tower_1adfe46cb7f7baac76ed662c6d5dcc4f74" kindref="member">_ringSize</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_flame_ring_tower_1a666810b492598d4e77a3b26ab71fcbb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_tower_1a666810b492598d4e77a3b26ab71fcbb6" kindref="member">_ringActualRange</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_flame_ring_tower_1a9de7e32d674577d1b72b05e748ad20d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_tower_1a9de7e32d674577d1b72b05e748ad20d7" kindref="member">_damage</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_flame_ring_tower_1ad7e7182c61ff1d1f4c20a1d87807fd4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_tower_1ad7e7182c61ff1d1f4c20a1d87807fd4c" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_tower_1ad8ebcb202ae5f74f10591fdd1b0b7a0f" kindref="member">FlameRingTower</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_tower_8h_1a515c655d051e131462a497de3df0e8eb" kindref="member">TowerEvent</ref><sp/><ref refid="class_flame_ring_tower_1ac7b603fcbd551c39fd2bb789896fcb92" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_tower_1a7eb91da364c81d4d93892223527ffe69" kindref="member">draw</ref>(sf::RenderWindow*<sp/>window,<sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>point)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_tower" kindref="compound">Tower</ref>*<sp/><ref refid="class_flame_ring_tower_1a86d9b25684eb86180f09fabf43081c94" kindref="member">clone</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>FLAMERINGTOWER_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.h"/>
+  </compounddef>
+</doxygen>

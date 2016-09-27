@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_game_8h" kind="file" language="C++">
+    <compoundname>Game.h</compoundname>
+    <includes local="no">list</includes>
+    <includes local="no">SFML/Graphics.hpp</includes>
+    <includes local="no">SFML/OpenGL.hpp</includes>
+    <includes refid="_tower_manager_8h" local="yes">TowerManager.h</includes>
+    <includes refid="_tower_8h" local="yes">Tower.h</includes>
+    <includes refid="_enemy_8h" local="yes">Enemy.h</includes>
+    <includes refid="_entity_8h" local="yes">Entity.h</includes>
+    <includes refid="_vec_8hpp" local="yes">Vec.hpp</includes>
+    <includedby refid="_enemy_8cpp" local="yes">Enemy.cpp</includedby>
+    <includedby refid="_flame_ring_tower_8h" local="yes">FlameRingTower.h</includedby>
+    <includedby refid="_tower_manager_8cpp" local="yes">TowerManager.cpp</includedby>
+    <includedby refid="_rocket_tower_8h" local="yes">RocketTower.h</includedby>
+    <includedby refid="_rocket_8cpp" local="yes">Rocket.cpp</includedby>
+    <includedby refid="_sniper_tower_8h" local="yes">SniperTower.h</includedby>
+    <includedby refid="_basic_enemy_8cpp" local="yes">BasicEnemy.cpp</includedby>
+    <includedby refid="_soldier_tower_8h" local="yes">SoldierTower.h</includedby>
+    <includedby refid="_bullet_8cpp" local="yes">Bullet.cpp</includedby>
+    <includedby refid="_flame_ring_8cpp" local="yes">FlameRing.cpp</includedby>
+    <includedby refid="_tower_8cpp" local="yes">Tower.cpp</includedby>
+    <includedby refid="_laser_entity_8cpp" local="yes">LaserEntity.cpp</includedby>
+    <includedby refid="_fire_entity_8cpp" local="yes">FireEntity.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <includedby refid="_explosion_entity_8cpp" local="yes">ExplosionEntity.cpp</includedby>
+    <includedby refid="_inmortal_enemy_8cpp" local="yes">InmortalEnemy.cpp</includedby>
+    <includedby refid="_game_8cpp" local="yes">Game.cpp</includedby>
+    <includedby refid="_inhibitor_enemy_8cpp" local="yes">InhibitorEnemy.cpp</includedby>
+    <incdepgraph>
+      <node id="1158">
+        <label>list</label>
+      </node>
+      <node id="1159">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1160">
+        <label>SFML/OpenGL.hpp</label>
+      </node>
+      <node id="1166">
+        <label>cmath</label>
+      </node>
+      <node id="1163">
+        <label>string</label>
+      </node>
+      <node id="1167">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1159" relation="include">
+        </childnode>
+        <childnode refid="1165" relation="include">
+        </childnode>
+      </node>
+      <node id="1165">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1166" relation="include">
+        </childnode>
+      </node>
+      <node id="1161">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="1158" relation="include">
+        </childnode>
+        <childnode refid="1159" relation="include">
+        </childnode>
+        <childnode refid="1162" relation="include">
+        </childnode>
+      </node>
+      <node id="1157">
+        <label>Game.h</label>
+        <link refid="Game.h"/>
+        <childnode refid="1158" relation="include">
+        </childnode>
+        <childnode refid="1159" relation="include">
+        </childnode>
+        <childnode refid="1160" relation="include">
+        </childnode>
+        <childnode refid="1161" relation="include">
+        </childnode>
+        <childnode refid="1164" relation="include">
+        </childnode>
+        <childnode refid="1167" relation="include">
+        </childnode>
+        <childnode refid="1168" relation="include">
+        </childnode>
+        <childnode refid="1165" relation="include">
+        </childnode>
+      </node>
+      <node id="1162">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1163" relation="include">
+        </childnode>
+        <childnode refid="1159" relation="include">
+        </childnode>
+        <childnode refid="1164" relation="include">
+        </childnode>
+      </node>
+      <node id="1168">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1159" relation="include">
+        </childnode>
+      </node>
+      <node id="1164">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1159" relation="include">
+        </childnode>
+        <childnode refid="1165" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1192">
+        <label>Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="1181">
+        <label>SniperTower.cpp</label>
+        <link refid="_sniper_tower_8cpp"/>
+      </node>
+      <node id="1173">
+        <label>BasicTowerManager.cpp</label>
+        <link refid="_basic_tower_manager_8cpp"/>
+      </node>
+      <node id="1171">
+        <label>FlameRingTower.h</label>
+        <link refid="_flame_ring_tower_8h"/>
+        <childnode refid="1172" relation="include">
+        </childnode>
+        <childnode refid="1173" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+      </node>
+      <node id="1174">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1180">
+        <label>SniperTower.h</label>
+        <link refid="_sniper_tower_8h"/>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1181" relation="include">
+        </childnode>
+        <childnode refid="1173" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+      </node>
+      <node id="1191">
+        <label>InmortalEnemy.cpp</label>
+        <link refid="_inmortal_enemy_8cpp"/>
+      </node>
+      <node id="1193">
+        <label>InhibitorEnemy.cpp</label>
+        <link refid="_inhibitor_enemy_8cpp"/>
+      </node>
+      <node id="1176">
+        <label>RocketTower.h</label>
+        <link refid="_rocket_tower_8h"/>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1173" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+      </node>
+      <node id="1184">
+        <label>SoldierTower.cpp</label>
+        <link refid="_soldier_tower_8cpp"/>
+      </node>
+      <node id="1178">
+        <label>RocketTower.cpp</label>
+        <link refid="_rocket_tower_8cpp"/>
+      </node>
+      <node id="1175">
+        <label>TowerManager.cpp</label>
+        <link refid="_tower_manager_8cpp"/>
+      </node>
+      <node id="1170">
+        <label>Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="1172">
+        <label>FlameRingTower.cpp</label>
+        <link refid="_flame_ring_tower_8cpp"/>
+      </node>
+      <node id="1185">
+        <label>Bullet.cpp</label>
+        <link refid="_bullet_8cpp"/>
+      </node>
+      <node id="1169">
+        <label>Game.h</label>
+        <link refid="Game.h"/>
+        <childnode refid="1170" relation="include">
+        </childnode>
+        <childnode refid="1171" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1176" relation="include">
+        </childnode>
+        <childnode refid="1179" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1182" relation="include">
+        </childnode>
+        <childnode refid="1183" relation="include">
+        </childnode>
+        <childnode refid="1185" relation="include">
+        </childnode>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1187" relation="include">
+        </childnode>
+        <childnode refid="1188" relation="include">
+        </childnode>
+        <childnode refid="1189" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1190" relation="include">
+        </childnode>
+        <childnode refid="1191" relation="include">
+        </childnode>
+        <childnode refid="1192" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+      </node>
+      <node id="1189">
+        <label>FireEntity.cpp</label>
+        <link refid="_fire_entity_8cpp"/>
+      </node>
+      <node id="1187">
+        <label>Tower.cpp</label>
+        <link refid="_tower_8cpp"/>
+      </node>
+      <node id="1190">
+        <label>ExplosionEntity.cpp</label>
+        <link refid="_explosion_entity_8cpp"/>
+      </node>
+      <node id="1188">
+        <label>LaserEntity.cpp</label>
+        <link refid="_laser_entity_8cpp"/>
+      </node>
+      <node id="1183">
+        <label>SoldierTower.h</label>
+        <link refid="_soldier_tower_8h"/>
+        <childnode refid="1173" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1184" relation="include">
+        </childnode>
+      </node>
+      <node id="1179">
+        <label>Rocket.cpp</label>
+        <link refid="_rocket_8cpp"/>
+      </node>
+      <node id="1186">
+        <label>FlameRing.cpp</label>
+        <link refid="_flame_ring_8cpp"/>
+      </node>
+      <node id="1182">
+        <label>BasicEnemy.cpp</label>
+        <link refid="_basic_enemy_8cpp"/>
+      </node>
+      <node id="1177">
+        <label>BasicTowerManager.h</label>
+        <link refid="_basic_tower_manager_8h"/>
+        <childnode refid="1173" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_game">Game</innernamespace>
+    <innernamespace refid="namespace_game_1_1_stats">Game::Stats</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_game_8h_1a598a3330b3c21701223ee0ca14316eca" prot="public" static="no">
+        <name>PI</name>
+        <initializer>3.14159265358979323846</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="4" column="9" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GAME_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAME_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PI<sp/>3.14159265358979323846</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Graphics.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/OpenGL.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_tower_manager_8h" kindref="compound">TowerManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_tower_8h" kindref="compound">Tower.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_enemy_8h" kindref="compound">Enemy.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_entity_8h" kindref="compound">Entity.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vec_8hpp" kindref="compound">Vec.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="namespace_game" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_game" kindref="compound">Game</ref>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespace_game_1_1_stats" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Stats{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1_1_stats_1a6db33dedd8ef995c9187906dc6abc664" kindref="member">enemiesKilled</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3" kindref="member">TileType</ref>{</highlight></codeline>
+<codeline lineno="25" refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a05554b8c93c03fab4a2469132ddbc92c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a05554b8c93c03fab4a2469132ddbc92c" kindref="member">EmptyTile</ref>,</highlight></codeline>
+<codeline lineno="26" refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a238e31f792ea0a53d8182088b3179185" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a238e31f792ea0a53d8182088b3179185" kindref="member">TowerTile</ref>,</highlight></codeline>
+<codeline lineno="27" refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a741af12eaf71b7dec93130c56ad9f86a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a741af12eaf71b7dec93130c56ad9f86a" kindref="member">RoadTile</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="class_tower_manager" kindref="compound">TowerManager</ref>*<sp/><ref refid="namespace_game_1a719e3885709c3dc073fd69bcf0d3d4ac" kindref="member">towerManager</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::list&lt;Tower*&gt;<sp/><ref refid="namespace_game_1acaee8a857e108ef391b58ba15f3897c9" kindref="member">towers</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::list&lt;Enemy*&gt;<sp/><ref refid="namespace_game_1a567bf723c1182e15ffac0548a9b01a00" kindref="member">enemies</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::list&lt;Entity*&gt;<sp/><ref refid="namespace_game_1a19468d252754d2b9efe64258e7e3ccba" kindref="member">entities</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::vector&lt;Vec2i&gt;<sp/><ref refid="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" kindref="member">enemiesRoute</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::vector&lt;<sp/>std::vector&lt;TileType&gt;<sp/>&gt;<sp/><ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">map</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">pixelsPerSquare</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a57b7bb4913757b7f74496bcef9a5066a" kindref="member">life</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a8c9e80bd9cfbe0ca529de0728ae63b7b" kindref="member">money</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1aff477320e2ca589ce1eb88d553763302" kindref="member">tickCount</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" kindref="member">velocity</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="class_tower" kindref="compound">Tower</ref>*<sp/><ref refid="namespace_game_1ab5f09ff25c1bf41aa00e19951062349e" kindref="member">selectedTower</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a83840990333d3cc33e50a8d944558125" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1ac8fed37d2d116b380d75962218826b1b" kindref="member">draw</ref>(sf::RenderWindow*<sp/>window);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower" kindref="compound">Tower</ref>*<sp/><ref refid="namespace_game_1a3d96c03e83451dab8603f1e791d22fd6" kindref="member">getTower</ref>(<ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/>position);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a45c3585e317f9cb5dfae27f54f1f019d" kindref="member">putTower</ref>(<ref refid="class_tower" kindref="compound">Tower</ref>*<sp/>tower);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;Tower*&gt;::iterator<sp/><ref refid="namespace_game_1a549aa0e7de912a178bb49190fab5a7f6" kindref="member">removeTower</ref>(std::list&lt;Tower*&gt;::iterator<sp/>tower);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower" kindref="compound">Tower</ref>*<sp/><ref refid="namespace_game_1a549aa0e7de912a178bb49190fab5a7f6" kindref="member">removeTower</ref>(<ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/>position);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1af2e314759bbe1f96478d79fda41d1c40" kindref="member">isInRange</ref>(<ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>position,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>minRange,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>maxRange,<sp/><ref refid="class_enemy" kindref="compound">Enemy</ref>*<sp/>enemy);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;Enemy*&gt;::iterator<sp/><ref refid="namespace_game_1a1d9c21b5df867aeaf1ac00fc77a577b7" kindref="member">kill</ref>(std::list&lt;Enemy*&gt;::iterator<sp/>enemy);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;Enemy*&gt;::iterator<sp/><ref refid="namespace_game_1a06280777aa0c70527c6dfce295cc4220" kindref="member">findTarget</ref>(<ref refid="class_tower" kindref="compound">Tower</ref>*<sp/>tower);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;<sp/>std::list&lt;Enemy*&gt;::iterator<sp/>&gt;<sp/><ref refid="namespace_game_1a2f4d39b84db31e6af593f4f4e58fab2d" kindref="member">findEnemiesInRange</ref>(<ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>position,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>minRange,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>maxRange);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1ae0de9897a96ba2707f9648a563521c7d" kindref="member">exists</ref>(<ref refid="class_enemy" kindref="compound">Enemy</ref>*<sp/>enemy);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1ae0de9897a96ba2707f9648a563521c7d" kindref="member">exists</ref>(<ref refid="class_tower" kindref="compound">Tower</ref>*<sp/>tower);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1ae0de9897a96ba2707f9648a563521c7d" kindref="member">exists</ref>(<ref refid="class_entity" kindref="compound">Entity</ref>*<sp/>entities);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a5ce72058030c0173b9f642f727fc3ce1" kindref="member">clearTowers</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1af1500b3fbfc3bac86161440e3cc5703b" kindref="member">clearEntities</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a29cc92564c4cf32c7fd0c06d6c65898f" kindref="member">clearEnemies</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a16cce46904b2800511356b0e5e45b05a" kindref="member">killEnemies</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a71544153aaa8842c582ec15166796d45" kindref="member">getDistance</ref>(<ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/>towerPosition,<sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>position);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/><ref refid="namespace_game_1a3a3a6fcb74f541d2dc4be77b0be28b71" kindref="member">getRealPosition</ref>(<ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/>towerPosition);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GAME_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,655 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="main_8cpp" kind="file" language="C++">
+    <compoundname>main.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">map</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">ctime</includes>
+    <includes local="no">thread</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">SFML/Graphics.hpp</includes>
+    <includes local="no">SFML/OpenGL.hpp</includes>
+    <includes refid="_game_8h" local="yes">Game.h</includes>
+    <includes refid="_resources_8h" local="yes">Resources.h</includes>
+    <includes refid="_map_manager_8h" local="yes">MapManager.h</includes>
+    <includes refid="_basic_tower_manager_8h" local="yes">BasicTowerManager.h</includes>
+    <includes refid="_tooltip_8h" local="yes">Tooltip.h</includes>
+    <includes refid="_soldier_tower_8h" local="yes">towers/SoldierTower.h</includes>
+    <includes refid="_rocket_tower_8h" local="yes">towers/RocketTower.h</includes>
+    <includes refid="_sniper_tower_8h" local="yes">towers/SniperTower.h</includes>
+    <includes refid="_flame_ring_tower_8h" local="yes">towers/FlameRingTower.h</includes>
+    <incdepgraph>
+      <node id="1287">
+        <label>list</label>
+      </node>
+      <node id="1284">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1307">
+        <label>towers/FlameRingTower.h</label>
+        <link refid="_flame_ring_tower_8h"/>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1286" relation="include">
+        </childnode>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1277">
+        <label>main.cpp</label>
+        <link refid="main.cpp"/>
+        <childnode refid="1278" relation="include">
+        </childnode>
+        <childnode refid="1279" relation="include">
+        </childnode>
+        <childnode refid="1280" relation="include">
+        </childnode>
+        <childnode refid="1281" relation="include">
+        </childnode>
+        <childnode refid="1282" relation="include">
+        </childnode>
+        <childnode refid="1283" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1285" relation="include">
+        </childnode>
+        <childnode refid="1286" relation="include">
+        </childnode>
+        <childnode refid="1295" relation="include">
+        </childnode>
+        <childnode refid="1296" relation="include">
+        </childnode>
+        <childnode refid="1299" relation="include">
+        </childnode>
+        <childnode refid="1304" relation="include">
+        </childnode>
+        <childnode refid="1305" relation="include">
+        </childnode>
+        <childnode refid="1300" relation="include">
+        </childnode>
+        <childnode refid="1302" relation="include">
+        </childnode>
+        <childnode refid="1307" relation="include">
+        </childnode>
+      </node>
+      <node id="1302">
+        <label>SniperTower.h</label>
+        <link refid="_sniper_tower_8h"/>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+        <childnode refid="1303" relation="include">
+        </childnode>
+        <childnode refid="1286" relation="include">
+        </childnode>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1285">
+        <label>SFML/OpenGL.hpp</label>
+      </node>
+      <node id="1300">
+        <label>RocketTower.h</label>
+        <link refid="_rocket_tower_8h"/>
+        <childnode refid="1287" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1286" relation="include">
+        </childnode>
+        <childnode refid="1291" relation="include">
+        </childnode>
+        <childnode refid="1301" relation="include">
+        </childnode>
+      </node>
+      <node id="1280">
+        <label>cmath</label>
+      </node>
+      <node id="1296">
+        <label>MapManager.h</label>
+        <link refid="_map_manager_8h"/>
+        <childnode refid="1297" relation="include">
+        </childnode>
+        <childnode refid="1298" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+      </node>
+      <node id="1290">
+        <label>string</label>
+      </node>
+      <node id="1279">
+        <label>map</label>
+      </node>
+      <node id="1293">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+      </node>
+      <node id="1298">
+        <label>fstream</label>
+      </node>
+      <node id="1292">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1280" relation="include">
+        </childnode>
+      </node>
+      <node id="1306">
+        <label>entities/Bullet.h</label>
+        <link refid="_bullet_8h"/>
+        <childnode refid="1294" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+        <childnode refid="1293" relation="include">
+        </childnode>
+      </node>
+      <node id="1288">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="1287" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1289" relation="include">
+        </childnode>
+      </node>
+      <node id="1281">
+        <label>ctime</label>
+      </node>
+      <node id="1286">
+        <label>Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="1287" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1285" relation="include">
+        </childnode>
+        <childnode refid="1288" relation="include">
+        </childnode>
+        <childnode refid="1291" relation="include">
+        </childnode>
+        <childnode refid="1293" relation="include">
+        </childnode>
+        <childnode refid="1294" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+      </node>
+      <node id="1297">
+        <label>vector</label>
+      </node>
+      <node id="1304">
+        <label>Tooltip.h</label>
+        <link refid="_tooltip_8h"/>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+      </node>
+      <node id="1289">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1290" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1291" relation="include">
+        </childnode>
+      </node>
+      <node id="1305">
+        <label>towers/SoldierTower.h</label>
+        <link refid="_soldier_tower_8h"/>
+        <childnode refid="1287" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1286" relation="include">
+        </childnode>
+        <childnode refid="1291" relation="include">
+        </childnode>
+        <childnode refid="1306" relation="include">
+        </childnode>
+      </node>
+      <node id="1278">
+        <label>iostream</label>
+      </node>
+      <node id="1283">
+        <label>chrono</label>
+      </node>
+      <node id="1282">
+        <label>thread</label>
+      </node>
+      <node id="1299">
+        <label>BasicTowerManager.h</label>
+        <link refid="_basic_tower_manager_8h"/>
+        <childnode refid="1288" relation="include">
+        </childnode>
+        <childnode refid="1300" relation="include">
+        </childnode>
+        <childnode refid="1302" relation="include">
+        </childnode>
+      </node>
+      <node id="1301">
+        <label>entities/Rocket.h</label>
+        <link refid="_rocket_8h"/>
+        <childnode refid="1294" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+        <childnode refid="1293" relation="include">
+        </childnode>
+      </node>
+      <node id="1294">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1284" relation="include">
+        </childnode>
+      </node>
+      <node id="1291">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1284" relation="include">
+        </childnode>
+        <childnode refid="1292" relation="include">
+        </childnode>
+      </node>
+      <node id="1303">
+        <label>../sprite.h</label>
+        <link refid="_sprite_8h"/>
+        <childnode refid="1284" relation="include">
+        </childnode>
+      </node>
+      <node id="1295">
+        <label>Resources.h</label>
+        <link refid="_resources_8h"/>
+        <childnode refid="1279" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1a5901170f346e94ad9e3f88c0c7275522" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initializeGame</definition>
+        <argsstring>()</argsstring>
+        <name>initializeGame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Always after initialize <ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref> </para>        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/main.cpp" line="24" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/main.cpp" bodystart="24" bodyend="71"/>
+        <references refid="map_creator_2main_8cpp_1ac2a3b52910dd7bd7d24ab3b653c59639" compoundref="map_creator_2main_8cpp" startline="14">tileMap</references>
+        <references refid="namespace_map_manager_1ac303bfa11db51676fd16be01d0f9383b" compoundref="_map_manager_8cpp" startline="43" endline="82">MapManager::load</references>
+        <references refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" compoundref="_game_8cpp" startline="31">Game::pixelsPerSquare</references>
+        <references refid="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" compoundref="_game_8cpp" startline="29">Game::enemiesRoute</references>
+        <references refid="namespace_game_1a719e3885709c3dc073fd69bcf0d3d4ac" compoundref="_game_8cpp" startline="24">Game::towerManager</references>
+        <references refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" compoundref="_game_8cpp" startline="30">Game::map</references>
+        <references refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a05554b8c93c03fab4a2469132ddbc92c" compoundref="_game_8h" startline="25">Game::EmptyTile</references>
+        <references refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a741af12eaf71b7dec93130c56ad9f86a" compoundref="_game_8h" startline="27">Game::RoadTile</references>
+        <references refid="class_tower_1ac95d4e39ad1e1d7aca4dd43114bfb35b" compoundref="_tower_8h" startline="55" endline="55">Tower::setPosition</references>
+        <references refid="class_tower_1a0e6f188ea4541160da9418cbab630c44" compoundref="_tower_8h" startline="57" endline="57">Tower::setPriority</references>
+        <references refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a72f6cdd6b6b9a86c93a38bc8ecc8025a" compoundref="_tower_8h" startline="18">Near</references>
+        <references refid="namespace_game_1a45c3585e317f9cb5dfae27f54f1f019d" compoundref="_game_8cpp" startline="214" endline="224">Game::putTower</references>
+        <references refid="_tower_8h_1a315655b1bb5848c063491adffde62b15ac2a3856002491cf465725e8d1108f796" compoundref="_tower_8h" startline="17">Last</references>
+        <references refid="namespace_game_1a57b7bb4913757b7f74496bcef9a5066a" compoundref="_game_8cpp" startline="33">Game::life</references>
+        <references refid="namespace_game_1a8c9e80bd9cfbe0ca529de0728ae63b7b" compoundref="_game_8cpp" startline="34">Game::money</references>
+        <references refid="namespace_game_1aff477320e2ca589ce1eb88d553763302" compoundref="_game_8cpp" startline="36">Game::tickCount</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a3f1f2de8ad16ee00d98289cf4270761f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void freeGame</definition>
+        <argsstring>()</argsstring>
+        <name>freeGame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/main.cpp" line="73" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/main.cpp" bodystart="73" bodyend="79"/>
+        <references refid="namespace_game_1a719e3885709c3dc073fd69bcf0d3d4ac" compoundref="_game_8cpp" startline="24">Game::towerManager</references>
+        <references refid="namespace_game_1a29cc92564c4cf32c7fd0c06d6c65898f" compoundref="_game_8cpp" startline="434" endline="439">Game::clearEnemies</references>
+        <references refid="namespace_game_1af1500b3fbfc3bac86161440e3cc5703b" compoundref="_game_8cpp" startline="427" endline="432">Game::clearEntities</references>
+        <references refid="namespace_game_1a5ce72058030c0173b9f642f727fc3ce1" compoundref="_game_8cpp" startline="420" endline="425">Game::clearTowers</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1ab8f3da104f8cd64675c808a1d882a61a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setTooltip</definition>
+        <argsstring>(Tooltip *&amp;tooltip, Vec2i mouse, TowerType *tt)</argsstring>
+        <name>setTooltip</name>
+        <param>
+          <type><ref refid="class_tooltip" kindref="compound">Tooltip</ref> *&amp;</type>
+          <declname>tooltip</declname>
+        </param>
+        <param>
+          <type><ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref></type>
+          <declname>mouse</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_tower_type" kindref="compound">TowerType</ref> *</type>
+          <declname>tt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/main.cpp" line="81" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/main.cpp" bodystart="81" bodyend="92"/>
+        <references refid="class_tooltip_1ad5886a8a5359d90fc580b95cc603e1d3" compoundref="_tooltip_8cpp" startline="30" endline="32">Tooltip::setPoint</references>
+        <references refid="class_tooltip_1ac18509cf67b5f48ed404fa68f64c0050" compoundref="_tooltip_8cpp" startline="22" endline="24">Tooltip::setTitle</references>
+        <references refid="struct_tower_type_1a24488ed3932873cb5be953fdaa3c733e" compoundref="_tower_type_8h" startline="13">TowerType::name</references>
+        <references refid="class_tooltip_1a555900703700b27097ff0f456be8bc7f" compoundref="_tooltip_8cpp" startline="26" endline="28">Tooltip::setBody</references>
+        <references refid="struct_tower_type_1ab6e4e62dc59a798beaa0028a67dd6571" compoundref="_tower_type_8h" startline="14">TowerType::description</references>
+        <references refid="struct_tower_type_1a298318e6f9d11a63daad82f48a87a205" compoundref="_tower_type_8h" startline="15">TowerType::cost</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/main.cpp" line="94" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/main.cpp" bodystart="94" bodyend="244"/>
+        <references refid="main_8cpp_1a5901170f346e94ad9e3f88c0c7275522" compoundref="main_8cpp" startline="24" endline="71">initializeGame</references>
+        <references refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" compoundref="_game_8cpp" startline="30">Game::map</references>
+        <references refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a05554b8c93c03fab4a2469132ddbc92c" compoundref="_game_8h" startline="25">Game::EmptyTile</references>
+        <references refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" compoundref="_game_8cpp" startline="31">Game::pixelsPerSquare</references>
+        <references refid="namespace_game_1a719e3885709c3dc073fd69bcf0d3d4ac" compoundref="_game_8cpp" startline="24">Game::towerManager</references>
+        <references refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::x</references>
+        <references refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::y</references>
+        <references refid="namespace_game_1a29cc92564c4cf32c7fd0c06d6c65898f" compoundref="_game_8cpp" startline="434" endline="439">Game::clearEnemies</references>
+        <references refid="namespace_game_1af1500b3fbfc3bac86161440e3cc5703b" compoundref="_game_8cpp" startline="427" endline="432">Game::clearEntities</references>
+        <references refid="namespace_game_1a5ce72058030c0173b9f642f727fc3ce1" compoundref="_game_8cpp" startline="420" endline="425">Game::clearTowers</references>
+        <references refid="namespace_game_1a57b7bb4913757b7f74496bcef9a5066a" compoundref="_game_8cpp" startline="33">Game::life</references>
+        <references refid="namespace_game_1a8c9e80bd9cfbe0ca529de0728ae63b7b" compoundref="_game_8cpp" startline="34">Game::money</references>
+        <references refid="namespace_game_1aff477320e2ca589ce1eb88d553763302" compoundref="_game_8cpp" startline="36">Game::tickCount</references>
+        <references refid="struct_tower_type_1a298318e6f9d11a63daad82f48a87a205" compoundref="_tower_type_8h" startline="15">TowerType::cost</references>
+        <references refid="struct_tower_type_1a137965897f2c4ec39a260f5561d1e70a" compoundref="_tower_type_8h" startline="12">TowerType::model</references>
+        <references refid="class_tower_1a1d444a99e396e60c804512ecd61dd25b">Tower::clone</references>
+        <references refid="class_tower_1ac95d4e39ad1e1d7aca4dd43114bfb35b" compoundref="_tower_8h" startline="55" endline="55">Tower::setPosition</references>
+        <references refid="namespace_game_1a45c3585e317f9cb5dfae27f54f1f019d" compoundref="_game_8cpp" startline="214" endline="224">Game::putTower</references>
+        <references refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a238e31f792ea0a53d8182088b3179185" compoundref="_game_8h" startline="26">Game::TowerTile</references>
+        <references refid="namespace_game_1ab5f09ff25c1bf41aa00e19951062349e" compoundref="_game_8cpp" startline="39">Game::selectedTower</references>
+        <references refid="namespace_game_1a3d96c03e83451dab8603f1e791d22fd6" compoundref="_game_8cpp" startline="207" endline="212">Game::getTower</references>
+        <references refid="namespace_game_1a549aa0e7de912a178bb49190fab5a7f6" compoundref="_game_8cpp" startline="226" endline="233">Game::removeTower</references>
+        <references refid="class_tower_manager_1a8474b8e86cf6e3082881d002ea26e012" compoundref="_tower_manager_8cpp" startline="29" endline="35">TowerManager::getTowerCost</references>
+        <references refid="class_tower_1abf534cfa4be4208f490316de84a363c6" compoundref="_tower_8h" startline="46" endline="46">Tower::getId</references>
+        <references refid="class_tower_manager_1a1831e2bb3e53169abdaa7760857cddd6" compoundref="_tower_manager_8cpp" startline="37" endline="92">TowerManager::parseEvent</references>
+        <references refid="main_8cpp_1ab8f3da104f8cd64675c808a1d882a61a" compoundref="main_8cpp" startline="81" endline="92">setTooltip</references>
+        <references refid="class_tower_manager_1addf03520e1fe692d2a547374e58e5711" compoundref="_tower_manager_8cpp" startline="99" endline="133">TowerManager::drawTowersPanel</references>
+        <references refid="namespace_game_1ac8fed37d2d116b380d75962218826b1b" compoundref="_game_8cpp" startline="88" endline="202">Game::draw</references>
+        <references refid="class_tower_1a1a810f6750616a02e665eb41db5dff5f" compoundref="_tower_8cpp" startline="7" endline="9">Tower::draw</references>
+        <references refid="class_tower_1a6233d4726637efbe811fa3e471b17763" compoundref="_tower_8cpp" startline="11" endline="13">Tower::drawOver</references>
+        <references refid="class_tooltip_1ac00ca1ff15192af7ca5de01bd51b8579" compoundref="_tooltip_8cpp" startline="34" endline="69">Tooltip::draw</references>
+        <references refid="namespace_game_1a83840990333d3cc33e50a8d944558125" compoundref="_game_8cpp" startline="41" endline="86">Game::tick</references>
+        <references refid="main_8cpp_1a3f1f2de8ad16ee00d98289cf4270761f" compoundref="main_8cpp" startline="73" endline="79">freeGame</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Graphics.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/OpenGL.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_8h" kindref="compound">Game.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_resources_8h" kindref="compound">Resources.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_map_manager_8h" kindref="compound">MapManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_basic_tower_manager_8h" kindref="compound">BasicTowerManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_tooltip_8h" kindref="compound">Tooltip.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_soldier_tower_8h" kindref="compound">towers/SoldierTower.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_rocket_tower_8h" kindref="compound">towers/RocketTower.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sniper_tower_8h" kindref="compound">towers/SniperTower.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_flame_ring_tower_8h" kindref="compound">towers/FlameRingTower.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="main_8cpp_1a5901170f346e94ad9e3f88c0c7275522" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a5901170f346e94ad9e3f88c0c7275522" kindref="member">initializeGame</ref>(){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;<sp/>vector&lt;bool&gt;<sp/>&gt;<sp/><ref refid="map_creator_2main_8cpp_1ac2a3b52910dd7bd7d24ab3b653c59639" kindref="member">tileMap</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/><ref refid="namespace_map_manager_1ac303bfa11db51676fd16be01d0f9383b" kindref="member">MapManager::load</ref>(tileMap,<sp/><ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>,<sp/><ref refid="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" kindref="member">Game::enemiesRoute</ref>,<sp/></highlight><highlight class="stringliteral">&quot;map.tdm&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a719e3885709c3dc073fd69bcf0d3d4ac" kindref="member">Game::towerManager</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_basic_tower_manager" kindref="compound">BasicTowerManager</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(n==0){</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">Game::map</ref>.resize(tileMap.size(),<sp/>vector&lt;Game::TileType&gt;(tileMap[0].size(),<sp/><ref refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a05554b8c93c03fab4a2469132ddbc92c" kindref="member">Game::TileType::EmptyTile</ref>));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;tileMap.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;tileMap[i].size();<sp/>j++)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!tileMap[i][j])</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">Game::map</ref>[i][j]<sp/>=<sp/><ref refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a741af12eaf71b7dec93130c56ad9f86a" kindref="member">Game::TileType::RoadTile</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>loading<sp/>map<sp/>\&quot;map.tdm\&quot;.<sp/>Error:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>n<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Loading<sp/>default<sp/>map.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref><sp/>=<sp/>50;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" kindref="member">Game::enemiesRoute</ref>.push_back(<ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref>(0,25));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" kindref="member">Game::enemiesRoute</ref>.push_back(<ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref>(475,25));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" kindref="member">Game::enemiesRoute</ref>.push_back(<ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref>(475,500));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;10;<sp/>i++)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">Game::map</ref>.push_back(vector&lt;Game::TileType&gt;(10,<sp/><ref refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a05554b8c93c03fab4a2469132ddbc92c" kindref="member">Game::TileType::EmptyTile</ref>));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;10;<sp/>i++){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">Game::map</ref>[i][0]<sp/>=<sp/><ref refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a741af12eaf71b7dec93130c56ad9f86a" kindref="member">Game::TileType::RoadTile</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">Game::map</ref>[9][i]<sp/>=<sp/><ref refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a741af12eaf71b7dec93130c56ad9f86a" kindref="member">Game::TileType::RoadTile</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tower" kindref="compound">Tower</ref>*<sp/>t<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_sniper_tower" kindref="compound">SniperTower</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t-&gt;<ref refid="class_tower_1ac95d4e39ad1e1d7aca4dd43114bfb35b" kindref="member">setPosition</ref>(<ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref>(3,3));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t-&gt;<ref refid="class_tower_1a0e6f188ea4541160da9418cbab630c44" kindref="member">setPriority</ref>(<ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a72f6cdd6b6b9a86c93a38bc8ecc8025a" kindref="member">Near</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="namespace_game_1a45c3585e317f9cb5dfae27f54f1f019d" kindref="member">Game::putTower</ref>(t))</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>t;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_sniper_tower" kindref="compound">SniperTower</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t-&gt;<ref refid="class_tower_1ac95d4e39ad1e1d7aca4dd43114bfb35b" kindref="member">setPosition</ref>(<ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref>(4,5));</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t-&gt;<ref refid="class_tower_1a0e6f188ea4541160da9418cbab630c44" kindref="member">setPriority</ref>(<ref refid="_tower_8h_1a315655b1bb5848c063491adffde62b15ac2a3856002491cf465725e8d1108f796" kindref="member">Last</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="namespace_game_1a45c3585e317f9cb5dfae27f54f1f019d" kindref="member">Game::putTower</ref>(t))</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>t;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_sniper_tower" kindref="compound">SniperTower</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t-&gt;<ref refid="class_tower_1ac95d4e39ad1e1d7aca4dd43114bfb35b" kindref="member">setPosition</ref>(<ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref>(5,4));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="namespace_game_1a45c3585e317f9cb5dfae27f54f1f019d" kindref="member">Game::putTower</ref>(t))</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>t;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a57b7bb4913757b7f74496bcef9a5066a" kindref="member">Game::life</ref><sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a8c9e80bd9cfbe0ca529de0728ae63b7b" kindref="member">Game::money</ref><sp/>=<sp/>1500;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_game_1aff477320e2ca589ce1eb88d553763302" kindref="member">Game::tickCount</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="main_8cpp_1a3f1f2de8ad16ee00d98289cf4270761f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a3f1f2de8ad16ee00d98289cf4270761f" kindref="member">freeGame</ref>(){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_game_1a719e3885709c3dc073fd69bcf0d3d4ac" kindref="member">Game::towerManager</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="namespace_game_1a719e3885709c3dc073fd69bcf0d3d4ac" kindref="member">Game::towerManager</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a29cc92564c4cf32c7fd0c06d6c65898f" kindref="member">Game::clearEnemies</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_game_1af1500b3fbfc3bac86161440e3cc5703b" kindref="member">Game::clearEntities</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a5ce72058030c0173b9f642f727fc3ce1" kindref="member">Game::clearTowers</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="main_8cpp_1ab8f3da104f8cd64675c808a1d882a61a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ab8f3da104f8cd64675c808a1d882a61a" kindref="member">setTooltip</ref>(<ref refid="class_tooltip" kindref="compound">Tooltip</ref>*&amp;<sp/>tooltip,<sp/><ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/>mouse,<sp/><ref refid="struct_tower_type" kindref="compound">TowerType</ref>*<sp/>tt){</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tt!=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tooltip==</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tooltip<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_tooltip" kindref="compound">Tooltip</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tooltip-&gt;<ref refid="class_tooltip_1ad5886a8a5359d90fc580b95cc603e1d3" kindref="member">setPoint</ref>(mouse);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tooltip-&gt;<ref refid="class_tooltip_1ac18509cf67b5f48ed404fa68f64c0050" kindref="member">setTitle</ref>(tt-&gt;<ref refid="struct_tower_type_1a24488ed3932873cb5be953fdaa3c733e" kindref="member">name</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tooltip-&gt;<ref refid="class_tooltip_1a555900703700b27097ff0f456be8bc7f" kindref="member">setBody</ref>(tt-&gt;<ref refid="struct_tower_type_1ab6e4e62dc59a798beaa0028a67dd6571" kindref="member">description</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n\nCost:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>to_string(tt-&gt;<ref refid="struct_tower_type_1a298318e6f9d11a63daad82f48a87a205" kindref="member">cost</ref>));</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tooltip!=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>tooltip;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tooltip<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>(){</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>srand(time(0));</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>map&lt;sf::Keyboard::Key,<sp/>bool&gt;<sp/>keys;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>running<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>sf::RenderWindow<sp/>window;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/>mouse;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a5901170f346e94ad9e3f88c0c7275522" kindref="member">initializeGame</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">Game::map</ref>.size()==0)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">Game::map</ref>.push_back(vector&lt;Game::TileType&gt;(1,<sp/><ref refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a05554b8c93c03fab4a2469132ddbc92c" kindref="member">Game::TileType::EmptyTile</ref>));</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>sf::IntRect<sp/>towersPanel(sf::Vector2i(<ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">Game::map</ref>.size()*<ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>,100),</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a719e3885709c3dc073fd69bcf0d3d4ac" kindref="member">Game::towerManager</ref>-&gt;getDrawRectSize()),</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>upgradesPanel(0,<ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">Game::map</ref>[0].size()*<ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>towersPanel.left+towersPanel.width,200);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>window.create(sf::VideoMode(upgradesPanel.left+upgradesPanel.width,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>upgradesPanel.top+upgradesPanel.height),<sp/></highlight><highlight class="stringliteral">&quot;Tower<sp/>Defense&quot;</highlight><highlight class="normal">,<sp/>sf::Style::Titlebar|sf::Style::Close);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>window.setFramerateLimit(60);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>glViewport(0,<sp/>0,<sp/>window.getSize().x,<sp/>window.getSize().y);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>glOrtho(0,window.getSize().x,<sp/>window.getSize().y,0,<sp/>0,1);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnable<sp/>(GL_BLEND);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>glBlendFunc<sp/>(GL_SRC_ALPHA,<sp/>GL_ONE_MINUS_SRC_ALPHA);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>paused<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tooltip" kindref="compound">Tooltip</ref>*<sp/>tooltip<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_tower_type" kindref="compound">TowerType</ref>*<sp/>placingTower<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(running<sp/>&amp;&amp;<sp/>window.isOpen()){</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::Event<sp/>ev;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(window.pollEvent(ev)){</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(ev.type){</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sf::Event::Closed:</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>running<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sf::Event::MouseMoved:</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouse.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref><sp/>=<sp/>ev.mouseMove.x;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mouse.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref><sp/>=<sp/>ev.mouseMove.y;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sf::Event::KeyPressed:</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keys[ev.key.code]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.key.code<sp/>==<sp/>sf::Keyboard::Space){</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>paused<sp/>=<sp/>!paused;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.key.code<sp/>==<sp/>sf::Keyboard::Return){</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a29cc92564c4cf32c7fd0c06d6c65898f" kindref="member">Game::clearEnemies</ref>();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1af1500b3fbfc3bac86161440e3cc5703b" kindref="member">Game::clearEntities</ref>();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a5ce72058030c0173b9f642f727fc3ce1" kindref="member">Game::clearTowers</ref>();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a57b7bb4913757b7f74496bcef9a5066a" kindref="member">Game::life</ref><sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a8c9e80bd9cfbe0ca529de0728ae63b7b" kindref="member">Game::money</ref><sp/>=<sp/>1500;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1aff477320e2ca589ce1eb88d553763302" kindref="member">Game::tickCount</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sf::Event::KeyReleased:</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keys[ev.key.code]<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>sf::Event::MouseButtonPressed:</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetFocus(window.getSystemHandle());</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.mouseButton.button<sp/>==<sp/>sf::Mouse::Left){</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/>p<sp/>=<sp/><ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref>(mouse.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>,mouse.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>)/<ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">Game::map</ref>.size()&gt;p.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref><sp/>&amp;&amp;<sp/>p.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>&gt;=0</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/><ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">Game::map</ref>[p.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>].size()&gt;p.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref><sp/>&amp;&amp;<sp/>p.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>&gt;=0){</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mustDeselect<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">Game::map</ref>[p.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>][p.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>]<sp/>==<sp/><ref refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a05554b8c93c03fab4a2469132ddbc92c" kindref="member">Game::TileType::EmptyTile</ref>){</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(placingTower<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/><ref refid="namespace_game_1a8c9e80bd9cfbe0ca529de0728ae63b7b" kindref="member">Game::money</ref><sp/>&gt;=<sp/>placingTower-&gt;<ref refid="struct_tower_type_1a298318e6f9d11a63daad82f48a87a205" kindref="member">cost</ref>){</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a8c9e80bd9cfbe0ca529de0728ae63b7b" kindref="member">Game::money</ref><sp/>-=<sp/>placingTower-&gt;<ref refid="struct_tower_type_1a298318e6f9d11a63daad82f48a87a205" kindref="member">cost</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tower" kindref="compound">Tower</ref>*<sp/>t<sp/>=<sp/>placingTower-&gt;<ref refid="struct_tower_type_1a137965897f2c4ec39a260f5561d1e70a" kindref="member">model</ref>-&gt;<ref refid="class_tower_1a1d444a99e396e60c804512ecd61dd25b" kindref="member">clone</ref>();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t-&gt;<ref refid="class_tower_1ac95d4e39ad1e1d7aca4dd43114bfb35b" kindref="member">setPosition</ref>(p);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="namespace_game_1a45c3585e317f9cb5dfae27f54f1f019d" kindref="member">Game::putTower</ref>(t))</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>t;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mustDeselect<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">Game::map</ref>[p.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>][p.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>]<sp/>==<sp/><ref refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a238e31f792ea0a53d8182088b3179185" kindref="member">Game::TileType::TowerTile</ref>){</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1ab5f09ff25c1bf41aa00e19951062349e" kindref="member">Game::selectedTower</ref><sp/>=<sp/><ref refid="namespace_game_1a3d96c03e83451dab8603f1e791d22fd6" kindref="member">Game::getTower</ref>(<ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref>(mouse.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>,mouse.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>)/<ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mustDeselect<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(mustDeselect)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1ab5f09ff25c1bf41aa00e19951062349e" kindref="member">Game::selectedTower</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>placingTower<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.mouseButton.button<sp/>==<sp/>sf::Mouse::Right){</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2i</ref><sp/>p<sp/>=<sp/><ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref>(mouse.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>,mouse.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>)/<ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" kindref="member">Game::map</ref>[p.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>][p.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>]<sp/>==<sp/><ref refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a238e31f792ea0a53d8182088b3179185" kindref="member">Game::TileType::TowerTile</ref>){</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tower" kindref="compound">Tower</ref>*<sp/>t<sp/>=<sp/><ref refid="namespace_game_1a549aa0e7de912a178bb49190fab5a7f6" kindref="member">Game::removeTower</ref>(p);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(t==</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ERROR<sp/>DELETING<sp/>TOWER&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a8c9e80bd9cfbe0ca529de0728ae63b7b" kindref="member">Game::money</ref><sp/>+=<sp/><ref refid="namespace_game_1a719e3885709c3dc073fd69bcf0d3d4ac" kindref="member">Game::towerManager</ref>-&gt;<ref refid="class_tower_manager_1a8474b8e86cf6e3082881d002ea26e012" kindref="member">getTowerCost</ref>(t-&gt;<ref refid="class_tower_1abf534cfa4be4208f490316de84a363c6" kindref="member">getId</ref>());</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>t;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_tower_type" kindref="compound">TowerType</ref>*<sp/>tt<sp/>=<sp/><ref refid="namespace_game_1a719e3885709c3dc073fd69bcf0d3d4ac" kindref="member">Game::towerManager</ref>-&gt;<ref refid="class_tower_manager_1a1831e2bb3e53169abdaa7760857cddd6" kindref="member">parseEvent</ref>(ev,<sp/>mouse,<sp/>sf::Vector2i(towersPanel.left,towersPanel.top));</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ev.type==sf::Event::MouseMoved)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1ab8f3da104f8cd64675c808a1d882a61a" kindref="member">setTooltip</ref>(tooltip,<sp/>mouse,<sp/>tt);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tt!=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tt-&gt;<ref refid="struct_tower_type_1a298318e6f9d11a63daad82f48a87a205" kindref="member">cost</ref><sp/>&lt;=<sp/><ref refid="namespace_game_1a8c9e80bd9cfbe0ca529de0728ae63b7b" kindref="member">Game::money</ref>)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>placingTower<sp/>=<sp/>tt;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.clear();</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glMatrixMode(GL_PROJECTION);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glLoadIdentity();</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.pushGLStates();</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sf::RectangleShape<sp/>rect;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rect.setOutlineColor(sf::Color::White);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rect.setOutlineThickness(1);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rect.setFillColor(sf::Color::Green);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rect.setPosition(upgradesPanel.left,<sp/>upgradesPanel.top);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rect.setSize(sf::Vector2f(upgradesPanel.width,<sp/>upgradesPanel.height));</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.draw(rect);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.popGLStates();</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a719e3885709c3dc073fd69bcf0d3d4ac" kindref="member">Game::towerManager</ref>-&gt;<ref refid="class_tower_manager_1addf03520e1fe692d2a547374e58e5711" kindref="member">drawTowersPanel</ref>(&amp;window,<sp/>sf::Vector2i(towersPanel.left,towersPanel.top));</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1ac8fed37d2d116b380d75962218826b1b" kindref="member">Game::draw</ref>(&amp;window);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(placingTower!=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>placingTower-&gt;<ref refid="struct_tower_type_1a137965897f2c4ec39a260f5561d1e70a" kindref="member">model</ref>-&gt;<ref refid="class_tower_1a1a810f6750616a02e665eb41db5dff5f" kindref="member">draw</ref>(&amp;window,<sp/>mouse);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>placingTower-&gt;<ref refid="struct_tower_type_1a137965897f2c4ec39a260f5561d1e70a" kindref="member">model</ref>-&gt;<ref refid="class_tower_1a6233d4726637efbe811fa3e471b17763" kindref="member">drawOver</ref>(&amp;window,<sp/>mouse);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tooltip!=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tooltip-&gt;<ref refid="class_tooltip_1ac00ca1ff15192af7ca5de01bd51b8579" kindref="member">draw</ref>(&amp;window);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.display();</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this_thread::sleep_for(chrono::milliseconds(10));</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!paused){</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_game_1a83840990333d3cc33e50a8d944558125" kindref="member">Game::tick</ref>())</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>running<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>window.close();</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a3f1f2de8ad16ee00d98289cf4270761f" kindref="member">freeGame</ref>();</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/main.cpp"/>
+  </compounddef>
+</doxygen>

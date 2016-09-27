@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_enemy.html" title="Enemy" alt="" coords="5,56,68,83"/>
+<area shape="rect" id="node2" href="$class_basic_enemy.html" title="BasicEnemy" alt="" coords="123,5,219,32"/>
+<area shape="rect" id="node3" href="$class_inhibitor_enemy.html" title="InhibitorEnemy" alt="" coords="117,56,225,83"/>
+<area shape="rect" id="node4" href="$class_inmortal_enemy.html" title="InmortalEnemy" alt="" coords="116,107,225,133"/>
+</map>

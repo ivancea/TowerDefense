@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_6e4ab86176cf0f693527fdb4dbb0e20a" kind="dir">
+    <compoundname>entities</compoundname>
+    <innerfile refid="_bullet_8cpp">Bullet.cpp</innerfile>
+    <innerfile refid="_bullet_8h">Bullet.h</innerfile>
+    <innerfile refid="_flame_ring_8cpp">FlameRing.cpp</innerfile>
+    <innerfile refid="_flame_ring_8h">FlameRing.h</innerfile>
+    <innerfile refid="_rocket_8cpp">Rocket.cpp</innerfile>
+    <innerfile refid="_rocket_8h">Rocket.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,4 @@
+<map id="InhibitorEnemy::draw" name="InhibitorEnemy::draw">
+<area shape="rect" id="node2" href="$namespace_game.html#ae0de9897a96ba2707f9648a563521c7d" title="Game::exists" alt="" coords="211,5,311,32"/>
+<area shape="rect" id="node3" href="$class_tower.html#a892066fc6cbe882417e749a0829a713b" title="Tower::getPosition" alt="" coords="196,56,325,83"/>
+</map>

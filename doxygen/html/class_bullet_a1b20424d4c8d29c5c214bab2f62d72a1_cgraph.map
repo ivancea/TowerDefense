@@ -1,0 +1,5 @@
+<map id="Bullet::tick" name="Bullet::tick">
+<area shape="rect" id="node2" href="$struct_vec2.html#a8f0f08fa249195af341222553c8db855" title="Vec2::distance" alt="" coords="141,5,250,32"/>
+<area shape="rect" id="node3" href="$struct_vec2.html#a73f59613a791abd955bf16fccd53777b" title="Vec2::normalize" alt="" coords="137,56,253,83"/>
+<area shape="rect" id="node4" href="$namespace_game.html#a1d9c21b5df867aeaf1ac00fc77a577b7" title="Game::kill" alt="" coords="155,107,236,133"/>
+</map>

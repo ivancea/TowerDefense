@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_fire_entity_8h" kind="file" language="C++">
+    <compoundname>FireEntity.h</compoundname>
+    <includes local="no">SFML/Graphics.hpp</includes>
+    <includes refid="_sprite_8h" local="yes">../Sprite.h</includes>
+    <includes refid="_vec_8hpp" local="yes">../Vec.hpp</includes>
+    <includes refid="_entity_8h" local="yes">../entity.h</includes>
+    <includedby refid="_sniper_tower_8cpp" local="yes">SniperTower.cpp</includedby>
+    <includedby refid="_fire_entity_8cpp" local="yes">FireEntity.cpp</includedby>
+    <incdepgraph>
+      <node id="1071">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1074">
+        <label>cmath</label>
+      </node>
+      <node id="1073">
+        <label>../Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1074" relation="include">
+        </childnode>
+      </node>
+      <node id="1070">
+        <label>FireEntity.h</label>
+        <link refid="FireEntity.h"/>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1072" relation="include">
+        </childnode>
+        <childnode refid="1073" relation="include">
+        </childnode>
+        <childnode refid="1075" relation="include">
+        </childnode>
+      </node>
+      <node id="1075">
+        <label>../entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1071" relation="include">
+        </childnode>
+      </node>
+      <node id="1072">
+        <label>../Sprite.h</label>
+        <link refid="_sprite_8h"/>
+        <childnode refid="1071" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1077">
+        <label>SniperTower.cpp</label>
+        <link refid="_sniper_tower_8cpp"/>
+      </node>
+      <node id="1078">
+        <label>FireEntity.cpp</label>
+        <link refid="_fire_entity_8cpp"/>
+      </node>
+      <node id="1076">
+        <label>FireEntity.h</label>
+        <link refid="FireEntity.h"/>
+        <childnode refid="1077" relation="include">
+        </childnode>
+        <childnode refid="1078" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_fire_entity" prot="public">FireEntity</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>FIREENTITY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIREENTITY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SFML/Graphics.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Sprite.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Vec.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../entity.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_fire_entity" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_fire_entity" kindref="compound">FireEntity</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_entity" kindref="compound">Entity</ref><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="class_fire_entity_1aad6423df3bee2af1f219f79bb135dd9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/><ref refid="class_fire_entity_1aad6423df3bee2af1f219f79bb135dd9d" kindref="member">_position</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_fire_entity_1a04fe40bc1b739d302a30a4ef5306eb41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fire_entity_1a04fe40bc1b739d302a30a4ef5306eb41" kindref="member">_ticksAlive</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_fire_entity_1abda03646b735fcf48a5a1796c4ebce32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fire_entity_1abda03646b735fcf48a5a1796c4ebce32" kindref="member">_ticksLived</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_fire_entity_1a7ff2eafe728286ab7be66a913f8c746c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sprite" kindref="compound">Sprite</ref><sp/><ref refid="class_fire_entity_1a7ff2eafe728286ab7be66a913f8c746c" kindref="member">_sprite</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_fire_entity_1a3a0d451f64cf200710f0091e79d9f4e7" kindref="member">FireEntity</ref>(<ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>position,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ticksAlive);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_fire_entity_1a22e38fdc101c077be7722352cf67396e" kindref="member">tick</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fire_entity_1a000ede7b6148c5c1b01e1fcd5d512c93" kindref="member">draw</ref>(sf::RenderWindow*<sp/>window)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>FIREENTITY_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/entities/FireEntity.h"/>
+  </compounddef>
+</doxygen>

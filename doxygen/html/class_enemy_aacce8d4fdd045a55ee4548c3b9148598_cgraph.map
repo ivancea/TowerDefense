@@ -1,0 +1,4 @@
+<map id="Enemy::setNextPositionIndex" name="Enemy::setNextPositionIndex">
+<area shape="rect" id="node2" href="$class_enemy.html#a5a90dbd539ffb35f91b8183feeac46c2" title="Enemy::reloadDistanceToEnd" alt="" coords="248,5,443,32"/>
+<area shape="rect" id="node3" href="$struct_vec2.html#a8f0f08fa249195af341222553c8db855" title="Vec2::distance" alt="" coords="491,5,600,32"/>
+</map>

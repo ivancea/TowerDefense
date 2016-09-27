@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_rocket_tower_8cpp" kind="file" language="C++">
+    <compoundname>RocketTower.cpp</compoundname>
+    <includes refid="_rocket_tower_8h" local="yes">RocketTower.h</includes>
+    <incdepgraph>
+      <node id="1372">
+        <label>list</label>
+      </node>
+      <node id="1373">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1375">
+        <label>SFML/OpenGL.hpp</label>
+      </node>
+      <node id="1371">
+        <label>RocketTower.h</label>
+        <link refid="_rocket_tower_8h"/>
+        <childnode refid="1372" relation="include">
+        </childnode>
+        <childnode refid="1373" relation="include">
+        </childnode>
+        <childnode refid="1374" relation="include">
+        </childnode>
+        <childnode refid="1379" relation="include">
+        </childnode>
+        <childnode refid="1384" relation="include">
+        </childnode>
+      </node>
+      <node id="1381">
+        <label>cmath</label>
+      </node>
+      <node id="1370">
+        <label>RocketTower.cpp</label>
+        <link refid="RocketTower.cpp"/>
+        <childnode refid="1371" relation="include">
+        </childnode>
+      </node>
+      <node id="1378">
+        <label>string</label>
+      </node>
+      <node id="1382">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1373" relation="include">
+        </childnode>
+        <childnode refid="1380" relation="include">
+        </childnode>
+      </node>
+      <node id="1380">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1381" relation="include">
+        </childnode>
+      </node>
+      <node id="1376">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="1372" relation="include">
+        </childnode>
+        <childnode refid="1373" relation="include">
+        </childnode>
+        <childnode refid="1377" relation="include">
+        </childnode>
+      </node>
+      <node id="1374">
+        <label>../Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="1372" relation="include">
+        </childnode>
+        <childnode refid="1373" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1376" relation="include">
+        </childnode>
+        <childnode refid="1379" relation="include">
+        </childnode>
+        <childnode refid="1382" relation="include">
+        </childnode>
+        <childnode refid="1383" relation="include">
+        </childnode>
+        <childnode refid="1380" relation="include">
+        </childnode>
+      </node>
+      <node id="1377">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1378" relation="include">
+        </childnode>
+        <childnode refid="1373" relation="include">
+        </childnode>
+        <childnode refid="1379" relation="include">
+        </childnode>
+      </node>
+      <node id="1384">
+        <label>entities/Rocket.h</label>
+        <link refid="_rocket_8h"/>
+        <childnode refid="1383" relation="include">
+        </childnode>
+        <childnode refid="1380" relation="include">
+        </childnode>
+        <childnode refid="1382" relation="include">
+        </childnode>
+      </node>
+      <node id="1383">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1373" relation="include">
+        </childnode>
+      </node>
+      <node id="1379">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1373" relation="include">
+        </childnode>
+        <childnode refid="1380" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_rocket_tower_8h" kindref="compound">RocketTower.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_rocket_tower_1a788ccf186eaab4f093cc3e5b024a9d4b" kindref="member">RocketTower::id</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_rocket_tower_1a760ea5f99ac54c33bd543035fea751ef" refkind="member"><highlight class="normal"><ref refid="class_rocket_tower_1a760ea5f99ac54c33bd543035fea751ef" kindref="member">RocketTower::RocketTower</ref>(){</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a02ec2f8d1c4dea2f7fc002d8626c8b28" kindref="member">_id</ref><sp/>=<sp/><ref refid="class_rocket_tower_1a788ccf186eaab4f093cc3e5b024a9d4b" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref><sp/>=<sp/>120;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" kindref="member">_ticksBetweenShoots</ref><sp/>=<sp/>120;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_rocket_tower_1a86b8c60830aedd59dacfcefd0b1a44d6" kindref="member">_damage</ref><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_rocket_tower_1ac78979c4795485d1a6a548f53ad08dbd" kindref="member">_explosionRange</ref><sp/>=<sp/>40;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_rocket_tower_1afa8ba83aece535a524f3d923032ba200" kindref="member">_rocketVelocity</ref><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_rocket_tower_1a34b8d23125680691a9234e9a780fc8f0" kindref="member">_maxRocketDistance</ref><sp/>=<sp/>500;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_rocket_tower_1af83cebcdc6889e0509eff9b179515bca" kindref="member">_followEnemy</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_rocket_tower_1a1210d14f7aefc0d96d1a9937a2b6c561" kindref="member">_hitEnemiesInPath</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" kindref="member">_minRange</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a29cae98d3f1d863335b175597f61f8da" kindref="member">_maxRange</ref><sp/>=<sp/>120;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_rocket_tower_1a6a577601ae706e981c833dfaf8675c59" refkind="member"><highlight class="normal"><ref refid="_tower_8h_1a515c655d051e131462a497de3df0e8eb" kindref="member">TowerEvent</ref><sp/><ref refid="class_rocket_tower_1a6a577601ae706e981c833dfaf8675c59" kindref="member">RocketTower::tick</ref>(){</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref>&lt;=0){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/><ref refid="namespace_game_1a06280777aa0c70527c6dfce295cc4220" kindref="member">Game::findTarget</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(it<sp/>!=<sp/><ref refid="namespace_game_1a567bf723c1182e15ffac0548a9b01a00" kindref="member">Game::enemies</ref>.end()){</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a19468d252754d2b9efe64258e7e3ccba" kindref="member">Game::entities</ref>.push_back(<ref refid="class_rocket_tower_1af83cebcdc6889e0509eff9b179515bca" kindref="member">_followEnemy</ref>?</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_rocket" kindref="compound">Rocket</ref>(*it,<sp/><ref refid="class_rocket_tower_1a86b8c60830aedd59dacfcefd0b1a44d6" kindref="member">_damage</ref>,<sp/><ref refid="class_rocket_tower_1ac78979c4795485d1a6a548f53ad08dbd" kindref="member">_explosionRange</ref>,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_rocket_tower_1afa8ba83aece535a524f3d923032ba200" kindref="member">_rocketVelocity</ref>,<sp/><ref refid="class_rocket_tower_1a34b8d23125680691a9234e9a780fc8f0" kindref="member">_maxRocketDistance</ref>,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_rocket_tower_1a1210d14f7aefc0d96d1a9937a2b6c561" kindref="member">_hitEnemiesInPath</ref>,<sp/>((<ref refid="struct_vec2" kindref="compound">Vec2d</ref>)<ref refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" kindref="member">_position</ref>+<ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref>(0.5,0.5))*<ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_rocket" kindref="compound">Rocket</ref>((*it)-&gt;getPosition(),<sp/><ref refid="class_rocket_tower_1a86b8c60830aedd59dacfcefd0b1a44d6" kindref="member">_damage</ref>,<sp/><ref refid="class_rocket_tower_1ac78979c4795485d1a6a548f53ad08dbd" kindref="member">_explosionRange</ref>,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_rocket_tower_1afa8ba83aece535a524f3d923032ba200" kindref="member">_rocketVelocity</ref>,<sp/><ref refid="class_rocket_tower_1a34b8d23125680691a9234e9a780fc8f0" kindref="member">_maxRocketDistance</ref>,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_rocket_tower_1a1210d14f7aefc0d96d1a9937a2b6c561" kindref="member">_hitEnemiesInPath</ref>,<sp/>((<ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref>)<ref refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" kindref="member">_position</ref>+<ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref>(0.5,0.5))*<ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref><sp/>=<sp/><ref refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" kindref="member">_ticksBetweenShoots</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>--<ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_tower_8h_1a515c655d051e131462a497de3df0e8ebac9d3e887722f2bc482bcca9d41c512af" kindref="member">TowerEvent::None</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_rocket_tower_1aeb6d89a594a58c05f723bd65ef4601af" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_rocket_tower_1aeb6d89a594a58c05f723bd65ef4601af" kindref="member">RocketTower::draw</ref>(sf::RenderWindow*<sp/>window,<sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>point)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t<sp/>=<sp/><ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>/2-2;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>glColor3ub(255,0,127);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>glBegin(GL_POLYGON);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref>*2.01;<sp/>i+=<ref refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref>/360)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(point.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sin(i)*t,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+cos(i)*t);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnd();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>glColor3ub(0,0,127);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>glBegin(GL_POLYGON);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(point.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>,<sp/>point.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref>*2.0*((double)<ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref>/(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<ref refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" kindref="member">_ticksBetweenShoots</ref>);<sp/>i+=<ref refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref>/360)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(point.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sin(-i)*t,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+cos(i+<ref refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref>)*t);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnd();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_rocket_tower_1a3d088da5e8638dcb40cef934778d56de" refkind="member"><highlight class="normal"><ref refid="class_tower" kindref="compound">Tower</ref>*<sp/><ref refid="class_rocket_tower_1a3d088da5e8638dcb40cef934778d56de" kindref="member">RocketTower::clone</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_rocket_tower_1a760ea5f99ac54c33bd543035fea751ef" kindref="member">RocketTower</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/RocketTower.cpp"/>
+  </compounddef>
+</doxygen>

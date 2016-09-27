@@ -1,0 +1,603 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_game" kind="namespace" language="C++">
+    <compoundname>Game</compoundname>
+    <innernamespace refid="namespace_game_1_1_stats">Game::Stats</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3" prot="public" static="no">
+        <name>TileType</name>
+        <enumvalue id="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a05554b8c93c03fab4a2469132ddbc92c" prot="public">
+          <name>EmptyTile</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a238e31f792ea0a53d8182088b3179185" prot="public">
+          <name>TowerTile</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a741af12eaf71b7dec93130c56ad9f86a" prot="public">
+          <name>RoadTile</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="24" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" bodystart="24" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_game_1a719e3885709c3dc073fd69bcf0d3d4ac" prot="public" static="no" mutable="no">
+        <type><ref refid="class_tower_manager" kindref="compound">TowerManager</ref> *</type>
+        <definition>TowerManager * Game::towerManager</definition>
+        <argsstring></argsstring>
+        <name>towerManager</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="30" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_game_1acaee8a857e108ef391b58ba15f3897c9" prot="public" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="class_tower" kindref="compound">Tower</ref> * &gt;</type>
+        <definition>std::list&lt; Tower * &gt; Game::towers</definition>
+        <argsstring></argsstring>
+        <name>towers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="31" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_game_1a567bf723c1182e15ffac0548a9b01a00" prot="public" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="class_enemy" kindref="compound">Enemy</ref> * &gt;</type>
+        <definition>std::list&lt; Enemy * &gt; Game::enemies</definition>
+        <argsstring></argsstring>
+        <name>enemies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="32" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_game_1a19468d252754d2b9efe64258e7e3ccba" prot="public" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="class_entity" kindref="compound">Entity</ref> * &gt;</type>
+        <definition>std::list&lt; Entity * &gt; Game::entities</definition>
+        <argsstring></argsstring>
+        <name>entities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="33" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_game_1a9900ae211669df060e8b46fe5ba3578d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref> &gt;</type>
+        <definition>std::vector&lt; Vec2i &gt; Game::enemiesRoute</definition>
+        <argsstring></argsstring>
+        <name>enemiesRoute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="35" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_game_1a09585bfa7de0afd33dc6fd6422b4b818" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3" kindref="member">TileType</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; TileType &gt; &gt; Game::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="36" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_game_1ae2587a19ce298e1559bff77f3701798e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Game::pixelsPerSquare</definition>
+        <argsstring></argsstring>
+        <name>pixelsPerSquare</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="37" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_game_1a57b7bb4913757b7f74496bcef9a5066a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Game::life</definition>
+        <argsstring></argsstring>
+        <name>life</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="39" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_game_1a8c9e80bd9cfbe0ca529de0728ae63b7b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Game::money</definition>
+        <argsstring></argsstring>
+        <name>money</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="40" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_game_1aff477320e2ca589ce1eb88d553763302" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Game::tickCount</definition>
+        <argsstring></argsstring>
+        <name>tickCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="42" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Game::velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="43" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_game_1ab5f09ff25c1bf41aa00e19951062349e" prot="public" static="no" mutable="no">
+        <type><ref refid="class_tower" kindref="compound">Tower</ref> *</type>
+        <definition>Tower * Game::selectedTower</definition>
+        <argsstring></argsstring>
+        <name>selectedTower</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="45" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_game_1a83840990333d3cc33e50a8d944558125" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Game::tick</definition>
+        <argsstring>()</argsstring>
+        <name>tick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="47" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="41" bodyend="86"/>
+        <references refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" compoundref="_game_8cpp" startline="37">velocity</references>
+        <references refid="class_enemy_1ad921c3a0eeab9d46eae08054814a0d0a" compoundref="_enemy_8cpp" startline="29" endline="57">Enemy::tick</references>
+        <references refid="class_enemy_1a88b06a3cfbd5fd4293cd849cfd149da2" compoundref="_enemy_8h" startline="33" endline="33">Enemy::getDamage</references>
+        <references refid="namespace_game_1af1500b3fbfc3bac86161440e3cc5703b" compoundref="_game_8cpp" startline="427" endline="432">clearEntities</references>
+        <references refid="namespace_game_1a3a3a6fcb74f541d2dc4be77b0be28b71" compoundref="_game_8cpp" startline="451" endline="454">getRealPosition</references>
+        <references refid="namespace_game_1a5ce72058030c0173b9f642f727fc3ce1" compoundref="_game_8cpp" startline="420" endline="425">clearTowers</references>
+        <references refid="class_entity_1a1ac1547ce618e2ec040c6a8498bb5201">Entity::tick</references>
+        <references refid="namespace_game_1aff477320e2ca589ce1eb88d553763302" compoundref="_game_8cpp" startline="36">tickCount</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1ac8fed37d2d116b380d75962218826b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::draw</definition>
+        <argsstring>(sf::RenderWindow *window)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="48" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="88" bodyend="202"/>
+        <references refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a741af12eaf71b7dec93130c56ad9f86a" compoundref="_game_8h" startline="27">RoadTile</references>
+        <references refid="namespace_game_1ae0de9897a96ba2707f9648a563521c7d" compoundref="_game_8cpp" startline="392" endline="399">exists</references>
+        <references refid="class_tower_1a892066fc6cbe882417e749a0829a713b" compoundref="_tower_8h" startline="54" endline="54">Tower::getPosition</references>
+        <references refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::x</references>
+        <references refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" compoundref="_game_8cpp" startline="31">pixelsPerSquare</references>
+        <references refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::y</references>
+        <references refid="class_tower_1af3974612b34698019596e847c20a0b5f" compoundref="_tower_8h" startline="59" endline="59">Tower::getMinRange</references>
+        <references refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" compoundref="_game_8h" startline="4">PI</references>
+        <references refid="class_tower_1a1de58ad0b4454321b7581a95be903f84" compoundref="_tower_8h" startline="61" endline="61">Tower::getMaxRange</references>
+        <references refid="namespace_game_1_1_stats_1a6db33dedd8ef995c9187906dc6abc664" compoundref="_game_8cpp" startline="20">Game::Stats::enemiesKilled</references>
+        <references refid="class_tower_1ac95d4e39ad1e1d7aca4dd43114bfb35b" compoundref="_tower_8h" startline="55" endline="55">Tower::setPosition</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1a3d96c03e83451dab8603f1e791d22fd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_tower" kindref="compound">Tower</ref> *</type>
+        <definition>Tower * Game::getTower</definition>
+        <argsstring>(Vec2i position)</argsstring>
+        <name>getTower</name>
+        <param>
+          <type><ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>HELPERS. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="53" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="207" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1a45c3585e317f9cb5dfae27f54f1f019d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Game::putTower</definition>
+        <argsstring>(Tower *tower)</argsstring>
+        <name>putTower</name>
+        <param>
+          <type><ref refid="class_tower" kindref="compound">Tower</ref> *</type>
+          <declname>tower</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>TODO: Is occupied?</para><para>TODO: Is occupied? </para>        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="54" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="214" bodyend="224"/>
+        <references refid="class_tower_1a892066fc6cbe882417e749a0829a713b" compoundref="_tower_8h" startline="54" endline="54">Tower::getPosition</references>
+        <references refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::x</references>
+        <references refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::y</references>
+        <references refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a05554b8c93c03fab4a2469132ddbc92c" compoundref="_game_8h" startline="25">EmptyTile</references>
+        <references refid="namespace_game_1acaee8a857e108ef391b58ba15f3897c9" compoundref="_game_8cpp" startline="25">towers</references>
+        <references refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a238e31f792ea0a53d8182088b3179185" compoundref="_game_8h" startline="26">TowerTile</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1a549aa0e7de912a178bb49190fab5a7f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_tower" kindref="compound">Tower</ref> * &gt;::iterator</type>
+        <definition>std::list&lt; Tower * &gt;::iterator Game::removeTower</definition>
+        <argsstring>(std::list&lt; Tower * &gt;::iterator tower)</argsstring>
+        <name>removeTower</name>
+        <param>
+          <type>std::list&lt; <ref refid="class_tower" kindref="compound">Tower</ref> * &gt;::iterator</type>
+          <declname>tower</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="55" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="226" bodyend="233"/>
+        <references refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::x</references>
+        <references refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::y</references>
+        <references refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a238e31f792ea0a53d8182088b3179185" compoundref="_game_8h" startline="26">TowerTile</references>
+        <references refid="namespace_game_1a4809408aad0c6154ca1f544bfe2e4bc3a05554b8c93c03fab4a2469132ddbc92c" compoundref="_game_8h" startline="25">EmptyTile</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1ac99a1484f601d4438ab49b9dc99dcc33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_tower" kindref="compound">Tower</ref> *</type>
+        <definition>Tower * Game::removeTower</definition>
+        <argsstring>(Vec2i position)</argsstring>
+        <name>removeTower</name>
+        <param>
+          <type><ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="56" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="235" bodyend="244"/>
+        <references refid="namespace_game_1a549aa0e7de912a178bb49190fab5a7f6" compoundref="_game_8cpp" startline="226" endline="233">removeTower</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1af2e314759bbe1f96478d79fda41d1c40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Game::isInRange</definition>
+        <argsstring>(Vec2d position, double minRange, double maxRange, Enemy *enemy)</argsstring>
+        <name>isInRange</name>
+        <param>
+          <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>minRange</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>maxRange</declname>
+        </param>
+        <param>
+          <type><ref refid="class_enemy" kindref="compound">Enemy</ref> *</type>
+          <declname>enemy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="58" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="253" bodyend="260"/>
+        <references refid="struct_vec2_1a8f0f08fa249195af341222553c8db855" compoundref="_vec_8hpp" startline="58" endline="58">Vec2&lt; T &gt;::distance</references>
+        <references refid="class_enemy_1afd5331e1b8efb74c4722569b14934c61" compoundref="_enemy_8h" startline="32" endline="32">Enemy::getPosition</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1a1d9c21b5df867aeaf1ac00fc77a577b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_enemy" kindref="compound">Enemy</ref> * &gt;::iterator</type>
+        <definition>std::list&lt; Enemy * &gt;::iterator Game::kill</definition>
+        <argsstring>(std::list&lt; Enemy * &gt;::iterator enemy)</argsstring>
+        <name>kill</name>
+        <param>
+          <type>std::list&lt; <ref refid="class_enemy" kindref="compound">Enemy</ref> * &gt;::iterator</type>
+          <declname>enemy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="60" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="246" bodyend="251"/>
+        <references refid="namespace_game_1_1_stats_1a6db33dedd8ef995c9187906dc6abc664" compoundref="_game_8cpp" startline="20">Game::Stats::enemiesKilled</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1a06280777aa0c70527c6dfce295cc4220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_enemy" kindref="compound">Enemy</ref> * &gt;::iterator</type>
+        <definition>std::list&lt; Enemy * &gt;::iterator Game::findTarget</definition>
+        <argsstring>(Tower *tower)</argsstring>
+        <name>findTarget</name>
+        <param>
+          <type><ref refid="class_tower" kindref="compound">Tower</ref> *</type>
+          <declname>tower</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="61" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="262" bodyend="380"/>
+        <references refid="class_tower_1a892066fc6cbe882417e749a0829a713b" compoundref="_tower_8h" startline="54" endline="54">Tower::getPosition</references>
+        <references refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::x</references>
+        <references refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" compoundref="_game_8cpp" startline="31">pixelsPerSquare</references>
+        <references refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::y</references>
+        <references refid="class_tower_1ae6698f53a92e382f35c13faa1c8755c5" compoundref="_tower_8h" startline="56" endline="56">Tower::getPriority</references>
+        <references refid="_tower_8h_1a315655b1bb5848c063491adffde62b15ac2a3856002491cf465725e8d1108f796" compoundref="_tower_8h" startline="17">Last</references>
+        <references refid="namespace_game_1a567bf723c1182e15ffac0548a9b01a00" compoundref="_game_8cpp" startline="26">enemies</references>
+        <references refid="namespace_game_1af2e314759bbe1f96478d79fda41d1c40" compoundref="_game_8cpp" startline="253" endline="260">isInRange</references>
+        <references refid="class_tower_1af3974612b34698019596e847c20a0b5f" compoundref="_tower_8h" startline="59" endline="59">Tower::getMinRange</references>
+        <references refid="class_tower_1a1de58ad0b4454321b7581a95be903f84" compoundref="_tower_8h" startline="61" endline="61">Tower::getMaxRange</references>
+        <references refid="class_enemy_1a95df3c4a64b8576874c5815877ee9d61" compoundref="_enemy_8cpp" startline="70" endline="72">Enemy::getDistanceToEnd</references>
+        <references refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a72f6cdd6b6b9a86c93a38bc8ecc8025a" compoundref="_tower_8h" startline="18">Near</references>
+        <references refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a2dacbd805425996a5d37778b02e24dde" compoundref="_tower_8h" startline="19">Far</references>
+        <references refid="_tower_8h_1a315655b1bb5848c063491adffde62b15af5b140d7cf39661c84d7e52e13b0c3db" compoundref="_tower_8h" startline="20">MoreLife</references>
+        <references refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a344ebf67c51ee0e28e8b1c370696eb99" compoundref="_tower_8h" startline="21">LessLife</references>
+        <references refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a1c8c8710e5a8d3afbe9499b22bd020c3" compoundref="_tower_8h" startline="22">MoreDamage</references>
+        <references refid="_tower_8h_1a315655b1bb5848c063491adffde62b15ade1117e4e38b558fda4490a817553c3d" compoundref="_tower_8h" startline="23">LessDamage</references>
+        <references refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a599c478c80ca66aa854dbd917f1ecef8" compoundref="_tower_8h" startline="24">MoreEnemiesTogether</references>
+        <references refid="struct_vec2_1a8f0f08fa249195af341222553c8db855" compoundref="_vec_8hpp" startline="58" endline="58">Vec2&lt; T &gt;::distance</references>
+        <references refid="_tower_8h_1a315655b1bb5848c063491adffde62b15ac5222d41f21bc883f0c0b9754191b350" compoundref="_tower_8h" startline="16">First</references>
+        <references refid="_tower_8h_1a315655b1bb5848c063491adffde62b15a79935518a3889663d8688b6b01fff051" compoundref="_tower_8h" startline="15">Default</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1a2f4d39b84db31e6af593f4f4e58fab2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; std::list&lt; <ref refid="class_enemy" kindref="compound">Enemy</ref> * &gt;::iterator &gt;</type>
+        <definition>std::list&lt; std::list&lt; Enemy * &gt;::iterator &gt; Game::findEnemiesInRange</definition>
+        <argsstring>(Vec2d position, double minRange, double maxRange)</argsstring>
+        <name>findEnemiesInRange</name>
+        <param>
+          <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>minRange</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>maxRange</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="62" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="382" bodyend="389"/>
+        <references refid="namespace_game_1af2e314759bbe1f96478d79fda41d1c40" compoundref="_game_8cpp" startline="253" endline="260">isInRange</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1ae0de9897a96ba2707f9648a563521c7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Game::exists</definition>
+        <argsstring>(Enemy *enemy)</argsstring>
+        <name>exists</name>
+        <param>
+          <type><ref refid="class_enemy" kindref="compound">Enemy</ref> *</type>
+          <declname>enemy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="64" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="392" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1a054c76dd36ea7fd2ac0fd34a132eddfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Game::exists</definition>
+        <argsstring>(Tower *tower)</argsstring>
+        <name>exists</name>
+        <param>
+          <type><ref refid="class_tower" kindref="compound">Tower</ref> *</type>
+          <declname>tower</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="65" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="401" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1a799152774e0478c9ffeb39c434faa6d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Game::exists</definition>
+        <argsstring>(Entity *entities)</argsstring>
+        <name>exists</name>
+        <param>
+          <type><ref refid="class_entity" kindref="compound">Entity</ref> *</type>
+          <declname>entities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="66" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="410" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1a5ce72058030c0173b9f642f727fc3ce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::clearTowers</definition>
+        <argsstring>()</argsstring>
+        <name>clearTowers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="68" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="420" bodyend="425"/>
+        <references refid="namespace_game_1a549aa0e7de912a178bb49190fab5a7f6" compoundref="_game_8cpp" startline="226" endline="233">removeTower</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1af1500b3fbfc3bac86161440e3cc5703b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::clearEntities</definition>
+        <argsstring>()</argsstring>
+        <name>clearEntities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="69" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="427" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1a29cc92564c4cf32c7fd0c06d6c65898f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::clearEnemies</definition>
+        <argsstring>()</argsstring>
+        <name>clearEnemies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="70" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="434" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1a16cce46904b2800511356b0e5e45b05a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::killEnemies</definition>
+        <argsstring>()</argsstring>
+        <name>killEnemies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="71" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="441" bodyend="444"/>
+        <references refid="namespace_game_1a1d9c21b5df867aeaf1ac00fc77a577b7" compoundref="_game_8cpp" startline="246" endline="251">kill</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1a71544153aaa8842c582ec15166796d45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Game::getDistance</definition>
+        <argsstring>(Vec2i towerPosition, Vec2d position)</argsstring>
+        <name>getDistance</name>
+        <param>
+          <type><ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref></type>
+          <declname>towerPosition</declname>
+        </param>
+        <param>
+          <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="73" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="446" bodyend="449"/>
+        <references refid="struct_vec2_1a8f0f08fa249195af341222553c8db855" compoundref="_vec_8hpp" startline="58" endline="58">Vec2&lt; T &gt;::distance</references>
+        <references refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::x</references>
+        <references refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" compoundref="_game_8cpp" startline="31">pixelsPerSquare</references>
+        <references refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::y</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_game_1a3a3a6fcb74f541d2dc4be77b0be28b71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+        <definition>Vec2d Game::getRealPosition</definition>
+        <argsstring>(Vec2i towerPosition)</argsstring>
+        <name>getRealPosition</name>
+        <param>
+          <type><ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref></type>
+          <declname>towerPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="74" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Game.cpp" bodystart="451" bodyend="454"/>
+        <references refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::x</references>
+        <references refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" compoundref="_game_8cpp" startline="31">pixelsPerSquare</references>
+        <references refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::y</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Enemies (TEMPORAL, will be replaced by some Rounds engine. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Game.h" line="16" column="1"/>
+  </compounddef>
+</doxygen>

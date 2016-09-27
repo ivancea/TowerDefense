@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_tooltip" kind="class" language="C++" prot="public">
+    <compoundname>Tooltip</compoundname>
+    <includes refid="_tooltip_8h" local="no">Tooltip.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_tooltip_1ace4127b05966b9e682d287364a226160" prot="private" static="no" mutable="no">
+        <type><ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref></type>
+        <definition>Vec2i Tooltip::_point</definition>
+        <argsstring></argsstring>
+        <name>_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" line="9" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tooltip_1a65fc19ec7dbb5c04204d9c1cb3456ac8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Tooltip::_maxWidth</definition>
+        <argsstring></argsstring>
+        <name>_maxWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" line="10" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tooltip_1a1df4148aa6035f0758e01fa2de0b0292" prot="private" static="no" mutable="no">
+        <type>sf::Color</type>
+        <definition>sf::Color Tooltip::_backColor</definition>
+        <argsstring></argsstring>
+        <name>_backColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" line="12" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tooltip_1add17c3e3b6916609906a69eb8d72e764" prot="private" static="no" mutable="no">
+        <type>sf::Color</type>
+        <definition>sf::Color Tooltip::_foreColor</definition>
+        <argsstring></argsstring>
+        <name>_foreColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" line="13" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tooltip_1a67cc85e3ea6e9ca2c7e8b162d636e4c4" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Tooltip::_title</definition>
+        <argsstring></argsstring>
+        <name>_title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" line="15" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tooltip_1adcfae457b1d3c99003448eb6523d9385" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Tooltip::_body</definition>
+        <argsstring></argsstring>
+        <name>_body</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" line="16" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_tooltip_1a46a4bafd52456186b1fc7f48a554f8ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Tooltip::Tooltip</definition>
+        <argsstring>()</argsstring>
+        <name>Tooltip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" line="19" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.cpp" bodystart="3" bodyend="7"/>
+        <references refid="class_tooltip_1a65fc19ec7dbb5c04204d9c1cb3456ac8" compoundref="_tooltip_8h" startline="10">_maxWidth</references>
+        <references refid="class_tooltip_1a1df4148aa6035f0758e01fa2de0b0292" compoundref="_tooltip_8h" startline="12">_backColor</references>
+        <references refid="class_tooltip_1add17c3e3b6916609906a69eb8d72e764" compoundref="_tooltip_8h" startline="13">_foreColor</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tooltip_1a8755dc5b59166a63e15f042c0fa14b1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Tooltip::Tooltip</definition>
+        <argsstring>(std::string title, std::string body, Vec2i point, int maxWidth=0, sf::Color backColor=sf::Color(255, 255, 200, 220), sf::Color foreColor=sf::Color::Black)</argsstring>
+        <name>Tooltip</name>
+        <param>
+          <type>std::string</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type><ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref></type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxWidth</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>backColor</declname>
+          <defval>sf::Color(255, 255, 200, 220)</defval>
+        </param>
+        <param>
+          <type>sf::Color</type>
+          <declname>foreColor</declname>
+          <defval>sf::Color::Black</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" line="20" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.cpp" bodystart="9" bodyend="20"/>
+        <references refid="class_tooltip_1a67cc85e3ea6e9ca2c7e8b162d636e4c4" compoundref="_tooltip_8h" startline="15">_title</references>
+        <references refid="class_tooltip_1adcfae457b1d3c99003448eb6523d9385" compoundref="_tooltip_8h" startline="16">_body</references>
+        <references refid="class_tooltip_1ace4127b05966b9e682d287364a226160" compoundref="_tooltip_8h" startline="9">_point</references>
+        <references refid="class_tooltip_1a65fc19ec7dbb5c04204d9c1cb3456ac8" compoundref="_tooltip_8h" startline="10">_maxWidth</references>
+        <references refid="class_tooltip_1a1df4148aa6035f0758e01fa2de0b0292" compoundref="_tooltip_8h" startline="12">_backColor</references>
+        <references refid="class_tooltip_1add17c3e3b6916609906a69eb8d72e764" compoundref="_tooltip_8h" startline="13">_foreColor</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tooltip_1ac18509cf67b5f48ed404fa68f64c0050" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Tooltip::setTitle</definition>
+        <argsstring>(std::string title)</argsstring>
+        <name>setTitle</name>
+        <param>
+          <type>std::string</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" line="25" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.cpp" bodystart="22" bodyend="24"/>
+        <references refid="class_tooltip_1a67cc85e3ea6e9ca2c7e8b162d636e4c4" compoundref="_tooltip_8h" startline="15">_title</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tooltip_1a555900703700b27097ff0f456be8bc7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Tooltip::setBody</definition>
+        <argsstring>(std::string body)</argsstring>
+        <name>setBody</name>
+        <param>
+          <type>std::string</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" line="26" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.cpp" bodystart="26" bodyend="28"/>
+        <references refid="class_tooltip_1adcfae457b1d3c99003448eb6523d9385" compoundref="_tooltip_8h" startline="16">_body</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tooltip_1ad5886a8a5359d90fc580b95cc603e1d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Tooltip::setPoint</definition>
+        <argsstring>(Vec2i point)</argsstring>
+        <name>setPoint</name>
+        <param>
+          <type><ref refid="_vec_8hpp_1a3fad0e3d3511071aeb1ddb2ebff1db58" kindref="member">Vec2i</ref></type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" line="27" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.cpp" bodystart="30" bodyend="32"/>
+        <references refid="class_tooltip_1ace4127b05966b9e682d287364a226160" compoundref="_tooltip_8h" startline="9">_point</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tooltip_1ac00ca1ff15192af7ca5de01bd51b8579" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Tooltip::draw</definition>
+        <argsstring>(sf::RenderWindow *window) const </argsstring>
+        <name>draw</name>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" line="29" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.cpp" bodystart="34" bodyend="69"/>
+        <references refid="class_tooltip_1a67cc85e3ea6e9ca2c7e8b162d636e4c4" compoundref="_tooltip_8h" startline="15">_title</references>
+        <references refid="class_tooltip_1add17c3e3b6916609906a69eb8d72e764" compoundref="_tooltip_8h" startline="13">_foreColor</references>
+        <references refid="class_tooltip_1adcfae457b1d3c99003448eb6523d9385" compoundref="_tooltip_8h" startline="16">_body</references>
+        <references refid="class_tooltip_1ace4127b05966b9e682d287364a226160" compoundref="_tooltip_8h" startline="9">_point</references>
+        <references refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::x</references>
+        <references refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::y</references>
+        <references refid="class_tooltip_1a1df4148aa6035f0758e01fa2de0b0292" compoundref="_tooltip_8h" startline="12">_backColor</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="216">
+        <label>Tooltip</label>
+        <link refid="class_tooltip"/>
+        <childnode refid="217" relation="usage">
+          <edgelabel>_point</edgelabel>
+        </childnode>
+      </node>
+      <node id="217">
+        <label>Vec2&lt; int &gt;</label>
+        <link refid="struct_vec2"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" line="8" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/Tooltip.h" bodystart="8" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_tooltip_1a1df4148aa6035f0758e01fa2de0b0292" prot="private" virt="non-virtual"><scope>Tooltip</scope><name>_backColor</name></member>
+      <member refid="class_tooltip_1adcfae457b1d3c99003448eb6523d9385" prot="private" virt="non-virtual"><scope>Tooltip</scope><name>_body</name></member>
+      <member refid="class_tooltip_1add17c3e3b6916609906a69eb8d72e764" prot="private" virt="non-virtual"><scope>Tooltip</scope><name>_foreColor</name></member>
+      <member refid="class_tooltip_1a65fc19ec7dbb5c04204d9c1cb3456ac8" prot="private" virt="non-virtual"><scope>Tooltip</scope><name>_maxWidth</name></member>
+      <member refid="class_tooltip_1ace4127b05966b9e682d287364a226160" prot="private" virt="non-virtual"><scope>Tooltip</scope><name>_point</name></member>
+      <member refid="class_tooltip_1a67cc85e3ea6e9ca2c7e8b162d636e4c4" prot="private" virt="non-virtual"><scope>Tooltip</scope><name>_title</name></member>
+      <member refid="class_tooltip_1ac00ca1ff15192af7ca5de01bd51b8579" prot="public" virt="non-virtual"><scope>Tooltip</scope><name>draw</name></member>
+      <member refid="class_tooltip_1a555900703700b27097ff0f456be8bc7f" prot="public" virt="non-virtual"><scope>Tooltip</scope><name>setBody</name></member>
+      <member refid="class_tooltip_1ad5886a8a5359d90fc580b95cc603e1d3" prot="public" virt="non-virtual"><scope>Tooltip</scope><name>setPoint</name></member>
+      <member refid="class_tooltip_1ac18509cf67b5f48ed404fa68f64c0050" prot="public" virt="non-virtual"><scope>Tooltip</scope><name>setTitle</name></member>
+      <member refid="class_tooltip_1a46a4bafd52456186b1fc7f48a554f8ef" prot="public" virt="non-virtual"><scope>Tooltip</scope><name>Tooltip</name></member>
+      <member refid="class_tooltip_1a8755dc5b59166a63e15f042c0fa14b1a" prot="public" virt="non-virtual"><scope>Tooltip</scope><name>Tooltip</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

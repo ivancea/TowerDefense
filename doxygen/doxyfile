@@ -91,46 +91,61 @@ WARN_IF_UNDOCUMENTED   = NO
 WARN_IF_DOC_ERROR      = YES
 WARN_NO_PARAMDOC       = YES
 WARN_FORMAT            = "$file:$line: $text"
-WARN_LOGFILE            = "C:\Documents and Settings\Javier\Escritorio\TowerDefense\doxygen\doxygen.log"
+WARN_LOGFILE            = "C:\Users\ivancea\Desktop\github\TowerDefense\doxygen\doxygen.log"
 #---------------------------------------------------------------------------
 # configuration options related to the input files
 #---------------------------------------------------------------------------
 INPUT                  = \
-	"..\main.cpp" \
-	"..\towerManagers\BasicTowerManager.h" \
-	"..\enemies\InmortalEnemy.h" \
-	"..\towers\SoldierTower.h" \
-	"..\towerManagers\BasicTowerManager.cpp" \
-	"..\towers\FlameRingTower.h" \
+	"..\entities\FireEntity.h" \
 	"..\Game.h" \
-	"..\towers\RocketTower.h" \
-	"..\Enemy.h" \
-	"..\Tower.h" \
-	"..\TowerType.h" \
-	"..\TowerType.cpp" \
-	"..\Game.cpp" \
-	"..\towers\SniperTower.h" \
-	"..\towers\SniperTower.cpp" \
-	"..\Entity.h" \
-	"..\TowerManager.h" \
+	"..\mapCreator\main.cpp" \
+	"..\Enemy.cpp" \
+	"..\towerManagers\BasicTowerManager.h" \
+	"..\Sprite.cpp" \
+	"..\towers\FlameRingTower.cpp" \
+	"..\Resources.h" \
+	"..\TowerManager.cpp" \
 	"..\towers\entities\Rocket.h" \
 	"..\MapManager.h" \
-	"..\towers\entities\Bullet.h" \
-	"..\towers\FlameRingTower.cpp" \
-	"..\towers\entities\Rocket.cpp" \
-	"..\mapCreator\main.cpp" \
-	"..\enemies\BasicEnemy.cpp" \
-	"..\enemies\BasicEnemy.h" \
-	"..\MapManager.cpp" \
-	"..\entities\ExplosionEntity.h" \
-	"..\enemies\InmortalEnemy.cpp" \
-	"..\TowerManager.cpp" \
-	"..\towers\entities\Bullet.cpp" \
-	"..\towers\SoldierTower.cpp" \
-	"..\entities\ExplosionEntity.cpp" \
-	"..\Vec.hpp" \
+	"..\towers\FlameRingTower.h" \
 	"..\towers\RocketTower.cpp" \
-	"..\Enemy.cpp" 
+	"..\Tooltip.cpp" \
+	"..\TowerType.cpp" \
+	"..\towers\entities\Rocket.cpp" \
+	"..\Enemy.h" \
+	"..\towers\SniperTower.cpp" \
+	"..\Tooltip.h" \
+	"..\towers\SniperTower.h" \
+	"..\MapManager.cpp" \
+	"..\enemies\BasicEnemy.cpp" \
+	"..\Resources.cpp" \
+	"..\enemies\BasicEnemy.h" \
+	"..\Sprite.h" \
+	"..\towers\SoldierTower.h" \
+	"..\Tower.h" \
+	"..\towers\entities\Bullet.cpp" \
+	"..\towers\entities\FlameRing.cpp" \
+	"..\Tower.cpp" \
+	"..\entities\LaserEntity.cpp" \
+	"..\towers\entities\FlameRing.h" \
+	"..\Entity.h" \
+	"..\towerManagers\BasicTowerManager.cpp" \
+	"..\entities\ExplosionEntity.h" \
+	"..\towers\RocketTower.h" \
+	"..\entities\LaserEntity.h" \
+	"..\entities\FireEntity.cpp" \
+	"..\main.cpp" \
+	"..\TowerManager.h" \
+	"..\towers\SoldierTower.cpp" \
+	"..\enemies\InmortalEnemy.h" \
+	"..\Vec.hpp" \
+	"..\towers\entities\Bullet.h" \
+	"..\entities\ExplosionEntity.cpp" \
+	"..\TowerType.h" \
+	"..\enemies\InhibitorEnemy.h" \
+	"..\enemies\InmortalEnemy.cpp" \
+	"..\Game.cpp" \
+	"..\enemies\InhibitorEnemy.cpp" 
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          =
 RECURSIVE              = NO
@@ -306,7 +321,7 @@ CALLER_GRAPH           = NO
 GRAPHICAL_HIERARCHY    = YES
 DIRECTORY_GRAPH        = YES
 DOT_IMAGE_FORMAT       = png
-DOT_PATH               =
+DOT_PATH           = "C:\mingw32\graphviz-2.38\release\bin\dot.exe"
 DOTFILE_DIRS           =
 MSCFILE_DIRS           =
 DOT_GRAPH_MAX_NODES    = 50

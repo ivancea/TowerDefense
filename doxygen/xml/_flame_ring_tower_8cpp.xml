@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_flame_ring_tower_8cpp" kind="file" language="C++">
+    <compoundname>FlameRingTower.cpp</compoundname>
+    <includes refid="_flame_ring_tower_8h" local="yes">FlameRingTower.h</includes>
+    <includes refid="_flame_ring_8h" local="yes">entities/FlameRing.h</includes>
+    <incdepgraph>
+      <node id="1107">
+        <label>list</label>
+      </node>
+      <node id="1105">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="1104">
+        <label>FlameRingTower.h</label>
+        <link refid="_flame_ring_tower_8h"/>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+      </node>
+      <node id="1108">
+        <label>SFML/OpenGL.hpp</label>
+      </node>
+      <node id="1114">
+        <label>cmath</label>
+      </node>
+      <node id="1111">
+        <label>string</label>
+      </node>
+      <node id="1115">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+      </node>
+      <node id="1113">
+        <label>Vec.hpp</label>
+        <link refid="_vec_8hpp"/>
+        <childnode refid="1114" relation="include">
+        </childnode>
+      </node>
+      <node id="1109">
+        <label>TowerManager.h</label>
+        <link refid="_tower_manager_8h"/>
+        <childnode refid="1107" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1110" relation="include">
+        </childnode>
+      </node>
+      <node id="1103">
+        <label>FlameRingTower.cpp</label>
+        <link refid="FlameRingTower.cpp"/>
+        <childnode refid="1104" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+      </node>
+      <node id="1106">
+        <label>../Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="1107" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1109" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+      </node>
+      <node id="1117">
+        <label>entities/FlameRing.h</label>
+        <link refid="_flame_ring_8h"/>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+      </node>
+      <node id="1110">
+        <label>TowerType.h</label>
+        <link refid="_tower_type_8h"/>
+        <childnode refid="1111" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+      </node>
+      <node id="1116">
+        <label>Entity.h</label>
+        <link refid="_entity_8h"/>
+        <childnode refid="1105" relation="include">
+        </childnode>
+      </node>
+      <node id="1112">
+        <label>Tower.h</label>
+        <link refid="_tower_8h"/>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_flame_ring_tower_8h" kindref="compound">FlameRingTower.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_flame_ring_8h" kindref="compound">entities/FlameRing.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_tower_1ad7e7182c61ff1d1f4c20a1d87807fd4c" kindref="member">FlameRingTower::id</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_flame_ring_tower_1ad8ebcb202ae5f74f10591fdd1b0b7a0f" refkind="member"><highlight class="normal"><ref refid="class_flame_ring_tower_1ad8ebcb202ae5f74f10591fdd1b0b7a0f" kindref="member">FlameRingTower::FlameRingTower</ref>(){</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a02ec2f8d1c4dea2f7fc002d8626c8b28" kindref="member">_id</ref><sp/>=<sp/><ref refid="class_flame_ring_tower_1ad7e7182c61ff1d1f4c20a1d87807fd4c" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref><sp/>=<sp/>30;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" kindref="member">_ticksBetweenShoots</ref><sp/>=<sp/>30;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" kindref="member">_minRange</ref><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tower_1a29cae98d3f1d863335b175597f61f8da" kindref="member">_maxRange</ref><sp/>=<sp/>80;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_tower_1a426a443ba32beb37f68d919b79c83088" kindref="member">_ringVelocity</ref><sp/>=<sp/>2.5;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_tower_1a666810b492598d4e77a3b26ab71fcbb6" kindref="member">_ringActualRange</ref><sp/>=<sp/><ref refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" kindref="member">_minRange</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_tower_1adfe46cb7f7baac76ed662c6d5dcc4f74" kindref="member">_ringSize</ref><sp/>=<sp/>30;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_tower_1a9de7e32d674577d1b72b05e748ad20d7" kindref="member">_damage</ref><sp/>=<sp/>0.15;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_flame_ring_tower_1ac7b603fcbd551c39fd2bb789896fcb92" refkind="member"><highlight class="normal"><ref refid="_tower_8h_1a515c655d051e131462a497de3df0e8eb" kindref="member">TowerEvent</ref><sp/><ref refid="class_flame_ring_tower_1ac7b603fcbd551c39fd2bb789896fcb92" kindref="member">FlameRingTower::tick</ref>(){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref><sp/>&lt;=<sp/>0){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a19468d252754d2b9efe64258e7e3ccba" kindref="member">Game::entities</ref>.push_back(</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring" kindref="compound">FlameRing</ref>(</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_game_1a3a3a6fcb74f541d2dc4be77b0be28b71" kindref="member">Game::getRealPosition</ref>(<ref refid="class_tower_1ae7e24d7c87b91df1de224482cf85abe8" kindref="member">_position</ref>),</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_flame_ring_tower_1adfe46cb7f7baac76ed662c6d5dcc4f74" kindref="member">_ringSize</ref>,<sp/><ref refid="class_flame_ring_tower_1a9de7e32d674577d1b72b05e748ad20d7" kindref="member">_damage</ref>,<sp/><ref refid="class_flame_ring_tower_1a426a443ba32beb37f68d919b79c83088" kindref="member">_ringVelocity</ref>,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tower_1a29cae98d3f1d863335b175597f61f8da" kindref="member">_maxRange</ref>,<sp/><ref refid="class_tower_1af5f048591ed3980f02dec3ee5c045b84" kindref="member">_minRange</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref><sp/>=<sp/><ref refid="class_tower_1a92a478cfdd99a2dc3a3388edb871576a" kindref="member">_ticksBetweenShoots</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>--<ref refid="class_tower_1a73940ff5a1f498c890ba840716b830e6" kindref="member">_ticksForShoot</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_tower_8h_1a515c655d051e131462a497de3df0e8ebac9d3e887722f2bc482bcca9d41c512af" kindref="member">TowerEvent::None</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_flame_ring_tower_1a7eb91da364c81d4d93892223527ffe69" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_tower_1a7eb91da364c81d4d93892223527ffe69" kindref="member">FlameRingTower::draw</ref>(sf::RenderWindow*<sp/>window,<sp/><ref refid="struct_vec2" kindref="compound">Vec2d</ref><sp/>point)</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t<sp/>=<sp/><ref refid="namespace_game_1ae2587a19ce298e1559bff77f3701798e" kindref="member">Game::pixelsPerSquare</ref>/2-2;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>glColor3ub(255,0,0);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>glBegin(GL_POLYGON);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref>*2.01;<sp/>i+=<ref refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref>/360)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glVertex2i(point.<ref refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" kindref="member">x</ref>+sin(i)*t,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point.<ref refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" kindref="member">y</ref>+cos(i)*t);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnd();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_flame_ring_tower_1a86d9b25684eb86180f09fabf43081c94" refkind="member"><highlight class="normal"><ref refid="class_tower" kindref="compound">Tower</ref>*<sp/><ref refid="class_flame_ring_tower_1a86d9b25684eb86180f09fabf43081c94" kindref="member">FlameRingTower::clone</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_flame_ring_tower_1ad8ebcb202ae5f74f10591fdd1b0b7a0f" kindref="member">FlameRingTower</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/FlameRingTower.cpp"/>
+  </compounddef>
+</doxygen>

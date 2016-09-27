@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_rocket" kind="class" language="C++" prot="public">
+    <compoundname>Rocket</compoundname>
+    <basecompoundref refid="class_entity" prot="public" virt="non-virtual">Entity</basecompoundref>
+    <includes refid="_rocket_8h" local="no">Rocket.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_rocket_1a709e85744e886fca6662c3ec626fca4f" prot="private" static="no" mutable="no">
+        <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+        <definition>Vec2d Rocket::_position</definition>
+        <argsstring></argsstring>
+        <name>_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="10" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rocket_1a64baa4198eafb02c97cbf886448a29cc" prot="private" static="no" mutable="no">
+        <type><ref refid="class_enemy" kindref="compound">Enemy</ref> *</type>
+        <definition>Enemy* Rocket::_targetEnemy</definition>
+        <argsstring></argsstring>
+        <name>_targetEnemy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="12" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rocket_1abe2eabd2a23839d30136b291bc655385" prot="private" static="no" mutable="no">
+        <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+        <definition>Vec2d Rocket::_targetPosition</definition>
+        <argsstring></argsstring>
+        <name>_targetPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="13" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rocket_1aeb35b2a4c15bd4d1b195b4c44867040a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Rocket::_damage</definition>
+        <argsstring></argsstring>
+        <name>_damage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="15" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rocket_1a8548f739f5d6f7fdc6998de11928e833" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Rocket::_explosionRange</definition>
+        <argsstring></argsstring>
+        <name>_explosionRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="16" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rocket_1a232ad9ef82cfa31e36220a4e139ca38c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Rocket::_velocity</definition>
+        <argsstring></argsstring>
+        <name>_velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="17" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rocket_1ab38346b404697945cb02c5c2343aad4d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Rocket::_distanceTraveled</definition>
+        <argsstring></argsstring>
+        <name>_distanceTraveled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="18" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rocket_1a26c1453a465705e8f364ea8c7eecfc98" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Rocket::_maxDistance</definition>
+        <argsstring></argsstring>
+        <name>_maxDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="19" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rocket_1a798c5384ab3f205084fb5d7ec41c7474" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Rocket::_hitEnemiesInPath</definition>
+        <argsstring></argsstring>
+        <name>_hitEnemiesInPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="20" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_rocket_1a9c76ec279a2f1ad97c86850a9666faab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Rocket::Rocket</definition>
+        <argsstring>(Enemy *target, double damage, double explosionRange, double velocity, double maxDistance, bool hitEnemiesInPath, Vec2d position)</argsstring>
+        <name>Rocket</name>
+        <param>
+          <type><ref refid="class_enemy" kindref="compound">Enemy</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>damage</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>explosionRange</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>maxDistance</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hitEnemiesInPath</declname>
+        </param>
+        <param>
+          <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="23" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.cpp" bodystart="9" bodyend="21"/>
+        <references refid="class_rocket_1a709e85744e886fca6662c3ec626fca4f" compoundref="_rocket_8h" startline="10">_position</references>
+        <references refid="class_rocket_1a64baa4198eafb02c97cbf886448a29cc" compoundref="_rocket_8h" startline="12">_targetEnemy</references>
+        <references refid="class_rocket_1abe2eabd2a23839d30136b291bc655385" compoundref="_rocket_8h" startline="13">_targetPosition</references>
+        <references refid="class_enemy_1afd5331e1b8efb74c4722569b14934c61" compoundref="_enemy_8h" startline="32" endline="32">Enemy::getPosition</references>
+        <references refid="class_rocket_1aeb35b2a4c15bd4d1b195b4c44867040a" compoundref="_rocket_8h" startline="15">_damage</references>
+        <references refid="class_rocket_1a8548f739f5d6f7fdc6998de11928e833" compoundref="_rocket_8h" startline="16">_explosionRange</references>
+        <references refid="class_rocket_1a232ad9ef82cfa31e36220a4e139ca38c" compoundref="_rocket_8h" startline="17">_velocity</references>
+        <references refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" compoundref="_game_8cpp" startline="37">Game::velocity</references>
+        <references refid="class_rocket_1ab38346b404697945cb02c5c2343aad4d" compoundref="_rocket_8h" startline="18">_distanceTraveled</references>
+        <references refid="class_rocket_1a26c1453a465705e8f364ea8c7eecfc98" compoundref="_rocket_8h" startline="19">_maxDistance</references>
+        <references refid="class_rocket_1a798c5384ab3f205084fb5d7ec41c7474" compoundref="_rocket_8h" startline="20">_hitEnemiesInPath</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rocket_1a89a41131057f7396121f0f16c7944498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Rocket::Rocket</definition>
+        <argsstring>(Vec2d target, double damage, double explosionRange, double velocity, double maxDistance, bool hitEnemiesInPath, Vec2d position)</argsstring>
+        <name>Rocket</name>
+        <param>
+          <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>damage</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>explosionRange</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>maxDistance</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hitEnemiesInPath</declname>
+        </param>
+        <param>
+          <type><ref refid="_vec_8hpp_1a5d9960b44dec6cd115402d1266d8d946" kindref="member">Vec2d</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="26" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.cpp" bodystart="23" bodyend="35"/>
+        <references refid="class_rocket_1a709e85744e886fca6662c3ec626fca4f" compoundref="_rocket_8h" startline="10">_position</references>
+        <references refid="class_rocket_1a64baa4198eafb02c97cbf886448a29cc" compoundref="_rocket_8h" startline="12">_targetEnemy</references>
+        <references refid="class_rocket_1abe2eabd2a23839d30136b291bc655385" compoundref="_rocket_8h" startline="13">_targetPosition</references>
+        <references refid="class_rocket_1aeb35b2a4c15bd4d1b195b4c44867040a" compoundref="_rocket_8h" startline="15">_damage</references>
+        <references refid="class_rocket_1a8548f739f5d6f7fdc6998de11928e833" compoundref="_rocket_8h" startline="16">_explosionRange</references>
+        <references refid="class_rocket_1a232ad9ef82cfa31e36220a4e139ca38c" compoundref="_rocket_8h" startline="17">_velocity</references>
+        <references refid="namespace_game_1a554b9baf7a1924aeba4a5135ebaee3b6" compoundref="_game_8cpp" startline="37">Game::velocity</references>
+        <references refid="class_rocket_1ab38346b404697945cb02c5c2343aad4d" compoundref="_rocket_8h" startline="18">_distanceTraveled</references>
+        <references refid="class_rocket_1a26c1453a465705e8f364ea8c7eecfc98" compoundref="_rocket_8h" startline="19">_maxDistance</references>
+        <references refid="class_rocket_1a798c5384ab3f205084fb5d7ec41c7474" compoundref="_rocket_8h" startline="20">_hitEnemiesInPath</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rocket_1a2081c885671bf36789e6e8b3af81081d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Rocket::damageEnemies</definition>
+        <argsstring>() const </argsstring>
+        <name>damageEnemies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="30" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.cpp" bodystart="37" bodyend="47"/>
+        <references refid="namespace_game_1a19468d252754d2b9efe64258e7e3ccba" compoundref="_game_8cpp" startline="27">Game::entities</references>
+        <references refid="class_rocket_1a709e85744e886fca6662c3ec626fca4f" compoundref="_rocket_8h" startline="10">_position</references>
+        <references refid="class_rocket_1a8548f739f5d6f7fdc6998de11928e833" compoundref="_rocket_8h" startline="16">_explosionRange</references>
+        <references refid="namespace_game_1a567bf723c1182e15ffac0548a9b01a00" compoundref="_game_8cpp" startline="26">Game::enemies</references>
+        <references refid="class_rocket_1aeb35b2a4c15bd4d1b195b4c44867040a" compoundref="_rocket_8h" startline="15">_damage</references>
+        <references refid="namespace_game_1a1d9c21b5df867aeaf1ac00fc77a577b7" compoundref="_game_8cpp" startline="246" endline="251">Game::kill</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rocket_1ad82fb42a0ae20e7157ede954020515b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Rocket::tick</definition>
+        <argsstring>()</argsstring>
+        <name>tick</name>
+        <reimplements refid="class_entity_1a1ac1547ce618e2ec040c6a8498bb5201">tick</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="32" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.cpp" bodystart="49" bodyend="85"/>
+        <references refid="namespace_game_1ae0de9897a96ba2707f9648a563521c7d" compoundref="_game_8cpp" startline="392" endline="399">Game::exists</references>
+        <references refid="class_rocket_1a64baa4198eafb02c97cbf886448a29cc" compoundref="_rocket_8h" startline="12">_targetEnemy</references>
+        <references refid="class_rocket_1abe2eabd2a23839d30136b291bc655385" compoundref="_rocket_8h" startline="13">_targetPosition</references>
+        <references refid="class_enemy_1afd5331e1b8efb74c4722569b14934c61" compoundref="_enemy_8h" startline="32" endline="32">Enemy::getPosition</references>
+        <references refid="_vec_8hpp_1afb4316fdff9c2e3e932e94e1f3ba2ff1" compoundref="_vec_8hpp" startline="85" endline="85">distance</references>
+        <references refid="struct_vec2_1a8f0f08fa249195af341222553c8db855" compoundref="_vec_8hpp" startline="58" endline="58">Vec2&lt; T &gt;::distance</references>
+        <references refid="class_rocket_1a709e85744e886fca6662c3ec626fca4f" compoundref="_rocket_8h" startline="10">_position</references>
+        <references refid="class_rocket_1a232ad9ef82cfa31e36220a4e139ca38c" compoundref="_rocket_8h" startline="17">_velocity</references>
+        <references refid="class_rocket_1ab38346b404697945cb02c5c2343aad4d" compoundref="_rocket_8h" startline="18">_distanceTraveled</references>
+        <references refid="class_rocket_1a26c1453a465705e8f364ea8c7eecfc98" compoundref="_rocket_8h" startline="19">_maxDistance</references>
+        <references refid="class_rocket_1a2081c885671bf36789e6e8b3af81081d" compoundref="_rocket_8cpp" startline="37" endline="47">damageEnemies</references>
+        <references refid="struct_vec2_1a73f59613a791abd955bf16fccd53777b" compoundref="_vec_8hpp" startline="52" endline="57">Vec2&lt; T &gt;::normalize</references>
+        <references refid="class_rocket_1a798c5384ab3f205084fb5d7ec41c7474" compoundref="_rocket_8h" startline="20">_hitEnemiesInPath</references>
+        <references refid="namespace_game_1a2f4d39b84db31e6af593f4f4e58fab2d" compoundref="_game_8cpp" startline="382" endline="389">Game::findEnemiesInRange</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rocket_1ac547764f02cbb614eb9e77d6a36786a0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Rocket::drawOver</definition>
+        <argsstring>(sf::RenderWindow *window) const </argsstring>
+        <name>drawOver</name>
+        <reimplements refid="class_entity_1a78fdc76cd8111e1c403024f66f2e00a0">drawOver</reimplements>
+        <param>
+          <type>sf::RenderWindow *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="33" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.cpp" bodystart="87" bodyend="94"/>
+        <references refid="_game_8h_1a598a3330b3c21701223ee0ca14316eca" compoundref="_game_8h" startline="4">PI</references>
+        <references refid="class_rocket_1a709e85744e886fca6662c3ec626fca4f" compoundref="_rocket_8h" startline="10">_position</references>
+        <references refid="struct_vec2_1a8ef8f719932c920ac4ce11399c983d53" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::x</references>
+        <references refid="struct_vec2_1a7ea262a941af6b3abd284ab97658806c" compoundref="_vec_8hpp" startline="46">Vec2&lt; T &gt;::y</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="189">
+        <label>Entity</label>
+        <link refid="class_entity"/>
+      </node>
+      <node id="188">
+        <label>Rocket</label>
+        <link refid="class_rocket"/>
+        <childnode refid="189" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="193">
+        <label>Vec2&lt; double &gt;</label>
+        <link refid="struct_vec2"/>
+      </node>
+      <node id="191">
+        <label>Entity</label>
+        <link refid="class_entity"/>
+      </node>
+      <node id="190">
+        <label>Rocket</label>
+        <link refid="class_rocket"/>
+        <childnode refid="191" relation="public-inheritance">
+        </childnode>
+        <childnode refid="192" relation="usage">
+          <edgelabel>_targetEnemy</edgelabel>
+        </childnode>
+        <childnode refid="193" relation="usage">
+          <edgelabel>_position</edgelabel>
+          <edgelabel>_targetPosition</edgelabel>
+        </childnode>
+      </node>
+      <node id="192">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="193" relation="usage">
+          <edgelabel>_position</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" line="8" column="1" bodyfile="C:/Users/ivancea/Desktop/github/TowerDefense/towers/entities/Rocket.h" bodystart="8" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_rocket_1aeb35b2a4c15bd4d1b195b4c44867040a" prot="private" virt="non-virtual"><scope>Rocket</scope><name>_damage</name></member>
+      <member refid="class_rocket_1ab38346b404697945cb02c5c2343aad4d" prot="private" virt="non-virtual"><scope>Rocket</scope><name>_distanceTraveled</name></member>
+      <member refid="class_rocket_1a8548f739f5d6f7fdc6998de11928e833" prot="private" virt="non-virtual"><scope>Rocket</scope><name>_explosionRange</name></member>
+      <member refid="class_rocket_1a798c5384ab3f205084fb5d7ec41c7474" prot="private" virt="non-virtual"><scope>Rocket</scope><name>_hitEnemiesInPath</name></member>
+      <member refid="class_rocket_1a26c1453a465705e8f364ea8c7eecfc98" prot="private" virt="non-virtual"><scope>Rocket</scope><name>_maxDistance</name></member>
+      <member refid="class_rocket_1a709e85744e886fca6662c3ec626fca4f" prot="private" virt="non-virtual"><scope>Rocket</scope><name>_position</name></member>
+      <member refid="class_rocket_1a64baa4198eafb02c97cbf886448a29cc" prot="private" virt="non-virtual"><scope>Rocket</scope><name>_targetEnemy</name></member>
+      <member refid="class_rocket_1abe2eabd2a23839d30136b291bc655385" prot="private" virt="non-virtual"><scope>Rocket</scope><name>_targetPosition</name></member>
+      <member refid="class_rocket_1a232ad9ef82cfa31e36220a4e139ca38c" prot="private" virt="non-virtual"><scope>Rocket</scope><name>_velocity</name></member>
+      <member refid="class_rocket_1a2081c885671bf36789e6e8b3af81081d" prot="public" virt="non-virtual"><scope>Rocket</scope><name>damageEnemies</name></member>
+      <member refid="class_entity_1a5ab2eb129b6330823115239247fec4f5" prot="public" virt="virtual"><scope>Rocket</scope><name>draw</name></member>
+      <member refid="class_rocket_1ac547764f02cbb614eb9e77d6a36786a0" prot="public" virt="virtual"><scope>Rocket</scope><name>drawOver</name></member>
+      <member refid="class_rocket_1a9c76ec279a2f1ad97c86850a9666faab" prot="public" virt="non-virtual"><scope>Rocket</scope><name>Rocket</name></member>
+      <member refid="class_rocket_1a89a41131057f7396121f0f16c7944498" prot="public" virt="non-virtual"><scope>Rocket</scope><name>Rocket</name></member>
+      <member refid="class_rocket_1ad82fb42a0ae20e7157ede954020515b8" prot="public" virt="virtual"><scope>Rocket</scope><name>tick</name></member>
+      <member refid="class_entity_1a588098978eea6a3486b7361605ff3f0f" prot="public" virt="virtual"><scope>Rocket</scope><name>~Entity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

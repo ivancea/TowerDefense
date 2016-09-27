@@ -1,0 +1,5 @@
+<map id="SniperTower" name="SniperTower">
+<area shape="rect" id="node2" href="$class_tower.html" title="Tower" alt="" coords="29,95,85,121"/>
+<area shape="rect" id="node3" href="$struct_vec2.html" title="Vec2\&lt; int \&gt;" alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node4" href="$class_sprite.html" title="Sprite" alt="" coords="123,95,179,121"/>
+</map>

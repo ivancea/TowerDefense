@@ -1,0 +1,5 @@
+<map id="SniperTower::clone" name="SniperTower::clone">
+<area shape="rect" id="node2" href="$class_sniper_tower.html#a93cc1454f3e6f239f8fca79be6ccc15a" title="SniperTower::SniperTower" alt="" coords="185,5,357,32"/>
+<area shape="rect" id="node3" href="$namespace_resources.html#a5d69bd132d861b6f3a83486e871b0b0a" title="Resources::getTexture" alt="" coords="405,5,559,32"/>
+<area shape="rect" id="node4" href="$namespace_resources.html#a0cbbb47ce375a16826bbdcd8843b7aa9" title="Resources::normalizePath" alt="" coords="607,5,781,32"/>
+</map>

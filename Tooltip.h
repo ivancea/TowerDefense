@@ -15,15 +15,17 @@ class Tooltip{
     std::string _title;
     std::string _body;
 
+    sf::Font _fontArial;
+
 public:
     Tooltip();
-    Tooltip(std::string title, std::string body,
+    Tooltip(const std::string& title, const std::string& body,
             Vec2i point, int maxWidth = 0,
             sf::Color backColor = sf::Color(255,255,200,220),
             sf::Color foreColor = sf::Color::Black);
 
-    void setTitle(std::string title);
-    void setBody(std::string body);
+    void setTitle(const std::string& title);
+    void setBody(const std::string& body);
     void setPoint(Vec2i point);
 
     void draw(sf::RenderWindow* window) const;

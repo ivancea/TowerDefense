@@ -1,0 +1,25 @@
+var class_enemy =
+[
+    [ "Enemy", "class_enemy.html#add9c4e25afbbcc2c50c96952cfe6a07b", null ],
+    [ "~Enemy", "class_enemy.html#a065a22a70c78bfc03da4c032312c6da5", null ],
+    [ "damage", "class_enemy.html#af7c3be9e985c7551466bb31e8d51bbbb", null ],
+    [ "draw", "class_enemy.html#a6b18444f40dcc15b19b4664a9e335789", null ],
+    [ "drawOver", "class_enemy.html#a2fcfd6cf10fa58c9b6963ccf3043cb73", null ],
+    [ "getDamage", "class_enemy.html#a88b06a3cfbd5fd4293cd849cfd149da2", null ],
+    [ "getDistanceToEnd", "class_enemy.html#a95df3c4a64b8576874c5815877ee9d61", null ],
+    [ "getDistanceToNextPosition", "class_enemy.html#ab01196254c5c73cfaca964804f45c28a", null ],
+    [ "getLife", "class_enemy.html#a8f6434a2485b61bb63388d6e719e252b", null ],
+    [ "getNextPositionIndex", "class_enemy.html#ad910d99ff1ef362a680719896b1725a9", null ],
+    [ "getPosition", "class_enemy.html#afd5331e1b8efb74c4722569b14934c61", null ],
+    [ "getVelocity", "class_enemy.html#a2f617118f5e390e8997907fe5f4dc155", null ],
+    [ "killed", "class_enemy.html#a0cb411813c4dbdf7ba6716635d94046d", null ],
+    [ "reloadDistanceToEnd", "class_enemy.html#a5a90dbd539ffb35f91b8183feeac46c2", null ],
+    [ "setNextPositionIndex", "class_enemy.html#aacce8d4fdd045a55ee4548c3b9148598", null ],
+    [ "tick", "class_enemy.html#ad921c3a0eeab9d46eae08054814a0d0a", null ],
+    [ "_damage", "class_enemy.html#aa015dbea3090d6010d26169a6af9d9ed", null ],
+    [ "_distanceToEnd", "class_enemy.html#a19816dfb5bbfe5efe3546364e1bed424", null ],
+    [ "_life", "class_enemy.html#a70ddc801163c579dcd432e8553331602", null ],
+    [ "_nextPositionIndex", "class_enemy.html#a59876d7ce834b7c6f99feea112e1a8e6", null ],
+    [ "_position", "class_enemy.html#a1bf385b88624441c10a926f41c2a194e", null ],
+    [ "_velocity", "class_enemy.html#af742f414df708a7c62240b6bd73aad94", null ]
+];
