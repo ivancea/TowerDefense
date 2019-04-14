@@ -179,13 +179,16 @@ int main(){
                     placingTower = nullptr;
                 }else if(ev.mouseButton.button == sf::Mouse::Right){
                     Vec2i p = Vec2i(mouse.x,mouse.y)/Game::pixelsPerSquare;
-                    if(Game::map[p.x][p.y] == Game::TileType::TowerTile){
-                        Tower* t = Game::removeTower(p);
-                        if(t==nullptr){
-                            cout << "ERROR DELETING TOWER" << endl;
-                        }else{
-                            Game::money += Game::towerManager->getTowerCost(t->getId());
-                            delete t;
+                    if(Game::map.size()>p.x && p.x>=0
+                    && Game::map[p.x].size()>p.y && p.y>=0){
+                        if(Game::map[p.x][p.y] == Game::TileType::TowerTile){
+                            Tower* t = Game::removeTower(p);
+                            if(t==nullptr){
+                                cout << "ERROR DELETING TOWER" << endl;
+                            }else{
+                                Game::money += Game::towerManager->getTowerCost(t->getId());
+                                delete t;
+                            }
                         }
                     }
                 }
