@@ -1,6 +1,7 @@
 # TowerDefense
+A Tower Defense game concept.
 
-Tower defense game, made with **C++**. Using **SFML** for window management and some graphical purposes.
+Made with **C++**. Using **SFML** for window management and some graphical purposes.
 
 New features *listed* in TODO.txt file.
 
