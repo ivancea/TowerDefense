@@ -4,7 +4,7 @@
 #include <SFML/Graphics.hpp>
 
 #include "../Vec.hpp"
-#include "../entity.h"
+#include "../entity.hpp"
 
 class LaserEntity : public Entity {
     Vec2d _from, _to;

@@ -1,8 +1,8 @@
-#include "TowerManager.h"
+#include "TowerManager.hpp"
 
 #include <vector>
 
-#include "Game.h"
+#include "Game.hpp"
 
 TowerManager::~TowerManager(){
     for(TowerType* tt : _towerTypes){

@@ -6,7 +6,7 @@ class TowerManager;
 #include <list>
 #include <SFML/Graphics.hpp>
 
-#include "TowerType.h"
+#include "TowerType.hpp"
 
 class TowerManager{
 

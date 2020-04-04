@@ -1,8 +1,8 @@
-#include "InhibitorEnemy.h"
+#include "InhibitorEnemy.hpp"
 
 #include <SFML/OpenGL.hpp>
 
-#include "Game.h"
+#include "../Game.hpp"
 
 
 InhibitorEnemy::InhibitorEnemy(double velocity, double life, double damage)

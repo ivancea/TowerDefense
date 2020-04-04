@@ -6,7 +6,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/OpenGL.hpp>
 
-#include "MapManager.h"
+#include "MapManager.hpp"
 #include "Vec.hpp"
 
 using namespace std;

@@ -1,6 +1,6 @@
-#include "LaserEntity.h"
+#include "LaserEntity.hpp"
 
-#include "../Game.h"
+#include "../Game.hpp"
 #include <SFML/OpenGL.hpp>
 
 LaserEntity::LaserEntity(Vec2d from, Vec2d to, int ticks){

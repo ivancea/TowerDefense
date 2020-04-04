@@ -4,9 +4,9 @@
 #include <list>
 #include <SFML/Graphics.hpp>
 
-#include "../Game.h"
-#include "../Tower.h"
-#include "entities/Rocket.h"
+#include "../Game.hpp"
+#include "../Tower.hpp"
+#include "entities/Rocket.hpp"
 
 class RocketTower : public Tower{
     double _damage;

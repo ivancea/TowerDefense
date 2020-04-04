@@ -1,4 +1,4 @@
-#include "SoldierTower.h"
+#include "SoldierTower.hpp"
 
 int SoldierTower::id = -1;
 

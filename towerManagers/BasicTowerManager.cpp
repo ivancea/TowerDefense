@@ -1,9 +1,9 @@
-#include "BasicTowerManager.h"
+#include "BasicTowerManager.hpp"
 
-#include "SoldierTower.h"
-#include "SniperTower.h"
-#include "RocketTower.h"
-#include "FlameRingTower.h"
+#include "../towers/SoldierTower.hpp"
+#include "../towers/SniperTower.hpp"
+#include "../towers/RocketTower.hpp"
+#include "../towers/FlameRingTower.hpp"
 
 
 BasicTowerManager::BasicTowerManager(){

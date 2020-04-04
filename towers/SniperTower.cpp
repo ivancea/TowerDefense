@@ -1,12 +1,12 @@
-#include "SniperTower.h"
+#include "SniperTower.hpp"
 
 #include <cmath>
 
 #include <SFML/OpenGL.hpp>
 
-#include "../Resources.h"
-#include "../entities/LaserEntity.h"
-#include "../entities/FireEntity.h"
+#include "../Resources.hpp"
+#include "../entities/LaserEntity.hpp"
+#include "../entities/FireEntity.hpp"
 
 int SniperTower::id = -1;
 

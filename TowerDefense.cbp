@@ -56,93 +56,93 @@
 		<Unit filename="Enemy.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="Enemy.h">
+		<Unit filename="Enemy.hpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="Entity.h">
+		<Unit filename="Entity.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="Game.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="Game.h">
+		<Unit filename="Game.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="MapManager.cpp" />
-		<Unit filename="MapManager.h" />
+		<Unit filename="MapManager.hpp" />
 		<Unit filename="README.md" />
 		<Unit filename="Resources.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="Resources.h">
+		<Unit filename="Resources.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="Sprite.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="Sprite.h">
+		<Unit filename="Sprite.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="TODO.txt" />
 		<Unit filename="Tooltip.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="Tooltip.h">
+		<Unit filename="Tooltip.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="Tower.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="Tower.h">
+		<Unit filename="Tower.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="TowerManager.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="TowerManager.h">
+		<Unit filename="TowerManager.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="TowerType.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="TowerType.h">
+		<Unit filename="TowerType.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="Vec.hpp" />
 		<Unit filename="enemies/BasicEnemy.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="enemies/BasicEnemy.h">
+		<Unit filename="enemies/BasicEnemy.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="enemies/InhibitorEnemy.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="enemies/InhibitorEnemy.h">
+		<Unit filename="enemies/InhibitorEnemy.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="enemies/InmortalEnemy.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="enemies/InmortalEnemy.h">
+		<Unit filename="enemies/InmortalEnemy.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="entities/ExplosionEntity.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="entities/ExplosionEntity.h">
+		<Unit filename="entities/ExplosionEntity.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="entities/FireEntity.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="entities/FireEntity.h">
+		<Unit filename="entities/FireEntity.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="entities/LaserEntity.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="entities/LaserEntity.h">
+		<Unit filename="entities/LaserEntity.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="main.cpp">
@@ -154,49 +154,49 @@
 		<Unit filename="towerManagers/BasicTowerManager.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="towerManagers/BasicTowerManager.h">
+		<Unit filename="towerManagers/BasicTowerManager.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="towers/FlameRingTower.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="towers/FlameRingTower.h">
+		<Unit filename="towers/FlameRingTower.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="towers/RocketTower.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="towers/RocketTower.h">
+		<Unit filename="towers/RocketTower.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="towers/SniperTower.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="towers/SniperTower.h">
+		<Unit filename="towers/SniperTower.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="towers/SoldierTower.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="towers/SoldierTower.h">
+		<Unit filename="towers/SoldierTower.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="towers/entities/Bullet.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="towers/entities/Bullet.h">
+		<Unit filename="towers/entities/Bullet.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="towers/entities/FlameRing.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="towers/entities/FlameRing.h">
+		<Unit filename="towers/entities/FlameRing.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="towers/entities/Rocket.cpp">
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="towers/entities/Rocket.h">
+		<Unit filename="towers/entities/Rocket.hpp">
 			<Option target="Release" />
 		</Unit>
 		<Extensions>

@@ -3,8 +3,8 @@
 
 #include <SFML/Graphics.hpp>
 
-#include "../Game.h"
-#include "../Tower.h"
+#include "../Game.hpp"
+#include "../Tower.hpp"
 
 class FlameRingTower : public Tower{
     double _ringVelocity;

@@ -1,10 +1,10 @@
-#include "Bullet.h"
+#include "Bullet.hpp"
 
 #include <list>
 #include <SFML/Graphics.hpp>
 #include <SFML/OpenGL.hpp>
 
-#include "../../Game.h"
+#include "../../Game.hpp"
 
 Bullet::Bullet(Vec2d target, double damage,
                double velocity, Vec2d position){

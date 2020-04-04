@@ -1,4 +1,4 @@
-#include "RocketTower.h"
+#include "RocketTower.hpp"
 
 int RocketTower::id = -1;
 

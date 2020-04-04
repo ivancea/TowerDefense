@@ -1,9 +1,9 @@
 #ifndef BULLET_H
 #define BULLET_H
 
-#include "../../Entity.h"
+#include "../../Entity.hpp"
 #include "../../Vec.hpp"
-#include "../../Enemy.h"
+#include "../../Enemy.hpp"
 
 class Bullet : public Entity{
 

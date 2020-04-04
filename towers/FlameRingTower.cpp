@@ -1,6 +1,6 @@
-#include "FlameRingTower.h"
+#include "FlameRingTower.hpp"
 
-#include "entities/FlameRing.h"
+#include "entities/FlameRing.hpp"
 
 int FlameRingTower::id = -1;
 

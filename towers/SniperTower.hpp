@@ -4,9 +4,9 @@
 #include <SFML/Graphics.hpp>
 
 #include "../Vec.hpp"
-#include "../sprite.h"
-#include "../Game.h"
-#include "../Tower.h"
+#include "../sprite.hpp"
+#include "../Game.hpp"
+#include "../Tower.hpp"
 
 class SniperTower : public Tower{
     double _damage;

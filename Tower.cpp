@@ -1,6 +1,6 @@
-#include "Tower.h"
+#include "Tower.hpp"
 
-#include "Game.h"
+#include "Game.hpp"
 
 Tower::Tower():_priority(Default){}
 

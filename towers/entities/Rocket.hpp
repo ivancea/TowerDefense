@@ -1,9 +1,9 @@
 #ifndef ROCKET_H
 #define ROCKET_H
 
-#include "../../Entity.h"
+#include "../../Entity.hpp"
 #include "../../Vec.hpp"
-#include "../../Enemy.h"
+#include "../../Enemy.hpp"
 
 class Rocket : public Entity{
 

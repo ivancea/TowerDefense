@@ -1,10 +1,10 @@
-#include "Rocket.h"
+#include "Rocket.hpp"
 
 #include <SFML/Graphics.hpp>
 #include <SFML/OpenGL.hpp>
 
-#include "../../Game.h"
-#include "../../entities/ExplosionEntity.h"
+#include "../../Game.hpp"
+#include "../../entities/ExplosionEntity.hpp"
 
 Rocket::Rocket(Enemy* target, double damage, double explosionRange,
                double velocity, double maxDistance,

@@ -1,7 +1,7 @@
-#include "FireEntity.h"
+#include "FireEntity.hpp"
 
-#include "../Resources.h"
-#include "../Game.h"
+#include "../Resources.hpp"
+#include "../Game.hpp"
 #include <SFML/OpenGL.hpp>
 
 FireEntity::FireEntity(Vec2d position, int ticksAlive)

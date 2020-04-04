@@ -1,16 +1,16 @@
-#include "Game.h"
+#include "Game.hpp"
 
 #include <cmath>
 #include <string>
 
-#include "Resources.h"
+#include "Resources.hpp"
 
-#include "entities/ExplosionEntity.h"
+#include "entities/ExplosionEntity.hpp"
 
 /// Enemies (TEMPORAL, will be replaced by some Rounds engine
-#include "enemies/BasicEnemy.h"
-#include "enemies/InhibitorEnemy.h"
-#include "enemies/InmortalEnemy.h"
+#include "enemies/BasicEnemy.hpp"
+#include "enemies/InhibitorEnemy.hpp"
+#include "enemies/InmortalEnemy.hpp"
 
 
 namespace Game{

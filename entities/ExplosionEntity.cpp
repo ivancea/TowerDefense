@@ -1,8 +1,8 @@
-#include "ExplosionEntity.h"
+#include "ExplosionEntity.hpp"
 
-#include "../Resources.h"
-#include "../Sprite.h"
-#include "../Game.h"
+#include "../Resources.hpp"
+#include "../Sprite.hpp"
+#include "../Game.hpp"
 #include <SFML/OpenGL.hpp>
 
 ExplosionEntity::ExplosionEntity(Vec2d position, double range, int ticksAlive)

@@ -7,17 +7,17 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/OpenGL.hpp>
 
-#include "Game.h"
-#include "Resources.h"
-#include "MapManager.h"
-#include "BasicTowerManager.h"
-#include "Tooltip.h"
+#include "Game.hpp"
+#include "Resources.hpp"
+#include "MapManager.hpp"
+#include "Tooltip.hpp"
+#include "towerManagers/BasicTowerManager.hpp"
 
 ///Towers (TEMPORAL, will be replaced by TowerManager)
-#include "towers/SoldierTower.h"
-#include "towers/RocketTower.h"
-#include "towers/SniperTower.h"
-#include "towers/FlameRingTower.h"
+#include "towers/SoldierTower.hpp"
+#include "towers/RocketTower.hpp"
+#include "towers/SniperTower.hpp"
+#include "towers/FlameRingTower.hpp"
 
 using namespace std;
 

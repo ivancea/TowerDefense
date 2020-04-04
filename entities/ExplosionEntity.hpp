@@ -3,9 +3,9 @@
 
 #include <SFML/Graphics.hpp>
 
-#include "../Sprite.h"
+#include "../Sprite.hpp"
 #include "../Vec.hpp"
-#include "../Entity.h"
+#include "../Entity.hpp"
 
 class ExplosionEntity : public Entity {
     Vec2d _position;

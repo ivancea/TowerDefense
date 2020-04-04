@@ -1,9 +1,7 @@
 #ifndef BASICTOWERMANAGER_H
 #define BASICTOWERMANAGER_H
 
-#include "../TowerManager.h"
-#include "RocketTower.h"
-#include "SniperTower.h"
+#include "../TowerManager.hpp"
 
 class BasicTowerManager : public TowerManager{
     int _nextId;

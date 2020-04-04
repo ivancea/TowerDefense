@@ -1,9 +1,9 @@
 #ifndef FLAMERING_H
 #define FLAMERING_H
 
-#include"../../Entity.h"
+#include"../../Entity.hpp"
 #include "../../Vec.hpp"
-#include "../../Enemy.h"
+#include "../../Enemy.hpp"
 
 class FlameRing : public Entity{
 

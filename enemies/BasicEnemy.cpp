@@ -1,8 +1,8 @@
-#include "BasicEnemy.h"
+#include "BasicEnemy.hpp"
 
 #include <SFML/OpenGL.hpp>
 
-#include "Game.h"
+#include "../Game.hpp"
 
 BasicEnemy::BasicEnemy(double velocity, double life, double damage)
 : Enemy(1){

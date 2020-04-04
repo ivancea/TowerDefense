@@ -1,8 +1,8 @@
-#include "InmortalEnemy.h"
+#include "InmortalEnemy.hpp"
 
 #include <SFML/OpenGL.hpp>
 
-#include "Game.h"
+#include "../Game.hpp"
 
 InmortalEnemy::InmortalEnemy(double velocity, double damage)
 : Enemy(1){

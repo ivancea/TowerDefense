@@ -1,8 +1,8 @@
 #ifndef INHIBITORENEMY_H
 #define INHIBITORENEMY_H
 
-#include "Enemy.h"
-#include "Tower.h"
+#include "../Enemy.hpp"
+#include "../Tower.hpp"
 
 class InhibitorEnemy : public Enemy{
 

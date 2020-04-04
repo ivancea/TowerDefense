@@ -1,6 +1,6 @@
-#include "Enemy.h"
+#include "Enemy.hpp"
 
-#include "Game.h"
+#include "Game.hpp"
 
 Enemy::Enemy(int nextPositionIndex){
     _nextPositionIndex = nextPositionIndex;

@@ -1,4 +1,4 @@
-#include "Tooltip.h"
+#include "Tooltip.hpp"
 
 Tooltip::Tooltip(){
     _maxWidth = 0;

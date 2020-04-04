@@ -1,4 +1,4 @@
-#include "Resources.h"
+#include "Resources.hpp"
 
 namespace Resources{
 

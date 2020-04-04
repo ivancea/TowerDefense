@@ -1,4 +1,4 @@
-#include "MapManager.h"
+#include "MapManager.hpp"
 
 namespace MapManager{
 

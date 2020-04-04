@@ -1,7 +1,7 @@
 #ifndef INMORTALENEMY_H
 #define INMORTALENEMY_H
 
-#include "../Enemy.h"
+#include "../Enemy.hpp"
 
 class InmortalEnemy : public Enemy{
 public:

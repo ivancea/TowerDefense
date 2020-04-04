@@ -7,10 +7,10 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/OpenGL.hpp>
 
-#include "TowerManager.h"
-#include "Tower.h"
-#include "Enemy.h"
-#include "Entity.h"
+#include "TowerManager.hpp"
+#include "Tower.hpp"
+#include "Enemy.hpp"
+#include "Entity.hpp"
 #include "Vec.hpp"
 
 namespace Game{

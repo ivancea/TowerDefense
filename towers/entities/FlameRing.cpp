@@ -1,9 +1,9 @@
-#include "FlameRing.h"
+#include "FlameRing.hpp"
 
 #include <SFML/Graphics.hpp>
 #include <SFML/OpenGL.hpp>
 
-#include "../../Game.h"
+#include "../../Game.hpp"
 
 FlameRing::FlameRing(Vec2d position, double ringSize,
                      double damage, double velocity,

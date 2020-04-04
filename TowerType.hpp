@@ -6,7 +6,7 @@ struct TowerType;
 #include <string>
 #include <SFML/Graphics.hpp>
 
-#include "Tower.h"
+#include "Tower.hpp"
 
 struct TowerType{
     Tower* model;
