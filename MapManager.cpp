@@ -6,9 +6,6 @@ namespace MapManager{
     inline std::string toBinary(int t){
         return std::string((char*)&t, sizeof(t));
     }
-    inline std::string toBinary(unsigned int t){
-        return std::string((char*)&t, sizeof(t));
-    }
     inline std::string toBinary(bool t){
         return std::string((char*)&t, 1);
     }
@@ -30,7 +27,7 @@ namespace MapManager{
         if(pathPoints.size()<2)
             return 5;
 
-        file << toBinary(tileMap.size()) << toBinary(tileMap[0].size()) << toBinary(pathPoints.size()) << toBinary(pixelsPerSquare);
+        file << toBinary((int) tileMap.size()) << toBinary((int) tileMap[0].size()) << toBinary((int) pathPoints.size()) << toBinary(pixelsPerSquare);
         for(int i=0; i<tileMap.size(); i++)
             for(int j=0; j<tileMap[i].size(); j++)
                 file << toBinary((bool)tileMap[i][j]);
