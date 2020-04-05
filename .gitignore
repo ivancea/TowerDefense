@@ -1,6 +1,3 @@
-# Local
-images/
-
 # Code::Blocks
 *.depend
 *.layout
@@ -24,3 +21,7 @@ lib/
 conanbuildinfo.*
 conaninfo.txt
 graph_info.json
+
+#VSCode
+.VSCode
+.cmake

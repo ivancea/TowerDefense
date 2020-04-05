@@ -419,22 +419,25 @@ namespace Game{
 
     void clearTowers(){
         for(auto it = towers.begin(); it!=towers.end();){
-            delete *it;
+            Tower* tower = *it;
             it = removeTower(it);
+            delete tower;
         }
     }
 
     void clearEntities(){
         for(auto it = entities.begin(); it!=entities.end();){
-            delete *it;
+            Entity* entity = *it;
             it = entities.erase(it);
+            delete entity;
         }
     }
 
     void clearEnemies(){
         for(auto it = enemies.begin(); it!=enemies.end();){
-            delete *it;
+            Enemy* enemy = *it;
             it = enemies.erase(it);
+            delete enemy;
         }
     }
 
