@@ -1,0 +1,78 @@
+{
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "options": "bzip2:build_executable=True\nbzip2:shared=False\nfreetype:shared=False\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\nlibpng:api_prefix=None\nlibpng:shared=False\nsfml:audio=False\nsfml:graphics=True\nsfml:network=False\nsfml:shared=False\nsfml:window=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "1",
+     "5"
+    ],
+    "path": "conanfile.txt",
+    "context": "host"
+   },
+   "1": {
+    "ref": "freetype/2.10.0@bincrafters/stable#0",
+    "options": "shared=False\nwith_bzip2=True\nwith_png=True\nwith_zlib=True\nbzip2:build_executable=True\nbzip2:shared=False\nlibpng:api_prefix=None\nlibpng:shared=False\nzlib:minizip=False\nzlib:shared=False",
+    "package_id": "e663056b45ea6b3dc7554d2f8908251a54b4f07b",
+    "prev": "87799c9946dc56287746ddfc15a38a59",
+    "modified": true,
+    "requires": [
+     "2",
+     "3",
+     "4"
+    ],
+    "context": "host"
+   },
+   "2": {
+    "ref": "libpng/1.6.37@bincrafters/stable#0",
+    "options": "api_prefix=None\nshared=False\nzlib:minizip=False\nzlib:shared=False",
+    "package_id": "814ebfa5186d998e34f569d194f81dba5a088811",
+    "prev": "fb0d176411507cf2d065ff0d75b48171",
+    "modified": true,
+    "requires": [
+     "3"
+    ],
+    "context": "host"
+   },
+   "3": {
+    "ref": "zlib/1.2.11@conan/stable#0",
+    "options": "minizip=False\nshared=False",
+    "package_id": "eb34f13b437ddfd63abb1f884c4b8886c48b74cd",
+    "prev": "509faf83606043b5cb75e20a39062ef2",
+    "modified": true,
+    "context": "host"
+   },
+   "4": {
+    "ref": "bzip2/1.0.8@conan/stable#0",
+    "options": "build_executable=True\nshared=False",
+    "package_id": "c8648fe7a19cb95ada8effe32ea21dfa7e89f441",
+    "prev": "e1a4e08c0a55ea3c21cf3757a26927ea",
+    "modified": true,
+    "context": "host"
+   },
+   "5": {
+    "ref": "sfml/2.5.0@bincrafters/stable#0",
+    "options": "audio=False\ngraphics=True\nnetwork=False\nshared=False\nwindow=True\nbzip2:build_executable=True\nbzip2:shared=False\nfreetype:shared=False\nfreetype:with_bzip2=True\nfreetype:with_png=True\nfreetype:with_zlib=True\nlibpng:api_prefix=None\nlibpng:shared=False\nzlib:minizip=False\nzlib:shared=False",
+    "package_id": "ffaeac7c1ce3091f9a3d88c7c21a902865c2efff",
+    "prev": "4512fd25cafeb14435743f6dc2f53a89",
+    "modified": true,
+    "requires": [
+     "1",
+     "6"
+    ],
+    "context": "host"
+   },
+   "6": {
+    "ref": "stb/20180214@conan/stable#0",
+    "options": "",
+    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
+    "prev": "eeb985d6f4125f2ceb51912669ede479",
+    "modified": true,
+    "context": "host"
+   }
+  },
+  "revisions_enabled": true
+ },
+ "version": "0.4",
+ "profile_host": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=gcc\ncompiler.cppstd=20\ncompiler.libcxx=libstdc++11\ncompiler.version=8.1\nos=Windows\nos_build=Windows\n[options]\n[build_requires]\n[env]\n"
+}

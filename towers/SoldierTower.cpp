@@ -5,8 +5,8 @@ int SoldierTower::id = -1;
 SoldierTower::SoldierTower(){
     _id = id;
     _ticksForShoot = 0;
-    _ticksBetweenShoots = 12;
-    _damage = 0.75;
+    _ticksBetweenShoots = 6;
+    _damage = 0.5;
     _bulletVelocity = 15;
 
     _maxBulletDistance = 300;

@@ -4,6 +4,7 @@
 #include "../towers/SniperTower.hpp"
 #include "../towers/RocketTower.hpp"
 #include "../towers/FlameRingTower.hpp"
+#include "../towers/ShotgunTower.hpp"
 
 
 BasicTowerManager::BasicTowerManager(){
@@ -28,4 +29,8 @@ BasicTowerManager::BasicTowerManager(){
                                    "Flame Ring",
                                    "Area damage, low range",
                                    400));
+    _towerTypes.push_back(new TowerType(new ShotgunTower(),
+                                   "Shotgun",
+                                   "High spread damage, low attack rate and range",
+                                   250));
 }

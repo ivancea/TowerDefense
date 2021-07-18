@@ -1,7 +1,9 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.12)
 project(TowerDefense)
 
-set(CMAKE_CXX_STANDARD 17)
+add_definitions(-DCMAKE_EXPORT_COMPILE_COMMANDS=ON)
+
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/obj)
 
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
@@ -55,10 +57,12 @@ add_library(SniperTower towers/SniperTower.cpp towers/SniperTower.hpp)
 target_link_libraries(SniperTower Tower LaserEntity FireEntity Sprite Resources)
 add_library(SoldierTower towers/SoldierTower.cpp towers/SoldierTower.hpp)
 target_link_libraries(SoldierTower Tower)
+add_library(ShotgunTower towers/ShotgunTower.cpp towers/ShotgunTower.hpp)
+target_link_libraries(ShotgunTower Tower)
 
 #TowerManagers
 add_library(BasicTowerManager towerManagers/BasicTowerManager.cpp towerManagers/BasicTowerManager.hpp)
-target_link_libraries(BasicTowerManager TowerManager TowerType FlameRingTower RocketTower SniperTower SoldierTower)
+target_link_libraries(BasicTowerManager TowerManager TowerType FlameRingTower RocketTower SniperTower SoldierTower ShotgunTower)
 
 # Executable
 add_executable(TowerDefense main.cpp)
