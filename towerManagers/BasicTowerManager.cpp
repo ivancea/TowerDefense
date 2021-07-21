@@ -5,6 +5,7 @@
 #include "../towers/RocketTower.hpp"
 #include "../towers/FlameRingTower.hpp"
 #include "../towers/ShotgunTower.hpp"
+#include "../towers/SwordTower.hpp"
 
 
 BasicTowerManager::BasicTowerManager(){
@@ -32,5 +33,9 @@ BasicTowerManager::BasicTowerManager(){
     _towerTypes.push_back(new TowerType(new ShotgunTower(),
                                    "Shotgun",
                                    "High spread damage, low attack rate and range",
+                                   250));
+    _towerTypes.push_back(new TowerType(new SwordTower(),
+                                   "Sword",
+                                   "Average area damage, unstoppable",
                                    250));
 }

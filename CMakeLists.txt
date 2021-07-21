@@ -59,10 +59,12 @@ add_library(SoldierTower towers/SoldierTower.cpp towers/SoldierTower.hpp)
 target_link_libraries(SoldierTower Tower)
 add_library(ShotgunTower towers/ShotgunTower.cpp towers/ShotgunTower.hpp)
 target_link_libraries(ShotgunTower Tower)
+add_library(SwordTower towers/SwordTower.cpp towers/SwordTower.hpp)
+target_link_libraries(SwordTower Tower)
 
 #TowerManagers
 add_library(BasicTowerManager towerManagers/BasicTowerManager.cpp towerManagers/BasicTowerManager.hpp)
-target_link_libraries(BasicTowerManager TowerManager TowerType FlameRingTower RocketTower SniperTower SoldierTower ShotgunTower)
+target_link_libraries(BasicTowerManager TowerManager TowerType FlameRingTower RocketTower SniperTower SoldierTower ShotgunTower SwordTower)
 
 # Executable
 add_executable(TowerDefense main.cpp)

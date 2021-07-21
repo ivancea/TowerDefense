@@ -25,3 +25,5 @@ graph_info.json
 #VSCode
 .VSCode
 .cmake
+
+doxygen
