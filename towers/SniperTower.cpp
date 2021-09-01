@@ -39,8 +39,8 @@ TowerEvent SniperTower::tick(){
         if(it != Game::enemies.end()){
             Vec2d pos = Game::getRealPosition(_position);
 
-            Game::entities.push_back(new LaserEntity(pos, (*it)->getPosition(), 10));
-            Game::entities.push_back(new FireEntity((*it)->getPosition(), 50));
+            Game::entities.emplace_back(std::make_unique<LaserEntity>(pos, (*it)->getPosition(), 10));
+            Game::entities.emplace_back(std::make_unique<FireEntity>((*it)->getPosition(), 50));
 
             Vec2d temp((*it)->getPosition()-pos);
 
@@ -76,6 +76,6 @@ void SniperTower::drawOver(sf::RenderWindow* window, Vec2d point) const{
     window->popGLStates();
 }
 
-Tower* SniperTower::clone() const {
-    return new SniperTower();
+std::unique_ptr<Tower> SniperTower::clone() const {
+    return std::make_unique<SniperTower>();
 }

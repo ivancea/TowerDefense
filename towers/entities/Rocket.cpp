@@ -35,7 +35,7 @@ Rocket::Rocket(Vec2d target, double damage, double explosionRange,
 }
 
 void Rocket::damageEnemies() const{
-    Game::entities.push_back(new ExplosionEntity(_position, _explosionRange, 50));
+    Game::entities.emplace_back(std::make_unique<ExplosionEntity>(_position, _explosionRange, 50));
     for(auto it = Game::enemies.begin(); it != Game::enemies.end();){
         if((*it)->getPosition().distance(_position)<=_explosionRange){
             if((*it)->damage(_damage))

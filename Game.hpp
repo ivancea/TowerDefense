@@ -27,10 +27,10 @@ namespace Game{
         RoadTile
     };
 
-    extern TowerManager* towerManager;
-    extern std::list<Tower*> towers;
-    extern std::list<Enemy*> enemies;
-    extern std::list<Entity*> entities;
+    extern std::unique_ptr<TowerManager> towerManager;
+    extern std::list<std::unique_ptr<Tower>> towers;
+    extern std::list<std::unique_ptr<Enemy>> enemies;
+    extern std::list<std::unique_ptr<Entity>> entities;
 
     extern std::vector<Vec2i> enemiesRoute;
     extern std::vector< std::vector<TileType> > map;
@@ -51,15 +51,15 @@ namespace Game{
     /// HELPERS
 
     Tower* getTower(Vec2i position);
-    bool putTower(Tower* tower);
+    bool putTower(std::unique_ptr<Tower>& tower);
     std::list<Tower*>::iterator removeTower(std::list<Tower*>::iterator tower);
-    Tower* removeTower(Vec2i position);
+    boolean removeTower(Vec2i position);
 
     bool isInRange(Vec2d position, double minRange, double maxRange, Enemy* enemy);
 
-    std::list<Enemy*>::iterator kill(std::list<Enemy*>::iterator enemy);
-    std::list<Enemy*>::iterator findTarget(Tower* tower);
-    std::list< std::list<Enemy*>::iterator > findEnemiesInRange(Vec2d position, double minRange, double maxRange);
+    std::list<std::unique_ptr<Enemy>>::iterator kill(std::list<std::unique_ptr<Enemy>>::iterator enemy);
+    std::list<std::unique_ptr<Enemy>>::iterator findTarget(Tower* tower);
+    std::list< std::list<std::unique_ptr<Enemy>>::iterator > findEnemiesInRange(Vec2d position, double minRange, double maxRange);
 
     bool exists(Enemy* enemy);
     bool exists(Tower* tower);

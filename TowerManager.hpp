@@ -11,7 +11,7 @@ class TowerManager;
 class TowerManager{
 
 protected:
-    std::list<TowerType*> _towerTypes;
+    std::list<std::unique_ptr<TowerType>> _towerTypes;
 
 public:
     virtual ~TowerManager();

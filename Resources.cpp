@@ -2,7 +2,7 @@
 
 namespace Resources{
 
-    std::map<std::string, sf::Texture*> _textures;
+    std::map<std::string, std::unique_ptr<sf::Texture>> _textures;
 
     void normalizePath(std::string& path){
         for(char& c:path)
@@ -25,14 +25,13 @@ namespace Resources{
         normalizePath(path);
         auto it = _textures.find(path);
         if(it!=_textures.end())
-            return it->second;
+            return it->second.get();
 
-        sf::Texture* tex = new sf::Texture();
+        auto tex = std::make_unique<sf::Texture>();
         if(tex->loadFromFile("resources/" + path)){
-            _textures[path] = tex;
-            return tex;
+            _textures[path] = std::move(tex);
+            return _textures[path].get();
         }
-        delete tex;
         return nullptr;
     }
 }

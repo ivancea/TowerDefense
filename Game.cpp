@@ -21,10 +21,10 @@ namespace Game{
 
     }
 
-    TowerManager* towerManager = nullptr;
-    std::list<Tower*> towers;
-    std::list<Enemy*> enemies;
-    std::list<Entity*> entities;
+    std::unique_ptr<TowerManager> towerManager;
+    std::list<std::unique_ptr<Tower>> towers;
+    std::list<std::unique_ptr<Enemy>> enemies;
+    std::list<std::unique_ptr<Entity>> entities;
 
     std::vector<Vec2i> enemiesRoute;
     std::vector< std::vector<TileType> > map;
@@ -36,17 +36,16 @@ namespace Game{
     int tickCount = 0;
     int velocity = 1;
 
-    Tower* selectedTower = nullptr;
+    Tower* selectedTower;
 
     bool tick(){
         for(unsigned int i=0; i<velocity; i++){ // TODO: Put here new enemies with RoundsManager
             auto it1 = enemies.begin();
             while(it1 != enemies.end()){
                 bool lost = life<=0;
-                Enemy* e = *it1;
+                auto& e = *it1;
                 if(e->tick()){
                     life -= e->getDamage();
-                    delete e;
                     it1 = enemies.erase(it1);
                 }else it1++;
 
@@ -54,8 +53,8 @@ namespace Game{
                     money = 0;
                     clearEntities();
 
-                    for(Tower* t:towers){
-                        entities.push_back(new ExplosionEntity(getRealPosition(t->getPosition()), pixelsPerSquare, 200));
+                    for(auto& t:towers){
+                        entities.emplace_back(std::make_unique<ExplosionEntity>(getRealPosition(t->getPosition()), pixelsPerSquare, 200));
                     }
 
                     clearTowers();
@@ -63,21 +62,20 @@ namespace Game{
             }
             auto it2 = entities.begin();
             while(it2 != entities.end()){
-                Entity* e = *it2;
+                auto& e = *it2;
                 if(e->tick()){
-                    delete e;
                     it2 = entities.erase(it2);
                 }else it2++;
             }
-            for(Tower* t : towers){
+            for(auto& t : towers){
                 t->tick();
             }
 
             if(life>0){
                 if(tickCount%400 == 1)
-                    enemies.push_back(new InhibitorEnemy(1.0, 30+tickCount/500, 1));
+                    enemies.emplace_back(std::make_unique<InhibitorEnemy>(1.0, 30+tickCount/500, 1));
                 else if(tickCount%20 == 1)
-                    enemies.push_back(new BasicEnemy(1.0 + (double)(rand()%10)/10.0, 15+tickCount/500, 1));
+                    enemies.emplace_back(std::make_unique<BasicEnemy>(1.0 + (double)(rand()%10)/10.0, 15+tickCount/500, 1));
             }
             ++tickCount;
         }
@@ -115,21 +113,21 @@ namespace Game{
             glEnd();
         }
 
-        for(Enemy* e : enemies)
+        for(auto& e : enemies)
             e->draw(window);
-        for(Entity* e : entities)
+        for(auto& e : entities)
             e->draw(window);
-        for(Tower* t : towers)
+        for(auto& t : towers)
             t->draw(window);
 
-        for(Enemy* e : enemies)
+        for(auto& e : enemies)
             e->draw(window);
-        for(Entity* e : entities)
+        for(auto& e : entities)
             e->drawOver(window);
-        for(Tower* t : towers)
+        for(auto& t : towers)
             t->drawOver(window);
 
-        if(selectedTower!=nullptr){
+        if(selectedTower){
             if(exists(selectedTower)){
                 Vec2i p = Vec2i(((double)selectedTower->getPosition().x+0.5)*pixelsPerSquare,
                                 ((double)selectedTower->getPosition().y+0.5)*pixelsPerSquare);
@@ -205,25 +203,25 @@ namespace Game{
     /// HELPERS
 
     Tower* getTower(Vec2i position){
-        for(Tower* t: towers)
+        for(auto& t: towers)
             if(t->getPosition()==position)
-                return t;
+                return t.get();
         return nullptr;
     }
 
-    bool putTower(Tower* tower){
+    bool putTower(std::unique_ptr<Tower>& tower){
         Vec2i p = tower->getPosition();
         if(map.size()>p.x && p.x>=0
         && map[p.x].size()>p.y && p.y>=0
         && map[p.x][p.y]==TileType::EmptyTile){ /// TODO: Is occupied?
-            Game::towers.push_back(tower);
+            Game::towers.emplace_back(std::move(tower));
             map[p.x][p.y] = TileType::TowerTile;
             return true;
         }
         return false;
     }
 
-    std::list<Tower*>::iterator removeTower(std::list<Tower*>::iterator tower){
+    std::list<std::unique_ptr<Tower>>::iterator removeTower(std::list<std::unique_ptr<Tower>>::iterator tower){
         Vec2i p = (*tower)->getPosition();
         if(map.size()>p.x && p.x>=0
         && map[p.x].size()>p.y && p.y>=0
@@ -232,21 +230,18 @@ namespace Game{
         return towers.erase(tower);
     }
 
-    Tower* removeTower(Vec2i position){
-        Tower* ret = nullptr;
+    boolean removeTower(Vec2i position){
         for(auto it = towers.begin(); it!= towers.end(); it++)
             if((*it)->getPosition()==position){
-                ret = *it;
                 removeTower(it);
-                break;
+                return true;
             }
-        return ret;
+        return false;
     }
 
-    std::list<Enemy*>::iterator kill(std::list<Enemy*>::iterator enemy){
+    std::list<std::unique_ptr<Enemy>>::iterator kill(std::list<std::unique_ptr<Enemy>>::iterator enemy){
         (*enemy)->killed();
         ++Stats::enemiesKilled;
-        delete *enemy;
         return enemies.erase(enemy);
     }
 
@@ -259,7 +254,7 @@ namespace Game{
         return d<=maxRange && d>=minRange;
     }
 
-    std::list<Enemy*>::iterator findTarget(Tower* tower){
+    std::list<std::unique_ptr<Enemy>>::iterator findTarget(Tower* tower){
         auto it = enemies.end();
         int index = -1;
         double t = -1;
@@ -270,9 +265,9 @@ namespace Game{
         switch(tower->getPriority()){
         case Last:
             for(auto it2=Game::enemies.begin(); it2!=Game::enemies.end(); it2++){
-                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), *it2))
+                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), it2->get()))
                     continue;
-                Enemy* e = *it2;
+                auto& e = *it2;
                 if(e->getDistanceToEnd()>0 && (t<0 || e->getDistanceToEnd()>t)){
                     t = e->getDistanceToEnd();
                     it = it2;
@@ -281,7 +276,7 @@ namespace Game{
             break;
         case Near:
             for(auto it2=Game::enemies.begin(); it2!=Game::enemies.end(); it2++){
-                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), *it2))
+                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), it2->get()))
                     continue;
                 double d = (*it2)->getPosition().distance(p);
                 if(t<0 || d<t){
@@ -292,7 +287,7 @@ namespace Game{
             break;
         case Far:
             for(auto it2=Game::enemies.begin(); it2!=Game::enemies.end(); it2++){
-                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), *it2))
+                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), it2->get()))
                     continue;
                 double d = (*it2)->getPosition().distance(p);
                 if(t<0 || d>t){
@@ -303,7 +298,7 @@ namespace Game{
             break;
         case MoreLife:
             for(auto it2=Game::enemies.begin(); it2!=Game::enemies.end(); it2++){
-                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), *it2))
+                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), it2->get()))
                     continue;
                 double l = (*it2)->getLife();
                 if(l>0 && (t<0 || l>t)){
@@ -314,7 +309,7 @@ namespace Game{
             break;
         case LessLife:
             for(auto it2=Game::enemies.begin(); it2!=Game::enemies.end(); it2++){
-                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), *it2))
+                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), it2->get()))
                     continue;
                 double l = (*it2)->getLife();
                 if(l>0 && (t<0 || l<t)){
@@ -325,7 +320,7 @@ namespace Game{
             break;
         case MoreDamage:
             for(auto it2=Game::enemies.begin(); it2!=Game::enemies.end(); it2++){
-                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), *it2))
+                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), it2->get()))
                     continue;
                 double d = (*it2)->getDamage();
                 if(d>0 && (t<0 || d>t)){
@@ -336,7 +331,7 @@ namespace Game{
             break;
         case LessDamage:
             for(auto it2=Game::enemies.begin(); it2!=Game::enemies.end(); it2++){
-                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), *it2))
+                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), it2->get()))
                     continue;
                 double d = (*it2)->getDamage();
                 if(d>0 && (t<0 || d<t)){
@@ -347,7 +342,7 @@ namespace Game{
             break;
         case MoreEnemiesTogether:
             for(auto it2=Game::enemies.begin(); it2!=Game::enemies.end(); it2++){
-                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), *it2))
+                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), it2->get()))
                     continue;
                 Vec2d p = (*it2)->getPosition();
                 int count = 0;
@@ -365,9 +360,9 @@ namespace Game{
         case Default:
         default:
             for(auto it2=Game::enemies.begin(); it2!=Game::enemies.end(); it2++){
-                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), *it2))
+                if(!isInRange(p, tower->getMinRange(), tower->getMaxRange(), it2->get()))
                     continue;
-                Enemy* e = *it2;
+                auto& e = *it2;
                 if(e->getDistanceToEnd()>0 && (t<0 || e->getDistanceToEnd()<t)){
                     t = e->getDistanceToEnd();
                     it = it2;
@@ -379,10 +374,10 @@ namespace Game{
         return it;
     }
 
-    std::list< std::list<Enemy*>::iterator > findEnemiesInRange(Vec2d position, double minRange, double maxRange){
-        std::list< std::list<Enemy*>::iterator > ret;
+    std::list< std::list<std::unique_ptr<Enemy>>::iterator > findEnemiesInRange(Vec2d position, double minRange, double maxRange){
+        std::list< std::list<std::unique_ptr<Enemy>>::iterator > ret;
         for(auto it = enemies.begin();  it!=enemies.end(); it++){
-            if(isInRange(position, minRange, maxRange, *it))
+            if(isInRange(position, minRange, maxRange, it->get()))
                 ret.push_back(it);
         }
         return ret;
@@ -392,8 +387,8 @@ namespace Game{
     bool exists(Enemy* enemy){
         if(enemy == nullptr)
             return false;
-        for(Enemy* e : enemies)
-            if(e==enemy)
+        for(auto& e : enemies)
+            if(e.get()==enemy)
                 return true;
         return false;
     }
@@ -401,8 +396,8 @@ namespace Game{
     bool exists(Tower* tower){
         if(tower == nullptr)
             return false;
-        for(Tower* t : towers)
-            if(t==tower)
+        for(auto& t : towers)
+            if(t.get()==tower)
                 return true;
         return false;
     }
@@ -410,8 +405,8 @@ namespace Game{
     bool exists(Entity* entity){
         if(entity == nullptr)
             return false;
-        for(Entity* e : entities)
-            if(e==entity)
+        for(auto& e : entities)
+            if(e.get()==entity)
                 return true;
         return false;
     }
@@ -419,26 +414,16 @@ namespace Game{
 
     void clearTowers(){
         for(auto it = towers.begin(); it!=towers.end();){
-            Tower* tower = *it;
             it = removeTower(it);
-            delete tower;
         }
     }
 
     void clearEntities(){
-        for(auto it = entities.begin(); it!=entities.end();){
-            Entity* entity = *it;
-            it = entities.erase(it);
-            delete entity;
-        }
+        entities.clear();
     }
 
     void clearEnemies(){
-        for(auto it = enemies.begin(); it!=enemies.end();){
-            Enemy* enemy = *it;
-            it = enemies.erase(it);
-            delete enemy;
-        }
+        enemies.clear();
     }
 
     void killEnemies(){

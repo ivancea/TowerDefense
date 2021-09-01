@@ -23,7 +23,7 @@ public:
     virtual TowerEvent tick();
     virtual void draw(sf::RenderWindow* window, Vec2d point) const;
 
-    virtual Tower* clone() const;
+    virtual std::unique_ptr<Tower> clone() const;
 };
 
 #endif // SHOTGUNTOWER_H

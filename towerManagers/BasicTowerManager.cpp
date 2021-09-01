@@ -13,28 +13,30 @@ BasicTowerManager::BasicTowerManager(){
     SniperTower::id = 2;
     RocketTower::id = 3;
     FlameRingTower::id = 4;
+    ShotgunTower::id = 5;
+    SwordTower::id = 6;
 
-    _towerTypes.push_back(new TowerType(new SoldierTower(),
+    _towerTypes.emplace_back(std::make_unique<TowerType>(std::make_unique<SoldierTower>(),
                                    "Soldier",
                                    "Fast shots, low damage",
                                    150));
-    _towerTypes.push_back(new TowerType(new SniperTower(),
+    _towerTypes.emplace_back(std::make_unique<TowerType>(std::make_unique<SniperTower>(),
                                    "Sniper",
                                    "High damage and global range, but low attack rate",
                                    200));
-    _towerTypes.push_back(new TowerType(new RocketTower(),
+    _towerTypes.emplace_back(std::make_unique<TowerType>(std::make_unique<RocketTower>(),
                                    "Rocket",
                                    "Ground area damage",
                                    300));
-    _towerTypes.push_back(new TowerType(new FlameRingTower(),
+    _towerTypes.emplace_back(std::make_unique<TowerType>(std::make_unique<FlameRingTower>(),
                                    "Flame Ring",
                                    "Area damage, low range",
                                    400));
-    _towerTypes.push_back(new TowerType(new ShotgunTower(),
+    _towerTypes.emplace_back(std::make_unique<TowerType>(std::make_unique<ShotgunTower>(),
                                    "Shotgun",
                                    "High spread damage, low attack rate and range",
                                    250));
-    _towerTypes.push_back(new TowerType(new SwordTower(),
+    _towerTypes.emplace_back(std::make_unique<TowerType>(std::make_unique<SwordTower>(),
                                    "Sword",
                                    "Average area damage, unstoppable",
                                    250));

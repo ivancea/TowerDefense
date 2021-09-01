@@ -77,6 +77,6 @@ void SwordTower::drawOver(sf::RenderWindow* window, Vec2d point) const{
     glEnd();
 }
 
-Tower* SwordTower::clone() const {
-    return new SwordTower();
+std::unique_ptr<Tower> SwordTower::clone() const {
+    return std::make_unique<SwordTower>();
 }

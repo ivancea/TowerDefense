@@ -32,7 +32,7 @@ TowerEvent ShotgunTower::tick(){
                 Vec2d target = (*it)->getPosition() + Vec2d(random(-30, 30), random(-30, 30))-((Vec2d)_position+Vec2d(0.5,0.5))*Game::pixelsPerSquare;
                 target.normalize();
                 target = ((Vec2d)_position+Vec2d(0.5,0.5))*Game::pixelsPerSquare + target*(_maxBulletDistance>_maxRange?_maxBulletDistance:_maxRange);
-                Game::entities.push_back(new Bullet(target, _damage, _bulletVelocity,
+                Game::entities.emplace_back(std::make_unique<Bullet>(target, _damage, _bulletVelocity,
                                                     ((Vec2d)_position+Vec2d(0.5,0.5))*Game::pixelsPerSquare));
             }
 
@@ -53,6 +53,6 @@ void ShotgunTower::draw(sf::RenderWindow* window, Vec2d point) const{
     glEnd();
 }
 
-Tower* ShotgunTower::clone() const {
-    return new ShotgunTower();
+std::unique_ptr<Tower> ShotgunTower::clone() const {
+    return std::make_unique<ShotgunTower>();
 }

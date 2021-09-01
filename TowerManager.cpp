@@ -4,31 +4,22 @@
 
 #include "Game.hpp"
 
-TowerManager::~TowerManager(){
-    for(TowerType* tt : _towerTypes){
-        if(tt!=nullptr){
-            if(tt->model != nullptr)
-                delete tt->model;
-            delete tt;
-        }
-    }
-    _towerTypes.clear();
-}
+TowerManager::~TowerManager() {}
 
 int TowerManager::getTowerCount() const{
     return _towerTypes.size();
 }
 
 TowerType* TowerManager::getTowerType(int id) const{
-    for(TowerType* tt : _towerTypes)
-        if(tt!=nullptr && tt->model!=nullptr && id==tt->model->getId())
-            return tt;
+    for(auto& tt : _towerTypes)
+        if(tt && tt->model!=nullptr && id==tt->model->getId())
+            return tt.get();
     return nullptr;
 }
 
 int TowerManager::getTowerCost(int id) const{
-    for(TowerType* tt : _towerTypes)
-        if(tt!=nullptr && tt->model!=nullptr && id==tt->model->getId()){
+    for(auto& tt : _towerTypes)
+        if(tt && tt->model!=nullptr && id==tt->model->getId()){
             return tt->cost;
         }
     return 0;
@@ -55,7 +46,7 @@ TowerType* TowerManager::parseEvent(sf::Event event, Vec2i mouse, sf::Vector2i p
             auto it = _towerTypes.begin();
             for(int i = t.y*2 + t.x; i>0; i--)
                 it++;
-            return *it;
+            return it->get();
         }
     case sf::Event::MouseButtonPressed:
         if(event.mouseButton.button == sf::Mouse::Left){
@@ -68,7 +59,7 @@ TowerType* TowerManager::parseEvent(sf::Event event, Vec2i mouse, sf::Vector2i p
                 auto it = _towerTypes.begin();
                 for(int i = t.y*2 + t.x; i>0; i--)
                     it++;
-                return *it;
+                return it->get();
             }
         }
         break;
@@ -79,7 +70,7 @@ TowerType* TowerManager::parseEvent(sf::Event event, Vec2i mouse, sf::Vector2i p
                     auto it = _towerTypes.begin();
                     while(i-->0)
                         ++it;
-                    return *it;
+                    return it->get();
                 }
                 break;
             }
@@ -119,8 +110,8 @@ void TowerManager::drawTowersPanel(sf::RenderWindow* window, sf::Vector2i point)
 
     int i = 0;
     Vec2d p;
-    for(TowerType* tt:_towerTypes){
-        if(tt==nullptr || tt->model==nullptr)
+    for(auto& tt:_towerTypes){
+        if(!tt || tt->model==nullptr)
             continue;
         p.x = point.x + 15 + Game::pixelsPerSquare/2 + (i%2)*(10+Game::pixelsPerSquare);
         p.y = point.y + 15 + Game::pixelsPerSquare/2 + (i/2)*(Game::pixelsPerSquare+10);

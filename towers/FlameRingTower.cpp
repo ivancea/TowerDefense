@@ -19,8 +19,8 @@ FlameRingTower::FlameRingTower(){
 TowerEvent FlameRingTower::tick(){
     if(_ticksForShoot <= 0){
 
-        Game::entities.push_back(
-            new FlameRing(
+        Game::entities.emplace_back(
+            std::make_unique<FlameRing>(
                 Game::getRealPosition(_position),
                 _ringSize, _damage, _ringVelocity,
                 _maxRange, _minRange
@@ -42,6 +42,6 @@ void FlameRingTower::draw(sf::RenderWindow* window, Vec2d point) const{
     glEnd();
 }
 
-Tower* FlameRingTower::clone() const {
-    return new FlameRingTower();
+std::unique_ptr<Tower> FlameRingTower::clone() const {
+    return std::make_unique<FlameRingTower>();
 }

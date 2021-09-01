@@ -68,7 +68,7 @@ public:
     virtual void draw(sf::RenderWindow* window, Vec2d point) const {};
     virtual void drawOver(sf::RenderWindow* window, Vec2d point) const {};
 
-    virtual Tower* clone() const = 0;
+    virtual std::unique_ptr<Tower> clone() const = 0;
 };
 
 #endif // TOWER_H

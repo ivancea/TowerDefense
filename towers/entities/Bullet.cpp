@@ -26,7 +26,7 @@ bool Bullet::tick(){
         p *= _velocity;
         _position += p;
     }
-    std::list<Enemy*>::iterator t = Game::enemies.end();
+    auto t = Game::enemies.end();
     double minDistance = -1;
     for(auto it = Game::enemies.begin(); it!=Game::enemies.end(); it++){
         double d = _position.distance((*it)->getPosition());

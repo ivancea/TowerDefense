@@ -9,13 +9,13 @@ struct TowerType;
 #include "Tower.hpp"
 
 struct TowerType{
-    Tower* model;
+    std::unique_ptr<Tower> model;
     std::string name;
     std::string description;
     int cost;
 
     TowerType();
-    TowerType(Tower* model, std::string name, std::string description, int cost);
+    TowerType(std::unique_ptr<Tower> model, std::string name, std::string description, int cost);
 };
 
 #endif // TOWERTYPE_H

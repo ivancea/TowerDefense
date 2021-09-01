@@ -26,7 +26,7 @@ void initializeGame(){
     int n = MapManager::load(tileMap, Game::pixelsPerSquare, Game::enemiesRoute, "map.tdm");
 
     /// Always after initialize Game::pixelsPerSquare
-    Game::towerManager = new BasicTowerManager();
+    Game::towerManager = std::make_unique<BasicTowerManager>();
 
     if(n==0){
         Game::map.resize(tileMap.size(), vector<Game::TileType>(tileMap[0].size(), Game::TileType::EmptyTile));
@@ -49,20 +49,19 @@ void initializeGame(){
             Game::map[9][i] = Game::TileType::RoadTile;
         }
 
-        Tower* t = new SniperTower();
+        std::unique_ptr<Tower> t = std::make_unique<SniperTower>();
         t->setPosition(Vec2i(3,3));
         t->setPriority(Near);
-        if(!Game::putTower(t))
-            delete t;
-        t = new SniperTower();
+        Game::putTower(t);
+
+        t = std::make_unique<SniperTower>();
         t->setPosition(Vec2i(4,5));
         t->setPriority(Last);
-        if(!Game::putTower(t))
-            delete t;
-        t = new SniperTower();
+        Game::putTower(t);
+
+        t = std::make_unique<SniperTower>();
         t->setPosition(Vec2i(5,4));
-        if(!Game::putTower(t))
-            delete t;
+        Game::putTower(t);
     }
 
     Game::life = 20;
@@ -71,23 +70,20 @@ void initializeGame(){
 }
 
 void freeGame(){
-    if(Game::towerManager != nullptr)
-        delete Game::towerManager;
     Game::clearEnemies();
     Game::clearEntities();
     Game::clearTowers();
 }
 
-void setTooltip(Tooltip*& tooltip, Vec2i mouse, TowerType* tt){
+void setTooltip(std::unique_ptr<Tooltip>& tooltip, Vec2i mouse, TowerType* tt){
     if(tt!=nullptr){
-        if(tooltip==nullptr)
-            tooltip = new Tooltip();
+        if(!tooltip)
+            tooltip = std::make_unique<Tooltip>();
         tooltip->setPoint(mouse);
         tooltip->setTitle(tt->name);
         tooltip->setBody(tt->description + "\n\nCost: " + to_string(tt->cost));
-    }else if(tooltip!=nullptr){
-        delete tooltip;
-        tooltip = nullptr;
+    }else{
+        tooltip.reset();
     }
 }
 
@@ -122,7 +118,7 @@ int main(){
 
     bool paused = false;
 
-    Tooltip* tooltip = nullptr;
+    std::unique_ptr<Tooltip> tooltip;
     TowerType* placingTower = nullptr;
 
     while(running && window.isOpen()){
@@ -162,11 +158,9 @@ int main(){
                         if(Game::map[p.x][p.y] == Game::TileType::EmptyTile){
                             if(placingTower != nullptr && Game::money >= placingTower->cost){
                                 Game::money -= placingTower->cost;
-                                Tower* t = placingTower->model->clone();
+                                std::unique_ptr<Tower> t(placingTower->model->clone());
                                 t->setPosition(p);
-                                if(!Game::putTower(t))
-                                    delete t;
-                                else
+                                if(Game::putTower(t))
                                     mustDeselect = false;
                             }
                         }else if(Game::map[p.x][p.y] == Game::TileType::TowerTile){
@@ -182,12 +176,11 @@ int main(){
                     if(Game::map.size()>p.x && p.x>=0
                     && Game::map[p.x].size()>p.y && p.y>=0){
                         if(Game::map[p.x][p.y] == Game::TileType::TowerTile){
-                            Tower* t = Game::removeTower(p);
-                            if(t==nullptr){
-                                cout << "ERROR DELETING TOWER" << endl;
-                            }else{
-                                Game::money += Game::towerManager->getTowerCost(t->getId());
-                                delete t;
+                            auto tower = Game::getTower(p);
+
+                            if (tower != nullptr) {
+                                Game::money += Game::towerManager->getTowerCost(tower->getId());
+                                Game::removeTower(p);
                             }
                         }
                     }
@@ -230,7 +223,7 @@ int main(){
             placingTower->model->drawOver(&window, mouse);
         }
 
-        if(tooltip!=nullptr)
+        if(tooltip)
             tooltip->draw(&window);
 
         window.display();

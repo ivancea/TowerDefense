@@ -1,5 +1,7 @@
 #include "MapManager.hpp"
 
+#include <memory>
+
 namespace MapManager{
 
 
@@ -51,23 +53,27 @@ namespace MapManager{
         pathPoints.clear();
 
         unsigned int x,y,n;
-        char* buff = new char[sizeof(int)*4];
+        std::unique_ptr<char[]> buffPtr = std::make_unique<char[]>(sizeof(int)*4);
+        char* buff = buffPtr.get();
+
         file.read(buff, sizeof(int)*4);
         x = *(int*)buff;
         y = *(int*)(buff+sizeof(int));
         n = *(int*)(buff+sizeof(int)*2);
         pixelsPerSquare = *(int*)(buff+sizeof(int)*3);
-        delete[] buff;
         for(int i=0; i<x; i++)
             tileMap.push_back(std::vector<bool>(y, true));
-        buff = new char[x*y];
+            
+        buffPtr = std::make_unique<char[]>(x*y);
+        buff = buffPtr.get();
         file.read(buff, x*y);
         for(int i=0; i<x; i++)
             for(int j=0; j<y; j++)
                 if(buff[i*y + j]==0)
                     tileMap[i][j] = false;
-        delete buff;
-        buff = new char[sizeof(int)*n*2];
+                    
+        buffPtr = std::make_unique<char[]>(sizeof(int)*n*2);
+        buff = buffPtr.get();
         file.read(buff, sizeof(int)*n*2);
         pathPoints.resize(n);
         for(int i=0; i<n; i++){

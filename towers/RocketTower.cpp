@@ -23,11 +23,11 @@ TowerEvent RocketTower::tick(){
     if(_ticksForShoot<=0){
         auto it = Game::findTarget(this);
         if(it != Game::enemies.end()){
-            Game::entities.push_back(_followEnemy?
-                               new Rocket(*it, _damage, _explosionRange,
+            Game::entities.emplace_back(_followEnemy
+                                ? std::make_unique<Rocket>(it->get(), _damage, _explosionRange,
                                           _rocketVelocity, _maxRocketDistance,
                                           _hitEnemiesInPath, ((Vec2d)_position+Vec2d(0.5,0.5))*Game::pixelsPerSquare)
-                              :new Rocket((*it)->getPosition(), _damage, _explosionRange,
+                                : std::make_unique<Rocket>((*it)->getPosition(), _damage, _explosionRange,
                                           _rocketVelocity, _maxRocketDistance,
                                           _hitEnemiesInPath, ((Vec2d)_position+Vec2d(0.5,0.5))*Game::pixelsPerSquare));
 
@@ -56,6 +56,6 @@ void RocketTower::draw(sf::RenderWindow* window, Vec2d point) const {
     glEnd();
 }
 
-Tower* RocketTower::clone() const {
-    return new RocketTower();
+std::unique_ptr<Tower> RocketTower::clone() const {
+    return std::make_unique<RocketTower>();
 }

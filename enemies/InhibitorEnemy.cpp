@@ -23,10 +23,10 @@ bool InhibitorEnemy::tick(){
     if(_inhibitionTicks==50){
         Tower* t = nullptr;
         double d = 151;
-        for(Tower* tower : Game::towers){
+        for(auto& tower : Game::towers){
             double dist = Game::getDistance(tower->getPosition(), _position);
             if(dist < d){
-                t = tower;
+                t = tower.get();
                 d = dist;
             }
         }

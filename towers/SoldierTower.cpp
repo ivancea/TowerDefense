@@ -22,7 +22,7 @@ TowerEvent SoldierTower::tick(){
             Vec2d target = (*it)->getPosition()-((Vec2d)_position+Vec2d(0.5,0.5))*Game::pixelsPerSquare;
             target.normalize();
             target = ((Vec2d)_position+Vec2d(0.5,0.5))*Game::pixelsPerSquare + target*(_maxBulletDistance>_maxRange?_maxBulletDistance:_maxRange);
-            Game::entities.push_back(new Bullet(target, _damage, _bulletVelocity,
+            Game::entities.emplace_back(std::make_unique<Bullet>(target, _damage, _bulletVelocity,
                                                 ((Vec2d)_position+Vec2d(0.5,0.5))*Game::pixelsPerSquare));
 
             _ticksForShoot = _ticksBetweenShoots;
@@ -42,6 +42,6 @@ void SoldierTower::draw(sf::RenderWindow* window, Vec2d point) const{
     glEnd();
 }
 
-Tower* SoldierTower::clone() const {
-    return new SoldierTower();
+std::unique_ptr<Tower> SoldierTower::clone() const {
+    return std::make_unique<SoldierTower>();
 }
